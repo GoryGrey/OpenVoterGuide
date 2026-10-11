@@ -94,6 +94,7 @@ for (const race of races) {
 unique(measures, (issue) => issue.issue_number, "measures");
 for (const issue of measures) checkSources(issue.sources, `Measure ${issue.issue_number}`);
 unique(levies, (issue) => issue.issue_number, "levies");
+assert(levies.every((issue) => !Object.prototype.hasOwnProperty.call(issue, "annual_cost_per_100k")), "Do not store one-size-fits-all levy dollar estimates; use the parcel-specific auditor estimator");
 for (const issue of levies) {
   assert(Number.isFinite(issue.millage) && issue.millage > 0, `Levy ${issue.issue_number}: invalid millage`);
   assert(issue.tax_change === (issue.type !== "renewal"), `Levy ${issue.issue_number}: tax_change conflicts with type`);
