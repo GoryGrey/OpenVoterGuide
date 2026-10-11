@@ -16,7 +16,7 @@ Strictly nonpartisan. No endorsements, no recommendations, no partisan framing. 
 
 ## Live Site
 
-[https://openvoterguide.pages.dev](https://openvoterguide.pages.dev) (after Cloudflare Pages setup)
+[https://gorygrey.github.io/OpenVoterGuide/](https://gorygrey.github.io/OpenVoterGuide/)
 
 ## For Voters
 
@@ -39,15 +39,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 ### Tech stack
 
 - **Static site generator:** Eleventy (11ty)
-- **Hosting:** Cloudflare Pages (free tier)
+- **Hosting:** GitHub Pages
 - **No backend, no database, no tracking**
-- **Build:** `npx @11ty/eleventy` outputs to `_site/`
+- **Build:** `npm run build` outputs to `_site/`
 
 ### Local development
 
 ```bash
 npm install
-npx @11ty/eleventy --serve
+npm run start
 ```
 
 Visit `http://localhost:8080`.

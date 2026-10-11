@@ -2,10 +2,10 @@
 (function() {
   let searchIndex = [];
 
-  // Build index from page data
   async function buildIndex() {
     try {
-      const res = await fetch('/search-index.json');
+      const res = await fetch(window.OVG_SEARCH_INDEX || '/OpenVoterGuide/search-index.json');
+      if (!res.ok) throw new Error('Search index request failed');
       searchIndex = await res.json();
     } catch (e) {
       console.warn('Search index not available');
@@ -14,6 +14,7 @@
 
   const input = document.getElementById('site-search');
   const results = document.getElementById('search-results');
+  const basePath = document.querySelector('meta[name="ovg-base-path"]')?.content || '/OpenVoterGuide/';
   if (!input || !results) return;
 
   input.addEventListener('input', (e) => {
@@ -22,20 +23,29 @@
       results.style.display = 'none';
       return;
     }
-    const matches = searchIndex
-      .filter(item =>
-        item.title.toLowerCase().includes(q) ||
-        (item.keywords && item.keywords.toLowerCase().includes(q))
-      )
-      .slice(0, 8);
+    const matches = searchIndex.filter(item =>
+      item.title.toLowerCase().includes(q) ||
+      (item.keywords && item.keywords.toLowerCase().includes(q))
+    ).slice(0, 8);
 
+    results.innerHTML = '';
     if (matches.length === 0) {
-      results.style.display = 'none';
+      const empty = document.createElement('p');
+      empty.textContent = 'No matching pages found.';
+      results.appendChild(empty);
+      results.style.display = 'block';
       return;
     }
-    results.innerHTML = matches
-      .map(m => `<a href="${m.url}"><strong>${m.title}</strong><br><small>${m.type}</small></a>`)
-      .join('');
+    matches.forEach((item) => {
+      const link = document.createElement('a');
+      link.href = basePath + item.url.replace(/^\/+/, '');
+      const title = document.createElement('strong');
+      title.textContent = item.title;
+      const type = document.createElement('small');
+      type.textContent = item.type;
+      link.append(title, document.createElement('br'), type);
+      results.appendChild(link);
+    });
     results.style.display = 'block';
   });
 
