@@ -17,14 +17,17 @@
   <header>
     <nav>
       <a href="{{ '/' | url }}" class="logo">Ashtabula County Voter Guide</a>
-      <div class="nav-links">
-        <a href="{{ '/races/' | url }}">Races</a>
-        <a href="{{ '/voting/' | url }}">Voting info</a>
-        <a href="{{ '/measures/' | url }}">Measures</a>
-        <a href="{{ '/levies/' | url }}">Levies</a>
-        <a href="{{ '/worksheet/' | url }}">My Worksheet</a>
-        <a href="{{ '/about/' | url }}">About</a>
-      </div>
+      <details class="site-nav">
+        <summary aria-label="Open site navigation">Menu</summary>
+        <div class="nav-links">
+          <a href="{{ '/races/' | url }}">Races</a>
+          <a href="{{ '/voting/' | url }}">Voting info</a>
+          <a href="{{ '/measures/' | url }}">Measures</a>
+          <a href="{{ '/levies/' | url }}">Levies</a>
+          <a href="{{ '/worksheet/' | url }}">My Worksheet</a>
+          <a href="{{ '/about/' | url }}">About</a>
+        </div>
+      </details>
       <div class="search-box">
         <input type="search" id="site-search" placeholder="Search races or enter your address..." aria-label="Search races or enter your address" aria-controls="search-results">
         <div id="search-results" role="region" aria-label="Search results" aria-live="polite"></div>

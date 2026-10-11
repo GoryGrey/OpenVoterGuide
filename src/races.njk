@@ -37,8 +37,9 @@ eleventyComputed:
 
 {% if race.candidates.length >= 2 %}
 <section class="all-candidates-compare" aria-labelledby="compare-heading">
-  <h2 id="compare-heading">Compare all {{ race.candidates.length }} candidates</h2>
-  <p>Each candidate is shown in the same column for a quick side-by-side scan. On a small screen, scroll horizontally.</p>
+  <details class="comparison-disclosure">
+    <summary id="compare-heading"><span class="comparison-summary-title">Compare all {{ race.candidates.length }} candidates side by side</span><span class="comparison-summary-hint">Open comparison</span></summary>
+    <p>Each candidate is shown in the same column so you can scan their backgrounds, statements, records, and sourced views in one place. On a small screen, scroll the table sideways.</p>
   <p class="comparison-note"><strong>About ballot issue views:</strong> A candidate's stated position appears only when we have a source for it. An empty entry means this guide has not added a sourced statement; it does not mean the candidate is undecided.</p>
   <div class="comparison-table-scroll" role="region" aria-label="Side-by-side comparison of all candidates" tabindex="0">
     <table class="candidate-comparison">
@@ -78,6 +79,7 @@ eleventyComputed:
       </tbody>
     </table>
   </div>
+  </details>
 </section>
 {% endif %}
 
