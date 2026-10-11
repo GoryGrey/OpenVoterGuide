@@ -14,6 +14,7 @@ const expected = [
   "worksheet/index.html",
   "about/index.html",
   "voting/index.html",
+  "sample-ballots/index.html",
   ...races.map((race) => `races/${race.id}/index.html`),
   ...measures.map((issue) => `measures/${issue.id}/index.html`)
 ];
