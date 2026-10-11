@@ -1645,7 +1645,7 @@
           "Supports simplifying licensing and regulation for small businesses, including gig workers, tradespeople, and in-home childcare providers."
         ],
         "record": [
-          "This guide does not include a prior public-office voting record for either candidate in the ticket."
+          "This guide does not include a sourced public-office voting-history summary for either candidate in the ticket."
         ],
         "correlation": "The selected positions above come from Kissick’s campaign issue page; they are not matched to a comparable public voting record in this guide. The data-center text is a list of stated concerns, not a specific pause or regulatory proposal.",
         "sources": [
@@ -1739,10 +1739,19 @@
           ],
           "record": [
             {
-              "status": "pending",
-              "note": "This states the scope of the guide’s selected record section; it does not assert that the candidates have never held office.",
+              "status": "editorial_summary",
+              "note": "This is a statement about the guide’s selected record coverage, not a claim that either candidate has never held office.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                },
+                {
+                  "label": "Toledo Free Press 2026 Libertarian gubernatorial candidate profile",
+                  "url": "https://toledofreepress.com/tfp-voters-guide-2026-may-primary-libertarian-gubernatorial/"
+                }
+              ]
             }
           ],
           "correlation": [
@@ -2547,11 +2556,15 @@
         "party": "Libertarian",
         "incumbent": false,
         "background": "The Libertarian Party’s candidate biography says Pruss owns a printing and mail-marketing business and previously ran for Toledo School Board and Lucas County Clerk of Courts. It describes candidacies for those offices, not service in them.",
-        "promises": [],
+        "promises": [
+          "Would maintain accurate voter rolls with transparency, secure voting systems, and clear statewide election procedures.",
+          "Would make election data more accessible, improve public reporting, and increase accountability in campaign-finance reporting.",
+          "Would streamline business filings, improve online systems, and reduce unnecessary regulation and red tape."
+        ],
         "record": [
           "No election-administration or legislative voting history is included in this guide. The Libertarian Party biography describes previous candidacies for local office, not officeholding."
         ],
-        "correlation": "No campaign policy positions are listed because the campaign website linked from the party candidate page did not provide readable issue content when checked October 11, 2026.",
+        "correlation": "These are selected statements from Pruss’s campaign platform. This guide does not compare them with a sourced record of his election-administration decisions and assigns no match score.",
         "sources": [
           {
             "label": "Libertarian Party candidate biography for Tom Pruss",
@@ -2560,6 +2573,10 @@
           {
             "label": "Ashtabula County BOE official 2026 candidate list",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Tom Pruss campaign platform",
+            "url": "https://votepruss.com/"
           }
         ],
         "claim_evidence": {
@@ -2591,10 +2608,50 @@
           ],
           "correlation": [
             {
-              "status": "pending",
-              "note": "The linked campaign site at votepruss.com did not return readable issue content during this review. No campaign positions are included until a direct statement can be checked.",
+              "status": "editorial_summary",
+              "note": "This identifies the scope of the selected comparison and does not infer a record or match score.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Tom Pruss campaign platform",
+                  "url": "https://votepruss.com/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "This summarizes the campaign’s stated priorities for voter rolls, election security, and election procedures.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Tom Pruss campaign platform",
+                  "url": "https://votepruss.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "This summarizes the campaign’s stated priorities for election-data access, public reporting, and campaign-finance accountability.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Tom Pruss campaign platform",
+                  "url": "https://votepruss.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "This summarizes the campaign’s stated priorities for business filings, online services, and regulation.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Tom Pruss campaign platform",
+                  "url": "https://votepruss.com/"
+                }
+              ]
             }
           ]
         }
@@ -3129,11 +3186,15 @@
           "Her campaign describes her as a constitutional conservative and says she would apply the law as written, protect public safety, and keep partisan politics out of the courthouse."
         ],
         "record": [],
-        "correlation": "This guide does not list selected opinions for O’Donnell. Her campaign statements are not compared with an audited case record here.",
+        "correlation": "No selected written trial-court decision authored by O’Donnell is listed here. The published appellate opinion in State ex rel. Mobley v. O’Donnell concerned an oath-of-office filing and was authored by the Tenth District, not O’Donnell; it is not treated as evidence of her broader judicial philosophy. This guide assigns no match score.",
         "sources": [
           {
             "label": "Colleen O’Donnell for Ohio Supreme Court",
             "url": "https://www.odonnellforohio.com/"
+          },
+          {
+            "label": "Tenth District opinion, State ex rel. Mobley v. O’Donnell, 2020-Ohio-251",
+            "url": "https://www.supremecourt.ohio.gov/rod/docs/PDF/10/2020/2020-Ohio-251.pdf"
           }
         ],
         "claim_evidence": {
@@ -3165,10 +3226,15 @@
           ],
           "correlation": [
             {
-              "status": "pending",
-              "note": "A selected-opinion review was not completed for this profile.",
+              "status": "editorial_summary",
+              "note": "The official opinion identifies O’Donnell as a respondent in an appellate writ action; the Tenth District authored the decision. It does not provide a selected authored trial-court opinion from which to infer a broader judicial philosophy.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Tenth District opinion, State ex rel. Mobley v. O’Donnell, 2020-Ohio-251",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/PDF/10/2020/2020-Ohio-251.pdf"
+                }
+              ]
             }
           ]
         }
@@ -3440,7 +3506,7 @@
         "incumbent": true,
         "background": "Ohio House member since January 2021. The Ohio House biography says she served on the State Board of Education from 2013 to 2020, was first elected in 2012, worked on her family farm, and began Sarah's Eggs at age 11.",
         "promises": [
-          "2026 Ohio Gun Owners survey: opposes 'mental health' legislation that would deny law-abiding Ohioans gun rights without due process; would co-sponsor legislation eliminating restrictions on lawful gun owners carrying in 'gun-free' areas"
+          "In her March 15, 2026 Ohio Gun Owners survey, answered “Yes” to opposing specified mental-health-based firearm disarmament without due process and “Co-Sponsor” to legislation eliminating some restrictions on carrying firearms in designated gun-free areas."
         ],
         "record": [
           "The Ohio House lists primary sponsorships on HB 38, HB 43, HB 59, HB 70, HB 333, HB 369, HB 375, HB 433, HB 481, HB 733, and HB 734. The House lists HB 433 as enrolled and HB 733 as passed by the House.",
@@ -3448,7 +3514,7 @@
           "YEA votes on HB 99 and HB 227 on November 17, 2021.",
           "Primary-sponsored HB 403, requiring reports when teachers retire under threat of disciplinary investigation, and HB 235, regarding State Board membership and meetings. HB 235 did not pass the House."
         ],
-        "correlation": "2026 survey positions (gun-rights expansion) are consistent with 2021 votes for HB 99/HB 227. Legislative output centers on education regulation, occupational-licensing reform, and commemorative bills. Vote against Householder expulsion was a notable break with the 75-member bipartisan majority, without a contemporaneous public explanation found.",
+        "correlation": "This profile lists one 2026 survey response beside selected 2021 House votes. The comparison is limited to those sourced statements and votes; it does not infer an overall policy match or score.",
         "sources": [
           {
             "label": "Wikipedia",
@@ -3460,6 +3526,10 @@
           },
           {
             "label": "ohiogunowners.org survey",
+            "url": "https://www.ohiogunowners.org/pdf/65a704da09df3/71538"
+          },
+          {
+            "label": "Sarah Fowler Arthur’s individual 2026 Ohio Gun Owners survey",
             "url": "https://www.ohiogunowners.org/pdf/65a704da09df3/71538"
           }
         ],
@@ -3479,10 +3549,15 @@
           ],
           "promises": [
             {
-              "status": "pending",
-              "note": "The linked Ohio Gun Owners survey PDF could not be reviewed directly in this source check; keep this candidate-stated summary pending.",
+              "status": "candidate_statement",
+              "note": "The individual survey identifies Arthur, District 99, Ohio House, and her answers: “Yes” to Question 8 and “Co-Sponsor” to Question 9. The survey organization’s question wording is its own framing; these entries report the candidate’s recorded answers.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Sarah Fowler Arthur’s individual 2026 Ohio Gun Owners survey",
+                  "url": "https://www.ohiogunowners.org/pdf/65a704da09df3/71538"
+                }
+              ]
             }
           ],
           "record": [
@@ -3541,10 +3616,23 @@
           ],
           "correlation": [
             {
-              "status": "pending",
-              "note": "This comparison depends on the survey position summary above, whose PDF could not be reviewed directly in this source check.",
+              "status": "editorial_summary",
+              "note": "This describes the limits of the guide’s selected survey and roll-call comparison and assigns no overall match score.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Sarah Fowler Arthur’s individual 2026 Ohio Gun Owners survey",
+                  "url": "https://www.ohiogunowners.org/pdf/65a704da09df3/71538"
+                },
+                {
+                  "label": "Ohio Legislature roll-call: House Bill 99",
+                  "url": "https://www.ohiosenate.gov/legislation/134/hb99/votes"
+                },
+                {
+                  "label": "Ohio Legislature roll-call: House Bill 227",
+                  "url": "https://www.legislature.ohio.gov/legislation/legislation-votes?id=GA134-HB-227"
+                }
+              ]
             }
           ]
         }
@@ -3553,26 +3641,31 @@
         "name": "Louis Murphy",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Science teacher in the Ashtabula Area City Schools; in spring 2022 served as Geneva-on-the-Lake's environmental policy analyst. 2024 Democratic nominee for District 99 (lost to Fowler Arthur 35.5% to 64.5%). Won the May 5, 2026 Democratic primary over Michael F. Price, 57.1% to 42.9%.",
+        "background": "Murphy’s campaign identifies him as a teacher, policy analyst, and geoscientist.",
         "promises": [],
         "record": [],
         "sources": [
           {
-            "label": "Chagrin Valley Today, 2024",
-            "url": "https://www.chagrinvalleytoday.com/communities/auburn/article_b9be0c24-8180-11ef-a789-bb2db719e182.html"
+            "label": "Louis Murphy campaign website",
+            "url": "https://www.murphyforohio.com/"
           },
           {
-            "label": "bluevoterguide.org",
-            "url": "https://bluevoterguide.org/OH/candidate_Louis_Murphy/527578"
+            "label": "Ashtabula County BOE official 2026 candidate list",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
         "claim_evidence": {
           "background": [
             {
-              "status": "pending",
-              "note": "This summary includes employment and election-history claims from a linked local-news page that could not be reviewed directly during this check.",
+              "status": "candidate_statement",
+              "note": "These job titles are the candidate campaign’s self-description; prior employment details and past election results are not included here.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Louis Murphy campaign website",
+                  "url": "https://www.murphyforohio.com/"
+                }
+              ]
             }
           ]
         }
