@@ -52,11 +52,22 @@ Array of race objects:
       "promises": ["..."],
       "record": ["..."],
       "correlation": "...",
-      "sources": [{"label": "...", "url": "..."}]
+      "sources": [{"label": "...", "url": "..."}],
+      "measure_positions": [{
+        "issue_number": "3",
+        "issue_label": "Issue 3: Voter ID amendment",
+        "issue_path": "/measures/issue-3/",
+        "position": "support",
+        "statement": "A short neutral summary of the candidate’s own public statement.",
+        "source": {"label": "Candidate interview, date", "url": "https://..."},
+        "checked_on": "2026-10-11"
+      }]
     }
   ]
 }
 ```
+
+`measure_positions` is optional. Each entry must link to a direct source for the candidate statement. Allowed positions are `support`, `oppose`, or `unclear`; do not infer a position from a party, endorsement, vote, or silence. Omit the field or use an empty array when the guide has not verified a statement. An empty entry means this guide has no sourced statement listed, not that the candidate is undecided.
 
 ## measures.json
 

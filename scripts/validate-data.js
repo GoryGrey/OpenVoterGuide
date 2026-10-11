@@ -37,7 +37,22 @@ unique(races, (race) => race.id, "races");
 for (const race of races) {
   assert(race.office && Array.isArray(race.candidates) && race.candidates.length > 0, `Race ${race.id}: missing office or candidates`);
   unique(race.candidates, (candidate) => candidate.name, `candidates in ${race.id}`);
-  for (const candidate of race.candidates) checkSources(candidate.sources, `Candidate ${candidate.name}`);
+  for (const candidate of race.candidates) {
+    checkSources(candidate.sources, `Candidate ${candidate.name}`);
+    if (candidate.measure_positions !== undefined) {
+      assert(Array.isArray(candidate.measure_positions), `Candidate ${candidate.name}: measure_positions must be an array`);
+      for (const position of candidate.measure_positions) {
+        assert(["support", "oppose", "unclear"].includes(position.position), `Candidate ${candidate.name}: invalid ballot issue position`);
+        assert(typeof position.issue_number === "string" && /^[0-9]+$/.test(position.issue_number) && Number(position.issue_number) >= 3 && Number(position.issue_number) <= 43, `Candidate ${candidate.name}: ballot issue position needs a valid issue_number`);
+        assert(typeof position.issue_label === "string" && position.issue_label.trim(), `Candidate ${candidate.name}: ballot issue position needs an issue_label`);
+        assert(typeof position.statement === "string" && position.statement.trim(), `Candidate ${candidate.name}: ballot issue position needs a sourced statement`);
+        assert(typeof position.checked_on === "string" && /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(position.checked_on) && !Number.isNaN(Date.parse(position.checked_on)), `Candidate ${candidate.name}: ballot issue position needs a checked_on date`);
+        assert(position.issue_path === undefined || (typeof position.issue_path === "string" && position.issue_path.startsWith("/")), `Candidate ${candidate.name}: issue_path must be a site path`);
+        checkSources([position.source], `Candidate ${candidate.name}, issue ${position.issue_number}`);
+      }
+      unique(candidate.measure_positions, (position) => position.issue_number, `ballot issue positions for ${candidate.name}`);
+    }
+  }
 }
 
 unique(measures, (issue) => issue.issue_number, "measures");

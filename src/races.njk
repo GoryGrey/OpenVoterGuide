@@ -19,24 +19,50 @@ eleventyComputed:
 <h2>Candidates ({{ race.candidates.length }})</h2>
 <p>Candidate backgrounds, positions, and records are editorial summaries. Sources are grouped by candidate rather than attached to individual claims; open the listed sources to check details.</p>
 
+
 {% if race.candidates.length >= 2 %}
-<div class="compare-controls">
-  <h3>Compare Candidates</h3>
-  <p>Select two to compare side by side:</p>
-  <div class="compare-selectors">
-    <select id="compare-a" aria-label="First candidate to compare">
-      <option value="">Choose...</option>
-      {% for c in race.candidates %}<option value="{{ c.name | slug }}">{{ c.name }}</option>{% endfor %}
-    </select>
-    <span>vs</span>
-    <select id="compare-b" aria-label="Second candidate to compare">
-      <option value="">Choose...</option>
-      {% for c in race.candidates %}<option value="{{ c.name | slug }}">{{ c.name }}</option>{% endfor %}
-    </select>
-    <button onclick="showComparison('{{ race.id }}')">Compare</button>
+<section class="all-candidates-compare" aria-labelledby="compare-heading">
+  <h2 id="compare-heading">Compare all {{ race.candidates.length }} candidates</h2>
+  <p>Each candidate is shown in the same column for a quick side-by-side scan. On a small screen, scroll horizontally.</p>
+  <p class="comparison-note"><strong>About ballot issue views:</strong> A candidate's stated position appears only when we have a source for it. An empty entry means this guide has not added a sourced statement; it does not mean the candidate is undecided.</p>
+  <div class="comparison-table-scroll" role="region" aria-label="Side-by-side comparison of all candidates" tabindex="0">
+    <table class="candidate-comparison">
+      <caption class="visually-hidden">All candidates for {{ race.office }} compared by background, campaign statements, voting record, and sourced ballot issue views.</caption>
+      <thead><tr><th scope="col">Compare</th>
+        {% for c in race.candidates %}
+        <th scope="col"><a href="#{{ c.name | slug }}">{{ c.name }}</a>
+          {% if c.party %}<span class="comparison-party">{{ c.party }}</span>{% endif %}
+          {% if c.incumbent %}<span class="comparison-incumbent">Incumbent</span>{% endif %}
+        </th>
+        {% endfor %}
+      </tr></thead>
+      <tbody>
+        <tr><th scope="row">Background</th>{% for c in race.candidates %}<td>{{ c.background or "No background summary listed." }}</td>{% endfor %}</tr>
+        <tr><th scope="row">Campaign statements</th>{% for c in race.candidates %}<td>
+          {% if c.promises and c.promises.length %}<ul>{% for p in c.promises %}<li>{{ p }}</li>{% endfor %}</ul>
+          {% else %}<p>No sourced campaign statements listed.</p>{% endif %}
+        </td>{% endfor %}</tr>
+        <tr><th scope="row">Voting record</th>{% for c in race.candidates %}<td>
+          {% if c.record and c.record.length %}<ul>{% for item in c.record %}<li>{{ item }}</li>{% endfor %}</ul>
+          {% else %}<p>No voting record summary listed.</p>{% endif %}
+        </td>{% endfor %}</tr>
+        <tr><th scope="row">Stated views on ballot issues</th>{% for c in race.candidates %}<td>
+          {% if c.measure_positions and c.measure_positions.length %}
+          <ul class="measure-position-list">{% for item in c.measure_positions %}<li>
+            <strong>{% if item.issue_path %}<a href="{{ item.issue_path | url }}">{{ item.issue_label }}</a>{% else %}{{ item.issue_label }}{% endif %}: {{ item.position | capitalize }}</strong>
+            <p>{{ item.statement }}</p>
+            <small>Checked {{ item.checked_on }} · <a href="{{ item.source.url }}" rel="noopener" target="_blank">{{ item.source.label }}</a></small>
+          </li>{% endfor %}</ul>
+          {% else %}<p class="comparison-empty">No source-backed candidate statement on a ballot issue has been added to this guide.</p>{% endif %}
+        </td>{% endfor %}</tr>
+        <tr><th scope="row">Research sources</th>{% for c in race.candidates %}<td>
+          {% if c.sources and c.sources.length %}<ul>{% for source in c.sources %}<li><a href="{{ source.url }}" rel="noopener" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul>
+          {% else %}<p>No sources listed.</p>{% endif %}
+        </td>{% endfor %}</tr>
+      </tbody>
+    </table>
   </div>
-  <div id="comparison-result" style="display:none;"></div>
-</div>
+</section>
 {% endif %}
 
 {% for c in race.candidates %}
@@ -76,6 +102,21 @@ eleventyComputed:
   <ul>
     {% for r in c.record %}<li>{{ r }}</li>{% endfor %}
   </ul>
+  {% endif %}
+
+  <h4>Stated Views on Ballot Issues</h4>
+  {% if c.measure_positions and c.measure_positions.length %}
+  <ul class="measure-position-list">
+    {% for item in c.measure_positions %}
+    <li>
+      <strong>{% if item.issue_path %}<a href="{{ item.issue_path | url }}">{{ item.issue_label }}</a>{% else %}{{ item.issue_label }}{% endif %}: {{ item.position | capitalize }}</strong>
+      <p>{{ item.statement }}</p>
+      <small>Checked {{ item.checked_on }} · <a href="{{ item.source.url }}" rel="noopener" target="_blank">{{ item.source.label }}</a></small>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="comparison-empty">No source-backed candidate statement on a ballot issue has been added to this guide. That does not mean the candidate is undecided.</p>
   {% endif %}
 
   {% if c.correlation %}
