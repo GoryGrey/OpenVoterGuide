@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: My Voting Worksheet
+description: Privately mark your ballot choices. Saved only in your browser, never sent anywhere.
+---
+
+<h1>My Voting Worksheet</h1>
+<p>Check boxes on race and measure pages to build your list. Everything stays in your browser. Nothing is tracked or sent to any server.</p>
+
+<p><strong><span id="worksheet-count">0</span> choices marked.</strong></p>
+
+<div id="worksheet-list"></div>
+
+<p>
+  <button onclick="printWorksheet()">Print My Worksheet</button>
+  <button onclick="clearWorksheet()">Clear All</button>
+</p>
+
+<p><em>This is a private reference only, not an official ballot. Verify your choices against the official sample ballot at <a href="https://www.boe.ohio.gov/ashtabula/">boe.ohio.gov/ashtabula</a>.</em></p>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = JSON.parse(localStorage.getItem('ashtabula-worksheet-2026') || '{}');
+  const list = document.getElementById('worksheet-list');
+  const entries = Object.entries(saved);
+  if (entries.length === 0) {
+    list.innerHTML = '<p>No choices marked yet. Browse <a href="/OpenVoterGuide/races/">races</a> and <a href="/OpenVoterGuide/measures/">measures</a> to get started.</p>';
+  } else {
+    list.innerHTML = '<ul>' + entries.map(([id, label]) => `<li>${label}</li>`).join('') + '</ul>';
+  }
+});
+</script>
