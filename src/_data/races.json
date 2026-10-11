@@ -1929,88 +1929,272 @@
         "name": "Robert Sprague",
         "party": "Republican",
         "incumbent": false,
-        "background": "Ohio Treasurer of State since 2019 (term-limited 2026); previously Findlay's city auditor and city treasurer and a member of the Ohio House. Beat Marcell Strbich in the May 5, 2026 GOP primary.",
+        "background": "Sprague’s campaign biography says he has served as Ohio Treasurer of State since 2019 and previously served in the Ohio House and as Findlay city auditor and treasurer.",
         "promises": [
-          "Eliminate ballot drop boxes",
-          "Limit who may vote absentee; emphasize in-person voting",
-          "Require photo ID for mailed ballots",
-          "Verify U.S. citizenship for new voter registrations",
-          "Support Issue 3 (photo-ID constitutional amendment)"
+          "Sprague proposes requiring photo ID for mailed ballots and eliminating ballot drop boxes.",
+          "He proposes checking citizenship status during voter registration using federal data.",
+          "He proposes paper ballots or voting machines that produce an auditable paper trail, and post-election reviews of election processes."
         ],
         "record": [
-          "Treasurer (2019-present): cumulative Israel Bonds purchases of $357.5 million by May 2024; $262.5 million in holdings as of Aug. 31, 2026",
-          "As state representative, co-sponsored HB 476 (enacted 2016), establishing anti-boycott requirements for state contracts",
-          "No elections-administration record: the Treasurer's office does not run elections"
+          "This profile does not include an elections-administration record for Sprague; his current statewide office is Treasurer, not Secretary of State."
         ],
-        "correlation": "NO ELECTIONS-ADMINISTRATION RECORD - every SOS promise is untested by his record. His treasurer record is fiscal, a different function.",
+        "correlation": "Selected proposals are attributed to Sprague’s campaign. They are not evaluated here for legal feasibility or likely results; no overall match score is assigned.",
         "sources": [
           {
-            "label": "Dispatch, 5/5/2026",
-            "url": "https://www.dispatch.com/story/news/politics/2026/05/05/ohio-secretary-of-state-primary-elections-2026/89537186007/"
+            "label": "Robert Sprague campaign election-security plan",
+            "url": "https://www.spragueforohio.com/election-security"
           },
           {
-            "label": "follownews.com",
-            "url": "https://follownews.com/2026/05/ohio-treasurer-sprague-targets-drop-boxes-in-secretary-of-state-campaign/"
+            "label": "Robert Sprague campaign biography",
+            "url": "https://www.spragueforohio.com/roberts-story"
+          },
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Rob_Portman_and_Robert_Sprague_%28cropped%29.jpg",
-        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Robert_Sprague"
+        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Robert_Sprague",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Sprague’s campaign biography describes his Treasurer service and prior local and legislative offices.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Robert Sprague campaign biography",
+                  "url": "https://www.spragueforohio.com/roberts-story"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Sprague’s campaign proposes photo ID for mail voting and eliminating drop boxes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Robert Sprague campaign election-security plan",
+                  "url": "https://www.spragueforohio.com/election-security"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Sprague’s campaign proposes checking citizenship during registration with federal data.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Robert Sprague campaign election-security plan",
+                  "url": "https://www.spragueforohio.com/election-security"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Sprague’s campaign proposes paper ballots or auditable paper records and post-election custody reviews.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Robert Sprague campaign election-security plan",
+                  "url": "https://www.spragueforohio.com/election-security"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide does not summarize a Secretary of State record for Sprague; the official ballot-list source confirms his candidacy.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide attributes these proposals to Sprague’s campaign and does not assess their feasibility or predicted effects.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Robert Sprague campaign election-security plan",
+                  "url": "https://www.spragueforohio.com/election-security"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Allison Russo",
         "party": "Democrat",
         "incumbent": false,
-        "background": "State representative (D-Upper Arlington) since 2019 (four terms); served 3+ years as House Minority Leader. Beat Bryan Hambley 67.4% to 32.6% in the May 5, 2026 Democratic primary.",
+        "background": "Russo’s campaign biography says she has served four terms in the Ohio House and previously served as House Minority Leader.",
         "promises": [
-          "Put voters first over partisan politics; end misinformation about election fraud",
-          "Bipartisan collaboration; clear, neutral ballot language from the Ballot Board",
-          "Protect reproductive rights; increase funding for the mental-health workforce"
+          "Russo says she would protect voters’ voices and work to keep Ohio elections fair, secure, and accessible.",
+          "She says she would protect voters’ personal data and restore trust in elections.",
+          "She says she would make government accountable to the people it serves."
         ],
         "record": [
-          "Ohio House (2019-present): voted with unanimous approval of new House/Senate maps in September 2023",
-          "Leading Democratic critic of the HB 6 (FirstEnergy) corruption scandal: called for federal DOJ probe; pushed campaign-finance reform bills, blocked by GOP supermajority",
-          "No elections-administration record (legislator)"
+          "This profile includes Russo’s campaign-reported Ohio House service but does not assess individual House votes or a prior election-administration record."
         ],
-        "correlation": "MATCH on anti-corruption/clean-government: HB 6 investigations advocacy aligns with Ballot Board transparency promises. MIXED on the 2023 maps vote: backed maps drawn by the Republican majority. GAP on elections administration.",
+        "correlation": "Selected priorities are attributed to Russo’s campaign. This profile does not infer an election-administration record from her House service and assigns no overall match score.",
         "sources": [
           {
-            "label": "Dispatch, 5/5/2026",
-            "url": "https://www.dispatch.com/story/news/politics/2026/05/05/ohio-secretary-of-state-primary-elections-2026/89537186007/"
+            "label": "Allison Russo campaign biography and priorities",
+            "url": "https://allisonrusso.com/meet-allison/"
           },
           {
-            "label": "Dispatch op-ed, 10/7/2026",
-            "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/10/07/election-fraud-secretary-of-state-allison-russo-robert-sprague/92119180007/"
+            "label": "Allison Russo campaign homepage",
+            "url": "https://allisonrusso.com/"
+          },
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rep._Allison_Russo_-_Rally_for_Abortion_Justice_-_March_for_Women_2021-_Columbus.jpg",
-        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Allison_Russo"
+        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Allison_Russo",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Russo’s campaign biography describes her four Ohio House terms and service as House Minority Leader.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Allison Russo campaign biography and priorities",
+                  "url": "https://allisonrusso.com/meet-allison/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Russo’s campaign says the Secretary of State should protect voters’ voices and keep elections fair, secure, and accessible.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Allison Russo campaign homepage",
+                  "url": "https://allisonrusso.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Russo’s campaign says she would protect personal data and restore trust in elections.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Allison Russo campaign homepage",
+                  "url": "https://allisonrusso.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Russo’s campaign says she would make government accountable to Ohioans.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Allison Russo campaign homepage",
+                  "url": "https://allisonrusso.com/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide does not audit individual House votes or claim prior election-administration service; the campaign biography is cited for her House tenure.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Allison Russo campaign biography and priorities",
+                  "url": "https://allisonrusso.com/meet-allison/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide presents selected campaign priorities and does not infer election-management experience from legislative service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Allison Russo campaign homepage",
+                  "url": "https://allisonrusso.com/"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Tom Pruss",
         "party": "Libertarian",
         "incumbent": false,
-        "background": "Toledo-area printing business owner; served on the Toledo Public School Board of Education and as Lucas County Clerk of Courts; 2024 Libertarian nominee for Ohio's 9th Congressional District (about 4%); won the May 2026 Libertarian SOS primary unopposed (8,633 votes).",
-        "promises": [
-          "Re-enter the ERIC voter-data system (which Ohio left in 2023)",
-          "'We shouldn't be purging people to purge them' on voter-roll maintenance",
-          "Cautious on new voter-ID requirements",
-          "Protect ballot opportunities (third-party/candidate access)"
-        ],
+        "background": "The Libertarian Party’s candidate biography says Pruss owns a printing and mail-marketing business and previously ran for Toledo School Board and Lucas County Clerk of Courts. It describes candidacies for those offices, not service in them.",
+        "promises": [],
         "record": [
-          "No state-office voting record exists",
-          "Local record: school board service and Clerk of Courts administration (specific actions not located - thin)"
+          "No election-administration or legislative voting history is included in this guide. The Libertarian Party biography describes previous candidacies for local office, not officeholding."
         ],
-        "correlation": "NO STATE VOTING RECORD. His ERIC re-entry promise directly reverses LaRose's documented 2023 withdrawal - a clear contrast with a documented action.",
+        "correlation": "No campaign policy positions are listed because the campaign website linked from the party candidate page did not provide readable issue content when checked October 11, 2026.",
         "sources": [
           {
-            "label": "Athens Independent",
-            "url": "https://athensindependent.com/2026-general-election-state-races/"
+            "label": "Libertarian Party candidate biography for Tom Pruss",
+            "url": "https://lp.org/candidate/tom-pruss/"
           },
           {
-            "label": "toledofreepress.com",
-            "url": "https://toledofreepress.com/tfp-voters-guide-2026-may-primary-secretary-of-state/"
+            "label": "Ashtabula County BOE official 2026 candidate list",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "The Libertarian Party biography describes Pruss’s printing business and says he previously ran for two local offices; it does not say he held them.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Libertarian Party candidate biography for Tom Pruss",
+                  "url": "https://lp.org/candidate/tom-pruss/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "The cited biography describes candidacies rather than officeholding; this guide does not list a legislative or election-administration record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Libertarian Party candidate biography for Tom Pruss",
+                  "url": "https://lp.org/candidate/tom-pruss/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "pending",
+              "note": "The linked campaign site at votepruss.com did not return readable issue content during this review. No campaign positions are included until a direct statement can be checked.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ]
+        }
       }
     ]
   },
@@ -2026,57 +2210,193 @@
         "name": "Jay Edwards",
         "party": "Republican",
         "incumbent": false,
-        "background": "Nelsonville; elected to the Ohio House in 2016 at age 27, served through 2024, chaired the House Finance Committee; realtor and small business owner. Beat State Sen. Kristina Roegner 53.1% to 46.9% in the May 5, 2026 GOP primary.",
+        "background": "Edwards’s campaign biography says he represented Southeast Ohio in the Ohio House beginning in 2016 and chaired the House Finance Committee. It also describes his education and Nelsonville background.",
         "promises": [
-          "Expand the Ohio Checkbook transparency program",
-          "Invest in community banks and credit unions; eliminate fraud",
-          "Criticized fellow Republicans for directing $600 million in unclaimed funds toward a new domed Cleveland Browns stadium"
+          "Edwards says that, as Treasurer, he would keep politics out of state investments and keep Ohio’s money working in local communities.",
+          "His campaign says he would protect taxpayer dollars."
         ],
         "record": [
-          "Ohio House (2017-2024): chaired the House Finance Committee during the 2023 two-year budget (HB 33); credited with helping deliver a '$3.2 billion tax cut' - CAMPAIGN CLAIM, not independently verified",
-          "In April 2023 publicly pushed for an income-tax cut in the House budget",
-          "Had ties to former House Speaker Larry Householder (convicted in the HB 6 bribery scandal)"
+          "This profile does not assess Edwards’s Ohio House roll calls or budget decisions. His campaign biography describes his past House service and Finance Committee chairmanship."
         ],
-        "correlation": "MATCH on tax-cutting: finance-chair record of pushing income-tax cuts aligns with fiscal-conservative pitch. GAP: no record of managing investments or a treasury function.",
+        "correlation": "Selected statements are attributed to Edwards’s campaign; his campaign biography is not a review of his legislative record. No overall match score is assigned.",
         "sources": [
           {
-            "label": "Cincinnati Enquirer, 5/5/2026",
-            "url": "https://www.cincinnati.com/story/news/politics/2026/05/05/gop-to-pick-state-treasurer-candidate-in-race-with-big-endorsements/89717160007/"
+            "label": "Jay Edwards campaign biography and Treasurer statement",
+            "url": "https://www.edwardsforohio.com/"
           },
           {
-            "label": "WCBE, 4/6/2023",
-            "url": "https://www.wcbe.org/wcbe-news/2023-04-06/finance-chair-says-income-tax-cut-is-likely-in-ohio-house-republicans-budget-proposal"
+            "label": "Ashtabula County BOE official 2026 candidate list",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Edwards’s campaign biography lists his Ohio House service beginning in 2016 and chairmanship of the House Finance Committee.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Jay Edwards campaign biography and Treasurer statement",
+                  "url": "https://www.edwardsforohio.com/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Edwards says he would keep politics out of state investments and keep Ohio’s money working in local communities.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Jay Edwards campaign biography and Treasurer statement",
+                  "url": "https://www.edwardsforohio.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The campaign describes protecting taxpayer dollars as a central focus.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Jay Edwards campaign biography and Treasurer statement",
+                  "url": "https://www.edwardsforohio.com/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide cites the campaign biography for the offices described but does not assess House votes or budget decisions.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Jay Edwards campaign biography and Treasurer statement",
+                  "url": "https://www.edwardsforohio.com/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "These are selected campaign statements, not an assessment of Edwards’s legislative record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Jay Edwards campaign biography and Treasurer statement",
+                  "url": "https://www.edwardsforohio.com/"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Seth Walsh",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Age 34; appointed to Cincinnati City Council in Dec. 2022, elected in 2023, re-elected in 2025. Before council: CEO of the College Hill Community Urban Redevelopment Corporation (led $85 million in development) and executive director of the Sedamsville Community Development Corporation. Announced for treasurer Jan. 8, 2026; unopposed in the May primary.",
+        "background": "Walsh’s campaign biography says he previously served on Cincinnati City Council and led community-development organizations in College Hill and Sedamsville. VOTE411’s candidate profile describes his role leading the College Hill organization and reports his candidate answers.",
         "promises": [
-          "Real transparency to how Ohio manages its money; protect public pensions",
-          "Cut state funding ties to outside nations, including Israel",
-          "Expand loan capabilities via community banks; foster small-business growth",
-          "Strong protections for data-center ratepayers; opposes special tax treatment for data centers"
+          "Walsh says he would invest in Ohio farmers, public-sector employees, and small businesses to support communities.",
+          "He says he would serve as an independent steward of taxpayer dollars, pensions, and savings."
         ],
         "record": [
-          "City council record is thin: community-development leadership ($85M College Hill investment) documented; specific council votes not located - thin",
-          "No state-level financial-management record exists"
+          "This guide does not include a state Treasurer voting or investment-management record for Walsh. His campaign biography reports local office and community-development service."
         ],
-        "correlation": "MATCH (adjacent): community-development record parallels neighborhood-investment promises, though at far smaller scale than the ~$280 billion the treasurer oversees. GAP: no record on pension management, state investment policy, or the Israel-Bonds divestment promise.",
+        "correlation": "Selected priorities are attributed to Walsh’s campaign. This guide does not treat local community-development work as a state investment record or assign an overall match score.",
         "sources": [
           {
-            "label": "CityBeat",
-            "url": "https://www.citybeatmagazine.com/news/city-council-member-seth-walsh-announces-state-office-campaign/index.html"
+            "label": "Seth Walsh for Ohio campaign: investment priorities",
+            "url": "https://teamwalshhq.com/"
           },
           {
-            "label": "Athens Independent",
-            "url": "https://athensindependent.com/2026-general-election-state-races/"
+            "label": "Seth Walsh campaign biography and voter guide responses",
+            "url": "https://onyourballot.vote411.org/m/candidate-detail.do?id=71979507"
+          },
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/SethWalsh_%28cropped%29.jpg",
-        "photo_credit": "CC0 via https://commons.wikimedia.org/wiki/File:SethWalsh_(cropped).jpg"
+        "photo_credit": "CC0 via https://commons.wikimedia.org/wiki/File:SethWalsh_(cropped).jpg",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Walsh’s campaign biography and VOTE411 candidate profile describe his city-council and community-development work.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Seth Walsh for Ohio campaign: investment priorities",
+                  "url": "https://teamwalshhq.com/"
+                },
+                {
+                  "label": "Seth Walsh campaign biography and voter guide responses",
+                  "url": "https://onyourballot.vote411.org/m/candidate-detail.do?id=71979507"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Walsh’s campaign says he would invest in farmers, public employees, and small businesses to support communities.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Seth Walsh for Ohio campaign: investment priorities",
+                  "url": "https://teamwalshhq.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Walsh’s campaign says he would independently steward taxpayer dollars, pensions, and savings.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Seth Walsh for Ohio campaign: investment priorities",
+                  "url": "https://teamwalshhq.com/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "No state Treasurer voting or investment-management record is included in this guide; sources cited here describe Walsh’s prior local work.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Seth Walsh for Ohio campaign: investment priorities",
+                  "url": "https://teamwalshhq.com/"
+                },
+                {
+                  "label": "Seth Walsh campaign biography and voter guide responses",
+                  "url": "https://onyourballot.vote411.org/m/candidate-detail.do?id=71979507"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide presents selected campaign priorities and does not equate local development work with a state investment record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Seth Walsh for Ohio campaign: investment priorities",
+                  "url": "https://teamwalshhq.com/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
