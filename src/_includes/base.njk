@@ -23,7 +23,7 @@
   <link rel="icon" href="{{ '/assets/brand/favicon.svg' | url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/assets/brand/favicon.ico' | url }}" sizes="any">
   <link rel="apple-touch-icon" href="{{ '/assets/brand/apple-touch-icon.png' | url }}">
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v=20261011-brand-support2">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v=20261011-kofi-modal1">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -48,9 +48,26 @@
         <input type="search" id="site-search" placeholder="Search races or enter your address..." aria-label="Search races or enter your address" aria-controls="search-results">
         <div id="search-results" role="region" aria-label="Search results" aria-live="polite"></div>
       </div>
-      <a class="header-support" href="https://ko-fi.com/openvoterguide" target="_blank" rel="noopener noreferrer">❤️ Support Us</a>
+      <button class="header-support" type="button" aria-haspopup="dialog" aria-controls="support-dialog">❤️ Support Us</button>
     </nav>
   </header>
+  <dialog class="support-dialog" id="support-dialog" aria-labelledby="support-dialog-title">
+    <div class="support-dialog-header">
+      <div>
+        <h2 id="support-dialog-title">Support OpenVoterGuide</h2>
+        <p>Contribute through Ko-fi without leaving this page.</p>
+      </div>
+      <button class="support-dialog-close" type="button" aria-label="Close support dialog">×</button>
+    </div>
+    <iframe
+      id="kofiframe"
+      data-src="https://ko-fi.com/openvoterguide/?hidefeed=true&amp;widget=true&amp;embed=true&amp;preview=true"
+      src="about:blank"
+      title="Ko-fi support panel for OpenVoterGuide"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <p class="support-fallback">If the panel doesn’t load, <a href="https://ko-fi.com/openvoterguide" target="_blank" rel="noopener noreferrer">open Ko-fi directly</a>.</p>
+  </dialog>
   <main id="main-content">
     {{ content | safe }}
   </main>
@@ -79,6 +96,27 @@
           closeMenu();
           toggle.focus();
         }
+      });
+    })();
+  </script>
+  <script>
+    (() => {
+      const trigger = document.querySelector(".header-support");
+      const dialog = document.querySelector("#support-dialog");
+      const closeButton = document.querySelector(".support-dialog-close");
+      const frame = document.querySelector("#kofiframe");
+      if (!trigger || !dialog || !closeButton || !frame) return;
+      trigger.addEventListener("click", () => {
+        if (frame.getAttribute("src") === "about:blank") frame.setAttribute("src", frame.dataset.src);
+        dialog.showModal();
+      });
+      closeButton.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", event => {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener("close", () => {
+        frame.setAttribute("src", "about:blank");
+        trigger.focus();
       });
     })();
   </script>
