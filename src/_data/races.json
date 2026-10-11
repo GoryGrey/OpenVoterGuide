@@ -1929,7 +1929,7 @@
         "name": "Robert Sprague",
         "party": "Republican",
         "incumbent": false,
-        "background": "Sprague’s campaign biography says he has served as Ohio Treasurer of State since 2019 and previously served in the Ohio House and as Findlay city auditor and treasurer.",
+        "background": "The Ohio Treasurer’s official biography says Sprague became Treasurer in January 2019 and previously served as Findlay city auditor and treasurer and in the Ohio House from 2011 through 2018.",
         "promises": [
           "Sprague proposes requiring photo ID for mailed ballots and eliminating ballot drop boxes.",
           "He proposes checking citizenship status during voter registration using federal data.",
@@ -1941,12 +1941,12 @@
         "correlation": "Selected proposals are attributed to Sprague’s campaign. They are not evaluated here for legal feasibility or likely results; no overall match score is assigned.",
         "sources": [
           {
-            "label": "Robert Sprague campaign election-security plan",
-            "url": "https://www.spragueforohio.com/election-security"
+            "label": "Ohio Treasurer of State: Robert Sprague biography",
+            "url": "https://tos.ohio.gov/bio"
           },
           {
-            "label": "Robert Sprague campaign biography",
-            "url": "https://www.spragueforohio.com/roberts-story"
+            "label": "Robert Sprague campaign election-security plan",
+            "url": "https://www.spragueforohio.com/election-security"
           },
           {
             "label": "Ashtabula County BOE official 2026 candidate list",
@@ -1958,13 +1958,13 @@
         "claim_evidence": {
           "background": [
             {
-              "status": "candidate_statement",
-              "note": "Sprague’s campaign biography describes his Treasurer service and prior local and legislative offices.",
+              "status": "official_record",
+              "note": "The Ohio Treasurer’s official biography lists Sprague’s current and previous offices.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Robert Sprague campaign biography",
-                  "url": "https://www.spragueforohio.com/roberts-story"
+                  "label": "Ohio Treasurer of State: Robert Sprague biography",
+                  "url": "https://tos.ohio.gov/bio"
                 }
               ]
             }
