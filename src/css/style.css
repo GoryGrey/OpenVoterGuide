@@ -898,3 +898,230 @@ table.levies { min-width:660px; }
   .home-race-card,.home-card-action { transition: none; }
   .home-race-card:hover { transform: none; }
 }
+
+
+/* Shared guide-page visual system */
+.page-shell {
+  min-height: 70vh;
+  padding: clamp(1.1rem, 3vw, 2.25rem) 1rem 3rem;
+  background:
+    radial-gradient(ellipse at 88% 0%, rgba(0, 198, 235, .07), transparent 30rem),
+    linear-gradient(180deg, #f3f7fc 0%, #edf3f9 100%);
+}
+.page-content {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: clamp(1.2rem, 3.3vw, 2.5rem);
+  border: 1px solid #e0e8f1;
+  border-radius: 22px;
+  background: rgba(255,255,255,.97);
+  box-shadow: 0 16px 42px rgba(15, 45, 76, .075);
+}
+.page-content > h1:first-child {
+  position: relative;
+  margin: 0 0 .65rem;
+  padding: 0 0 .85rem;
+  border-bottom: 1px solid #e5ebf2;
+  color: #10283f;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -.045em;
+}
+.page-content > h1:first-child::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 3.5rem;
+  height: 3px;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #0784ff, #05c8e6 62%, #57f5d3);
+  content: "";
+}
+.page-content > h1:first-child + p {
+  max-width: 75ch;
+  margin: 0 0 1.5rem;
+  color: #526980;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.page-content h2 {
+  margin: 2.2rem 0 .85rem;
+  color: #10283f;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.25;
+  letter-spacing: -.035em;
+}
+.page-content h3 {
+  color: #14314d;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  letter-spacing: -.02em;
+}
+.page-content h4 {
+  margin: 1.25rem 0 .4rem;
+  color: #173752;
+  font-size: .94rem;
+}
+.page-content p,.page-content li {
+  color: #405a73;
+  line-height: 1.68;
+}
+.page-content > p { margin: .65rem 0 1rem; }
+.page-content > ul,.page-content > ol { margin: .8rem 0 1.5rem; padding-left: 1.4rem; }
+.page-content li + li { margin-top: .35rem; }
+.page-content a { color: #075bb5; text-underline-offset: .18em; }
+.page-content a:hover { color: #003f89; }
+.page-content a:focus-visible,.page-content button:focus-visible,.page-content input:focus-visible,.page-content summary:focus-visible {
+  outline: 3px solid #f09b25;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.page-content .primary-action,.page-content button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .7rem 1rem;
+  border: 1px solid #0c5caa;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #08244f, #1768a9);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(10, 70, 130, .16);
+}
+.page-content .primary-action:hover,.page-content button:hover { filter: brightness(1.1); color: #fff; }
+.page-content .candidate-card,.page-content .measure-card,.page-content .levy-row {
+  margin: 1rem 0;
+  padding: clamp(1rem, 2.3vw, 1.5rem);
+  border: 1px solid #e0e8f1;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #fff, #f8fbff);
+  box-shadow: 0 8px 22px rgba(15, 45, 76, .075);
+}
+.page-content .candidate-card h3,.page-content .measure-card h3 { margin: 0 0 .55rem; }
+.page-content .candidate-card h2,.page-content .measure-card h2 { margin: 0 0 .7rem; }
+.page-content .candidate-card p:last-child,.page-content .measure-card p:last-child { margin-bottom: 0; }
+.page-content .candidate-card a,.page-content .measure-card a { font-weight: 700; }
+.page-content .verification-badge {
+  margin: .2rem 0 1.1rem;
+  padding: .42rem .75rem;
+  border: 1px solid #bdebd9;
+  border-radius: 999px;
+  background: #ecfaf4;
+  color: #087b51;
+  font-size: .79rem;
+  font-weight: 800;
+}
+.page-content .worksheet-check {
+  margin: .7rem 0;
+  padding: .9rem 1rem;
+  border: 1px solid #dce7f2;
+  border-radius: 12px;
+  background: #f7faff;
+}
+.page-content .worksheet-check label { color: #14314d; }
+.page-content .worksheet-check input[type="checkbox"],.page-content input[type="checkbox"] {
+  accent-color: #087bdb;
+}
+.page-content .source-list {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid #e0e8f1;
+  border-radius: 12px;
+  background: #f7faff;
+}
+.page-content .source-list ul { margin: .45rem 0 0; padding-left: 1.25rem; }
+.page-content blockquote {
+  margin: .9rem 0 1.2rem;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid #0b87d8;
+  border-radius: 0 10px 10px 0;
+  background: #eff7ff;
+  color: #173752;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+.page-content .all-candidates-compare {
+  margin: 1.4rem 0 2rem;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dce7f2;
+  border-radius: 14px;
+  background: #f8fbff;
+  box-shadow: 0 8px 22px rgba(15, 45, 76, .06);
+}
+.page-content .comparison-disclosure > summary {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(110deg, #edf6ff, #f4fbff);
+  color: #10283f;
+  cursor: pointer;
+  list-style: none;
+}
+.page-content .comparison-disclosure > summary::-webkit-details-marker { display:none; }
+.page-content .comparison-summary-title { font-weight: 900; }
+.page-content .comparison-summary-hint {
+  color: #075bb5;
+  font-size: .8rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.page-content .comparison-disclosure > p { margin: 1rem 1.2rem; }
+.page-content .comparison-note { border-radius: 8px; }
+.page-content .candidate-comparison { background: #fff; }
+.page-content .candidate-comparison thead th { background: #e9f3fd; }
+.page-content .candidate-comparison tbody th { background: #f4f8fc; }
+.page-content table.levies { min-width: 760px; background: #fff; }
+.page-content table.levies th {
+  padding: .8rem .75rem;
+  background: #102f4d;
+  color: #fff;
+  font-size: .82rem;
+  letter-spacing: .02em;
+}
+.page-content table.levies td { padding: .78rem .75rem; color: #405a73; }
+.page-content table.levies tbody tr:nth-child(even) { background: #f4f8fc; }
+.page-content table.levies tbody tr:hover { background: #eaf5ff; }
+.page-content .levies-table-scroll { margin: .65rem 0 1.4rem; border-color: #dce7f2; border-radius: 12px; }
+.page-content .table-scroll-hint { color: #62788e; font-size: .82rem; }
+.page-content .measure-position-list { padding-left: 1.25rem; }
+.page-content .measure-position-list li { padding: .35rem 0; }
+.page-content #worksheet-count {
+  color: #087bdb;
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}
+.page-content #worksheet-list {
+  min-height: 115px;
+  margin: 1rem 0;
+  padding: 1.2rem;
+  border: 1px solid #dce7f2;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #fff, #f6faff);
+}
+.page-content #worksheet-list ul { margin: 0; padding-left: 1.35rem; }
+.page-content .comparison-empty { padding: .7rem .85rem; border-radius: 9px; background: #f4f7fb; }
+@media (max-width: 640px) {
+  .page-shell { padding: .8rem .65rem 1.5rem; }
+  .page-content { padding: 1.1rem; border-radius: 16px; }
+  .page-content > h1:first-child { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .page-content > h1:first-child + p { font-size: .95rem; }
+  .page-content h2 { margin-top: 1.8rem; }
+  .page-content .comparison-disclosure > summary { align-items: flex-start; flex-direction: column; gap: .25rem; padding: .9rem; }
+  .page-content .comparison-disclosure > p { margin: .85rem; }
+  .page-content .levies-table-scroll { margin-inline: -.2rem; }
+}
+@media print {
+  .page-shell { min-height: 0; padding: 0; background: #fff; }
+  .page-content { width: 100%; padding: 0; border: 0; box-shadow: none; }
+  .page-content .candidate-card,.page-content .measure-card,.page-content .levy-row { box-shadow: none; }
+  .page-content .comparison-disclosure:not([open]) > .comparison-table-scroll { display: block; }
+}
