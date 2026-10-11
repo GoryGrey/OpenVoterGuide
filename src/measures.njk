@@ -10,8 +10,10 @@ eleventyComputed:
   description: "{{ measure.plain_english | truncate(150) }}"
 ---
 
-<h1>{{ measure.title }}</h1>
+<article class="measure-profile">
+<header class="content-page-heading"><p class="content-eyebrow">November 3, 2026 · Ohio Issue {{ measure.issue_number }}</p><h1>{{ measure.title }}</h1>
 <p><strong>Issue {{ measure.issue_number }}</strong></p>
+</header>
 
 <span class="verification-badge">Ballot issue sources reviewed {{ measure.verification_date }}</span>
 
@@ -73,3 +75,4 @@ eleventyComputed:
 {% endif %}
 
 <p><a href="{{ '/measures/' | url }}">All measures</a> | <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
+</article>

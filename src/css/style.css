@@ -1054,6 +1054,80 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 .directory-callout { margin-top:1.25rem; padding:1.2rem 1.35rem; border:1px solid #cfe0ef; border-left:4px solid #00bddb; border-radius:11px; background:#f5faff; }
 .directory-callout h2 { margin:0 0 .3rem!important; font-size:1.2rem!important; }
 .directory-callout p { margin:.3rem 0; }
+.content-eyebrow { margin:0 0 .25rem!important; color:#0876bb!important; font-size:.74rem; font-weight:850; letter-spacing:.09em; line-height:1.35!important; text-transform:uppercase; }
+.content-page-heading { padding-bottom:1.25rem; border-bottom:1px solid #e4edf5; }
+.content-page-heading .directory-intro { max-width:68ch; font-size:1.02rem; }
+.levies-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.85rem; margin:1.1rem 0; }
+.levy-summary-card { display:flex; align-items:center; gap:.8rem; min-height:82px; padding:1rem 1.1rem; border:1px solid #dce7f0; border-radius:12px; background:linear-gradient(135deg,#f8fbff,#eef6fc); }
+.levy-summary-number { color:#0b5cad; font-size:clamp(1.7rem,3vw,2.25rem); font-weight:900; line-height:1; }
+.levy-summary-label { color:#36536d; font-size:.89rem; font-weight:750; line-height:1.3; }
+.levy-summary-change { border-color:#efc0c7; background:linear-gradient(135deg,#fffafb,#fff0f2); }
+.levy-summary-change .levy-summary-number { color:#c3223b; }
+.levy-summary-renewal { border-color:#bde8da; background:linear-gradient(135deg,#f9fffc,#eaf8f2); }
+.levy-summary-renewal .levy-summary-number { color:#08795d; }
+.levy-explainer { display:flex; align-items:flex-start; gap:.8rem; margin:1.1rem 0 1.6rem; padding:.95rem 1rem; border:1px solid #cfe4f5; border-radius:12px; background:#eff7ff; color:#294961; }
+.levy-explainer p { margin:0; font-size:.9rem; }
+.levy-explainer strong { color:#102d48; }
+.levy-explainer-icon { display:grid; flex:0 0 28px; width:28px; height:28px; place-items:center; border-radius:50%; background:#0b65bd; color:#fff; font-weight:900; }
+.levy-group { margin:1.5rem 0; padding:clamp(.85rem,2vw,1.35rem); border:1px solid #dce6ef; border-radius:14px; background:#fff; box-shadow:0 5px 18px rgba(14,45,80,.05); }
+.levy-group-changes { border-top:4px solid #e33951; }
+.levy-group-renewals { border-top:4px solid #14a47a; }
+.levy-group-heading { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:.45rem; }
+.levy-group-heading h2 { margin:0!important; font-size:clamp(1.3rem,2.2vw,1.7rem)!important; }
+.levy-group-heading h2 span { color:#72869a; font-size:.77em; }
+.levy-group-tag { flex:0 0 auto; padding:.35rem .65rem; border-radius:999px; background:#fff0f2; color:#b62539; font-size:.76rem; font-weight:850; }
+.levy-group-renewals .levy-group-tag { background:#eaf8f2; color:#08795d; }
+.levy-directory-table { min-width:850px!important; }
+.levy-directory-table th { white-space:nowrap; }
+.levy-directory-table td { vertical-align:middle; }
+.levy-directory-table tr:hover { background:#eef6fc!important; }
+.levy-issue-link { display:inline-flex; align-items:center; min-height:34px; padding:.3rem .6rem; border-radius:7px; background:#e8f3ff; font-weight:850; text-decoration:none; white-space:nowrap; }
+.levy-type-pill { display:inline-block; padding:.22rem .5rem; border-radius:999px; background:#fff0f2; color:#a52036; font-size:.76rem; font-weight:800; white-space:nowrap; }
+.levy-details-link { font-weight:800; text-decoration:none; white-space:nowrap; }
+.levies-directory .levy-sources { margin-top:1.5rem; }
+.levies-directory .levy-sources ul { margin:.6rem 0; }
+.levies-directory .levy-sources .directory-action { margin-top:.45rem; }
+.levy-profile { max-width:860px; margin:0 auto; }
+.levy-profile > h1:first-of-type { margin-top:.5rem; }
+.levy-profile .directory-meta { color:#567089; font-size:.87rem; font-weight:750; }
+.levy-facts { display:grid; grid-template-columns:minmax(110px,.65fr) 2fr; margin:1.2rem 0; overflow:hidden; border:1px solid #dce6ef; border-radius:12px; }
+.levy-facts dt,.levy-facts dd { margin:0; padding:.75rem .9rem; border-bottom:1px solid #e7eef4; }
+.levy-facts dt { background:#f2f7fb; color:#34536c; font-weight:800; }
+.levy-facts dd { color:#19344c; }
+.levy-facts dt:last-of-type,.levy-facts dd:last-of-type { border-bottom:0; }
+.page-content > h1:first-child { letter-spacing:-.04em; }
+.page-content > h1:first-child,.content-page-heading h1 { margin:0 0 .55rem; color:#10283f; font-size:clamp(2rem,3.5vw,2.8rem); line-height:1.08; letter-spacing:-.04em; }
+.page-content > h1:first-child::after,.content-page-heading h1::after { display:block; width:3rem; height:4px; margin-top:.7rem; border-radius:3px; background:linear-gradient(90deg,#087bff,#00c6eb,#53edcb); content:""; }
+.page-content .candidate-profile > h1:first-child::after,.page-content .levy-profile > h1:first-child::after { display:none; }
+.content-page-heading > p:not(.content-eyebrow) { max-width:76ch; color:#526a82; }
+.measure-profile,.race-profile,.levy-profile,.liquor-page,.voting-page,.sample-ballot-page,.about-page,.worksheet-page { max-width:100%; }
+.measure-profile > h2,.race-profile > h2,.voting-page > h2,.sample-ballot-page > h2,.about-page > h2 { padding-top:.5rem; border-top:1px solid #e5edf4; }
+.measure-profile > .measure-card { margin:1rem 0; }
+.measure-profile > section { margin-top:1.4rem; }
+.liquor-page > section.measure-card { margin:1rem 0; padding:clamp(1rem,2.4vw,1.5rem); border-left:4px solid #682db0; background:linear-gradient(135deg,#fff 0%,#f8f4ff 100%); }
+.liquor-page > section.measure-card h2 { margin:0 0 .65rem; }
+.liquor-page > section.measure-card h3 { margin:1rem 0 .35rem; }
+.sample-ballot-page > header .primary-action { margin:.3rem 0 .7rem; }
+.about-page > h2 { margin-top:1.65rem; }
+.voting-page > h2 { margin-top:1.65rem; }
+.voting-page > ul,.sample-ballot-page > ul,.about-page > ul { padding:1rem 1.1rem 1rem 2.2rem!important; border:1px solid #e1eaf2; border-radius:11px; background:#f8fbfe; }
+.worksheet-page #worksheet-list { max-width:780px; }
+.worksheet-page .worksheet-toolbar button:first-child { background:#0758b4; }
+.race-profile > h1:first-of-type,.measure-profile > h1:first-of-type { margin-top:.5rem; }
+.page-content section[aria-labelledby] { scroll-margin-top:1rem; }
+.page-content :focus-visible { outline:3px solid #00a9d6; outline-offset:3px; }
+@media (max-width:760px) {
+  .levies-summary { grid-template-columns:1fr; gap:.55rem; }
+  .levy-summary-card { min-height:66px; }
+  .levy-group-heading { align-items:flex-start; }
+  .levy-group-tag { margin-top:.15rem; }
+  .levy-facts { grid-template-columns:minmax(92px,.7fr) 1.5fr; }
+}
+@media (max-width:460px) {
+  .levy-group-heading { display:block; }
+  .levy-group-tag { display:inline-block; margin-top:.55rem; }
+  .levy-facts dt,.levy-facts dd { padding:.65rem .7rem; }
+}
 @media (max-width:760px) {
   main > .page-shell:not(.landing-hero):not(.landing-shell) { padding:1rem .75rem 1.5rem; }
 }

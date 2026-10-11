@@ -10,6 +10,7 @@ eleventyComputed:
   description: "Candidates for {{ race.office }} in the Ashtabula County November 3, 2026 election."
 ---
 
+<article class="race-profile">
 {% macro claimEvidence(candidate, field, index) %}
   {% set evidence = null %}
   {% if candidate.claim_evidence and candidate.claim_evidence[field] %}
@@ -157,3 +158,4 @@ eleventyComputed:
 {% endfor %}
 
 <p><a href="{{ '/races/' | url }}">All races</a> | <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
+</article>

@@ -5,8 +5,10 @@ description: Precinct-specific November 3, 2026 Sunday liquor questions checked 
 permalink: /measures/liquor/index.html
 ---
 
-<h1>Sunday Liquor Questions</h1>
+<article class="liquor-page">
+<header class="content-page-heading"><p class="content-eyebrow">Local ballot questions</p><h1>Sunday liquor questions</h1>
 <p>These local-option questions apply only to voters in the listed precinct. The wording below comes from the county’s official November 3 ballot. Check your own sample ballot to confirm whether a question appears for you.</p>
+</header>
 
 {% for item in liquor %}
 <section class="measure-card">
@@ -24,3 +26,4 @@ permalink: /measures/liquor/index.html
 {% endfor %}
 
 <p><a href="{{ '/measures/' | url }}">All ballot measures →</a></p>
+</article>
