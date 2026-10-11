@@ -5,14 +5,20 @@ description: Every candidate race on the Ashtabula County November 3, 2026 ballo
 permalink: /races/index.html
 ---
 
-<h1>All Races</h1>
-
-{% for race in races %}
-<div class="candidate-card">
-  <h3><a href="/OpenVoterGuide/races/{{ race.id }}/">{{ race.office }}</a></h3>
-  <p>{{ race.term_info | truncate(150) }}</p>
-  <p>{{ race.candidates.length }} candidates:
-    {% for c in race.candidates %}{{ c.name }} ({{ c.party }}){% if not loop.last %}, {% endif %}{% endfor %}
-  </p>
-</div>
-{% endfor %}
+<section class="directory-page" aria-labelledby="races-page-title">
+  <h1 id="races-page-title">All races</h1>
+  <p class="directory-intro">Explore candidate backgrounds, statements, voting records, and linked sources for the offices on your ballot.</p>
+  <p class="directory-count"><span aria-hidden="true">★</span> {{ races.length }} candidate races</p>
+  <div class="directory-grid">
+    {% for race in races %}
+      {% set racePath = '/races/' + race.id + '/' %}
+      <article class="directory-card">
+        <p class="directory-meta">Candidate race{% if race.district %} · {{ race.district }}{% endif %}</p>
+        <h2><a href="{{ racePath | url }}">{{ race.office }}</a></h2>
+        <p>{{ race.term_info | truncate(160) }}</p>
+        <p>{{ race.candidates.length }} candidates listed</p>
+        <a class="directory-action" href="{{ racePath | url }}">Explore race <span aria-hidden="true">→</span></a>
+      </article>
+    {% endfor %}
+  </div>
+</section>

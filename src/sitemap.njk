@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% set staticRoutes = ["/", "/races/", "/measures/", "/measures/liquor/", "/levies/", "/worksheet/", "/about/", "/voting/", "/sample-ballots/"] %}
+{% for route in staticRoutes %}<url><loc>{{ (site.baseUrl + route) | xmlEscape }}</loc></url>
+{% endfor %}{% for race in races %}<url><loc>{{ (site.baseUrl + "/races/" + race.id + "/") | xmlEscape }}</loc></url>
+{% endfor %}{% for candidate in candidatePages %}<url><loc>{{ (site.baseUrl + candidate.profile_url) | xmlEscape }}</loc></url>
+{% endfor %}{% for measure in measures %}<url><loc>{{ (site.baseUrl + "/measures/" + measure.id + "/") | xmlEscape }}</loc></url>
+{% endfor %}{% for levy in levies %}<url><loc>{{ (site.baseUrl + "/levies/issue-" + (levy.issue_number | string) + "/") | xmlEscape }}</loc></url>
+{% endfor %}</urlset>

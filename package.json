@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/validate-data.js && eleventy && node scripts/check-generated-routes.js",
+    "test": "npm run build",
+    "build": "node scripts/validate-data.js && eleventy && node scripts/generate-google-verification.js && node scripts/check-generated-routes.js && node scripts/check-internal-links.js",
     "start": "eleventy --serve",
     "validate": "node scripts/validate-data.js"
   },

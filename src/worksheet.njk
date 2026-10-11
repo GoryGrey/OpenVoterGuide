@@ -5,17 +5,19 @@ description: Privately mark your ballot choices. Saved only in your browser, nev
 permalink: /worksheet/index.html
 ---
 
-<h1>My Voting Worksheet</h1>
+<article class="worksheet-page">
+<header class="content-page-heading"><p class="content-eyebrow">Private to this browser</p><h1>My voting worksheet</h1>
 <p>Check boxes on race and measure pages to build your list. Everything stays in your browser. Nothing is tracked or sent to any server.</p>
+</header>
 
-<p><strong><span id="worksheet-count">0</span> choices marked.</strong></p>
+<p class="worksheet-count-card"><strong><span id="worksheet-count">0</span> choices marked</strong></p>
 
 <div id="worksheet-list"></div>
 
-<p>
-  <button onclick="printWorksheet()">Print My Worksheet</button>
-  <button onclick="clearWorksheet()">Clear All</button>
-</p>
+<div class="worksheet-toolbar">
+  <button type="button" onclick="printWorksheet()">Print my worksheet</button>
+  <button type="button" onclick="clearWorksheet()">Clear all choices</button>
+</div>
 
 <p><em>This is a private reference only, not an official ballot. Verify your choices against the official sample ballot at <a href="https://www.boe.ohio.gov/ashtabula/">boe.ohio.gov/ashtabula</a>.</em></p>
 
@@ -25,9 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('worksheet-list');
   const entries = Object.entries(saved);
   if (entries.length === 0) {
-    list.innerHTML = '<p>No choices marked yet. Browse <a href="/OpenVoterGuide/races/">races</a> and <a href="/OpenVoterGuide/measures/">measures</a> to get started.</p>';
+    const message = document.createElement('p');
+    const racesLink = document.createElement('a');
+    racesLink.href = '{{ "/races/" | url }}';
+    racesLink.textContent = 'races';
+    const measuresLink = document.createElement('a');
+    measuresLink.href = '{{ "/measures/" | url }}';
+    measuresLink.textContent = 'measures';
+    message.append('No choices marked yet. Browse ', racesLink, ' and ', measuresLink, ' to get started.');
+    list.replaceChildren(message);
   } else {
-    list.innerHTML = '<ul>' + entries.map(([id, label]) => `<li>${label}</li>`).join('') + '</ul>';
+    const choices = document.createElement('ul');
+    for (const [, label] of entries) {
+      const item = document.createElement('li');
+      item.textContent = label;
+      choices.append(item);
+    }
+    list.replaceChildren(choices);
   }
 });
 </script>
+</article>

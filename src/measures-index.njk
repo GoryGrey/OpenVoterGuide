@@ -5,16 +5,24 @@ description: Plain-language guides to Ohio Issue 3 and the Conneaut data-center 
 permalink: /measures/index.html
 ---
 
-<h1>Ballot Measures</h1>
-<p>These summaries explain what the ballot text would change. They do not recommend how to vote. Check your official sample ballot to see which local questions appear for you.</p>
-
-{% for measure in measures %}
-  {% set measurePath = '/measures/' + measure.id + '/' %}
-  <article class="candidate-card">
-    <h2><a href="{{ measurePath | url }}">Issue {{ measure.issue_number }}: {{ measure.title }}</a></h2>
-    <p>{{ measure.plain_english }}</p>
-    <p><a href="{{ measurePath | url }}">Read what YES and NO mean →</a></p>
-  </article>
-{% endfor %}
-
-<p><a href="{{ '/measures/liquor/' | url }}">View the three precinct-specific Sunday liquor questions →</a></p>
+<section class="directory-page" aria-labelledby="measures-page-title">
+  <h1 id="measures-page-title">Ballot measures</h1>
+  <p class="directory-intro">These summaries explain what the ballot text would change. They do not recommend how to vote. Check your official sample ballot to see which local questions appear for you.</p>
+  <p class="directory-count">{{ measures.length }} statewide and local measure guides</p>
+  <div class="directory-grid directory-grid-measures">
+    {% for measure in measures %}
+      {% set measurePath = '/measures/' + measure.id + '/' %}
+      <article class="directory-card">
+        <p class="directory-meta">Issue {{ measure.issue_number }}</p>
+        <h2><a href="{{ measurePath | url }}">{{ measure.title }}</a></h2>
+        <p>{{ measure.plain_english | truncate(220) }}</p>
+        <a class="directory-action" href="{{ measurePath | url }}">Read what YES and NO mean <span aria-hidden="true">→</span></a>
+      </article>
+    {% endfor %}
+  </div>
+  <aside class="directory-callout">
+    <h2>Sunday liquor questions</h2>
+    <p>View the precinct-specific local-option questions and official wording.</p>
+    <a class="directory-action" href="{{ '/measures/liquor/' | url }}">Browse liquor issues <span aria-hidden="true">→</span></a>
+  </aside>
+</section>

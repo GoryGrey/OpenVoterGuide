@@ -5,18 +5,22 @@ description: Official 2026 Ashtabula County voting dates, hours, deadlines, and 
 permalink: /voting/index.html
 ---
 
-<h1>Plan when to vote</h1>
+<article class="voting-page">
+<header class="content-page-heading"><p class="content-eyebrow">Election day · {{ election.election_date }}</p><h1>Plan when to vote</h1>
 <p><strong>General Election Day is {{ election.election_date }}.</strong> Dates and voting rules below come from official Ohio election sources. Confirm your ballot and polling location with the county Board of Elections.</p>
 
 <p><a class="primary-action" href="{{ '/sample-ballots/' | url }}">Find your official sample ballot</a></p>
+</header>
 
+<div class="date-card-grid">
 {% for date in election.key_dates %}
-<article class="candidate-card">
+<article class="candidate-card date-card">
   <h2>{{ date.label }}</h2>
   <p><strong>{{ date.date }}</strong></p>
   <p>{{ date.details }}</p>
 </article>
 {% endfor %}
+</div>
 
 <h2>Official election services</h2>
 <ul>
@@ -37,3 +41,4 @@ permalink: /voting/index.html
 <h2>Sources</h2>
 <ul>{% for source in election.sources %}<li><a href="{{ source.url }}" rel="noopener" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul>
 {% endif %}
+</article>

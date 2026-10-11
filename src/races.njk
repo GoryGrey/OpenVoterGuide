@@ -6,10 +6,11 @@ pagination:
   alias: race
 permalink: "/races/{{ race.id }}/"
 eleventyComputed:
-  title: "{{ race.office }}"
+  title: "{{ race.office }} — Ashtabula County 2026 Election"
   description: "Candidates for {{ race.office }} in the Ashtabula County November 3, 2026 election."
 ---
 
+<article class="race-profile">
 {% macro claimEvidence(candidate, field, index) %}
   {% set evidence = null %}
   {% if candidate.claim_evidence and candidate.claim_evidence[field] %}
@@ -97,6 +98,7 @@ eleventyComputed:
       {% if c.photo_credit %}<p class="photo-credit"><small>Photo: {{ c.photo_credit }}</small></p>{% endif %}
     </div>
   </div>
+  <p><a href="{{ ('/candidates/' + race.id + '/' + (c.name | profileSlug) + '/') | url }}">View {{ c.name }}’s candidate profile and sources</a></p>
 
   {% if c.response_status %}<p class="candidate-response-status">{{ c.response_status }}</p>{% endif %}
 
@@ -155,4 +157,5 @@ eleventyComputed:
 </div>
 {% endfor %}
 
-<p><a href="/OpenVoterGuide/races/">All races</a> | <a href="/OpenVoterGuide/worksheet/">My worksheet</a></p>
+<p><a href="{{ '/races/' | url }}">All races</a> | <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
+</article>

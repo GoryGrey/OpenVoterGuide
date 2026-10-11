@@ -16,7 +16,7 @@ Strictly nonpartisan. No endorsements, no recommendations, no partisan framing. 
 
 ## Live Site
 
-[https://gorygrey.github.io/OpenVoterGuide/](https://gorygrey.github.io/OpenVoterGuide/)
+[https://openvoterguide.org/](https://openvoterguide.org/)
 
 ## For Voters
 

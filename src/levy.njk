@@ -1,0 +1,30 @@
+---
+layout: base.njk
+pagination:
+  data: levies
+  size: 1
+  alias: levy
+permalink: "/levies/issue-{{ levy.issue_number }}/"
+eleventyComputed:
+  title: "Ashtabula County Issue {{ levy.issue_number }} Levy — {{ levy.jurisdiction }}"
+  description: "Issue {{ levy.issue_number }} asks voters in {{ levy.jurisdiction }} about {{ levy.purpose | lower }}. Review the levy type, millage, term, tax change, and official sources for the November 3, 2026 ballot."
+---
+
+<article class="levy-profile">
+  <p class="directory-meta"><a href="{{ '/levies/' | url }}">Ashtabula County property tax levies</a> · Issue {{ levy.issue_number }}</p>
+  <h1>Issue {{ levy.issue_number }}: {{ levy.jurisdiction }}</h1>
+  <p>{{ levy.purpose }}</p>
+  <span class="verification-badge">Levy details checked {{ levy.verification_date }} against county auditor and state filing sources</span>
+  <dl class="levy-facts">
+    <dt>Jurisdiction</dt><dd>{{ levy.jurisdiction }}</dd>
+    <dt>Purpose</dt><dd>{{ levy.purpose }}</dd>
+    <dt>Type</dt><dd>{{ levy.type | replace("_", " ") | capitalize }}{% if levy.tax_change %} · changes the tax{% else %} · straight renewal{% endif %}</dd>
+    <dt>Millage</dt><dd>{{ levy.millage }} mills</dd>
+    {% if levy.term_years %}<dt>Term</dt><dd>{{ levy.term_years }} years</dd>{% endif %}
+    <dt>Election</dt><dd>November 3, 2026 · Ashtabula County, Ohio</dd>
+  </dl>
+  {% if levy.notes %}<h2>What this levy means</h2><p>{{ levy.notes }}</p>{% endif %}
+  <div class="worksheet-check"><label><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES"> Mark YES on my worksheet</label></div>
+  {% if levy.sources and levy.sources.length %}<section class="source-list"><h2>Official and research sources</h2><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul></section>{% endif %}
+  <p><a href="{{ '/sample-ballots/' | url }}">Check your official precinct ballot</a> · <a href="{{ '/levies/' | url }}">All property tax levies</a> · <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
+</article>
