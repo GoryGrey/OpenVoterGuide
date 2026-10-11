@@ -246,6 +246,63 @@
                 }
               ]
             }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This is a limited comparison of six selected campaign statements and six selected Senate actions; it is not a complete voting history or a prediction of future votes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Official U.S. Senate biography",
+                  "url": "https://www.husted.senate.gov/about/"
+                },
+                {
+                  "label": "H.R. 1 Senate roll call 372",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.htm"
+                },
+                {
+                  "label": "S. 2 Senate roll call 163",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00163.htm"
+                },
+                {
+                  "label": "Husted statement on the Working Families Tax Cut Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-in-medina-with-ohio-business-leaders/"
+                },
+                {
+                  "label": "Husted statement on federal permitting reform",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-joins-bill-to-expedite-americas-permitting-process/"
+                },
+                {
+                  "label": "Husted announcement of the Upward Mobility Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-reform-welfare-eliminate-benefits-cliff-and-pave-path-for-families-to-pursue-economic-opportunities/"
+                },
+                {
+                  "label": "Husted announcement of the Ratepayer Protection Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/"
+                },
+                {
+                  "label": "H.R. 9340 Senate roll call 254",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
+                },
+                {
+                  "label": "S. 2882 Senate roll call 557",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00557.htm"
+                },
+                {
+                  "label": "S. 2882 official bill text",
+                  "url": "https://www.congress.gov/119/bills/s2882/BILLS-119s2882pcs.pdf"
+                },
+                {
+                  "label": "S. 6 Senate roll call 11",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00011.htm"
+                },
+                {
+                  "label": "S.J.Res. 104 Senate roll call 46",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00046.htm"
+                }
+              ]
+            }
           ]
         }
       },
@@ -448,6 +505,51 @@
                 }
               ]
             }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This is a limited comparison of four selected campaign statements and seven selected House and Senate actions; it is not a complete voting history or a prediction of future votes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Sherrod Brown campaign platform: Our Fight",
+                  "url": "https://www.sherrodbrown.com/our-fight/"
+                },
+                {
+                  "label": "U.S. House History, Art & Archives: Sherrod Brown biography",
+                  "url": "https://history.house.gov/People/Detail/9996"
+                },
+                {
+                  "label": "House roll call 455: H.J.Res. 114",
+                  "url": "https://clerk.house.gov/Votes/2002455"
+                },
+                {
+                  "label": "House roll call 575: H.R. 3450",
+                  "url": "https://clerk.house.gov/Votes/1993575"
+                },
+                {
+                  "label": "Senate roll call 110: H.R. 1319",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00110.htm"
+                },
+                {
+                  "label": "Senate roll call 271: H.R. 4346",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00271.htm"
+                },
+                {
+                  "label": "Senate roll call 314: H.R. 3684",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00314.htm"
+                },
+                {
+                  "label": "Senate roll call 162: H.R. 4173",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1112/vote_111_2_00162.htm"
+                },
+                {
+                  "label": "Congress.gov: S. 420 cosponsors",
+                  "url": "https://www.congress.gov/bill/117th-congress/senate-bill/420/cosponsors"
+                }
+              ]
+            }
           ]
         }
       },
@@ -575,6 +677,23 @@
                 {
                   "label": "Bill Redpath campaign biography and platform",
                   "url": "https://billredpath.com/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This profile lists selected campaign positions and a limited background record; it does not score them against an equivalent legislative voting record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign biography and platform",
+                  "url": "https://billredpath.com/"
+                },
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
                 }
               ]
             }
@@ -710,6 +829,27 @@
                 }
               ]
             }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This profile lists selected campaign positions and a limited background record; it does not score them against an equivalent legislative voting record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                },
+                {
+                  "label": "Greg Levy campaign and Party for Socialism and Liberation information",
+                  "url": "https://www.greg4senate.com/about-the-psl"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
           ]
         }
       },
@@ -722,7 +862,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Anthony Holliman",
@@ -733,7 +888,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Timothy Telymonde",
@@ -744,7 +914,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
@@ -1393,29 +1578,129 @@
         "name": "Don Kissick / James L. Mills",
         "party": "Libertarian",
         "incumbent": false,
-        "background": "Kissick: six years in the U.S. Navy (two Desert Shield/Desert Storm deployments); worked at Honda of America Manufacturing (2013-2022) and as an HVAC technician; Libertarian Party of Ohio county development coordinator since 2018; ran for OH-5 in 2018 (2.6%) and for U.S. Senate in 2024 (3.4%). Mills: Cincinnati; vice chair of a third party for Ohio/Warren County; MBA from Xavier; co-founder of a campfire-foods food truck and a residential construction company. Note: Mills background beyond ballot listing is thin - treat as thin.",
+        "background": "The Ashtabula County BOE lists Don Kissick / James L. Mills as the Libertarian ticket. A Toledo Free Press candidate profile lists Kissick’s prior Libertarian Party, military, manufacturing, and HVAC background and Mills’s business and education history; these details are attributed to that profile.",
         "promises": [
-          "Ban government use of automated license-plate surveillance",
-          "Support the 'End Property Tax' amendment with local consumption-based funding",
-          "Ban legislators from becoming lobbyists for five years after leaving office",
-          "Repeal certificate-of-need laws; opposes government insurance-purchase mandates",
-          "Pause new data-center development until permanent statewide standards exist",
-          "Continue the Science of Reading model; measure outcomes transparently"
+          "Would work with the General Assembly to restrict or prohibit government use of automated license-plate readers and limit the collection and sharing of vehicle-location data.",
+          "Supports the proposed End Property Tax amendment and prefers local consumption-based funding.",
+          "Wants a five-year restriction on former legislators becoming lobbyists and searchable public databases for government contracts and budgets.",
+          "Raises concerns about data-center electricity and water use, electronic waste, farmland, tax incentives, and local control; the campaign page does not state the specific pause or standards described in the previous profile.",
+          "Supports simplifying licensing and regulation for small businesses, including gig workers, tradespeople, and in-home childcare providers."
         ],
         "record": [
-          "No prior public-office voting record found for either candidate."
+          "This guide does not include a prior public-office voting record for either candidate in the ticket."
         ],
-        "correlation": "NO PRIOR VOTING RECORD for either - positions are promises only.",
+        "correlation": "The selected positions above come from Kissick’s campaign issue page; they are not matched to a comparable public voting record in this guide. The data-center text is a list of stated concerns, not a specific pause or regulatory proposal.",
         "sources": [
           {
-            "label": "toledofreepress.com",
+            "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Toledo Free Press 2026 Libertarian gubernatorial candidate profile",
             "url": "https://toledofreepress.com/tfp-voters-guide-2026-may-primary-libertarian-gubernatorial/"
           },
           {
-            "label": "Athens Independent",
-            "url": "https://athensindependent.com/2026-general-election-state-races/"
+            "label": "Don Kissick campaign, On the Issues",
+            "url": "https://donkissick.com/on-the-issues"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The BOE confirms the ticket and party; the career details are attributed to a contemporaneous Toledo Free Press profile.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                },
+                {
+                  "label": "Toledo Free Press 2026 Libertarian gubernatorial candidate profile",
+                  "url": "https://toledofreepress.com/tfp-voters-guide-2026-may-primary-libertarian-gubernatorial/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "This wording summarizes the campaign’s stated proposal to restrict or prohibit government use of automated license-plate surveillance and limit location-data collection and sharing.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The campaign supports the proposed amendment and says it prefers local consumption-based funding.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The campaign page calls for a five-year restriction on legislators becoming lobbyists and searchable public contract and budget information.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The campaign page raises these data-center concerns. It does not contain the former profile’s specific pause/standards pledge, which was removed.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The campaign page calls for simplifying licensing and regulation for small businesses.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "pending",
+              "note": "This states the scope of the guide’s selected record section; it does not assert that the candidates have never held office.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This describes the sources and limits of the comparison and does not infer a voting pattern.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Don Kissick campaign, On the Issues",
+                  "url": "https://donkissick.com/on-the-issues"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Timothy Grady / Andrea Neutzling",
@@ -1426,7 +1711,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Heather Hill / Patrick Manley",
@@ -1437,7 +1737,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Renea Turner / Jalen Turner",
@@ -1448,7 +1763,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Ron Ula / Michael C. Lehnerd",
@@ -1459,7 +1789,22 @@
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
         ],
-        "party": "Write-in"
+        "party": "Write-in",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
