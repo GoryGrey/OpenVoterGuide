@@ -885,7 +885,127 @@
             "url": "https://genevaohio.gov/city-council/"
           }
         ],
-        "response_status": "Ideastream published this candidate's responses as submitted and says responses were not uniformly fact-checked."
+        "response_status": "Ideastream published this candidate's responses as submitted and says responses were not uniformly fact-checked.",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Campaign-reported background; the city roster independently confirms his council seat and presidency.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Barbo campaign biography",
+                  "url": "https://barboforohio.com/about/"
+                },
+                {
+                  "label": "City of Geneva City Council roster",
+                  "url": "https://genevaohio.gov/city-council/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response; Ideastream says responses were published as submitted and were not uniformly fact-checked. His campaign site also lists this priority.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                },
+                {
+                  "label": "John Barbo campaign priorities",
+                  "url": "https://barboforohio.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response published by Ideastream; not independently verified as a policy outcome.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response and campaign priority; these links support what he says he would do, not the factual framing around data-center tax breaks.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                },
+                {
+                  "label": "John Barbo campaign priorities",
+                  "url": "https://barboforohio.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response published by Ideastream; not an independently verified policy plan.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response published by Ideastream; not an independently verified policy plan.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "pending",
+              "note": "No state legislative service is listed in the sources reviewed; independent check still needed.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            },
+            {
+              "status": "official_record",
+              "note": "The City of Geneva lists Barbo on City Council. This guide has not audited council roll-call votes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "City of Geneva City Council roster",
+                  "url": "https://genevaohio.gov/city-council/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "Editorial summary of his published response and the absence of a comparable state legislative record; the underlying candidate position is not independently fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                },
+                {
+                  "label": "Ohio House official biography: David Thomas",
+                  "url": "https://ohiohouse.gov/members/david-thomas/biography"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "David Thomas",
@@ -894,7 +1014,7 @@
         "background": "Incumbent State Representative for District 65, serving his first House term. Previously served as Ashtabula County Auditor and Austinburg Township Fiscal Officer. The district includes portions of Ashtabula and Trumbull counties.",
         "promises": [],
         "record": [
-          "Primary-sponsored bills include HB 61 (homestead exemption and owner-occupancy tax credit), HB 124 (property-tax sales-assessment ratio studies), HB 129 (school property-tax exemptions), and HB 158 (utility-billing transparency). Sponsorship does not by itself show a bill became law."
+          "Primary-sponsored bills include HB 61 (homestead exemption and owner-occupancy tax credit), HB 124 (property-tax sales-assessment ratio studies), HB 129 (limits reallocation of certain school property-tax millage), and HB 158 (utility-billing transparency). Sponsorship does not by itself show a bill became law."
         ],
         "correlation": "The listed bill sponsorships show legislative activity; they do not establish his position on every issue or whether sponsored bills became law.",
         "sources": [
@@ -915,7 +1035,48 @@
             "url": "https://www.ideastream.org/ohio-house-district-65"
           }
         ],
-        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions.",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The Ohio House biography confirms his first House term, District 65, prior county auditor service, and Austinburg Township fiscal-officer service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio House official biography: David Thomas",
+                  "url": "https://ohiohouse.gov/members/david-thomas/biography"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The Ohio House identifies these as primary-sponsored bills; sponsorship does not mean enactment.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio House official primary-sponsored bills: David Thomas",
+                  "url": "https://www.ohiohouse.gov/members/david-thomas/legislation"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "Editorial reading of the official sponsorship list; this does not establish his position on every issue or whether a sponsored bill became law.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio House official primary-sponsored bills: David Thomas",
+                  "url": "https://www.ohiohouse.gov/members/david-thomas/legislation"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
