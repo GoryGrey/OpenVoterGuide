@@ -25,7 +25,7 @@ jobs:
       - name: Build site
         run: npm run build
         env:
-          OVG_SITE_URL: ${{ vars.OVG_SITE_URL }}
+          OVG_SITE_URL: https://openvoterguide.org/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
