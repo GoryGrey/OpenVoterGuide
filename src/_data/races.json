@@ -1103,20 +1103,13 @@
           "background": [
             {
               "status": "candidate_statement",
-              "note": "Acton’s campaign biography describes her as a physician, Ohio State University public-health faculty member, and former director of the Ohio Department of Health.",
+              "note": "The ticket biographies describe Acton’s public-health career and former Ohio Department of Health director role, and Pepper’s Cincinnati City Council and Hamilton County commissioner service.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
                   "label": "Amy Acton campaign biography",
                   "url": "https://actonforgovernor.com/meet-amy/"
-                }
-              ]
-            },
-            {
-              "status": "candidate_statement",
-              "note": "Pepper’s campaign biography lists Cincinnati City Council and Hamilton County commissioner service.",
-              "checked_on": "2026-10-11",
-              "sources": [
+                },
                 {
                   "label": "David Pepper campaign biography",
                   "url": "https://actonforgovernor.com/meet-david/"
