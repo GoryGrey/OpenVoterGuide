@@ -991,11 +991,15 @@
     "candidates": [
       {
         "name": "Marisa L. Cornachio",
-        "background": "Marisa L. Cornachio is listed by the Ashtabula County Board of Elections as a candidate for Judge of the 11th District Court of Appeals. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Her campaign biography says she is serving a second term as a Willoughby Municipal Court judge and previously worked as an assistant Lake County prosecutor.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Marisa Cornachio for Judge campaign biography",
+            "url": "https://www.cornachioforjudge.com/"
           }
         ],
         "party": "Republican"
@@ -1012,11 +1016,15 @@
     "candidates": [
       {
         "name": "Robert J. Patton",
-        "background": "Robert J. Patton is listed by the Ashtabula County Board of Elections as a candidate for Judge of the 11th District Court of Appeals. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The Supreme Court of Ohio lists Robert J. Patton as a judge of the 11th District Court of Appeals.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ohio Supreme Court: 11th District Court of Appeals",
+            "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/ohio-court-of-appeals/"
           }
         ],
         "party": "Republican"
@@ -1033,7 +1041,7 @@
     "candidates": [
       {
         "name": "Marianne Sezon",
-        "background": "Marianne Sezon is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ashtabula County court schedules list her as a Common Pleas judge. Her campaign biography says she was elected in 2014 and previously served in court clerk, staff attorney, magistrate, and court administrator roles.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1046,6 +1054,10 @@
           {
             "label": "Ashtabula County Common Pleas Court schedules",
             "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
+          },
+          {
+            "label": "Judge Marianne Sezon campaign biography",
+            "url": "https://www.votesezon.com/about"
           }
         ],
         "incumbent": true
@@ -1062,7 +1074,7 @@
     "candidates": [
       {
         "name": "Albert S. Camplese",
-        "background": "Albert S. Camplese is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The county court directory lists him as a judge in the Probate-Juvenile Division. In his Ideastream response, he says he has served in that division since 2015.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1075,6 +1087,10 @@
           {
             "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
             "url": "https://www.ideastream.org/ashtabula-county-elections"
+          },
+          {
+            "label": "Ashtabula County Courts directory",
+            "url": "https://courts.ashtabulacounty.gov/courts_directory.htm"
           }
         ],
         "response_status": "Ideastream published this candidate's responses as submitted and says responses were not uniformly fact-checked.",
@@ -1085,7 +1101,7 @@
       },
       {
         "name": "Harold E. Specht Jr.",
-        "background": "Harold E. Specht Jr. is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ashtabula County court schedules list him as an Eastern County Court judge. He is seeking a different position, in Common Pleas Court.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1098,6 +1114,10 @@
           {
             "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
             "url": "https://www.ideastream.org/ashtabula-county-elections"
+          },
+          {
+            "label": "Ashtabula County court schedules",
+            "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
           }
         ],
         "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
@@ -1114,7 +1134,7 @@
     "candidates": [
       {
         "name": "Thomas E. Harris",
-        "background": "Thomas E. Harris is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ashtabula County court schedules list him as a Common Pleas judge.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1143,7 +1163,7 @@
     "candidates": [
       {
         "name": "Edith M. Jonas",
-        "background": "Edith M. Jonas is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, Probate Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The Ohio Association of Magistrates lists her as an Ashtabula County Common Pleas magistrate. Her campaign biography describes more than 35 years of legal work, including as a prosecutor, magistrate, public defender, and private attorney.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1152,6 +1172,14 @@
           {
             "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
             "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ohio Association of Magistrates: Edith Jonas",
+            "url": "https://ohiomagistrates.org/magistrate/edith-jonas/"
+          },
+          {
+            "label": "Edith Jonas campaign biography (Ashtabula County Republican Party)",
+            "url": "https://ashtabulagop.com/jonas/"
           }
         ]
       }
@@ -1189,7 +1217,7 @@
       },
       {
         "name": "Casey Kozlowski",
-        "background": "Casey Kozlowski is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Commissioner. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ashtabula County lists him as a commissioner and current board president.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1220,7 +1248,7 @@
     "candidates": [
       {
         "name": "Oakey L. Emery",
-        "background": "Oakey L. Emery is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Auditor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The City of Conneaut's 2026 official roster lists him as the Ward 3 council member.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1229,6 +1257,10 @@
           {
             "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
             "url": "https://www.ideastream.org/ashtabula-county-elections"
+          },
+          {
+            "label": "City of Conneaut 2026 roster of officials",
+            "url": "https://codelibrary.amlegal.com/codes/conneaut/latest/conneaut_oh/0-0-0-83"
           }
         ],
         "party": "Democrat",
@@ -1236,7 +1268,7 @@
       },
       {
         "name": "Scott Yamamoto",
-        "background": "Scott Yamamoto is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Auditor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ashtabula County's Auditor website identifies him as the current county auditor.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1267,7 +1299,7 @@
     "candidates": [
       {
         "name": "Catherine A. Bishop",
-        "background": "Catherine A. Bishop is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Coroner. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ashtabula County's Coroner website identifies Dr. Catherine Bishop as the current county coroner.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1276,6 +1308,10 @@
           {
             "label": "Ashtabula County official staff directory",
             "url": "https://www.ashtabulacounty.gov/m/directory"
+          },
+          {
+            "label": "Ashtabula County Coroner",
+            "url": "https://ashtabulacounty.gov/175/Coroner"
           }
         ],
         "party": "Republican",
