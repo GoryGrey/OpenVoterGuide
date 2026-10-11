@@ -39,3 +39,11 @@ The guide does not endorse candidates or ballot outcomes. It presents descriptio
 ## Supreme Court candidate profiles reviewed
 
 The profiles for Daniel R. Hawkins, Marilyn Zayas, Jennifer Brunner, and Colleen O’Donnell were narrowed to directly sourced biographies, attributed campaign statements, and selected opinions with official Supreme Court links. Hawkins’s 2022 Issue 1 statement is dated and described as a position on the proposed bail amendment. His State v. King entry distinguishes discretionary leave to appeal from an appeal as of right. The earlier unsupported claims about a unanimous Doberdruk authorship, broad ideological voting patterns, and unverified Zayas juvenile cases were removed. Brunner’s selected dissents describe the specific legal disagreements in State v. Lash and Wilkes. O’Donnell’s campaign biography and positions are attributed to her campaign; a selected-opinion review remains pending. This is a limited profile audit, not a full review of any candidate’s record.
+
+## Named write-in candidate coverage and remaining source checks
+
+The seven named write-in candidates for U.S. Senator and Governor/Lieutenant Governor are included because they appear on the Ashtabula County BOE candidate list revised September 15, 2026. The guide currently limits their profiles to ballot-list information; it does not imply that their backgrounds or issue positions were reviewed. Their issue and biography research remains pending.
+
+The Libertarian governor-ticket profile was compared with Don Kissick’s current campaign issue page and a Toledo Free Press candidate profile. Unsupported statements about certificate-of-need laws, insurance mandates, data-center pauses, and Science of Reading policy were removed. Data-center concerns are now presented as campaign concerns, not a concrete pause pledge. Kissick campaign statements are attributed; biographical details are attributed to the news profile. The guide does not include a prior public-office voting record for either candidate. This is a limited review.
+
+The evidence panel’s comparison status is now populated for the four audited U.S. Senate profiles; those summaries describe the selected examples and do not claim comprehensive review or predict future votes.
