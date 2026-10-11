@@ -1,0 +1,96 @@
+---
+layout: base.njk
+pagination:
+  data: races
+  size: 1
+  alias: race
+permalink: "/races/{{ race.id }}/"
+eleventyComputed:
+  title: "{{ race.office }}"
+  description: "Candidates for {{ race.office }} in the Ashtabula County November 3, 2026 election."
+---
+
+<h1>{{ race.office }}</h1>
+{% if race.district %}<p><strong>District:</strong> {{ race.district }}</p>{% endif %}
+<p>{{ race.term_info }}</p>
+
+<span class="verification-badge">Verified {{ race.verification_date }} against Ashtabula County BOE official candidate list</span>
+
+<h2>Candidates ({{ race.candidates.length }})</h2>
+
+{% if race.candidates.length >= 2 %}
+<div class="compare-controls">
+  <h3>Compare Candidates</h3>
+  <p>Select two to compare side by side:</p>
+  <div class="compare-selectors">
+    <select id="compare-a" aria-label="First candidate to compare">
+      <option value="">Choose...</option>
+      {% for c in race.candidates %}<option value="{{ c.name | slug }}">{{ c.name }}</option>{% endfor %}
+    </select>
+    <span>vs</span>
+    <select id="compare-b" aria-label="Second candidate to compare">
+      <option value="">Choose...</option>
+      {% for c in race.candidates %}<option value="{{ c.name | slug }}">{{ c.name }}</option>{% endfor %}
+    </select>
+    <button onclick="showComparison('{{ race.id }}')">Compare</button>
+  </div>
+  <div id="comparison-result" style="display:none;"></div>
+</div>
+{% endif %}
+
+{% for c in race.candidates %}
+<div class="candidate-card" id="{{ c.name | slug }}">
+  <div class="candidate-header">
+    {% if c.photo_url %}
+    <img src="{{ c.photo_url }}" alt="Photo of {{ c.name }}" class="candidate-photo" loading="lazy">
+    {% endif %}
+    <div>
+      <h3>{{ c.name }}
+        <span class="party-tag party-{{ c.party | first }}">{{ c.party }}</span>
+        {% if c.incumbent %}<span class="party-tag">Incumbent</span>{% endif %}
+      </h3>
+      {% if c.photo_credit %}<p class="photo-credit"><small>Photo: {{ c.photo_credit }}</small></p>{% endif %}
+    </div>
+  </div>
+
+  <div class="worksheet-check">
+    <label>
+      <input type="checkbox" data-worksheet-id="race-{{ race.id }}-{{ c.name | slug }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
+      Mark as my choice
+    </label>
+  </div>
+
+  <h4>Background</h4>
+  <p>{{ c.background }}</p>
+
+  {% if c.promises and c.promises.length %}
+  <h4>Campaign Promises & Positions</h4>
+  <ul>
+    {% for p in c.promises %}<li>{{ p }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if c.record and c.record.length %}
+  <h4>Voting Record</h4>
+  <ul>
+    {% for r in c.record %}<li>{{ r }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if c.correlation %}
+  <h4>Promise vs. Record</h4>
+  <p>{{ c.correlation }}</p>
+  {% endif %}
+
+  {% if c.sources and c.sources.length %}
+  <div class="source-list">
+    <strong>Sources:</strong>
+    <ul>
+      {% for s in c.sources %}<li><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+
+<p><a href="/OpenVoterGuide/races/">All races</a> | <a href="/OpenVoterGuide/worksheet/">My worksheet</a></p>
