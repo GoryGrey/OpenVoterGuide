@@ -51,6 +51,10 @@ for (const race of races) {
   unique(race.candidates, (candidate) => candidate.name, `candidates in ${race.id}`);
   for (const candidate of race.candidates) {
     checkSources(candidate.sources, `Candidate ${candidate.name}`);
+    if (candidate.response_status !== undefined) {
+      assert(typeof candidate.response_status === "string" && candidate.response_status.trim(), `Candidate ${candidate.name}: response_status must be non-empty text`);
+      assert(candidate.sources.some((source) => source.url.includes("ideastream.org")), `Candidate ${candidate.name}: response_status needs its voter-guide source`);
+    }
     const candidateUrl = `/races/${race.id}/#${candidateSlug(candidate.name)}`;
     assert(searchIndex.some((entry) => entry.title === candidate.name && entry.url === candidateUrl), `Candidate ${candidate.name}: missing or mismatched search-index anchor`);
     if (candidate.measure_positions !== undefined) {
