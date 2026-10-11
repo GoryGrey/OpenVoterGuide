@@ -402,3 +402,18 @@ table.levies { min-width:660px; }
 @media (min-width:601px) {
   .site-nav:not([open]) > .nav-links { display:flex; }
 }
+
+/* Use one visible desktop navigation and a button-controlled mobile menu. */
+.mobile-menu-toggle { display:none; }
+@media (max-width:600px) {
+  .mobile-menu-toggle {
+    display:flex; align-items:center; justify-content:center; min-width:76px; min-height:44px;
+    padding:.55rem .75rem; border:1px solid var(--border); border-radius:8px;
+    background:#fff; color:var(--primary); font:inherit; font-weight:800; cursor:pointer;
+  }
+  .mobile-menu-toggle::after { content:"⌄"; margin-left:.4rem; }
+  .mobile-menu-toggle[aria-expanded="true"]::after { content:"⌃"; }
+  .mobile-menu-toggle:focus-visible { outline:3px solid var(--ovg-focus-on-light); outline-offset:2px; }
+  .mobile-menu-toggle + .nav-links { display:none; }
+  .mobile-menu-toggle[aria-expanded="true"] + .nav-links { display:grid; }
+}
