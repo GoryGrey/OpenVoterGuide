@@ -74,7 +74,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
             <article class="home-race-card home-race-{{ raceTone }}">
               <figure class="home-race-photo">
                 <img src="{{ raceImage }}" alt="" loading="lazy" decoding="async" width="1000" height="620">
-                <figcaption><a href="{{ raceCreditUrl }}" target="_blank" rel="noopener noreferrer">{{ raceCredit }}</a></figcaption>
+                <figcaption>{% if loop.index == 3 %}<a href="{{ raceCreditUrl }}" target="_blank" rel="noopener noreferrer">Photo by Alexander Smith</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>{% else %}<a href="{{ raceCreditUrl }}" target="_blank" rel="noopener noreferrer">{{ raceCredit }}</a>{% endif %}</figcaption>
                 <span class="home-race-badge home-badge-{{ raceTone }}">{{ raceCategory }}</span>
               </figure>
               <div class="home-race-body">
