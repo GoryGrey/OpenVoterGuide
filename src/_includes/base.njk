@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Ashtabula County Voter Guide 2026</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="https://ashtabula-voter-guide.pages.dev{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Ashtabula County Voter Guide</a>
+      <div class="nav-links">
+        <a href="/races/">Races</a>
+        <a href="/measures/">Measures</a>
+        <a href="/levies/">Levies</a>
+        <a href="/worksheet/">My Worksheet</a>
+        <a href="/about/">About</a>
+      </div>
+      <div class="search-box">
+        <input type="search" id="site-search" placeholder="Search candidates, measures..." aria-label="Search">
+        <div id="search-results"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <p>Strictly nonpartisan. No endorsements. Data verified against Ashtabula County BOE official lists (Rev. 9-15-26) on October 11, 2026.</p>
+    <p><a href="/about/">About & Sources</a> | <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County BOE</a></p>
+    <p>Open source: <a href="https://github.com/">GitHub</a> (MIT License)</p>
+  </footer>
+  <script src="/js/search.js"></script>
+  <script src="/js/worksheet.js"></script>
+  <script src="/js/compare.js"></script>
+</body>
+</html>
