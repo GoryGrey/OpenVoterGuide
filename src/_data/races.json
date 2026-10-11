@@ -1083,15 +1083,15 @@
         "name": "Sarah Fowler Arthur",
         "party": "Republican",
         "incumbent": true,
-        "background": "From Geneva-on-the-Lake; home-schooled; worked the family farm and ran an egg-selling small business for 12 years. Elected to the Ohio State Board of Education in 2012, re-elected twice (served until Dec. 2020). Elected to the Ohio House in 2020 (58.5%), flipping District 99; re-elected 2022 (60.4%) and 2024 (64.5%).",
+        "background": "Ohio House member since January 2021. The Ohio House biography says she served on the State Board of Education from 2013 to 2020, was first elected in 2012, worked on her family farm, and began Sarah's Eggs at age 11.",
         "promises": [
-          "2026 Ohio Gun Owners survey: opposes 'mental health' legislation that would deny law-abiding Ohioans gun rights without due process; would co-sponsor legislation eliminating restrictions on lawful gun owners carrying in 'gun-free' areas",
-          "Education focus: sponsor testimony on HB 403 (reporting when teacher retires under threat of disciplinary investigation); sponsored HB 235 (2023) to shrink the State Board of Education"
+          "2026 Ohio Gun Owners survey: opposes 'mental health' legislation that would deny law-abiding Ohioans gun rights without due process; would co-sponsor legislation eliminating restrictions on lawful gun owners carrying in 'gun-free' areas"
         ],
         "record": [
-          "Primary-sponsored bills: HB 38, HB 43, HB 59 (passed House), HB 70, HB 333, HB 369, HB 375, HB 433 (passed General Assembly July 2026), HB 481, HB 733, HB 734",
-          "Key vote: in 2021 voted against the expulsion of former House Speaker Larry Householder (federally indicted in the HB 6 nuclear bribery scandal); the House voted 75-21 to expel",
-          "November 2021: voted for and publicly supported HB 99 and HB 227 (second-amendment bills)"
+          "The Ohio House lists primary sponsorships on HB 38, HB 43, HB 59, HB 70, HB 333, HB 369, HB 375, HB 433, HB 481, HB 733, and HB 734. The House lists HB 433 as enrolled and HB 733 as passed by the House.",
+          "In 2021, voted against House Resolution 69, which expelled Representative Larry Householder; the resolution passed 75–21.",
+          "YEA votes on HB 99 and HB 227 on November 17, 2021.",
+          "Primary-sponsored HB 403, requiring reports when teachers retire under threat of disciplinary investigation, and HB 235, regarding State Board membership and meetings. HB 235 did not pass the House."
         ],
         "correlation": "2026 survey positions (gun-rights expansion) are consistent with 2021 votes for HB 99/HB 227. Legislative output centers on education regulation, occupational-licensing reform, and commemorative bills. Vote against Householder expulsion was a notable break with the 75-member bipartisan majority, without a contemporaneous public explanation found.",
         "sources": [
@@ -1107,21 +1107,100 @@
             "label": "ohiogunowners.org survey",
             "url": "https://www.ohiogunowners.org/pdf/65a704da09df3/71538"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The official Ohio House biography supports these biographical details.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio House official biography: Sarah Fowler Arthur",
+                  "url": "https://ohiohouse.gov/members/sarah-fowler-arthur/biography"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "pending",
+              "note": "The linked Ohio Gun Owners survey PDF could not be reviewed directly in this source check; keep this candidate-stated summary pending.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The Ohio House sponsorship list confirms the bill numbers and current statuses shown here.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio House official primary-sponsored bill list: Sarah Fowler Arthur",
+                  "url": "https://www.ohiohouse.gov/members/sarah-fowler-arthur/legislation"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The official roll-call page shows Arthur voted no; HR 69 passed 75–21.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Legislature roll-call: House Resolution 69",
+                  "url": "https://www.legislature.ohio.gov/legislation/134/hr69/votes"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "Both official House roll-call records list her vote as yea on November 17, 2021.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Legislature roll-call: House Bill 99",
+                  "url": "https://www.ohiosenate.gov/legislation/134/hb99/votes"
+                },
+                {
+                  "label": "Ohio Legislature roll-call: House Bill 227",
+                  "url": "https://www.legislature.ohio.gov/legislation/legislation-votes?id=GA134-HB-227"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The official bill pages identify Arthur as a primary sponsor and describe their contents and status.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Legislature: House Bill 403",
+                  "url": "https://www.legislature.ohio.gov/legislation/134/hb403"
+                },
+                {
+                  "label": "Ohio Legislature: House Bill 235",
+                  "url": "https://www.legislature.ohio.gov/legislation/135/hb235"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "pending",
+              "note": "This comparison depends on the survey position summary above, whose PDF could not be reviewed directly in this source check.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ]
+        }
       },
       {
         "name": "Louis Murphy",
         "party": "Democrat",
         "incumbent": false,
         "background": "Science teacher in the Ashtabula Area City Schools; in spring 2022 served as Geneva-on-the-Lake's environmental policy analyst. 2024 Democratic nominee for District 99 (lost to Fowler Arthur 35.5% to 64.5%). Won the May 5, 2026 Democratic primary over Michael F. Price, 57.1% to 42.9%.",
-        "promises": [
-          "No published 2026 platform statements and no 2024 campaign position statements were found in public sources (no campaign website, voter-guide responses, or survey answers located)",
-          "Endorsements listed for 2026 by the Blue Voter Guide: 3.14 Action, AFL-CIO Ohio, Gun Sense Voter, and United Auto Workers (endorsements are third-party signals, not stated positions)"
-        ],
-        "record": [
-          "He has held no prior elected or legislative office; no prior voting record found"
-        ],
-        "correlation": "There is no legislative record to compare against campaign promises, and no detailed platform statements were located, so no promises-vs.-record comparison is possible for this candidate.",
+        "promises": [],
+        "record": [],
         "sources": [
           {
             "label": "Chagrin Valley Today, 2024",
@@ -1131,7 +1210,17 @@
             "label": "bluevoterguide.org",
             "url": "https://bluevoterguide.org/OH/candidate_Louis_Murphy/527578"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "pending",
+              "note": "This summary includes employment and election-history claims from a linked local-news page that could not be reviewed directly during this check.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ]
+        }
       }
     ]
   },
