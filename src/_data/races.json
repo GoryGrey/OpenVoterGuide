@@ -77,6 +77,10 @@
           {
             "label": "S.J.Res. 104 Senate roll call 46",
             "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00046.htm"
+          },
+          {
+            "label": "U.S. Government Publishing Office, S. 5028 introduced bill record",
+            "url": "https://www.govinfo.gov/app/details/BILLS-119s5028is"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg/960px-Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg",
@@ -196,9 +200,13 @@
             },
             {
               "status": "official_record",
-              "note": "The member-office release documents the introduced S. 5028 and House companion. The official Senate roll call records the 57–43 cloture vote on proceeding to H.R. 9340.",
+              "note": "The Government Publishing Office confirms Husted introduced S. 5028, the Ratepayer Protection Act. The House Clerk records passage of the companion H.R. 9340 by 417–3; the Senate roll call records the failed 57–43 cloture vote on proceeding to H.R. 9340.",
               "checked_on": "2026-10-11",
               "sources": [
+                {
+                  "label": "U.S. Government Publishing Office, S. 5028 introduced bill record",
+                  "url": "https://www.govinfo.gov/app/details/BILLS-119s5028is"
+                },
                 {
                   "label": "Husted announcement of the Ratepayer Protection Act",
                   "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/"
