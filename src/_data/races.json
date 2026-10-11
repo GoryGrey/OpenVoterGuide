@@ -1154,7 +1154,22 @@
             "url": "https://www.cornachioforjudge.com/"
           }
         ],
-        "party": "Republican"
+        "party": "Republican",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Her campaign biography is the source for the described career history; it is candidate-produced material.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Marisa Cornachio campaign biography",
+                  "url": "https://www.cornachioforjudge.com/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1179,7 +1194,22 @@
             "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/ohio-court-of-appeals/"
           }
         ],
-        "party": "Republican"
+        "party": "Republican",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The Supreme Court of Ohio lists Patton among the Eleventh District appellate judges.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Eleventh District judges",
+                  "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/ohio-court-of-appeals/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1212,7 +1242,26 @@
             "url": "https://www.votesezon.com/about"
           }
         ],
-        "incumbent": true
+        "incumbent": true,
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "County schedules confirm she is a Common Pleas judge; her campaign biography supplies the election date and prior court roles.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County court schedules",
+                  "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
+                },
+                {
+                  "label": "Judge Marianne Sezon campaign biography",
+                  "url": "https://www.votesezon.com/about"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1249,7 +1298,50 @@
         "promises": [
           "Says his first priority would be to re-establish Ashtabula County's former felony drug court docket.",
           "Says education, data centers, and cost of living are legislative or administrative matters outside the General Division Common Pleas Court's role."
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "The court directory confirms his Probate and Juvenile Court roles; his service-since-2015 detail comes from his Ideastream response, which is published as submitted and not uniformly fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County Courts directory",
+                  "url": "https://courts.ashtabulacounty.gov/courts_directory.htm"
+                },
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response published as submitted by Ideastream; not independently fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Candidate response published as submitted by Ideastream; not independently fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Harold E. Specht Jr.",
@@ -1272,7 +1364,26 @@
             "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
           }
         ],
-        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions.",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "County schedules identify Specht as a judge of Eastern County Court; the BOE list shows his Common Pleas candidacy.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County court schedules",
+                  "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
+                },
+                {
+                  "label": "Ashtabula County BOE candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1301,7 +1412,22 @@
             "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
           }
         ],
-        "incumbent": true
+        "incumbent": true,
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county's weekly schedules list Judge Thomas Harris in Common Pleas Court.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County court schedules",
+                  "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1333,7 +1459,26 @@
             "label": "Edith Jonas campaign biography (Ashtabula County Republican Party)",
             "url": "https://ashtabulagop.com/jonas/"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "The magistrates association confirms her current magistrate role; her campaign biography supplies the broader career history.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Association of Magistrates: Edith Jonas",
+                  "url": "https://ohiomagistrates.org/magistrate/edith-jonas/"
+                },
+                {
+                  "label": "Edith Jonas campaign biography",
+                  "url": "https://ashtabulagop.com/jonas/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1347,7 +1492,7 @@
     "candidates": [
       {
         "name": "Jayson-Robert T. Noscal",
-        "background": "Jayson-Robert T. Noscal is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Commissioner. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The Ashtabula County Board of Elections lists Jayson-Robert T. Noscal as a candidate for county commissioner. No independent biographical summary has been added for him.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -1365,7 +1510,68 @@
           "Require transparent decisions, water and environmental protections, and demonstrated local benefits from data-center projects; says a temporary moratorium may be considered while long-term impacts are assessed.",
           "Limit unnecessary tax pressure through responsible county budgeting; support jobs with wages that keep pace with costs and stronger county transportation options.",
           "Improve public trust through plain-language budget updates, public discussion of major projects, and routine updates; review the use of executive sessions."
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The BOE list confirms his candidacy. The rest of this sentence describes the guide's current coverage, not his biography.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County BOE candidate list, revised September 15, 2026",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Ideastream publishes this candidate response as submitted and says responses were not uniformly fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Ideastream publishes this candidate response as submitted and says responses were not uniformly fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Ideastream publishes this candidate response as submitted and says responses were not uniformly fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Ideastream publishes this candidate response as submitted and says responses were not uniformly fact-checked.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ideastream Public Media, Ashtabula County candidate responses (published as submitted)",
+                  "url": "https://www.ideastream.org/ashtabula-county-elections"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Casey Kozlowski",
@@ -1386,7 +1592,22 @@
         ],
         "party": "Republican",
         "incumbent": true,
-        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions.",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county's current commissioner page lists Kozlowski as president of the board.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County Board of Commissioners",
+                  "url": "https://ashtabulacounty.gov/220/Commissioners"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1416,7 +1637,22 @@
           }
         ],
         "party": "Democrat",
-        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions.",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The City's 2026 roster lists Emery as the Third Ward council member.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "City of Conneaut 2026 roster of officials",
+                  "url": "https://codelibrary.amlegal.com/codes/conneaut/latest/conneaut_oh/0-0-0-83"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Scott Yamamoto",
@@ -1437,7 +1673,22 @@
         ],
         "party": "Republican",
         "incumbent": true,
-        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions.",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county auditor's official website identifies Yamamoto as the current auditor.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County Auditor official website",
+                  "url": "https://auditor.ashtabulacounty.gov/dnn/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
@@ -1467,7 +1718,22 @@
           }
         ],
         "party": "Republican",
-        "incumbent": true
+        "incumbent": true,
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The county Coroner's Office page identifies Dr. Bishop as the coroner.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ashtabula County Coroner",
+                  "url": "https://ashtabulacounty.gov/175/Coroner"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "verification_date": "2026-10-11",
