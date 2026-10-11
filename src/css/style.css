@@ -861,7 +861,7 @@ table.levies { min-width:660px; }
   .home-note { align-items: flex-start; margin-bottom: 1.5rem; padding: .8rem; }
   .home-note-icon { margin-top: .05rem; }
   .home-note p { font-size: .87rem; }
-  .home-content { width: min(100% - 1.25rem, 460px); }
+  .home-content { width: min(calc(100% - 1.25rem), 460px); }
   .home-section { margin-bottom: 1.55rem; }
   .home-section-heading { align-items: flex-start; gap: .5rem; padding: 0 .1rem; }
   .home-heading-copy { align-items: flex-start; gap: .65rem; }
