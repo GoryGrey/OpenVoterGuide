@@ -14,9 +14,10 @@ eleventyComputed:
 {% if race.district %}<p><strong>District:</strong> {{ race.district }}</p>{% endif %}
 <p>{{ race.term_info }}</p>
 
-<span class="verification-badge">Verified {{ race.verification_date }} against Ashtabula County BOE official candidate list</span>
+<span class="verification-badge">Candidate list checked {{ race.verification_date }} against Ashtabula County BOE</span>
 
 <h2>Candidates ({{ race.candidates.length }})</h2>
+<p>Candidate backgrounds, positions, and records are editorial summaries. Sources are grouped by candidate rather than attached to individual claims; open the listed sources to check details.</p>
 
 {% if race.candidates.length >= 2 %}
 <div class="compare-controls">

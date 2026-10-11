@@ -4,7 +4,7 @@
     "office": "U.S. Senator",
     "district": null,
     "term_info": "Special election, unexpired term ending 1/3/2029 (vote for 1). Seat vacated when J.D. Vance resigned to become vice president; winner serves remaining two years of the term Vance was elected to in 2022.",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -160,7 +160,7 @@
     "office": "U.S. House of Representatives",
     "district": "14th District",
     "term_info": "Vote for 1; 2-year term. All of Ashtabula County is in OH-14.",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -230,7 +230,7 @@
     "office": "Governor and Lieutenant Governor",
     "district": null,
     "term_info": "Joint ticket; vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -332,7 +332,7 @@
     "office": "Attorney General",
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -405,7 +405,7 @@
     "office": "Auditor of State",
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -473,7 +473,7 @@
     "office": "Secretary of State",
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -570,7 +570,7 @@
     "office": "Treasurer of State",
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -636,7 +636,7 @@
     "office": "Justice of the Supreme Court",
     "district": null,
     "term_info": "Full term commencing 1/1/2027; vote for 1; 6-year term. Judicial candidates run without party labels on the general ballot but are nominated in partisan primaries; parties below are the nominating party per the BOE list.",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -704,7 +704,7 @@
     "office": "Justice of the Supreme Court",
     "district": null,
     "term_info": "Full term commencing 1/2/2027; vote for 1; 6-year term. Judicial candidates run without party labels on the general ballot but are nominated in partisan primaries; parties below are the nominating party per the BOE list.",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {
@@ -766,7 +766,7 @@
     "office": "State Representative",
     "district": "Ohio House District 99",
     "term_info": "Vote for 1; 2-year term. All of Ashtabula County is in District 99.",
-    "verification_status": "verified",
+    "verification_status": "candidate_list_checked",
     "verification_date": "2026-10-11",
     "candidates": [
       {

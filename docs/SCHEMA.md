@@ -41,7 +41,7 @@ Array of race objects:
   "office": "U.S. Senator",
   "district": null,
   "term_info": "Special election...",
-  "verification_status": "verified",
+  "verification_status": "candidate_list_checked",
   "verification_date": "2026-10-11",
   "candidates": [
     {

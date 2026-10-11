@@ -8,8 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy",
-    "start": "eleventy --serve"
+    "build": "node scripts/validate-data.js && eleventy && node scripts/check-generated-routes.js",
+    "start": "eleventy --serve",
+    "validate": "node scripts/validate-data.js"
   },
   "keywords": [],
   "author": "",
