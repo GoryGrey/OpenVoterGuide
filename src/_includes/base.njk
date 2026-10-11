@@ -72,7 +72,15 @@
     <p class="support-fallback">If the panel doesn’t load, <a href="https://ko-fi.com/openvoterguide" target="_blank" rel="noopener noreferrer">open Ko-fi directly</a>.</p>
   </dialog>
   <main id="main-content">
-    {{ content | safe }}
+    {% if page.url == '/' %}
+      {{ content | safe }}
+    {% else %}
+      <div class="page-shell">
+        <div class="page-content">
+          {{ content | safe }}
+        </div>
+      </div>
+    {% endif %}
   </main>
   <footer>
     <p>Strictly nonpartisan. No endorsements. Race and ballot listings checked against county BOE lists. Candidate claims link to claim-level evidence where checked; others are marked pending. See About for verification scope.</p>
