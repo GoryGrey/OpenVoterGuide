@@ -9,7 +9,7 @@ permalink: /levies/index.html
   <header class="content-page-heading">
     <p class="content-eyebrow">November 3, 2026 · Ashtabula County, Ohio</p>
     <h1 id="levies-title">Property tax levies</h1>
-    <p class="directory-intro">Review the local property-tax questions on the ballot, see which proposals change a tax, and follow each issue to its sources.</p>
+    <p class="directory-intro">Compare what each local property-tax question funds, whether it changes your tax rate, how long it lasts, and the estimated revenue reported for the district.</p>
     <span class="verification-badge">Levy jurisdictions, types, and rates checked against the county auditor on 2026-10-11</span>
   </header>
 
@@ -21,7 +21,7 @@ permalink: /levies/index.html
 
   <aside class="levy-explainer">
     <span class="levy-explainer-icon" aria-hidden="true">i</span>
-    <p><strong>How to read this list.</strong> Millage is a tax rate, not the dollar amount your household will pay. Actual cost and ballot wording can vary by parcel and issue. Issue 10 is a Conneaut charter amendment, not a property-tax levy. Check your precinct ballot and the official sources before deciding.</p>
+    <p><strong>How to read this list.</strong> The “annual revenue” figures are estimates for the taxing district, not a household bill. Millage is a tax rate; your cost depends on your property and applicable credits. Open “Sources and ballot context” to see where to verify each issue, or check your precinct ballot for its exact wording. Issue 10 is a Conneaut charter amendment, not a property-tax levy.</p>
   </aside>
 
   <section class="levy-group levy-group-changes" aria-labelledby="tax-changes-heading">
@@ -29,16 +29,18 @@ permalink: /levies/index.html
       <div><p class="content-eyebrow">New taxes, increases, or reductions</p><h2 id="tax-changes-heading">Tax changes <span>(11)</span></h2></div>
       <span class="levy-group-tag">Review the change</span>
     </div>
-    <p class="table-scroll-hint">Swipe the issue list sideways to see all details.</p>
+    <p class="table-scroll-hint">Swipe the issue list sideways to see all columns. Expand “Sources and ballot context” for details without leaving this page.</p>
     <div class="levies-table-scroll" role="region" aria-label="Tax changes levy table" tabindex="0">
       <table class="levies levy-directory-table">
-        <thead><tr><th scope="col">Issue</th><th scope="col">Jurisdiction</th><th scope="col">Purpose</th><th scope="col">Type</th><th scope="col">Millage</th><th scope="col"><span class="visually-hidden">Details</span></th><th scope="col"><span class="visually-hidden">Worksheet choice</span></th></tr></thead>
+        <thead><tr><th scope="col">Issue</th><th scope="col">Jurisdiction</th><th scope="col">Purpose and impact</th><th scope="col">Type</th><th scope="col">Rate</th><th scope="col">Term</th><th scope="col">More information</th><th scope="col"><span class="visually-hidden">Worksheet choice</span></th></tr></thead>
         <tbody>
           {% for levy in levies %}{% if levy.tax_change %}
           <tr>
             <td><a class="levy-issue-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td>
-            <td>{{ levy.jurisdiction }}</td><td>{{ levy.purpose }}</td><td><span class="levy-type-pill">{{ levy.type | replace("_", " ") | capitalize }}</span></td><td>{{ levy.millage }}</td>
-            <td><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">View details <span aria-hidden="true">→</span></a></td>
+            <td>{{ levy.jurisdiction }}</td>
+            <td><strong>{{ levy.purpose }}</strong>{% if levy.notes %}<span class="levy-impact-summary">{{ levy.notes }}</span>{% endif %}</td>
+            <td><span class="levy-type-pill">{{ levy.type | replace("_", " ") | capitalize }}</span></td><td>{{ levy.millage }} mills</td><td>{% if levy.term_years %}{{ levy.term_years }} years{% else %}Not listed{% endif %}</td>
+            <td><details class="levy-inline-details"><summary>Sources and ballot context</summary><div class="levy-inline-panel"><p>{{ levy.notes or "No additional note is available for this issue." }}</p><p>Exact ballot wording can vary by precinct. Check your official sample ballot before voting.</p><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}</ul><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Open full Issue {{ levy.issue_number }} page <span aria-hidden="true">→</span></a></div></details></td>
             <td><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES" aria-label="Vote yes on Issue {{ levy.issue_number }}"></td>
           </tr>{% endif %}{% endfor %}
         </tbody>
@@ -52,13 +54,13 @@ permalink: /levies/index.html
       <span class="levy-group-tag">No rate increase</span>
     </div>
     <p>These proposals continue existing taxes at the same rate. A straight renewal does not add a new levy or change the levy rate.</p>
-    <p class="table-scroll-hint">Swipe the issue list sideways to see all details.</p>
+    <p class="table-scroll-hint">Swipe the issue list sideways to see all columns. Expand “Sources and ballot context” for details without leaving this page.</p>
     <div class="levies-table-scroll" role="region" aria-label="Straight renewals levy table" tabindex="0">
       <table class="levies levy-directory-table">
-        <thead><tr><th scope="col">Issue</th><th scope="col">Jurisdiction</th><th scope="col">Purpose</th><th scope="col">Millage</th><th scope="col"><span class="visually-hidden">Details</span></th></tr></thead>
+        <thead><tr><th scope="col">Issue</th><th scope="col">Jurisdiction</th><th scope="col">Purpose and impact</th><th scope="col">Rate</th><th scope="col">Term</th><th scope="col">More information</th><th scope="col"><span class="visually-hidden">Worksheet choice</span></th></tr></thead>
         <tbody>
           {% for levy in levies %}{% if not levy.tax_change %}
-          <tr><td><a class="levy-issue-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td><td>{{ levy.jurisdiction }}</td><td>{{ levy.purpose }}</td><td>{{ levy.millage }}</td><td><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">View details <span aria-hidden="true">→</span></a></td></tr>
+          <tr><td><a class="levy-issue-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td><td>{{ levy.jurisdiction }}</td><td><strong>{{ levy.purpose }}</strong>{% if levy.notes %}<span class="levy-impact-summary">{{ levy.notes }}</span>{% endif %}</td><td>{{ levy.millage }} mills</td><td>{% if levy.term_years %}{{ levy.term_years }} years{% else %}Not listed{% endif %}</td><td><details class="levy-inline-details"><summary>Sources and ballot context</summary><div class="levy-inline-panel"><p>{{ levy.notes or "No additional note is available for this issue." }}</p><p>Exact ballot wording can vary by precinct. Check your official sample ballot before voting.</p><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}</ul><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Open full Issue {{ levy.issue_number }} page <span aria-hidden="true">→</span></a></div></details></td><td><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES" aria-label="Vote yes on Issue {{ levy.issue_number }}"></td></tr>
           {% endif %}{% endfor %}
         </tbody>
       </table>
@@ -75,3 +77,4 @@ permalink: /levies/index.html
     <a class="directory-action" href="{{ '/sample-ballots/' | url }}">Check your official sample ballot <span aria-hidden="true">→</span></a>
   </section>
 </section>
+
