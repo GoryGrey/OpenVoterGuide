@@ -964,23 +964,27 @@
           {
             "label": "Timothy Telymonde website",
             "url": "https://www.telymonde.com/"
+          },
+          {
+            "label": "The Portager, League of Women Voters 2026 candidate questionnaire (response published as submitted)",
+            "url": "https://theportager.com/november-2026-voters-guide-presented-by-the-league-of-women-voters/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "candidate_statement",
-              "note": "This profile detail is attributed to the candidate’s campaign; the BOE list separately confirms the candidacy.",
+              "status": "editorial_summary",
+              "note": "The BOE list confirms the candidacy; the candidate’s questionnaire responses were published by The Portager.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Timothy Telymonde website",
-                  "url": "https://www.telymonde.com/"
+                  "label": "Ashtabula County BOE official candidate list (revised 9/15/26)",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
                 },
                 {
-                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
-                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                  "label": "The Portager, League of Women Voters 2026 candidate questionnaire (response published as submitted)",
+                  "url": "https://theportager.com/november-2026-voters-guide-presented-by-the-league-of-women-voters/"
                 }
               ]
             }
