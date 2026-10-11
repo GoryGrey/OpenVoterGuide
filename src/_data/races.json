@@ -1,0 +1,828 @@
+[
+  {
+    "id": "us-senator",
+    "office": "U.S. Senator",
+    "district": null,
+    "term_info": "Special election, unexpired term ending 1/3/2029 (vote for 1). Seat vacated when J.D. Vance resigned to become vice president; winner serves remaining two years of the term Vance was elected to in 2022.",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Jon Husted",
+        "party": "Republican",
+        "incumbent": true,
+        "background": "Ohio House 2001-2009 (Speaker 2005-2009), Ohio State Senate 2009-2011, Ohio Secretary of State 2011-2019, Lieutenant Governor 2019-2025. Appointed by Gov. DeWine on Jan 17, 2025 to the Vance vacancy. Campaign bio: born into foster care, then adopted.",
+        "promises": [
+          "Supports the Working Families Tax Cut (ended taxes on tips/overtime, expanded Child Tax Credit, SNAP/Medicaid work requirements)",
+          "Streamlined energy-infrastructure permitting to lower energy costs",
+          "Sponsoring bill for state pilot programs easing the benefits cliff for workers losing assistance as pay rises",
+          "Stronger border enforcement and fentanyl interdiction",
+          "Data centers should pay their own grid-infrastructure costs (Ratepayer Protection Act)",
+          "Traditional energy development; pro-police funding and anti-abortion policies"
+        ],
+        "record": [
+          "YEA on H.R.1 (reconciliation/Working Families Tax Cut), final passage July 1, 2025 (51-50)",
+          "YEA on S.2, Secure America Act (border security), passage June 5, 2026",
+          "Championed S.5028, Ratepayer Protection Act: would have states consider standards making large-load customers (data centers 100+ MW) cover incremental grid costs; House passed H.R.9340 417-3 (9/16/2026); Senate cloture failed 57-43 (9/30/2026)",
+          "NAY on S.2882, Continuing Appropriations (Oct 9, 2025), which would have extended expanded ACA premium tax credits (failed 47-50)",
+          "YEA on S.6, Born-Alive Abortion Survivors Protection Act cloture (Jan 22, 2025; failed 52-47)",
+          "Voted against S.J.Res.104 Iran war-powers resolution (March 2026) - secondary source; Senate roll-call confirmation recommended",
+          "Missed 0 of 662 roll-call votes (Jan 2025-Oct 2026)"
+        ],
+        "correlation": "Record matches stated positions on taxes (H.R.1), border enforcement (S.2), and abortion-related votes. Data centers: MIXED - he is the Senate champion of the Ratepayer Protection Act, but the bill stalled, and his prior pro-data-center record as lieutenant governor complicates the picture. His Iran war-powers vote's relation to his stated position is UNVERIFIED (position attribution comes from partisan sources).",
+        "sources": [
+          {
+            "label": "Columbus Dispatch, 9/22/2026",
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/09/22/ohio-senate-race-jon-husted-sherrod-brown-affordability-data-centers-immigration/91386477007/"
+          },
+          {
+            "label": "GovTrack",
+            "url": "http://govtrack.us/congress/members/jon_husted/457032"
+          },
+          {
+            "label": "VoteSmart",
+            "url": "https://justfacts.votesmart.org/candidate/45796/jon-husted"
+          },
+          {
+            "label": "Ballotpedia",
+            "url": "http://ballotpedia.org/Jon_Husted"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg/960px-Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg",
+        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Jon_Husted"
+      },
+      {
+        "name": "Sherrod Brown",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Born Mansfield, Ohio. Ohio House (1975-1982), Ohio Secretary of State (1983-1991), U.S. House (1993-2007), U.S. Senate (2007-2025) where he chaired the Banking Committee from 2021. Lost re-election in November 2024 to Bernie Moreno.",
+        "promises": [
+          "Hold healthcare companies accountable; lower prescription drug costs",
+          "Data centers should pay full utility costs and use closed-loop water systems; favors local restrictions and no tax breaks for tech companies (no moratorium proposed)",
+          "Cutting taxes for working families, not billionaires and corporations",
+          "End U.S. war with Iran to bring down gas and fertilizer costs",
+          "Target political corruption",
+          "Co-sponsor the Faster Labor Contracts Act (FLCA)"
+        ],
+        "record": [
+          "NAY on H.J.Res.114, Iraq War authorization (Oct. 2002, as House member)",
+          "NAY on H.R.3450, NAFTA implementing legislation (Nov. 1993); long-documented trade-skeptic record",
+          "YEA on H.R.1319, American Rescue Plan (March 2021), including Butch Lewis Act preserving pensions of over a million union members/retirees",
+          "YEA on H.R.4346, CHIPS and Science Act (Aug. 2022) - helped bring Intel chip factories to New Albany, Ohio",
+          "YEA on H.R.3684, Infrastructure Investment and Jobs Act (Nov. 2021), insisting on Buy America requirements",
+          "YEA on H.R.4173, Dodd-Frank (July 2010); as Banking chair (2021-2025) pushed consumer protections against predatory lending and junk fees",
+          "Co-sponsored the PRO Act (union-organizing legislation); it never received a Senate floor vote - gap between stated labor priority and enacted outcomes"
+        ],
+        "correlation": "MATCHES labor/manufacturing promises (Butch Lewis, Buy America, CHIPS, NAFTA opposition, FEND Off Fentanyl) and drug-pricing (IRA vote). GAPS: PRO Act never became law; no major tax-code overhaul during his chairmanship. On data centers he has no Senate votes (out of office since Jan. 2025) - 'make tech pay' is a promise without a federal record.",
+        "sources": [
+          {
+            "label": "Athens Independent",
+            "url": "https://athensindependent.com/2026-general-election-state-races/"
+          },
+          {
+            "label": "Congressional Record farewell tribute",
+            "url": "https://www.congress.gov/congressional-record/volume-170/issue-184/senate-section/article/S6942-3"
+          },
+          {
+            "label": "NPR/KSFR, 10/2/2026",
+            "url": "https://www.ksfr.org/npr-news/2026-10-02/the-u-s-senate-is-up-for-grabs-can-this-ohio-democrat-win-back-working-class-votes"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sherrod_Brown_117th_Congress_%282%29.jpg/960px-Sherrod_Brown_117th_Congress_%282%29.jpg",
+        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Sherrod_Brown"
+      },
+      {
+        "name": "William B. Redpath",
+        "party": "Libertarian",
+        "incumbent": false,
+        "background": "Perrysburg resident (born Findlay); retired CPA and business valuator; former chairman of the Libertarian National Committee; 24 years as treasurer of Fair Vote (electoral-reform organization); ~40 years of ballot-access and electoral-reform work; Libertarian nominee for U.S. Senate in Illinois in 2022. Won the May 5, 2026 Libertarian primary with 4,996 votes (100%). Never held public office - no prior voting record exists.",
+        "promises": [
+          "Free trade (opposes recent federal tariffs; supports unilateral free trade)",
+          "Cut federal spending; end corporate welfare and farm subsidies",
+          "Eliminate the federal Departments of Education and Housing and Urban Development",
+          "Entitlement reform: BRAC-style commission for Social Security, convert Medicare to cash-assistance, convert Medicaid to federal block grants with 10-year phaseout",
+          "Turn consensual-crime laws (drugs, gambling) over to the states",
+          "Ranked-choice voting and proportional representation"
+        ],
+        "record": [
+          "None (never held elected office)."
+        ],
+        "correlation": "N/A - no legislative record; platform only.",
+        "sources": [
+          {
+            "label": "WTAP, 5/1/2026",
+            "url": "https://gray-wtap-prod.gtv-cdn.com/2026/05/01/ohio-us-senate-primary-candidates-outline-priorities-ahead-may-5-election/"
+          },
+          {
+            "label": "Athens Independent",
+            "url": "https://athensindependent.com/2026-general-election-state-races/"
+          },
+          {
+            "label": "Signal Ohio",
+            "url": "https://signalohio.org/ohio-disqualifies-libertarian-u-s-senate-candidate-jeffrey-kanter-election-2026/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Bill_Redpath_%28Portrait%29.jpeg",
+        "photo_credit": "CC BY-SA 2.0"
+      },
+      {
+        "name": "Greg Levy",
+        "party": "Independent",
+        "incumbent": false,
+        "background": "Community organizer and musician from University Heights (Akron-raised); directs the Robeson Singers gospel choir; joined the U.S. Navy at 18; furniture mover and grassroots organizer. Member of the Party for Socialism and Liberation but filed as an independent; describes himself as a revolutionary socialist. Does not accept PAC money. Never held public office - no prior voting record exists. Listed as 'Other-party' on the official BOE candidate list.",
+        "promises": [
+          "Make college free; cancel all existing college debt",
+          "Fund by cutting the military budget by 90%",
+          "Raise minimum wage to match cost of living (cites $22.50/hr)",
+          "Combat data-center development; blames data centers for high electricity bills",
+          "Expand health insurance/Medicaid and unemployment assistance",
+          "End wars"
+        ],
+        "record": [
+          "None (never held elected office)."
+        ],
+        "correlation": "N/A - no legislative record; platform only.",
+        "sources": [
+          {
+            "label": "Heights Observer, 9/28/2026",
+            "url": "https://heightsobserver.org/articles/opinion/uhs-greg-levy-is-on-the-ballot-for-u-s-senate/"
+          },
+          {
+            "label": "greg4senate.com/platform",
+            "url": "https://www.greg4senate.com/platform"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "us-house-14",
+    "office": "U.S. House of Representatives",
+    "district": "14th District",
+    "term_info": "Vote for 1; 2-year term. All of Ashtabula County is in OH-14.",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "David P. Joyce",
+        "party": "Republican",
+        "incumbent": true,
+        "background": "Cleveland; accounting and law degrees from the University of Dayton; public defender, then Geauga County prosecuting attorney (1988-2012). Elected to Congress Nov. 2012; seventh term. House Appropriations Committee (chairs Financial Services and General Government subcommittee) and House Homeland Security Committee. ~3.0% lifetime missed votes.",
+        "promises": [
+          "Protect and fund the Great Lakes (Great Lakes Restoration Initiative)",
+          "Treat opioid epidemic as national emergency (fentanyl interdiction, naloxone access)",
+          "Cannabis reform via state autonomy (co-chair, Congressional Cannabis Caucus; STATES 2.0 Act; SAFE Banking Act)",
+          "Fiscal restraint, military funding, economic growth"
+        ],
+        "record": [
+          "Sponsored STATES 2.0 Act (reintroduced April 2025), SAFE Banking Act of 2026 (lead, June 2026)",
+          "Voted NAY on the MORE Act (2022)",
+          "YEA on H.R.8035/8034/8036 (Ukraine/Israel/Indo-Pacific aid, April 20, 2024)",
+          "YEA on S.1582, GENIUS Act (stablecoin), House passage 308-122 (July 17, 2025)",
+          "GLRI reauthorization bill H.R.284 (Jan. 2025)"
+        ],
+        "correlation": "MATCHES on cannabis (sponsored the reform bills he advocates) and Great Lakes advocacy. Military-funding position matches April 2024 aid votes.",
+        "sources": [
+          {
+            "label": "theangryohioan.com",
+            "url": "https://www.theangryohioan.com/p/ohios-14th-congressional-district"
+          },
+          {
+            "label": "Congressional Record Index",
+            "url": "https://www.congress.gov/congressional-record/congressional-record-index/119th-congress/1st-session/joyce-david-p-a-representative-from-ohio/1964099"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/David_Joyce_%28cropped%29.jpg/960px-David_Joyce_%28cropped%29.jpg",
+        "photo_credit": "Public domain"
+      },
+      {
+        "name": "Maria Jukic",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Served four years as Euclid City Councilwoman for Ward 7 (2020-2023). ~24 years at the Cleveland Clinic, including developing the Arts and Medicine Institute. Licensed attorney and small business owner. Won the May 2026 Democratic primary (50.8%). No federal or state legislative record. Note: described in campaign materials as a Fulbright scholar - UNVERIFIED in sources reviewed.",
+        "promises": [
+          "Lower Medicare eligibility age from 65 to 62; break up healthcare monopolies; let Medicare negotiate drug prices; cap insulin costs",
+          "Oppose Social Security benefit reductions; support raising or eliminating the payroll-tax income cap",
+          "Working-family tax relief; close the carried-interest loophole; raise the minimum wage",
+          "Great Lakes protections (runoff, working with farmers on fertilizer runoff)"
+        ],
+        "record": [
+          "No federal or state voting record found",
+          "Euclid City Council (2020-2023): no compiled individual voting record readily found - thin/UNVERIFIED",
+          "One documented item: Sept. 6, 2022 council agenda shows Jukic co-sponsoring Ordinance 097-22, a $105,000 design/engineering agreement for Waterfront Phase III project"
+        ],
+        "correlation": "N/A at the federal level - with no congressional or state legislative record, positions can only be weighed as stated promises.",
+        "sources": [
+          {
+            "label": "Ballotpedia",
+            "url": "https://ballotpedia.org/Maria_Jukic"
+          },
+          {
+            "label": "theangryohioan.com",
+            "url": "https://www.theangryohioan.com/p/ohios-14th-congressional-district"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "governor",
+    "office": "Governor and Lieutenant Governor",
+    "district": null,
+    "term_info": "Joint ticket; vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Vivek Ramaswamy / Robert A. McColley",
+        "party": "Republican",
+        "incumbent": false,
+        "background": "Ramaswamy: Cincinnati-born biotech entrepreneur, founder and CEO of Roivant Sciences (2014-2021), 2024 Republican presidential candidate. Won the May 5, 2026 GOP gubernatorial primary. No prior elected office. McColley: Ohio Senate District 1 since 2017, unanimously elected Ohio Senate President in January 2025.",
+        "promises": [
+          "Phase out Ohio's state income tax over 8-10 years; eliminate income taxes on capital gains in first two-year budget",
+          "Slash property taxes",
+          "Data centers would pay full property taxes (no abatements), some revenue funding homeowner rebates nearby",
+          "Expand natural-gas production, streamline permits, cut electric bills",
+          "Higher academic standards; merit-based teacher pay; parental choice",
+          "Tougher policies for repeat violent offenders",
+          "Supported the Sept. 2026 90-day gas-tax suspension (HB 519)"
+        ],
+        "record": [
+          "Ramaswamy: no prior public-office voting or governing record",
+          "McColley (Ohio Senate): YES on HB 8, Parents' Bill of Rights (24-7, 12/18/2024); YES on SB 58, Second Amendment Financial Privacy Act; YES on HB 1, ban on foreign-national campaign contributions; YES on SB 1 (2025), barring public universities from DEI initiatives"
+        ],
+        "correlation": "Ramaswamy: NO PRIOR RECORD - every position is a promise. McColley: MATCH on education/parental-rights and election-integrity. GAP on the income-tax phaseout and property-tax rollback: no McColley record of voting for full income-tax elimination found.",
+        "sources": [
+          {
+            "label": "Dispatch, 10/4/2026",
+            "url": "https://www.dispatch.com/story/news/politics/2026/10/04/ohio-governor-candidates-amy-acton-and-vivek-ramaswamy-on-the-issues/88588933007/"
+          },
+          {
+            "label": "beyondlink.live, Jan 2026",
+            "url": "https://beyondlink.live/vivek-ramaswamy-reveals-running-mate-rob-mccolley-for-ohio-governor-ticket/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vivek_Ramaswamy_%2855241367373%29_%28cropped%29.jpg/960px-Vivek_Ramaswamy_%2855241367373%29_%28cropped%29.jpg",
+        "photo_credit": "CC BY-SA 4.0"
+      },
+      {
+        "name": "Amy Acton / David Pepper",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Acton: physician trained in pediatrics and preventive medicine. Led the Ohio Department of Health Feb. 2019-June 2020, becoming the public face of Ohio's early COVID-19 response. Resigned June 11, 2020. Ran unopposed in the 2026 Democratic primary. Pepper: Cincinnati lawyer, former Cincinnati City Council member and Hamilton County commissioner; chaired the Ohio Democratic Party 2015-2020.",
+        "promises": [
+          "Expand and make refundable the state earned income tax credit; $1,000/yr child tax credit (under 7) and $500/yr (ages 7-18) for families earning up to $85,000",
+          "Launch 'Ohio Rx' online platform to lower drug prices; protect Medicaid and Medicare",
+          "Ban fracking in state parks and wildlife areas; review existing drilling leases on public land",
+          "Create Anti-Corruption Task Force in first 100 days",
+          "Free school breakfasts and lunches; raise teacher pay; preserve teachers' right to organize",
+          "Pro-union; raise the minimum wage",
+          "Supported HB 519 (90-day gas-tax suspension)"
+        ],
+        "record": [
+          "Acton (ODH director Feb. 2019-June 11, 2020): signed emergency health orders closing schools, businesses, and (initially) polls in March-May 2020; extended modified stay-at-home order through May 29, 2020",
+          "Pepper: no state legislative voting record exists"
+        ],
+        "correlation": "Acton: MATCH between her health-director tenure and campaign health-care framing. MIXED on executive style: ODH record shows willingness to use sweeping emergency orders, contrasting with campaign message against giving politicians more power. GAP: ODH role produced no record on taxes, fracking, or education funding. Pepper: NO PRIOR STATE VOTING RECORD.",
+        "sources": [
+          {
+            "label": "Dispatch, 10/4/2026",
+            "url": "https://www.dispatch.com/story/news/politics/2026/10/04/ohio-governor-candidates-amy-acton-and-vivek-ramaswamy-on-the-issues/88588933007/"
+          },
+          {
+            "label": "Wikipedia - Amy Acton",
+            "url": "https://en.wikipedia.org/wiki/Amy_Acton"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Amy_Acton_2025.jpg",
+        "photo_credit": "CC0"
+      },
+      {
+        "name": "Don Kissick / James L. Mills",
+        "party": "Libertarian",
+        "incumbent": false,
+        "background": "Kissick: six years in the U.S. Navy (two Desert Shield/Desert Storm deployments); worked at Honda of America Manufacturing (2013-2022) and as an HVAC technician; Libertarian Party of Ohio county development coordinator since 2018; ran for OH-5 in 2018 (2.6%) and for U.S. Senate in 2024 (3.4%). Mills: Cincinnati; vice chair of a third party for Ohio/Warren County; MBA from Xavier; co-founder of a campfire-foods food truck and a residential construction company. Note: Mills background beyond ballot listing is thin - treat as thin.",
+        "promises": [
+          "Ban government use of automated license-plate surveillance",
+          "Support the 'End Property Tax' amendment with local consumption-based funding",
+          "Ban legislators from becoming lobbyists for five years after leaving office",
+          "Repeal certificate-of-need laws; opposes government insurance-purchase mandates",
+          "Pause new data-center development until permanent statewide standards exist",
+          "Continue the Science of Reading model; measure outcomes transparently"
+        ],
+        "record": [
+          "No prior public-office voting record found for either candidate."
+        ],
+        "correlation": "NO PRIOR VOTING RECORD for either - positions are promises only.",
+        "sources": [
+          {
+            "label": "toledofreepress.com",
+            "url": "https://toledofreepress.com/tfp-voters-guide-2026-may-primary-libertarian-gubernatorial/"
+          },
+          {
+            "label": "Athens Independent",
+            "url": "https://athensindependent.com/2026-general-election-state-races/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "attorney-general",
+    "office": "Attorney General",
+    "district": null,
+    "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Keith Faber",
+        "party": "Republican",
+        "incumbent": false,
+        "background": "Ohio Auditor of State since 2019; previously 16 years in the Ohio General Assembly, including as Senate President. Ran unopposed in the May 5, 2026 GOP primary.",
+        "promises": [
+          "Support law enforcement, including more resources for the Bureau of Criminal Investigation in counties without their own crime labs",
+          "Continue anti-corruption and anti-fraud work begun as auditor",
+          "Consumer protection, including help for Ohioans with denied health-insurance claims"
+        ],
+        "record": [
+          "Auditor (2019-present): Special Investigations Unit - as of Aug. 2026, 165 convictions on 376 criminal charges, 284 findings for recovery totaling $28,667,204",
+          "Among first state auditors to examine pandemic unemployment-compensation fraud; estimated $5B+ in improper unemployment payments",
+          "Serves on the seven-member Ohio Redistricting Commission",
+          "State senator (16 years, incl. Senate presidency): specific roll-call votes with bill numbers correlated to AG promises were not located - GAP"
+        ],
+        "correlation": "MATCH on anti-fraud/anti-corruption: auditor fraud investigations and recoveries directly parallel AG promise to continue that work. GAP on the BCI crime-lab and insurance-claim intervenor promises: no auditor or Senate record found testing them.",
+        "sources": [
+          {
+            "label": "Wikipedia - Keith Faber",
+            "url": "https://en.wikipedia.org/wiki/Keith_Faber"
+          },
+          {
+            "label": "Dispatch, 10/7/2026",
+            "url": "https://www.dispatch.com/story/news/state/2026/10/07/keith-faber-john-kulewicz-running-to-be-ohios-next-attorney-general/91656069007/"
+          },
+          {
+            "label": "signalohio.org",
+            "url": "https://signalohio.org/election-2026-keith-faber-and-john-kulewicz-ohio-next-attorney-general/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Keith_Faber_2018_rally_%28cropped%29.jpg/960px-Keith_Faber_2018_rally_%28cropped%29.jpg",
+        "photo_credit": "CC BY-SA 4.0 via https://commons.wikimedia.org/wiki/File:Keith_Faber_2018_rally_(cropped).jpg"
+      },
+      {
+        "name": "John J. Kulewicz",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "44 years as an attorney at Vorys, Sater, Seymour and Pease, leading teams on complex corporate cases; retired as a partner in December 2024. Elected to Upper Arlington City Council in 2019, re-elected 2023; now in second term. Beat former state Rep. Elliot Forhan 63.1% to 36.9% in the May 5, 2026 Democratic primary.",
+        "promises": [
+          "Focus AG resources on economic issues: wage theft and consumer-protection cases; avoid 'culture war issues'",
+          "Handle the basics: protect health care, pensions, jobs, communities, daycare",
+          "Vigilance that prosecutors move cases forward promptly"
+        ],
+        "record": [
+          "City council record is thin: routine municipal business only",
+          "No record of wage-theft enforcement, consumer-protection litigation, or criminal-justice administration (not municipal-council functions)",
+          "No prior state legislative or prosecutorial record exists"
+        ],
+        "correlation": "NO PRIOR STATE-LEVEL RECORD. His 44-year litigation career is professional experience, not a voting or governing record. GAP on every AG promise.",
+        "sources": [
+          {
+            "label": "Ballotpedia",
+            "url": "https://ballotpedia.org/John_Kulewicz"
+          },
+          {
+            "label": "Dispatch, 10/7/2026",
+            "url": "https://www.dispatch.com/story/news/state/2026/10/07/keith-faber-john-kulewicz-running-to-be-ohios-next-attorney-general/91656069007/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/JohnJKulewicz.jpg",
+        "photo_credit": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "id": "auditor-of-state",
+    "office": "Auditor of State",
+    "district": null,
+    "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Frank LaRose",
+        "party": "Republican",
+        "incumbent": false,
+        "background": "In his second term as Ohio Secretary of State (elected 2018, re-elected 2022), term-limited in 2026. Previously two terms in the Ohio Senate (2011-2018). Served in the 101st Airborne and as a Green Beret; recently returned from a six-week Ohio Army National Guard deployment in Eastern Europe.",
+        "promises": [
+          "Mandatory performance audits of public entities using per-capita cost analysis",
+          "Curb corruption and fraud by public officials, particularly Medicaid fraud, using public-database data analysis",
+          "Cites 2022 creation of the SOS Public Integrity Division as qualification for the auditor's fraud-fighting role"
+        ],
+        "record": [
+          "SOS (2019-present): proposed and campaigned for the August 2023 Issue 1 constitutional amendment (60% voter-approval threshold); voters defeated it",
+          "Withdrew Ohio from the bipartisan Electronic Registration Information Center (ERIC) in March 2023, weeks after calling it 'one of the best fraud-fighting tools that we have'",
+          "Implemented Ohio's photo-ID voting law (statutory, 2023); has repeatedly said Ohio elections are 'secure, easily accessible and highly accurate'",
+          "Has stated election fraud is 'exceedingly rare' in Ohio"
+        ],
+        "correlation": "MATCH on anti-fraud emphasis: Public Integrity Division creation parallels auditor-campaign pledge to fight fraud. MIXED on data-driven accountability: cited elections achievement is ballot-security administration, not financial auditing - no auditing experience. GAP: no record of performance-audit work.",
+        "sources": [
+          {
+            "label": "pulse.findlay.edu",
+            "url": "https://pulse.findlay.edu/2026/politics/auditor/"
+          },
+          {
+            "label": "Akron Beacon Journal, 5/30/2026",
+            "url": "https://www.beaconjournal.com/story/news/politics/elections/2026/05/30/gop-ohio-auditor-candidate-frank-larose-speaks-to-akron-press-club/90313346007/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Frank_LaRose_by_Gage_Skidmore.jpg/960px-Frank_LaRose_by_Gage_Skidmore.jpg",
+        "photo_credit": "CC BY-SA 3.0 via https://en.wikipedia.org/wiki/Frank_LaRose"
+      },
+      {
+        "name": "Annette Blackwell",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Elected mayor of Maple Heights (Cuyahoga County) in November 2015; serving her third term; the city's first female and first Black mayor. When she took office, the city was in state fiscal emergency; the emergency status ended in 2020. Previously spent 16 years at Deloitte as a property-tax specialist. B.A. from Ursuline College; Certified Public Manager credential from Cleveland State.",
+        "promises": [
+          "Turn the auditor's office from a 'purely punitive watchdog into a proactive partner' for local governments",
+          "Investigate corruption and fiscal mismanagement 'regardless of political affiliation'",
+          "Fight state-government corruption; safeguard taxpayer dollars",
+          "Fair congressional district maps (the auditor sits on the Redistricting Commission)"
+        ],
+        "record": [
+          "Mayor (2016-present): led the city's exit from fiscal emergency (2020), writing a five-year turnaround plan",
+          "City has received the Auditor of State's 'Clean Audit' award multiple years running (three consecutive years, per a 2026 podcast summary; primary award records not reviewed - thin)",
+          "Municipal record on investigating corruption beyond her own city's finances: not found - GAP"
+        ],
+        "correlation": "MATCH on fiscal turnaround: Maple Heights' exit from fiscal emergency and clean audits directly parallel her promise of proactive fiscal partnership. GAP on statewide anti-corruption enforcement: a mayoral record does not include investigating other governments' fraud.",
+        "sources": [
+          {
+            "label": "pulse.findlay.edu",
+            "url": "https://pulse.findlay.edu/2026/politics/auditor/"
+          },
+          {
+            "label": "Signal Akron voter guide",
+            "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "secretary-of-state",
+    "office": "Secretary of State",
+    "district": null,
+    "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Robert Sprague",
+        "party": "Republican",
+        "incumbent": false,
+        "background": "Ohio Treasurer of State since 2019 (term-limited 2026); previously Findlay's city auditor and city treasurer and a member of the Ohio House. Beat Marcell Strbich in the May 5, 2026 GOP primary.",
+        "promises": [
+          "Eliminate ballot drop boxes",
+          "Limit who may vote absentee; emphasize in-person voting",
+          "Require photo ID for mailed ballots",
+          "Verify U.S. citizenship for new voter registrations",
+          "Support Issue 3 (photo-ID constitutional amendment)"
+        ],
+        "record": [
+          "Treasurer (2019-present): cumulative Israel Bonds purchases of $357.5 million by May 2024; $262.5 million in holdings as of Aug. 31, 2026",
+          "As state representative, co-sponsored HB 476 (enacted 2016), establishing anti-boycott requirements for state contracts",
+          "No elections-administration record: the Treasurer's office does not run elections"
+        ],
+        "correlation": "NO ELECTIONS-ADMINISTRATION RECORD - every SOS promise is untested by his record. His treasurer record is fiscal, a different function.",
+        "sources": [
+          {
+            "label": "Dispatch, 5/5/2026",
+            "url": "https://www.dispatch.com/story/news/politics/2026/05/05/ohio-secretary-of-state-primary-elections-2026/89537186007/"
+          },
+          {
+            "label": "follownews.com",
+            "url": "https://follownews.com/2026/05/ohio-treasurer-sprague-targets-drop-boxes-in-secretary-of-state-campaign/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Rob_Portman_and_Robert_Sprague_%28cropped%29.jpg",
+        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Robert_Sprague"
+      },
+      {
+        "name": "Allison Russo",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "State representative (D-Upper Arlington) since 2019 (four terms); served 3+ years as House Minority Leader. Beat Bryan Hambley 67.4% to 32.6% in the May 5, 2026 Democratic primary.",
+        "promises": [
+          "Put voters first over partisan politics; end misinformation about election fraud",
+          "Bipartisan collaboration; clear, neutral ballot language from the Ballot Board",
+          "Protect reproductive rights; increase funding for the mental-health workforce"
+        ],
+        "record": [
+          "Ohio House (2019-present): voted with unanimous approval of new House/Senate maps in September 2023",
+          "Leading Democratic critic of the HB 6 (FirstEnergy) corruption scandal: called for federal DOJ probe; pushed campaign-finance reform bills, blocked by GOP supermajority",
+          "No elections-administration record (legislator)"
+        ],
+        "correlation": "MATCH on anti-corruption/clean-government: HB 6 investigations advocacy aligns with Ballot Board transparency promises. MIXED on the 2023 maps vote: backed maps drawn by the Republican majority. GAP on elections administration.",
+        "sources": [
+          {
+            "label": "Dispatch, 5/5/2026",
+            "url": "https://www.dispatch.com/story/news/politics/2026/05/05/ohio-secretary-of-state-primary-elections-2026/89537186007/"
+          },
+          {
+            "label": "Dispatch op-ed, 10/7/2026",
+            "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/10/07/election-fraud-secretary-of-state-allison-russo-robert-sprague/92119180007/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rep._Allison_Russo_-_Rally_for_Abortion_Justice_-_March_for_Women_2021-_Columbus.jpg",
+        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Allison_Russo"
+      },
+      {
+        "name": "Tom Pruss",
+        "party": "Libertarian",
+        "incumbent": false,
+        "background": "Toledo-area printing business owner; served on the Toledo Public School Board of Education and as Lucas County Clerk of Courts; 2024 Libertarian nominee for Ohio's 9th Congressional District (about 4%); won the May 2026 Libertarian SOS primary unopposed (8,633 votes).",
+        "promises": [
+          "Re-enter the ERIC voter-data system (which Ohio left in 2023)",
+          "'We shouldn't be purging people to purge them' on voter-roll maintenance",
+          "Cautious on new voter-ID requirements",
+          "Protect ballot opportunities (third-party/candidate access)"
+        ],
+        "record": [
+          "No state-office voting record exists",
+          "Local record: school board service and Clerk of Courts administration (specific actions not located - thin)"
+        ],
+        "correlation": "NO STATE VOTING RECORD. His ERIC re-entry promise directly reverses LaRose's documented 2023 withdrawal - a clear contrast with a documented action.",
+        "sources": [
+          {
+            "label": "Athens Independent",
+            "url": "https://athensindependent.com/2026-general-election-state-races/"
+          },
+          {
+            "label": "toledofreepress.com",
+            "url": "https://toledofreepress.com/tfp-voters-guide-2026-may-primary-secretary-of-state/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasurer-of-state",
+    "office": "Treasurer of State",
+    "district": null,
+    "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Jay Edwards",
+        "party": "Republican",
+        "incumbent": false,
+        "background": "Nelsonville; elected to the Ohio House in 2016 at age 27, served through 2024, chaired the House Finance Committee; realtor and small business owner. Beat State Sen. Kristina Roegner 53.1% to 46.9% in the May 5, 2026 GOP primary.",
+        "promises": [
+          "Expand the Ohio Checkbook transparency program",
+          "Invest in community banks and credit unions; eliminate fraud",
+          "Criticized fellow Republicans for directing $600 million in unclaimed funds toward a new domed Cleveland Browns stadium"
+        ],
+        "record": [
+          "Ohio House (2017-2024): chaired the House Finance Committee during the 2023 two-year budget (HB 33); credited with helping deliver a '$3.2 billion tax cut' - CAMPAIGN CLAIM, not independently verified",
+          "In April 2023 publicly pushed for an income-tax cut in the House budget",
+          "Had ties to former House Speaker Larry Householder (convicted in the HB 6 bribery scandal)"
+        ],
+        "correlation": "MATCH on tax-cutting: finance-chair record of pushing income-tax cuts aligns with fiscal-conservative pitch. GAP: no record of managing investments or a treasury function.",
+        "sources": [
+          {
+            "label": "Cincinnati Enquirer, 5/5/2026",
+            "url": "https://www.cincinnati.com/story/news/politics/2026/05/05/gop-to-pick-state-treasurer-candidate-in-race-with-big-endorsements/89717160007/"
+          },
+          {
+            "label": "WCBE, 4/6/2023",
+            "url": "https://www.wcbe.org/wcbe-news/2023-04-06/finance-chair-says-income-tax-cut-is-likely-in-ohio-house-republicans-budget-proposal"
+          }
+        ]
+      },
+      {
+        "name": "Seth Walsh",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Age 34; appointed to Cincinnati City Council in Dec. 2022, elected in 2023, re-elected in 2025. Before council: CEO of the College Hill Community Urban Redevelopment Corporation (led $85 million in development) and executive director of the Sedamsville Community Development Corporation. Announced for treasurer Jan. 8, 2026; unopposed in the May primary.",
+        "promises": [
+          "Real transparency to how Ohio manages its money; protect public pensions",
+          "Cut state funding ties to outside nations, including Israel",
+          "Expand loan capabilities via community banks; foster small-business growth",
+          "Strong protections for data-center ratepayers; opposes special tax treatment for data centers"
+        ],
+        "record": [
+          "City council record is thin: community-development leadership ($85M College Hill investment) documented; specific council votes not located - thin",
+          "No state-level financial-management record exists"
+        ],
+        "correlation": "MATCH (adjacent): community-development record parallels neighborhood-investment promises, though at far smaller scale than the ~$280 billion the treasurer oversees. GAP: no record on pension management, state investment policy, or the Israel-Bonds divestment promise.",
+        "sources": [
+          {
+            "label": "CityBeat",
+            "url": "https://www.citybeatmagazine.com/news/city-council-member-seth-walsh-announces-state-office-campaign/index.html"
+          },
+          {
+            "label": "Athens Independent",
+            "url": "https://athensindependent.com/2026-general-election-state-races/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/SethWalsh_%28cropped%29.jpg",
+        "photo_credit": "CC0 via https://commons.wikimedia.org/wiki/File:SethWalsh_(cropped).jpg"
+      }
+    ]
+  },
+  {
+    "id": "supreme-court-01012027",
+    "office": "Justice of the Supreme Court",
+    "district": null,
+    "term_info": "Full term commencing 1/1/2027; vote for 1; 6-year term. Judicial candidates run without party labels on the general ballot but are nominated in partisan primaries; parties below are the nominating party per the BOE list.",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Daniel R. Hawkins",
+        "party": "Republican",
+        "incumbent": true,
+        "background": "Elected to the Ohio Supreme Court in November 2024, took his seat in January 2025. Before that served on the Franklin County Court of Common Pleas (~11 years) and 13 years as a Franklin County prosecutor, including as head of the special victims unit.",
+        "promises": [
+          "Stated judicial approach: 'Judges should just call balls and strikes... A judge's role [is] to say what is the law and not what they think the law should be'",
+          "Named U.S. Supreme Court Justices Scalia and Thomas as models",
+          "Said he wanted the court to 'maintain a good, conservative balance'"
+        ],
+        "record": [
+          "Wells Fargo Bank, N.A. v. Doberdruk, 2026-Ohio-2674: authored unanimous majority holding R.C. 2329.45 lets a borrower seek restitution if a foreclosure is later found improper",
+          "Doe v. Columbus, 2026-Ohio-1095: authored 5-2 majority holding preliminary injunctions blocking city ordinances are uniformly 'final orders' subject to immediate appeal",
+          "Joined Justice Pat DeWine's 4-3 majority in State v. King, 2026-Ohio-2656 (July 14, 2026), which overruled the Court's 1987 decision and held prosecutors may appeal a trial judge's post-verdict acquittal"
+        ],
+        "correlation": "Stated approach (plain-language textualism) is consistent in form with his opinions. His votes place him consistently in the Court's 4-3/5-2 conservative majorities. His Doberdruk majority ruling was unanimous and favored the borrower, showing his record is not uniformly aligned with one litigant class.",
+        "sources": [
+          {
+            "label": "Dispatch, 4/8/2026",
+            "url": "https://www.dispatch.com/story/news/courts/2026/04/08/who-is-running-for-ohio-supreme-court-in-the-may-primary-election/88745617007/"
+          },
+          {
+            "label": "Dispatch, 7/15/2026",
+            "url": "https://www.dispatch.com/story/news/courts/2026/07/15/ohio-supreme-court-gives-prosecutors-a-win-in-new-decision/90927455007/"
+          }
+        ]
+      },
+      {
+        "name": "Marilyn Zayas",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Judge on Ohio's First District Court of Appeals (Hamilton County) for about nine years; first elected in 2016 - the first person of Latino heritage elected to an Ohio appeals court. Born 1964 in East Harlem, NYC; B.S. in computer science; IT manager at Procter & Gamble (1988-1994); J.D., University of Cincinnati College of Law (1997). Ran for the Court in 2022 and lost to Justice Pat DeWine.",
+        "promises": [
+          "Stated philosophy: 'to faithfully apply the law and constitution equally to everyone. There should not be any bias if someone has money or doesn't have money.'",
+          "Court 'must be a beacon of integrity, impartiality, and independence'",
+          "Accepted '$0 from corporate interests: energy, banking, and insurance companies'",
+          "Would expand Veterans, Mental Health, and Drug Courts"
+        ],
+        "record": [
+          "Authored a unanimous First District reversal of a juvenile court's permanent-custody termination order - UNVERIFIED as to the case name/citation",
+          "Sat by designation on the Ohio Supreme Court in multiple cases",
+          "2025 First District participation: concurred in In re J. Children (2025) and In re C/S Children (2025), affirming juvenile-court permanent-custody awards",
+          "Named 2024 Hispanic National Bar Association Latina Judge of the Year"
+        ],
+        "correlation": "Stated philosophy (law-applied-equally, independence from political influence, skepticism of overturning settled precedent) is consistent with her appellate record and public criticism of State v. King. Her $0-corporate-money pledge is a campaign posture with no judicial-record equivalent.",
+        "sources": [
+          {
+            "label": "Court News Ohio, 4/29/2025",
+            "url": "https://courtnewsohio.gov/bench/2025/AJZayas_042925.asp"
+          },
+          {
+            "label": "Signal Akron 2026 voter guide",
+            "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Judge_Marilyn_Zayas.jpg/960px-Judge_Marilyn_Zayas.jpg",
+        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Marilyn_Zayas"
+      }
+    ]
+  },
+  {
+    "id": "supreme-court-01022027",
+    "office": "Justice of the Supreme Court",
+    "district": null,
+    "term_info": "Full term commencing 1/2/2027; vote for 1; 6-year term. Judicial candidates run without party labels on the general ballot but are nominated in partisan primaries; parties below are the nominating party per the BOE list.",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Jennifer Brunner",
+        "party": "Democrat",
+        "incumbent": true,
+        "background": "Elected to the Ohio Supreme Court in 2020; the Court's lone Democrat. Previously a Franklin County Common Pleas judge (founded the county's adult felony drug court in 2004), a Tenth District Court of Appeals judge, and Ohio Secretary of State (2007-2011). 2008 JFK Profile in Courage Award recipient.",
+        "promises": [
+          "2026 campaign theme: opposition to overturning precedent based on changed court membership rather than changed circumstances",
+          "Courts maintain trust by being 'not partisan or even appear partisan'"
+        ],
+        "record": [
+          "State v. King (2026-Ohio-2656): dissented in the 4-3 decision (alongside Chief Justice Kennedy and Justice Fischer)",
+          "State v. Lash, 2026-Ohio-2746 (dissent, Oct. 2026): DNA-testing denial",
+          "Wilkes v. Ohio Dept. of Transp., 2026-Ohio-3897 (dissent, Oct. 2026)",
+          "Authored majorities incl. In re Application of Duke Energy Ohio (2026-Ohio-2064); voted in the 2025 majority requiring AES Ohio to repay over $61 million in excessive earnings",
+          "In 2023, sued over the state law requiring judicial candidates to declare party affiliation on general-election ballots"
+        ],
+        "correlation": "Her 2026 campaign theme (opposition to overturning precedent based on changed court membership) tracks her voting pattern: frequently the dissenting justice in 4-3 and 5-2 decisions by the six-Republican majority.",
+        "sources": [
+          {
+            "label": "Bolts 2026 election guide",
+            "url": "https://boltsmag.org/whats-on-the-ballot/guide-to-2026-general-election/"
+          },
+          {
+            "label": "supremecourt.ohio.gov opinions",
+            "url": "https://supremecourt.ohio.gov/docs/SCO/justices/brunner/Opinions.pdf"
+          }
+        ],
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/20080310_Jennifer_Brunner.jpg/960px-20080310_Jennifer_Brunner.jpg",
+        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Jennifer_Brunner"
+      },
+      {
+        "name": "Colleen O'Donnell",
+        "party": "Republican",
+        "incumbent": false,
+        "background": "Franklin County Common Pleas Court, General Division, 2013-2023. In 2023 became a U.S. immigration judge with the Department of Justice in Laredo, Texas. Earlier: Assistant Attorney General (2006-2007), law clerk for the U.S. District Court for the Northern District of Ohio, associate at Carpenter Lipps LLP. J.D., Case Western Reserve (2006). Won the four-candidate May 2026 Republican primary with 32% of the vote.",
+        "promises": [
+          "'In my rulings and considerations, I go where the law leads me'",
+          "On immigration-court tenure: 'enforced the law as written, never once granted asylum, and consistently ordered the removal of illegal aliens'",
+          "'Partisan politics really has no place in the courthouse'"
+        ],
+        "record": [
+          "No specific notable rulings from her Common Pleas tenure or immigration-court service were verifiable in available public sources - UNVERIFIED beyond biographical facts",
+          "Per the judicial canons, her pledges are properly read as statements of approach rather than promises of outcomes"
+        ],
+        "correlation": "With no verifiable ruling record in the public domain, there is nothing to correlate against her campaign statements; voters can weigh only her experience claims and stated philosophy.",
+        "sources": [
+          {
+            "label": "Dispatch, 4/8/2026",
+            "url": "https://www.dispatch.com/story/news/politics/elections/candidate-profiles/2026/04/08/view-ohio-supreme-court-gop-primary-candidate-profiles-for-may-election/89330380007/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ohio-house-99",
+    "office": "State Representative",
+    "district": "Ohio House District 99",
+    "term_info": "Vote for 1; 2-year term. All of Ashtabula County is in District 99.",
+    "verification_status": "verified",
+    "verification_date": "2026-10-11",
+    "candidates": [
+      {
+        "name": "Sarah Fowler Arthur",
+        "party": "Republican",
+        "incumbent": true,
+        "background": "From Geneva-on-the-Lake; home-schooled; worked the family farm and ran an egg-selling small business for 12 years. Elected to the Ohio State Board of Education in 2012, re-elected twice (served until Dec. 2020). Elected to the Ohio House in 2020 (58.5%), flipping District 99; re-elected 2022 (60.4%) and 2024 (64.5%).",
+        "promises": [
+          "2026 Ohio Gun Owners survey: opposes 'mental health' legislation that would deny law-abiding Ohioans gun rights without due process; would co-sponsor legislation eliminating restrictions on lawful gun owners carrying in 'gun-free' areas",
+          "Education focus: sponsor testimony on HB 403 (reporting when teacher retires under threat of disciplinary investigation); sponsored HB 235 (2023) to shrink the State Board of Education"
+        ],
+        "record": [
+          "Primary-sponsored bills: HB 38, HB 43, HB 59 (passed House), HB 70, HB 333, HB 369, HB 375, HB 433 (passed General Assembly July 2026), HB 481, HB 733, HB 734",
+          "Key vote: in 2021 voted against the expulsion of former House Speaker Larry Householder (federally indicted in the HB 6 nuclear bribery scandal); the House voted 75-21 to expel",
+          "November 2021: voted for and publicly supported HB 99 and HB 227 (second-amendment bills)"
+        ],
+        "correlation": "2026 survey positions (gun-rights expansion) are consistent with 2021 votes for HB 99/HB 227. Legislative output centers on education regulation, occupational-licensing reform, and commemorative bills. Vote against Householder expulsion was a notable break with the 75-member bipartisan majority, without a contemporaneous public explanation found.",
+        "sources": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Sarah_Fowler_Arthur"
+          },
+          {
+            "label": "ohiohouse.gov legislation",
+            "url": "https://www.ohiohouse.gov/members/sarah-fowler-arthur/legislation"
+          },
+          {
+            "label": "ohiogunowners.org survey",
+            "url": "https://www.ohiogunowners.org/pdf/65a704da09df3/71538"
+          }
+        ]
+      },
+      {
+        "name": "Louis Murphy",
+        "party": "Democrat",
+        "incumbent": false,
+        "background": "Science teacher in the Ashtabula Area City Schools; in spring 2022 served as Geneva-on-the-Lake's environmental policy analyst. 2024 Democratic nominee for District 99 (lost to Fowler Arthur 35.5% to 64.5%). Won the May 5, 2026 Democratic primary over Michael F. Price, 57.1% to 42.9%.",
+        "promises": [
+          "No published 2026 platform statements and no 2024 campaign position statements were found in public sources (no campaign website, voter-guide responses, or survey answers located)",
+          "Endorsements listed for 2026 by the Blue Voter Guide: 3.14 Action, AFL-CIO Ohio, Gun Sense Voter, and United Auto Workers (endorsements are third-party signals, not stated positions)"
+        ],
+        "record": [
+          "He has held no prior elected or legislative office; no prior voting record found"
+        ],
+        "correlation": "There is no legislative record to compare against campaign promises, and no detailed platform statements were located, so no promises-vs.-record comparison is possible for this candidate.",
+        "sources": [
+          {
+            "label": "Chagrin Valley Today, 2024",
+            "url": "https://www.chagrinvalleytoday.com/communities/auburn/article_b9be0c24-8180-11ef-a789-bb2db719e182.html"
+          },
+          {
+            "label": "bluevoterguide.org",
+            "url": "https://bluevoterguide.org/OH/candidate_Louis_Murphy/527578"
+          }
+        ]
+      }
+    ]
+  }
+]
