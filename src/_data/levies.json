@@ -9,12 +9,20 @@
     "annual_cost_per_100k": 18,
     "tax_change": true,
     "notes": "NEW countywide tax. Raises about $1,281,490/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -28,12 +36,20 @@
     "annual_cost_per_100k": 44,
     "tax_change": true,
     "notes": "NEW tax. Raises about $296,521/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -42,17 +58,25 @@
     "jurisdiction": "Jefferson Emergency Rescue District",
     "purpose": "Ambulance services, emergency medical services, or both",
     "type": "renewal",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 5,
     "annual_cost_per_100k": 51,
     "tax_change": false,
     "notes": "Raises about $219,695/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -61,17 +85,25 @@
     "jurisdiction": "Northwest Ambulance District",
     "purpose": "Ambulance service, emergency medical service, or both",
     "type": "renewal",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 5,
     "annual_cost_per_100k": 53,
     "tax_change": false,
     "notes": "Raises about $715,784/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -85,12 +117,20 @@
     "annual_cost_per_100k": 12,
     "tax_change": false,
     "notes": "Raises about $105,833/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -104,12 +144,20 @@
     "annual_cost_per_100k": 29,
     "tax_change": false,
     "notes": "Raises about $24,501/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -123,12 +171,20 @@
     "annual_cost_per_100k": 70,
     "tax_change": true,
     "notes": "NEW tax. Starts with tax year 2026 (first due 2027), a year earlier than most levies. Raises about $104,708/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -137,17 +193,25 @@
     "jurisdiction": "Village of Jefferson",
     "purpose": "Parks and recreational purposes",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 23,
     "tax_change": false,
     "notes": "Raises about $55,616/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -161,12 +225,20 @@
     "annual_cost_per_100k": 38,
     "tax_change": false,
     "notes": "Raises about $90,896/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -175,17 +247,25 @@
     "jurisdiction": "North Kingsville Village",
     "purpose": "Ambulance and emergency medical services",
     "type": "additional",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 35,
     "tax_change": true,
     "notes": "NEW tax. Raises about $83,100/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -194,17 +274,25 @@
     "jurisdiction": "North Kingsville Village",
     "purpose": "Police department services",
     "type": "renewal_increase",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 5,
     "annual_cost_per_100k": 61,
     "tax_change": true,
     "notes": "Renews existing 1 mill and adds 1 mill (total 2 mills). Raises about $148,085/year. If it fails, the existing 1-mill tax expires entirely.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -213,17 +301,25 @@
     "jurisdiction": "Andover Township (excluding Andover Village)",
     "purpose": "Ambulance service and emergency medical service",
     "type": "renewal",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 2,
     "annual_cost_per_100k": 43,
     "tax_change": false,
     "notes": "Raises about $78,219/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -232,17 +328,25 @@
     "jurisdiction": "Andover Township (excluding Andover Village)",
     "purpose": "General construction, reconstruction, resurfacing and repair of streets, roads and bridges",
     "type": "renewal",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 5,
     "annual_cost_per_100k": 28,
     "tax_change": false,
     "notes": "Raises about $56,041/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -251,17 +355,25 @@
     "jurisdiction": "Ashtabula Township (excluding Ashtabula City)",
     "purpose": "Maintaining and operating public cemeteries",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 23,
     "tax_change": false,
     "notes": "Raises about $150,365/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -275,12 +387,20 @@
     "annual_cost_per_100k": 29,
     "tax_change": false,
     "notes": "Raises about $187,269/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -289,17 +409,25 @@
     "jurisdiction": "Ashtabula Township (excluding Ashtabula City)",
     "purpose": "Fire and emergency medical service, personnel or equipment",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 23,
     "tax_change": false,
     "notes": "Raises about $149,815/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -313,12 +441,20 @@
     "annual_cost_per_100k": 34,
     "tax_change": false,
     "notes": "Raises about $224,722/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -332,12 +468,20 @@
     "annual_cost_per_100k": 57,
     "tax_change": false,
     "notes": "Raises about $374,537/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -346,17 +490,25 @@
     "jurisdiction": "Austinburg Township",
     "purpose": "Current operating expenses",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 18,
     "tax_change": false,
     "notes": "Raises about $52,316/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -370,12 +522,20 @@
     "annual_cost_per_100k": 32,
     "tax_change": true,
     "notes": "Renews existing 1 mill and adds 0.4 mills (total 1.4 mills). Raises about $89,035/year. If it fails, the existing 1-mill tax expires entirely.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -384,17 +544,25 @@
     "jurisdiction": "Cherry Valley Township",
     "purpose": "Fire/EMS apparatus, personnel, ambulance services",
     "type": "renewal_reduction",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 21,
     "tax_change": true,
     "notes": "Renews at a REDUCED rate: drops 0.5 mills from current 1.5 mills to 1.0 mill. This is a tax cut. Raises about $16,051/year. If it fails, the existing 1.5-mill tax expires entirely.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -408,12 +576,20 @@
     "annual_cost_per_100k": 36,
     "tax_change": false,
     "notes": "Raises about $31,527/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -422,17 +598,25 @@
     "jurisdiction": "Colebrook Township",
     "purpose": "General construction, reconstruction, resurfacing and repair of streets, roads and bridges",
     "type": "additional",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 5,
     "annual_cost_per_100k": 70,
     "tax_change": true,
     "notes": "NEW tax. Starts with tax year 2026 (first due 2027). Raises about $60,018/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -441,17 +625,25 @@
     "jurisdiction": "Denmark Township",
     "purpose": "Fire/EMS (equipment, buildings, alarm lines, personnel, ambulance)",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 11,
     "tax_change": false,
     "notes": "Raises about $8,335/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -460,17 +652,25 @@
     "jurisdiction": "Geneva Township (excluding City of Geneva and Village of Geneva on the Lake)",
     "purpose": "General construction, reconstruction, resurfacing, and repair of streets, roads and bridges",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 23,
     "tax_change": false,
     "notes": "Raises about $62,572/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -484,12 +684,20 @@
     "annual_cost_per_100k": 39,
     "tax_change": false,
     "notes": "Raises about $102,066/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -503,12 +711,20 @@
     "annual_cost_per_100k": 33,
     "tax_change": false,
     "notes": "Raises about $103,664/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -517,17 +733,25 @@
     "jurisdiction": "Kingsville Township",
     "purpose": "Maintaining and operating cemeteries",
     "type": "renewal",
-    "millage": 1.0,
+    "millage": 1,
     "term_years": 5,
     "annual_cost_per_100k": 28,
     "tax_change": false,
     "notes": "Raises about $36,784/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -541,12 +765,20 @@
     "annual_cost_per_100k": 22,
     "tax_change": false,
     "notes": "Raises about $27,719/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -560,12 +792,20 @@
     "annual_cost_per_100k": 36,
     "tax_change": false,
     "notes": "Raises about $28,775/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -579,12 +819,20 @@
     "annual_cost_per_100k": 32,
     "tax_change": false,
     "notes": "Raises about $39,134/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -598,12 +846,20 @@
     "annual_cost_per_100k": 62,
     "tax_change": false,
     "notes": "Raises about $51,758/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -612,17 +868,25 @@
     "jurisdiction": "Richmond Township",
     "purpose": "Fire/EMS (apparatus, personnel, ambulance equipment)",
     "type": "renewal_increase",
-    "millage": 2.0,
+    "millage": 2,
     "term_years": 2,
     "annual_cost_per_100k": 47,
     "tax_change": true,
     "notes": "Renews existing 1.5 mills and adds 0.5 mills (total 2 mills) for 2 years. Raises about $32,735/year. If it fails, the existing 1.5-mill tax expires entirely.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -636,12 +900,20 @@
     "annual_cost_per_100k": 12,
     "tax_change": false,
     "notes": "Raises about $15,692/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -655,12 +927,20 @@
     "annual_cost_per_100k": 158,
     "tax_change": true,
     "notes": "NEW tax. Largest new tax on the county ballot. Raises about $202,729/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   },
@@ -674,12 +954,20 @@
     "annual_cost_per_100k": 88,
     "tax_change": true,
     "notes": "NEW tax. Raises about $159,892/year.",
-    "verification_status": "verified",
+    "verification_status": "rate_and_type_checked",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ashtabula County BOE Official Issues Sheet (Rev. 9-15-26)",
-        "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Issues.pdf"
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
     ]
   }
