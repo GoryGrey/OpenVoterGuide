@@ -95,3 +95,8 @@ for (const entry of districtRaceMap) {
   if (entry.kind === "state-lower") assert(/State Representative/i.test(race.office), "District map " + entry.race_id + ": expected a state House race");
   if (entry.kind === "state-upper") assert(/State Senator/i.test(race.office), "District map " + entry.race_id + ": expected a state Senate race");
 }
+
+for (const race of races.filter((candidate) => candidate.office === "State Representative")) {
+  const district = String(race.district || "").match(/\d+/)?.[0];
+  assert(district && districtRaceMap.some((entry) => entry.kind === "state-lower" && Number(entry.district) === Number(district) && entry.race_id === race.id), "State Representative race " + race.id + " must be included in the district race map");
+}
