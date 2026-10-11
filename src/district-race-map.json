@@ -8,5 +8,10 @@
     "kind": "state-lower",
     "district": "99",
     "race_id": "ohio-house-99"
+  },
+  {
+    "kind": "state-lower",
+    "district": "65",
+    "race_id": "ohio-house-65"
   }
 ]
