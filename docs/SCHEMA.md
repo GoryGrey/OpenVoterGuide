@@ -53,6 +53,7 @@ Array of race objects:
       "record": ["..."],
       "correlation": "...",
       "sources": [{"label": "...", "url": "..."}],
+      "response_status": "Optional source-backed note about a response or nonresponse to a named voter guide. A nonresponse must not imply the candidate has no public positions.",
       "measure_positions": [{
         "issue_number": "3",
         "issue_label": "Issue 3: Voter ID amendment",
