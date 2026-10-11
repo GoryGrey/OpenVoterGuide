@@ -8,14 +8,14 @@ permalink: /worksheet/index.html
 <h1>My Voting Worksheet</h1>
 <p>Check boxes on race and measure pages to build your list. Everything stays in your browser. Nothing is tracked or sent to any server.</p>
 
-<p><strong><span id="worksheet-count">0</span> choices marked.</strong></p>
+<p class="worksheet-count-card"><strong><span id="worksheet-count">0</span> choices marked</strong></p>
 
 <div id="worksheet-list"></div>
 
-<p>
-  <button onclick="printWorksheet()">Print My Worksheet</button>
-  <button onclick="clearWorksheet()">Clear All</button>
-</p>
+<div class="worksheet-toolbar">
+  <button type="button" onclick="printWorksheet()">Print my worksheet</button>
+  <button type="button" onclick="clearWorksheet()">Clear all choices</button>
+</div>
 
 <p><em>This is a private reference only, not an official ballot. Verify your choices against the official sample ballot at <a href="https://www.boe.ohio.gov/ashtabula/">boe.ohio.gov/ashtabula</a>.</em></p>
 
