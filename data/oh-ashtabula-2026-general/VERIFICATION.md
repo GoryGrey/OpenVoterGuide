@@ -8,15 +8,15 @@ Last reviewed: October 11, 2026.
 - [Ohio Secretary of State 2026 voting schedule](https://www.ohiosos.gov/elections/voting-schedule-text-only) confirms Election Day, early voting dates and hours, registration and absentee request deadlines, and that non-UOCAVA absentee ballots must reach the board by 7:30 p.m. on Election Day.
 - [Ohio Revised Code § 3509.05](https://codes.ohio.gov/ohio-revised-code/section-3509.05), effective March 20, 2026 under SB 293, sets the return deadline and who may deliver a mailed absentee ballot. UOCAVA voters have a separate deadline under § 3511.11.
 
-The county homepage publishes the candidate and issues documents for the current election. The cited PDFs show revision 9-15-26. They are linked here for voters to inspect directly.
+The county's candidate-list PDF is revised September 15, 2026. The BOE file named Election_Issues.pdf currently identifies the May 5, 2026 Primary Election, so it is not a valid source for November local issues. This review now uses the county auditor's November levy estimator, the Ohio Secretary of State's November Local Questions and Issues workbook, and the BOE sample ballot selector. The county ballot data page reports a September 11, 2026 update.
 
 ## Coverage and counts
 
 This guide currently includes 20 race pages with 45 named candidates, including the seven write-in candidates named in the official candidate list; 2 measure pages (Issues 3 and 10); 36 property-tax levies; and 3 precinct-specific liquor questions (Issues 41–43). The 9 additional race pages cover two 11th District Court of Appeals seats, four Common Pleas seats, County Commissioner, County Auditor, and County Coroner. Several new profiles intentionally contain only official ballot-list information until more candidate details can be independently sourced. Issue 10 is a Conneaut charter amendment, not a property-tax levy.
 
-The 36 levies are: 25 straight renewals, 7 additional levies, 3 renewals with increases, and 1 renewal with a reduction. Eleven levy questions change the tax amount or add a levy.
+The county auditor's November estimator lists all 36 levy numbers, jurisdictions, purposes, millage rates, and categories. Its roster matches the guide's 36 issue numbers: 25 straight renewals, 7 additional levies, 3 renewals with increases, and 1 renewal with a reduction. This review does not treat the estimator as proof of every duration, dollar estimate, or ballot sentence. Check those on the selected precinct ballot and the Secretary of State workbook.
 
-The official issue list covers ballot issue numbers 3–43 (41 numbered items). The range 4–40 contains 37 issue numbers, but Issue 10 is a charter amendment, leaving 36 property-tax levies in that range.
+The countywide BOE sample-ballot selector lists November 3, 2026 ballot styles. The voter-specific ballot selector and the Secretary of State workbook are the current sources for local questions. The BOE PDF previously cited for local issues is a May primary document and must not be used to certify November questions. Issue 10 is treated separately from the tax levies as a Conneaut charter amendment.
 
 ## Candidate information: scope of verification
 
@@ -24,7 +24,7 @@ Candidate names and ballot presence were checked against the county's official c
 
 ## Coverage correction in this review\n\nThe official candidate list includes nine additional judge and county-office contests beyond the original 11 race pages. Those routes are now represented. The list also names four write-in tickets for Governor/Lieutenant Governor and three write-in candidates for U.S. Senator; all seven are included.\n\n
 
-The site previously described Issues 4–40 as 37 property-tax levies and reported 26 straight renewals. Issue 10 is not a levy; correcting the totals gives 36 levies and 25 straight renewals. The remaining categories are 7 additional levies, 3 increases, and 1 reduction.
+The county auditor confirms the levy counts and rate/type roster above. Exact tax impact and term statements are being checked against the official November ballot text. The three precinct-specific liquor entries remain pending until their establishment, permit wording, and precinct labels are matched directly to November sample ballots.
 
 ## Nonpartisanship
 

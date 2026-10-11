@@ -1,21 +1,22 @@
 ---
 layout: base.njk
 title: Property Tax Levies (Issues 4-40)
-description: All 36 property tax levies on the Ashtabula County November 3, 2026 ballot, with millage rates and estimated costs.
+description: County auditor-verified jurisdictions, levy types, and millage rates for the 36 Ashtabula County November 3, 2026 property-tax questions.
 permalink: /levies/index.html
 ---
 
 <h1>Property Tax Levies</h1>
 <p>Issues 4 through 40 include 36 property-tax levies. Issue 10 is the Conneaut charter amendment, not a levy.</p>
 
-<span class="verification-badge">Verified 2026-10-11 against Ashtabula County BOE official issues list</span>
+<span class="verification-badge">Levy jurisdictions, types, and rates checked against the county auditor on 2026-10-11</span>
+<p>Millage is a tax rate, not the dollar amount your household will pay. The dollar impact, term, and exact wording can vary by parcel and by issue. Use the official sources below and confirm your own precinct ballot before deciding.</p>
 
 <h2>Tax changes (11)</h2>
 <p>These are new taxes, increases, or a reduction. The rest are straight renewals.</p>
 
 <table class="levies">
   <thead>
-    <tr><th>Issue</th><th>Jurisdiction</th><th>Purpose</th><th>Type</th><th>Millage</th><th>Est. Cost per $100K</th><th></th></tr>
+    <tr><th>Issue</th><th>Jurisdiction</th><th>Purpose</th><th>Type</th><th>Millage</th><th></th></tr>
   </thead>
   <tbody>
     {% for levy in levies %}
@@ -26,7 +27,6 @@ permalink: /levies/index.html
       <td>{{ levy.purpose }}</td>
       <td>{{ levy.type }}</td>
       <td>{{ levy.millage }}</td>
-      <td>{% if levy.annual_cost_per_100k %}${{ levy.annual_cost_per_100k }}/yr{% else %}See BOE{% endif %}</td>
       <td><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES" aria-label="Vote yes on Issue {{ levy.issue_number }}"></td>
     </tr>
     {% endif %}
@@ -39,7 +39,7 @@ permalink: /levies/index.html
 
 <table class="levies">
   <thead>
-    <tr><th>Issue</th><th>Jurisdiction</th><th>Purpose</th><th>Millage</th><th>Term</th></tr>
+    <tr><th>Issue</th><th>Jurisdiction</th><th>Purpose</th><th>Millage</th></tr>
   </thead>
   <tbody>
     {% for levy in levies %}
@@ -49,11 +49,16 @@ permalink: /levies/index.html
       <td>{{ levy.jurisdiction }}</td>
       <td>{{ levy.purpose }}</td>
       <td>{{ levy.millage }}</td>
-      <td>{{ levy.term_years }} years</td>
     </tr>
     {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
+<h2>Official sources</h2>
+<ul>
+  <li><a href="https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator" target="_blank" rel="noopener">County Auditor levy estimator</a> — lists the November levy numbers, jurisdictions, purposes, rates, and renewal/addition categories. Its estimates exclude tax rollbacks and reductions.</li>
+  <li><a href="https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx" target="_blank" rel="noopener">Ohio Secretary of State local questions and issues workbook</a> — official statewide filing data.</li>
+  <li><a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx" target="_blank" rel="noopener">County sample ballot selector</a> — choose your precinct to see the exact question printed on your ballot.</li>
+</ul>
 <p><a href="/OpenVoterGuide/worksheet/">My worksheet</a></p>
