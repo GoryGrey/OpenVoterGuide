@@ -11,45 +11,243 @@
         "name": "Jon Husted",
         "party": "Republican",
         "incumbent": true,
-        "background": "Ohio House 2001-2009 (Speaker 2005-2009), Ohio State Senate 2009-2011, Ohio Secretary of State 2011-2019, Lieutenant Governor 2019-2025. Appointed by Gov. DeWine on Jan 17, 2025 to the Vance vacancy. Campaign bio: born into foster care, then adopted.",
+        "background": "Official Senate biography: elected to the Ohio House in 2000 and served as Speaker from 2005 to 2009; later served in the Ohio Senate, as Ohio Secretary of State for two terms, and as Lieutenant Governor. He began serving in the U.S. Senate in January 2025. In his biography, Husted says he was born into foster care and adopted.",
         "promises": [
-          "Supports the Working Families Tax Cut (ended taxes on tips/overtime, expanded Child Tax Credit, SNAP/Medicaid work requirements)",
-          "Streamlined energy-infrastructure permitting to lower energy costs",
-          "Sponsoring bill for state pilot programs easing the benefits cliff for workers losing assistance as pay rises",
-          "Stronger border enforcement and fentanyl interdiction",
-          "Data centers should pay their own grid-infrastructure costs (Ratepayer Protection Act)",
-          "Traditional energy development; pro-police funding and anti-abortion policies"
+          "Says his work focuses on lowering costs for working families and supports the Working Families Tax Cut Act.",
+          "Supports streamlining federal permitting for energy and mineral infrastructure, which he says can lower costs.",
+          "Introduced the Upward Mobility Act, proposing a five-state pilot to test changes intended to reduce benefits cliffs.",
+          "Says he supports stronger border security and law-enforcement funding.",
+          "Introduced the Ratepayer Protection Act, proposing that state regulators consider requiring large new electricity users to cover the incremental grid costs they create.",
+          "His Senate biography describes him as a pro-family advocate and says he has worked to protect unborn children."
         ],
         "record": [
-          "YEA on H.R.1 (reconciliation/Working Families Tax Cut), final passage July 1, 2025 (51-50)",
-          "YEA on S.2, Secure America Act (border security), passage June 5, 2026",
-          "Championed S.5028, Ratepayer Protection Act: would have states consider standards making large-load customers (data centers 100+ MW) cover incremental grid costs; House passed H.R.9340 417-3 (9/16/2026); Senate cloture failed 57-43 (9/30/2026)",
-          "NAY on S.2882, Continuing Appropriations (Oct 9, 2025), which would have extended expanded ACA premium tax credits (failed 47-50)",
-          "YEA on S.6, Born-Alive Abortion Survivors Protection Act cloture (Jan 22, 2025; failed 52-47)",
-          "Voted against S.J.Res.104 Iran war-powers resolution (March 2026) - secondary source; Senate roll-call confirmation recommended",
-          "Missed 0 of 662 roll-call votes (Jan 2025-Oct 2026)"
+          "Voted YEA on final passage of H.R. 1 on July 1, 2025. The Senate recorded 50–50; the Vice President cast the tie-breaking vote.",
+          "Voted YEA on final passage of S. 2, the Secure America Act, on June 5, 2026.",
+          "Introduced S. 5028, the Ratepayer Protection Act. After the House passed companion H.R. 9340 by 417–3, a Senate cloture vote on the motion to proceed to H.R. 9340 failed 57–43 on September 30, 2026.",
+          "Voted NAY on cloture on the motion to proceed to S. 2882 on October 9, 2025 (47–50). The bill included a permanent extension of enhanced Affordable Care Act premium tax credits.",
+          "Voted YEA on cloture on S. 6, the Born-Alive Abortion Survivors Protection Act, on January 22, 2025; the motion failed 52–47.",
+          "Voted NAY on a motion to discharge S.J.Res. 104, a resolution directing removal of U.S. forces from unauthorized hostilities with Iran; the motion failed 47–53 on March 4, 2026."
         ],
-        "correlation": "Record matches stated positions on taxes (H.R.1), border enforcement (S.2), and abortion-related votes. Data centers: MIXED - he is the Senate champion of the Ratepayer Protection Act, but the bill stalled, and his prior pro-data-center record as lieutenant governor complicates the picture. His Iran war-powers vote's relation to his stated position is UNVERIFIED (position attribution comes from partisan sources).",
+        "correlation": "This comparison lists Husted’s sourced public statements beside selected Senate actions. A vote records a position on a specific motion or bill; it does not by itself establish the candidate’s intent or whether a policy achieved its stated goal. No overall match score is assigned.",
         "sources": [
           {
-            "label": "Columbus Dispatch, 9/22/2026",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/09/22/ohio-senate-race-jon-husted-sherrod-brown-affordability-data-centers-immigration/91386477007/"
+            "label": "Official U.S. Senate biography",
+            "url": "https://www.husted.senate.gov/about/"
           },
           {
-            "label": "GovTrack",
-            "url": "http://govtrack.us/congress/members/jon_husted/457032"
+            "label": "H.R. 1 Senate roll call 372",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.htm"
           },
           {
-            "label": "VoteSmart",
-            "url": "https://justfacts.votesmart.org/candidate/45796/jon-husted"
+            "label": "S. 2 Senate roll call 163",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00163.htm"
           },
           {
-            "label": "Ballotpedia",
-            "url": "http://ballotpedia.org/Jon_Husted"
+            "label": "Husted statement on the Working Families Tax Cut Act",
+            "url": "https://www.husted.senate.gov/media/press-releases/husted-in-medina-with-ohio-business-leaders/"
+          },
+          {
+            "label": "Husted statement on federal permitting reform",
+            "url": "https://www.husted.senate.gov/media/press-releases/husted-joins-bill-to-expedite-americas-permitting-process/"
+          },
+          {
+            "label": "Husted announcement of the Upward Mobility Act",
+            "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-reform-welfare-eliminate-benefits-cliff-and-pave-path-for-families-to-pursue-economic-opportunities/"
+          },
+          {
+            "label": "Husted announcement of the Ratepayer Protection Act",
+            "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/"
+          },
+          {
+            "label": "H.R. 9340 Senate roll call 254",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
+          },
+          {
+            "label": "S. 2882 Senate roll call 557",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00557.htm"
+          },
+          {
+            "label": "S. 2882 official bill text",
+            "url": "https://www.congress.gov/119/bills/s2882/BILLS-119s2882pcs.pdf"
+          },
+          {
+            "label": "S. 6 Senate roll call 11",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00011.htm"
+          },
+          {
+            "label": "S.J.Res. 104 Senate roll call 46",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00046.htm"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg/960px-Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg",
-        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Jon_Husted"
+        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Jon_Husted",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The official Senate biography supports the Ohio office history, Speaker dates, Senate start date, and biographical account.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Official U.S. Senate biography",
+                  "url": "https://www.husted.senate.gov/about/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Husted’s Senate office describes his affordability focus and support for the Working Families Tax Cut Act. The vote is separately listed in the record below.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Husted statement on the Working Families Tax Cut Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-in-medina-with-ohio-business-leaders/"
+                },
+                {
+                  "label": "H.R. 1 Senate roll call 372",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.htm"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "This is Husted’s stated position on a permitting bill; the cited office release describes its proposed provisions and his stated rationale.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Husted statement on federal permitting reform",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-joins-bill-to-expedite-americas-permitting-process/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Husted’s office says he introduced the bill and describes its proposed five-state pilot. Introduction is not enactment or proof of results.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Husted announcement of the Upward Mobility Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-reform-welfare-eliminate-benefits-cliff-and-pave-path-for-families-to-pursue-economic-opportunities/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Husted’s Senate biography describes his stated border and law-enforcement priorities.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Official U.S. Senate biography",
+                  "url": "https://www.husted.senate.gov/about/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Husted’s Senate office describes the bill as a proposal for state regulators to consider standards for large electricity users; it was introduced, not enacted.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Husted announcement of the Ratepayer Protection Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "This summarizes the senator’s self-description and stated priorities in his official biography.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Official U.S. Senate biography",
+                  "url": "https://www.husted.senate.gov/about/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The Senate roll call records Husted Yea and 50–50; the tie was broken by the Vice President. The official bill record covers the Act’s provisions.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "H.R. 1 Senate roll call 372",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.htm"
+                },
+                {
+                  "label": "Husted statement on the Working Families Tax Cut Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-in-medina-with-ohio-business-leaders/"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The official Senate roll call records Husted Yea on final passage.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "S. 2 Senate roll call 163",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00163.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The member-office release documents the introduced S. 5028 and House companion. The official Senate roll call records the 57–43 cloture vote on proceeding to H.R. 9340.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Husted announcement of the Ratepayer Protection Act",
+                  "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/"
+                },
+                {
+                  "label": "H.R. 9340 Senate roll call 254",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The official roll call shows a 47–50 failed cloture vote on the motion to proceed; the introduced bill text contains a permanent extension of enhanced premium tax credits.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "S. 2882 Senate roll call 557",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00557.htm"
+                },
+                {
+                  "label": "S. 2882 official bill text",
+                  "url": "https://www.congress.gov/119/bills/s2882/BILLS-119s2882pcs.pdf"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The official roll call records the cloture vote and its 52–47 result.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "S. 6 Senate roll call 11",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00011.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The official roll call records a Nay vote on the motion to discharge, not a vote to pass the resolution.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "S.J.Res. 104 Senate roll call 46",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00046.htm"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Sherrod Brown",
