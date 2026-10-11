@@ -5,16 +5,24 @@ description: Plain-language guides to Ohio Issue 3 and the Conneaut data-center 
 permalink: /measures/index.html
 ---
 
-<h1>Ballot Measures</h1>
-<p>These summaries explain what the ballot text would change. They do not recommend how to vote. Check your official sample ballot to see which local questions appear for you.</p>
+<div class="directory-page directory-measures">
+  <div class="directory-heading">
+    <span class="directory-eyebrow"><span aria-hidden="true">▤</span> Understand each question</span>
+    <h1>Ballot measures</h1>
+    <p class="directory-lede">These summaries explain what the ballot text would change. They do not recommend how to vote. Check your official sample ballot to see which local questions appear for you.</p>
+  </div>
 
-{% for measure in measures %}
-  {% set measurePath = '/measures/' + measure.id + '/' %}
-  <article class="candidate-card">
-    <h2><a href="{{ measurePath | url }}">Issue {{ measure.issue_number }}: {{ measure.title }}</a></h2>
-    <p>{{ measure.plain_english }}</p>
-    <p><a href="{{ measurePath | url }}">Read what YES and NO mean →</a></p>
-  </article>
-{% endfor %}
+  <div class="directory-grid directory-measure-grid">
+    {% for measure in measures %}
+      {% set measurePath = '/measures/' + measure.id + '/' %}
+      <article class="directory-card directory-measure-card">
+        <div class="directory-card-meta"><span class="directory-badge directory-badge-measure">Issue {{ measure.issue_number }}</span><span>Official ballot question</span></div>
+        <h2><a href="{{ measurePath | url }}">{{ measure.title }}</a></h2>
+        <p class="directory-summary">{{ measure.plain_english }}</p>
+        <a class="directory-action" href="{{ measurePath | url }}">Read what YES and NO mean <span aria-hidden="true">→</span></a>
+      </article>
+    {% endfor %}
+  </div>
 
-<p><a href="{{ '/measures/liquor/' | url }}">View the three precinct-specific Sunday liquor questions →</a></p>
+  <a class="directory-feature-link" href="{{ '/measures/liquor/' | url }}"><span><strong>Sunday liquor questions</strong><small>View the three precinct-specific local-option questions</small></span><span aria-hidden="true">→</span></a>
+</div>
