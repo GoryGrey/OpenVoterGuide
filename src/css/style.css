@@ -345,3 +345,12 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
   .site-nav { position:static; }
   .site-nav .nav-links { top:calc(.65rem + 44px + .55rem); right:1rem; }
 }
+
+
+/* Keep wide levy data scrollable inside its own table region on phones. */
+.levies-table-scroll { max-width:100%; overflow-x:auto; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch; border:1px solid var(--border); border-radius:8px; }
+table.levies { min-width:660px; }
+.table-scroll-hint { display:none; }
+@media (max-width:600px) {
+  .table-scroll-hint { display:block; margin:.5rem 0; color:var(--muted); font-size:.85rem; }
+}
