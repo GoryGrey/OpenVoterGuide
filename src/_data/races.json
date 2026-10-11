@@ -884,7 +884,8 @@
             "label": "City of Geneva City Council",
             "url": "https://genevaohio.gov/city-council/"
           }
-        ]
+        ],
+        "response_status": "Ideastream published this candidate's responses as submitted and says responses were not uniformly fact-checked."
       },
       {
         "name": "David Thomas",
@@ -893,10 +894,9 @@
         "background": "Incumbent State Representative for District 65, serving his first House term. Previously served as Ashtabula County Auditor and Austinburg Township Fiscal Officer. The district includes portions of Ashtabula and Trumbull counties.",
         "promises": [],
         "record": [
-          "Primary-sponsored bills include HB 61 (homestead exemption and owner-occupancy tax credit), HB 124 (property-tax sales-assessment ratio studies), HB 129 (school property-tax exemptions), and HB 158 (utility-billing transparency). Sponsorship does not by itself show a bill became law.",
-          "Ideastream Public Media reported it did not receive a response from Thomas for its 2026 District 65 voter guide."
+          "Primary-sponsored bills include HB 61 (homestead exemption and owner-occupancy tax credit), HB 124 (property-tax sales-assessment ratio studies), HB 129 (school property-tax exemptions), and HB 158 (utility-billing transparency). Sponsorship does not by itself show a bill became law."
         ],
-        "correlation": "No 2026 campaign questionnaire response was available in the Ideastream guide to compare with his record. The listed bill sponsorships show legislative activity; they do not establish his position on every issue.",
+        "correlation": "The listed bill sponsorships show legislative activity; they do not establish his position on every issue or whether sponsored bills became law.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -914,7 +914,8 @@
             "label": "Ideastream Public Media 2026 District 65 voter guide",
             "url": "https://www.ideastream.org/ohio-house-district-65"
           }
-        ]
+        ],
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
       }
     ]
   },
@@ -1070,7 +1071,16 @@
           {
             "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
             "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
+            "url": "https://www.ideastream.org/ashtabula-county-elections"
           }
+        ],
+        "response_status": "Ideastream published this candidate's responses as submitted and says responses were not uniformly fact-checked.",
+        "promises": [
+          "Says his first priority would be to re-establish Ashtabula County's former felony drug court docket.",
+          "Says education, data centers, and cost of living are legislative or administrative matters outside the General Division Common Pleas Court's role."
         ]
       },
       {
@@ -1084,8 +1094,13 @@
           {
             "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
             "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
+            "url": "https://www.ideastream.org/ashtabula-county-elections"
           }
-        ]
+        ],
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
       }
     ],
     "verification_date": "2026-10-11",
@@ -1157,9 +1172,20 @@
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
+            "url": "https://www.ideastream.org/ashtabula-county-elections"
           }
         ],
-        "party": "Democrat"
+        "party": "Democrat",
+        "response_status": "Ideastream published this candidate's responses as submitted and says responses were not uniformly fact-checked.",
+        "promises": [
+          "Advocate for school funding policies that do not destabilize local school finances, while supporting workforce development and community infrastructure.",
+          "Require transparent decisions, water and environmental protections, and demonstrated local benefits from data-center projects; says a temporary moratorium may be considered while long-term impacts are assessed.",
+          "Limit unnecessary tax pressure through responsible county budgeting; support jobs with wages that keep pace with costs and stronger county transportation options.",
+          "Improve public trust through plain-language budget updates, public discussion of major projects, and routine updates; review the use of executive sessions."
+        ]
       },
       {
         "name": "Casey Kozlowski",
@@ -1172,10 +1198,15 @@
           {
             "label": "Ashtabula County Board of Commissioners",
             "url": "https://ashtabulacounty.gov/220/Commissioners"
+          },
+          {
+            "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
+            "url": "https://www.ideastream.org/ashtabula-county-elections"
           }
         ],
         "party": "Republican",
-        "incumbent": true
+        "incumbent": true,
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
       }
     ],
     "verification_date": "2026-10-11",
@@ -1194,9 +1225,14 @@
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
+            "url": "https://www.ideastream.org/ashtabula-county-elections"
           }
         ],
-        "party": "Democrat"
+        "party": "Democrat",
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
       },
       {
         "name": "Scott Yamamoto",
@@ -1209,10 +1245,15 @@
           {
             "label": "Ashtabula County Auditor",
             "url": "https://auditor.ashtabulacounty.gov/dnn/"
+          },
+          {
+            "label": "Ideastream Public Media 2026 Ashtabula County voter guide (candidate responses; not uniformly fact-checked)",
+            "url": "https://www.ideastream.org/ashtabula-county-elections"
           }
         ],
         "party": "Republican",
-        "incumbent": true
+        "incumbent": true,
+        "response_status": "Ideastream reports that it contacted every candidate three times but did not receive a response from this candidate. That describes this guide's outreach; it does not mean the candidate has no public positions."
       }
     ],
     "verification_date": "2026-10-11",
