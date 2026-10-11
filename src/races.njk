@@ -21,7 +21,7 @@ eleventyComputed:
       <strong>Evidence type: {{ evidence.status | replace("_", " ") }}</strong> · <span>{{ evidence.note }}</span>
     </small>
   {% else %}
-    <small class="claim-evidence claim-evidence-pending">Claim-level source check pending.</small>
+    <small class="claim-evidence claim-evidence-pending">Claim-level source check pending.{% if evidence and evidence.note %} {{ evidence.note }}{% endif %}</small>
   {% endif %}
 {% endmacro %}
 
