@@ -397,3 +397,8 @@ table.levies { min-width:660px; }
   .site-nav { order:3; }
   .search-box { order:4; }
 }
+
+/* Keep desktop navigation visible while retaining the native mobile disclosure. */
+@media (min-width:601px) {
+  .site-nav:not([open]) > .nav-links { display:flex; }
+}
