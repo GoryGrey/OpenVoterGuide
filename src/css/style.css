@@ -1057,3 +1057,8 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 @media (max-width:760px) {
   main > .page-shell:not(.landing-hero):not(.landing-shell) { padding:1rem .75rem 1.5rem; }
 }
+
+.hero-location-map-wrap { position:relative; grid-column:2; width:100%; max-width:108px; }
+.hero-location-map { display:block; width:100%; max-height:112px; object-fit:contain; filter:grayscale(1) brightness(0) invert(1); opacity:.84; }
+.hero-location-region { position:absolute; top:11%; right:6%; width:14%; aspect-ratio:1; border-radius:50% 50% 50% 0; background:#00c6eb; border:2px solid #f8fafc; transform:rotate(-45deg); box-shadow:0 0 0 3px rgba(0,198,235,.18); }
+.hero-location-map-wrap a { display:block; margin-top:.15rem; color:#e7f4ff; font-size:.56rem; line-height:1.2; text-decoration:underline; text-underline-offset:2px; }
