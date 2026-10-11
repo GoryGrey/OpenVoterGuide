@@ -12,18 +12,19 @@
     "plain_english": "This local-option question asks voters in the precinct whether one specific store - Convenient Food Mart at 1714 W. 19th Street in Ashtabula - may sell wine and mixed beverages on Sundays under a D-6 liquor permit. Only voters in that precinct decide it.",
     "yes_means": "The store is allowed to sell wine and mixed beverages on Sundays.",
     "no_means": "Sunday sales of wine and mixed beverages remain prohibited at this store.",
-    "verification_status": "pending_official_november_ballot_review",
+    "verification_status": "verified_official_ballot_text",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
-        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+        "label": "Ashtabula County BOE, November 3, 2026 official accessible ballot — Ashtabula 3-B",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/xmlview.aspx?bpty=x&elec=20261103g&prsid=010___1&lang=en"
       },
       {
-        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct)",
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector",
         "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
-    ]
+    ],
+    "official_ballot_language": "Shall the sale of wine and mixed beverages be permitted for sale on Sunday by Laxminarayan Three, L.L.C. dba Convenient Food Mart an applicant for a D-6 liquor permit who is engaged in the business of operating a carryout/grocery store at 1714 W. 19th Street, Ashtabula, OH 44004 in this precinct?"
   },
   {
     "issue_number": 42,
@@ -38,18 +39,19 @@
     "plain_english": "Asks voters in the precinct whether Hunters Tavern (a bar at 4518 Footville Richmond Rd., Rock Creek) may sell beer, wine, mixed beverages, and spirituous liquor on Sundays under a D-6 permit. Only voters in that precinct decide it.",
     "yes_means": "The bar is allowed Sunday sales of beer, wine, mixed beverages, and spirituous liquor.",
     "no_means": "Sunday sales remain prohibited at this bar.",
-    "verification_status": "pending_official_november_ballot_review",
+    "verification_status": "verified_official_ballot_text",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
-        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+        "label": "Ashtabula County BOE, November 3, 2026 official accessible ballot — Trumbull Township",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/xmlview.aspx?bpty=x&elec=20261103g&prsid=100___1&lang=en"
       },
       {
-        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct)",
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector",
         "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
-    ]
+    ],
+    "official_ballot_language": "Shall the sale of beer, wine and mixed beverages, and spirituous liquor be permitted for sale on Sunday by JCNKalina II, dba: Hunters Tavern an applicant for a D-6 liquor permit who is engaged in the business of operating Hunters Tavern – Bar at 4518 Footville Richmond Rd., Rock Creek, OH 44084 in this precinct?"
   },
   {
     "issue_number": 43,
@@ -64,17 +66,18 @@
     "plain_english": "Asks voters in the precinct whether Monarch Meadow Vineyard (a winery at 1599 SR 534, Geneva) may sell wine, mixed beverages, beer, and spirituous liquor on Sundays under a D-6 permit. Only voters in that precinct decide it.",
     "yes_means": "The winery is allowed Sunday sales of wine, mixed beverages, beer, and spirituous liquor.",
     "no_means": "Sunday sales remain prohibited at this winery.",
-    "verification_status": "pending_official_november_ballot_review",
+    "verification_status": "verified_official_ballot_text",
     "verification_date": "2026-10-11",
     "sources": [
       {
-        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
-        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+        "label": "Ashtabula County BOE, November 3, 2026 official accessible ballot — Trumbull Township",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/xmlview.aspx?bpty=x&elec=20261103g&prsid=100___1&lang=en"
       },
       {
-        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct)",
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector",
         "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
       }
-    ]
+    ],
+    "official_ballot_language": "Shall the sale of wine and mixed beverages, beer and spirituous liquor be permitted for sale on Sunday by SR534 LLC, dba Monarch Meadow Vineyard, an applicant for a D-6 liquor permit who is engaged in the business of winery/vineyard at 1599 SR 534 Geneva, Ohio 44041 in this precinct?"
   }
 ]
