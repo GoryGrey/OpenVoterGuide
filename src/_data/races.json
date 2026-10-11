@@ -2412,59 +2412,197 @@
         "name": "Daniel R. Hawkins",
         "party": "Republican",
         "incumbent": true,
-        "background": "Elected to the Ohio Supreme Court in November 2024, took his seat in January 2025. Before that served on the Franklin County Court of Common Pleas (~11 years) and 13 years as a Franklin County prosecutor, including as head of the special victims unit.",
+        "background": "Ohio Supreme Court justice since December 2024. The court biography lists prior Franklin County Common Pleas and Municipal Court service and 13 years as a Franklin County prosecutor, including 10 years directing the Special Victims Unit.",
         "promises": [
-          "Stated judicial approach: 'Judges should just call balls and strikes... A judge's role [is] to say what is the law and not what they think the law should be'",
-          "Named U.S. Supreme Court Justices Scalia and Thomas as models",
-          "Said he wanted the court to 'maintain a good, conservative balance'"
+          "In a 2022 guest commentary, Hawkins supported Ohio Issue 1, which proposed allowing judges to consider public safety when setting bail. This is a dated statement about a proposed constitutional amendment, not a prediction about future rulings."
         ],
         "record": [
-          "Wells Fargo Bank, N.A. v. Doberdruk, 2026-Ohio-2674: authored unanimous majority holding R.C. 2329.45 lets a borrower seek restitution if a foreclosure is later found improper",
-          "Doe v. Columbus, 2026-Ohio-1095: authored 5-2 majority holding preliminary injunctions blocking city ordinances are uniformly 'final orders' subject to immediate appeal",
-          "Joined Justice Pat DeWine's 4-3 majority in State v. King, 2026-Ohio-2656 (July 14, 2026), which overruled the Court's 1987 decision and held prosecutors may appeal a trial judge's post-verdict acquittal"
+          "Doe v. Columbus, 2026-Ohio-1095: authored the opinion holding that a preliminary injunction blocking city ordinances was an immediately appealable final order; the Court reversed and remanded.",
+          "State v. King, 2026-Ohio-2656: joined the 4-3 majority holding the State may seek discretionary leave to appeal a postverdict judgment of acquittal, but may not appeal it as of right."
         ],
-        "correlation": "Stated approach (plain-language textualism) is consistent in form with his opinions. His votes place him consistently in the Court's 4-3/5-2 conservative majorities. His Doberdruk majority ruling was unanimous and favored the borrower, showing his record is not uniformly aligned with one litigant class.",
+        "correlation": "These are selected examples only. Hawkins’s votes in a small number of cases do not establish a complete judicial philosophy or predict future decisions.",
         "sources": [
           {
-            "label": "Dispatch, 4/8/2026",
-            "url": "https://www.dispatch.com/story/news/courts/2026/04/08/who-is-running-for-ohio-supreme-court-in-the-may-primary-election/88745617007/"
+            "label": "Supreme Court of Ohio: Justice Daniel R. Hawkins biography",
+            "url": "https://www.supremecourt.ohio.gov/judicial-system/supreme-court-of-ohio/justices-overview/daniel-hawkins/"
           },
           {
-            "label": "Dispatch, 7/15/2026",
-            "url": "https://www.dispatch.com/story/news/courts/2026/07/15/ohio-supreme-court-gives-prosecutors-a-win-in-new-decision/90927455007/"
+            "label": "Dan Hawkins guest commentary, Columbus Dispatch, October 27, 2022",
+            "url": "https://www.yahoo.com/news/franklin-county-judge-issue-1-102837297.html"
+          },
+          {
+            "label": "Supreme Court of Ohio: Doe v. Columbus, 2026-Ohio-1095",
+            "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-1095.pdf"
+          },
+          {
+            "label": "Supreme Court of Ohio: State v. King, 2026-Ohio-2656",
+            "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-2656.pdf"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The Supreme Court biography lists Hawkins’s current and prior public service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Justice Daniel R. Hawkins biography",
+                  "url": "https://www.supremecourt.ohio.gov/judicial-system/supreme-court-of-ohio/justices-overview/daniel-hawkins/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "This dated guest commentary states Hawkins’s support for Issue 1 and its proposed bail-setting change.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Dan Hawkins guest commentary, Columbus Dispatch, October 27, 2022",
+                  "url": "https://www.yahoo.com/news/franklin-county-judge-issue-1-102837297.html"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The opinion identifies Hawkins as author and describes the Court’s holding and disposition.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Doe v. Columbus, 2026-Ohio-1095",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-1095.pdf"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The opinion and official case announcement show Hawkins joined the majority; the holding allows discretionary review, not an appeal as of right.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: State v. King, 2026-Ohio-2656",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-2656.pdf"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide limits this comparison to the two cited opinions and does not infer a general ideology.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Doe v. Columbus, 2026-Ohio-1095",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-1095.pdf"
+                },
+                {
+                  "label": "Supreme Court of Ohio: State v. King, 2026-Ohio-2656",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-2656.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Marilyn Zayas",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Judge on Ohio's First District Court of Appeals (Hamilton County) for about nine years; first elected in 2016 - the first person of Latino heritage elected to an Ohio appeals court. Born 1964 in East Harlem, NYC; B.S. in computer science; IT manager at Procter & Gamble (1988-1994); J.D., University of Cincinnati College of Law (1997). Ran for the Court in 2022 and lost to Justice Pat DeWine.",
+        "background": "Judge on Ohio’s First District Court of Appeals. Her campaign biography says she has served nearly nine years on that court and was appointed three times in 2025 to sit on the Ohio Supreme Court when a justice recused.",
         "promises": [
-          "Stated philosophy: 'to faithfully apply the law and constitution equally to everyone. There should not be any bias if someone has money or doesn't have money.'",
-          "Court 'must be a beacon of integrity, impartiality, and independence'",
-          "Accepted '$0 from corporate interests: energy, banking, and insurance companies'",
-          "Would expand Veterans, Mental Health, and Drug Courts"
+          "Her campaign says she is committed to applying the law, facts, and Constitution, and describes the Supreme Court as a beacon of integrity."
         ],
         "record": [
-          "Authored a unanimous First District reversal of a juvenile court's permanent-custody termination order - UNVERIFIED as to the case name/citation",
-          "Sat by designation on the Ohio Supreme Court in multiple cases",
-          "2025 First District participation: concurred in In re J. Children (2025) and In re C/S Children (2025), affirming juvenile-court permanent-custody awards",
-          "Named 2024 Hispanic National Bar Association Latina Judge of the Year"
+          "In re C.R., 2022-Ohio-3540: authored a First District opinion reversing and remanding a juvenile-court custody order because the court had not addressed the father’s custody motion."
         ],
-        "correlation": "Stated philosophy (law-applied-equally, independence from political influence, skepticism of overturning settled precedent) is consistent with her appellate record and public criticism of State v. King. Her $0-corporate-money pledge is a campaign posture with no judicial-record equivalent.",
+        "correlation": "The cited opinion is one example of Zayas’s appellate work. It is not enough to establish a general judicial philosophy; the campaign statements are presented as her stated approach.",
         "sources": [
           {
-            "label": "Court News Ohio, 4/29/2025",
-            "url": "https://courtnewsohio.gov/bench/2025/AJZayas_042925.asp"
+            "label": "Supreme Court of Ohio: Ohio Court of Appeals directory",
+            "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/ohio-court-of-appeals/"
           },
           {
-            "label": "Signal Akron 2026 voter guide",
-            "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
+            "label": "Judge Marilyn Zayas campaign: judicial experience",
+            "url": "https://judgemarilynzayas.com/judicial-experience-matters/"
+          },
+          {
+            "label": "Judge Marilyn Zayas campaign: Meet Judge Zayas",
+            "url": "https://judgemarilynzayas.com/meet-judge-zayas/"
+          },
+          {
+            "label": "Supreme Court of Ohio: In re C.R., 2022-Ohio-3540",
+            "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/1/2022/2022-Ohio-3540.pdf"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Judge_Marilyn_Zayas.jpg/960px-Judge_Marilyn_Zayas.jpg",
-        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Marilyn_Zayas"
+        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Marilyn_Zayas",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The court directory lists Zayas on the First District; the campaign source supplies the reported length of service and 2025 Supreme Court assignments.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Ohio Court of Appeals directory",
+                  "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/ohio-court-of-appeals/"
+                },
+                {
+                  "label": "Judge Marilyn Zayas campaign: judicial experience",
+                  "url": "https://judgemarilynzayas.com/judicial-experience-matters/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "The campaign biography states this approach and describes the court’s role.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Judge Marilyn Zayas campaign: Meet Judge Zayas",
+                  "url": "https://judgemarilynzayas.com/meet-judge-zayas/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The official opinion identifies Zayas as author and gives the reversal and remand.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: In re C.R., 2022-Ohio-3540",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/1/2022/2022-Ohio-3540.pdf"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide treats one opinion as a selected example and does not claim it proves a broader philosophy.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: In re C.R., 2022-Ohio-3540",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/1/2022/2022-Ohio-3540.pdf"
+                },
+                {
+                  "label": "Judge Marilyn Zayas campaign: Meet Judge Zayas",
+                  "url": "https://judgemarilynzayas.com/meet-judge-zayas/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
@@ -2480,53 +2618,157 @@
         "name": "Jennifer Brunner",
         "party": "Democrat",
         "incumbent": true,
-        "background": "Elected to the Ohio Supreme Court in 2020; the Court's lone Democrat. Previously a Franklin County Common Pleas judge (founded the county's adult felony drug court in 2004), a Tenth District Court of Appeals judge, and Ohio Secretary of State (2007-2011). 2008 JFK Profile in Courage Award recipient.",
+        "background": "Ohio Supreme Court justice since January 2021. The court biography lists prior service on the Tenth District Court of Appeals and Franklin County Common Pleas Court, where she founded the adult felony drug court, and as Ohio Secretary of State.",
         "promises": [
-          "2026 campaign theme: opposition to overturning precedent based on changed court membership rather than changed circumstances",
-          "Courts maintain trust by being 'not partisan or even appear partisan'"
+          "Her campaign describes justice as fairness, equality, and respect for all people."
         ],
         "record": [
-          "State v. King (2026-Ohio-2656): dissented in the 4-3 decision (alongside Chief Justice Kennedy and Justice Fischer)",
-          "State v. Lash, 2026-Ohio-2746 (dissent, Oct. 2026): DNA-testing denial",
-          "Wilkes v. Ohio Dept. of Transp., 2026-Ohio-3897 (dissent, Oct. 2026)",
-          "Authored majorities incl. In re Application of Duke Energy Ohio (2026-Ohio-2064); voted in the 2025 majority requiring AES Ohio to repay over $61 million in excessive earnings",
-          "In 2023, sued over the state law requiring judicial candidates to declare party affiliation on general-election ballots"
+          "State v. Lash, 2026-Ohio-2746: dissented from the majority’s conclusion that citing a statutory reason sufficiently explained denial of a postconviction DNA-testing application; Brunner argued the order should explain its application of the statutory criteria.",
+          "Wilkes v. Ohio Dept. of Transp., 2026-Ohio-3897: dissented from the Court’s decision granting ODOT discretionary immunity for not installing temporary protective fencing during bridge reconstruction."
         ],
-        "correlation": "Her 2026 campaign theme (opposition to overturning precedent based on changed court membership) tracks her voting pattern: frequently the dissenting justice in 4-3 and 5-2 decisions by the six-Republican majority.",
+        "correlation": "These selected opinions show areas where Brunner disagreed with the majority. They are not a complete record or a measure of how she would decide future cases.",
         "sources": [
           {
-            "label": "Bolts 2026 election guide",
-            "url": "https://boltsmag.org/whats-on-the-ballot/guide-to-2026-general-election/"
+            "label": "Supreme Court of Ohio: Justice Jennifer Brunner biography",
+            "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/supreme-court-of-ohio/justices-overview/jennifer-brunner/"
           },
           {
-            "label": "supremecourt.ohio.gov opinions",
-            "url": "https://supremecourt.ohio.gov/docs/SCO/justices/brunner/Opinions.pdf"
+            "label": "Justice Jennifer Brunner campaign",
+            "url": "https://justicebrunner.com/"
+          },
+          {
+            "label": "Supreme Court of Ohio: State v. Lash, 2026-Ohio-2746",
+            "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-2746.pdf"
+          },
+          {
+            "label": "Supreme Court of Ohio: Wilkes v. Ohio Dept. of Transp., 2026-Ohio-3897",
+            "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-3897.pdf"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/20080310_Jennifer_Brunner.jpg/960px-20080310_Jennifer_Brunner.jpg",
-        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Jennifer_Brunner"
+        "photo_credit": "CC BY 2.0 via https://en.wikipedia.org/wiki/Jennifer_Brunner",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The Supreme Court biography lists Brunner’s judicial and Secretary of State service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Justice Jennifer Brunner biography",
+                  "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/supreme-court-of-ohio/justices-overview/jennifer-brunner/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "The campaign states this value and approach.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Justice Jennifer Brunner campaign",
+                  "url": "https://justicebrunner.com/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The opinion identifies Brunner’s dissent and explains the disagreement about the trial court’s reasons for denying DNA testing.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: State v. Lash, 2026-Ohio-2746",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-2746.pdf"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The opinion identifies Brunner’s dissent and the majority’s immunity ruling.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: Wilkes v. Ohio Dept. of Transp., 2026-Ohio-3897",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-3897.pdf"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide describes two selected dissents without using them as a proxy for a full judicial record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Supreme Court of Ohio: State v. Lash, 2026-Ohio-2746",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-2746.pdf"
+                },
+                {
+                  "label": "Supreme Court of Ohio: Wilkes v. Ohio Dept. of Transp., 2026-Ohio-3897",
+                  "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-3897.pdf"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Colleen O'Donnell",
         "party": "Republican",
         "incumbent": false,
-        "background": "Franklin County Common Pleas Court, General Division, 2013-2023. In 2023 became a U.S. immigration judge with the Department of Justice in Laredo, Texas. Earlier: Assistant Attorney General (2006-2007), law clerk for the U.S. District Court for the Northern District of Ohio, associate at Carpenter Lipps LLP. J.D., Case Western Reserve (2006). Won the four-candidate May 2026 Republican primary with 32% of the vote.",
+        "background": "Her campaign biography lists service as a Franklin County Common Pleas judge, a U.S. immigration judge, an Assistant Ohio Attorney General, and a federal law clerk. These career details are attributed to the campaign.",
         "promises": [
-          "'In my rulings and considerations, I go where the law leads me'",
-          "On immigration-court tenure: 'enforced the law as written, never once granted asylum, and consistently ordered the removal of illegal aliens'",
-          "'Partisan politics really has no place in the courthouse'"
+          "Her campaign describes her as a constitutional conservative and says she would apply the law as written, protect public safety, and keep partisan politics out of the courthouse."
         ],
-        "record": [
-          "No specific notable rulings from her Common Pleas tenure or immigration-court service were verifiable in available public sources - UNVERIFIED beyond biographical facts",
-          "Per the judicial canons, her pledges are properly read as statements of approach rather than promises of outcomes"
-        ],
-        "correlation": "With no verifiable ruling record in the public domain, there is nothing to correlate against her campaign statements; voters can weigh only her experience claims and stated philosophy.",
+        "record": [],
+        "correlation": "This guide does not list selected opinions for O’Donnell. Her campaign statements are not compared with an audited case record here.",
         "sources": [
           {
-            "label": "Dispatch, 4/8/2026",
-            "url": "https://www.dispatch.com/story/news/politics/elections/candidate-profiles/2026/04/08/view-ohio-supreme-court-gop-primary-candidate-profiles-for-may-election/89330380007/"
+            "label": "Colleen O’Donnell for Ohio Supreme Court",
+            "url": "https://www.odonnellforohio.com/"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Career history is presented in the candidate’s campaign biography and has not been independently checked in this profile.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Colleen O’Donnell for Ohio Supreme Court",
+                  "url": "https://www.odonnellforohio.com/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "These positions summarize the candidate’s campaign statements.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Colleen O’Donnell for Ohio Supreme Court",
+                  "url": "https://www.odonnellforohio.com/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "pending",
+              "note": "A selected-opinion review was not completed for this profile.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ]
+        }
       }
     ]
   },
