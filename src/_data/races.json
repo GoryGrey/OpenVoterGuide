@@ -855,81 +855,169 @@
       },
       {
         "name": "Stephen Faris",
-        "background": "Stephen Faris is listed by the Ashtabula County Board of Elections as a candidate for U.S. Senator. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "His campaign website asks voters to write in his name for U.S. Senate and describes him as a single-issue candidate.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Stephen Faris campaign website",
+            "url": "https://www.writeinfaris.com/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "status": "candidate_statement",
+              "note": "This profile detail is attributed to the candidate’s campaign; the BOE list separately confirms the candidacy.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Stephen Faris campaign website",
+                  "url": "https://www.writeinfaris.com/"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
                 }
               ]
             }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "This is the candidate’s campaign statement about his position.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Stephen Faris campaign website",
+                  "url": "https://www.writeinfaris.com/"
+                }
+              ]
+            }
           ]
-        }
+        },
+        "promises": [
+          "Faris’s campaign says abortion should be abolished immediately and totally."
+        ]
       },
       {
         "name": "Anthony Holliman",
-        "background": "Anthony Holliman is listed by the Ashtabula County Board of Elections as a candidate for U.S. Senator. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "His campaign website identifies him as a U.S. Senate write-in candidate and publishes a draft federal bill called the Family Integrity and National Accountability Act.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Anthony Holliman campaign website",
+            "url": "https://writeinholliman.com/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "status": "candidate_statement",
+              "note": "This profile detail is attributed to the candidate’s campaign; the BOE list separately confirms the candidacy.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Anthony Holliman campaign website",
+                  "url": "https://writeinholliman.com/"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
                 }
               ]
             }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "This summarizes provisions in a draft bill published by the candidate’s campaign; it is a proposal, not enacted law.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Anthony Holliman campaign draft legislation",
+                  "url": "https://writeinholliman.com/bills"
+                }
+              ]
+            }
           ]
-        }
+        },
+        "promises": [
+          "His published draft bill would remove federal marriage penalties and establish direct compensation for household caregiving."
+        ]
       },
       {
         "name": "Timothy Telymonde",
-        "background": "Timothy Telymonde is listed by the Ashtabula County Board of Elections as a candidate for U.S. Senator. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The BOE lists Telymonde as a U.S. Senate write-in candidate. The candidate’s responses to a League of Women Voters questionnaire were published by The Portager.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Timothy Telymonde website",
+            "url": "https://www.telymonde.com/"
+          },
+          {
+            "label": "The Portager, League of Women Voters 2026 candidate questionnaire (response published as submitted)",
+            "url": "https://theportager.com/november-2026-voters-guide-presented-by-the-league-of-women-voters/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "status": "editorial_summary",
+              "note": "The BOE list confirms the candidacy; the candidate’s questionnaire responses were published by The Portager.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Ashtabula County BOE official candidate list (revised 9/15/26)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                },
+                {
+                  "label": "The Portager, League of Women Voters 2026 candidate questionnaire (response published as submitted)",
+                  "url": "https://theportager.com/november-2026-voters-guide-presented-by-the-league-of-women-voters/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "The Portager publishes this as the candidate’s questionnaire response; these proposals are attributed to the candidate and have not been independently assessed for feasibility or effect.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "The Portager, League of Women Voters 2026 candidate questionnaire (response published as submitted)",
+                  "url": "https://theportager.com/november-2026-voters-guide-presented-by-the-league-of-women-voters/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The Portager publishes this as the candidate’s questionnaire response; these proposals are attributed to the candidate and have not been independently assessed for feasibility or effect.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "The Portager, League of Women Voters 2026 candidate questionnaire (response published as submitted)",
+                  "url": "https://theportager.com/november-2026-voters-guide-presented-by-the-league-of-women-voters/"
                 }
               ]
             }
           ]
-        }
+        },
+        "promises": [
+          "In a published candidate questionnaire response, Telymonde proposed paper ballots, a website voters could use to verify their vote was recorded, and public receipts for local results.",
+          "In the same response, he proposed comparing exit polls with election totals and requiring a dated newspaper clipping and photo identification with mailed ballots."
+        ]
       }
     ]
   },
@@ -1771,55 +1859,139 @@
       },
       {
         "name": "Timothy Grady / Andrea Neutzling",
-        "background": "Timothy Grady / Andrea Neutzling is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Grady’s campaign describes him as an independent candidate for governor and presents Integrity, Freedom, and Improvement as guiding principles.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Tim Grady for Ohio campaign website",
+            "url": "https://timgradyforohio.com/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "status": "candidate_statement",
+              "note": "This profile detail is attributed to the candidate’s campaign; the BOE list separately confirms the candidacy.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Tim Grady for Ohio campaign website",
+                  "url": "https://timgradyforohio.com/"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
                 }
               ]
             }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "These are positions stated on the candidate’s campaign website.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Tim Grady for Ohio campaign website",
+                  "url": "https://timgradyforohio.com/policy/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "These are positions stated on the candidate’s campaign website.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Tim Grady for Ohio campaign website",
+                  "url": "https://timgradyforohio.com/policy/"
+                }
+              ]
+            }
           ]
-        }
+        },
+        "promises": [
+          "Grady’s campaign proposes investing in Ohio’s cities, infrastructure, education, health, and communities to support economic opportunity.",
+          "His campaign says it would emphasize transparency and pursue government accountability and anti-corruption measures."
+        ]
       },
       {
         "name": "Heather Hill / Patrick Manley",
-        "background": "Heather Hill / Patrick Manley is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Hill’s campaign describes her as a small-business owner, foster mother, and community leader; the campaign lists Patrick Manley as her running mate.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Heather Hill for Ohio campaign website",
+            "url": "https://heatherhillohio.com/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
+              "status": "candidate_statement",
+              "note": "This profile detail is attributed to the candidate’s campaign; the BOE list separately confirms the candidacy.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Heather Hill for Ohio campaign website",
+                  "url": "https://heatherhillohio.com/"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
                 }
               ]
             }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "These descriptions and proposals appear on the candidate’s campaign website; they are presented as campaign statements.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Heather Hill for Ohio campaign website",
+                  "url": "https://heatherhillohio.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "These descriptions and proposals appear on the candidate’s campaign website; they are presented as campaign statements.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Heather Hill for Ohio campaign website",
+                  "url": "https://heatherhillohio.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "These descriptions and proposals appear on the candidate’s campaign website; they are presented as campaign statements.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Heather Hill for Ohio campaign website",
+                  "url": "https://heatherhillohio.com/"
+                }
+              ]
+            }
           ]
-        }
+        },
+        "promises": [
+          "Hill’s campaign proposes abolishing property taxes and says public services should be funded through other means.",
+          "Her campaign opposes new data centers and AI investment and calls for renewed investment in Ohio manufacturing.",
+          "Her campaign says parents should make decisions about their children’s health and education."
+        ]
       },
       {
         "name": "Renea Turner / Jalen Turner",
