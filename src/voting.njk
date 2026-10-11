@@ -8,6 +8,8 @@ permalink: /voting/index.html
 <h1>Plan when to vote</h1>
 <p><strong>General Election Day is {{ election.election_date }}.</strong> Dates and voting rules below come from official Ohio election sources. Confirm your ballot and polling location with the county Board of Elections.</p>
 
+<p><a class="primary-action" href="{{ '/sample-ballots/' | url }}">Find your official sample ballot</a></p>
+
 {% for date in election.key_dates %}
 <article class="candidate-card">
   <h2>{{ date.label }}</h2>
@@ -19,10 +21,10 @@ permalink: /voting/index.html
 <h2>Official election services</h2>
 <ul>
   <li><a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/pollfinder.aspx" rel="noopener" target="_blank">Find your polling place</a></li>
-  <li><a href="https://www.boe.ohio.gov/ashtabula/">View the official sample ballot and county election notices</a></li>
-  <li><a href="https://www.ohiosos.gov/elections/voting-schedule-text-only">Ohio Secretary of State: voting dates and hours</a></li>
-  <li><a href="https://voteohio.gov/track">Track a mailed absentee ballot</a></li>
-  <li><a href="https://olvr.ohiosos.gov/">Check or update voter registration</a></li>
+  <li><a href="{{ '/sample-ballots/' | url }}">View the official sample ballot lookup</a></li>
+  <li><a href="https://www.ohiosos.gov/elections/voting-schedule-text-only" rel="noopener" target="_blank">Ohio Secretary of State: voting dates and hours</a></li>
+  <li><a href="https://voteohio.gov/track" rel="noopener" target="_blank">Track a mailed absentee ballot</a></li>
+  <li><a href="https://olvr.ohiosos.gov/" rel="noopener" target="_blank">Check or update voter registration</a></li>
 </ul>
 
 <h2>Ashtabula County Board of Elections</h2>
