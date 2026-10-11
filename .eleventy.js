@@ -6,6 +6,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/search-index.json");
   eleventyConfig.addPassthroughCopy("src/district-race-map.json");
 
+  eleventyConfig.addFilter("candidateSlug", (value) => String(value ?? "")
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9/'’]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+  );
+
   // Date filter
   eleventyConfig.addFilter("readableDate", (dateStr) => {
     return new Date(dateStr).toLocaleDateString("en-US", {

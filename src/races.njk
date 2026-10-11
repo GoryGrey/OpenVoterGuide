@@ -30,7 +30,7 @@ eleventyComputed:
       <caption class="visually-hidden">All candidates for {{ race.office }} compared by background, campaign statements, voting record, and sourced ballot issue views.</caption>
       <thead><tr><th scope="col">Compare</th>
         {% for c in race.candidates %}
-        <th scope="col"><a href="#{{ c.name | slug }}">{{ c.name }}</a>
+        <th scope="col"><a href="#{{ c.name | candidateSlug }}">{{ c.name }}</a>
           {% if c.party %}<span class="comparison-party">{{ c.party }}</span>{% else %}<span class="comparison-party">Nonpartisan ballot</span>{% endif %}
           {% if c.incumbent %}<span class="comparison-incumbent">Incumbent</span>{% endif %}
         </th>
@@ -66,7 +66,7 @@ eleventyComputed:
 {% endif %}
 
 {% for c in race.candidates %}
-<div class="candidate-card" id="{{ c.name | slug }}">
+<div class="candidate-card" id="{{ c.name | candidateSlug }}">
   <div class="candidate-header">
     {% if c.photo_url %}
     <img src="{{ c.photo_url }}" alt="Photo of {{ c.name }}" class="candidate-photo" loading="lazy">
@@ -82,7 +82,7 @@ eleventyComputed:
 
   <div class="worksheet-check">
     <label>
-      <input type="checkbox" data-worksheet-id="race-{{ race.id }}-{{ c.name | slug }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
+      <input type="checkbox" data-worksheet-id="race-{{ race.id }}-{{ c.name | candidateSlug }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
       Mark as my choice
     </label>
   </div>
