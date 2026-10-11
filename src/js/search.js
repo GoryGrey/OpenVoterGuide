@@ -53,7 +53,14 @@
     parent.appendChild(links);
   }
   function getDistrictNumber(geographies, key) {
-    const entry = Object.entries(geographies || {}).find(([name]) => name.toLowerCase() === key.toLowerCase());
+    const wanted = key.toLowerCase();
+    const entry = Object.entries(geographies || {}).find(([name]) => {
+      const actual = name.toLowerCase();
+      if (wanted === 'congressional districts') return actual.includes('congressional district');
+      if (wanted.endsWith('upper')) return actual.includes('state legislative') && actual.includes('upper');
+      if (wanted.endsWith('lower')) return actual.includes('state legislative') && actual.includes('lower');
+      return actual.includes(wanted);
+    });
     const item = Array.isArray(entry?.[1]) ? entry[1][0] : null;
     if (!item) return '';
     const match = String(item.BASENAME || item.NAME || '').match(/\d+/);
