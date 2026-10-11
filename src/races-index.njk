@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: All Races
+description: Every candidate race on the Ashtabula County November 3, 2026 ballot.
+permalink: /races/index.html
+---
+
+<h1>All Races</h1>
+
+{% for race in races %}
+<div class="candidate-card">
+  <h3><a href="/OpenVoterGuide/races/{{ race.id }}/">{{ race.office }}</a></h3>
+  <p>{{ race.term_info | truncate(150) }}</p>
+  <p>{{ race.candidates.length }} candidates:
+    {% for c in race.candidates %}{{ c.name }} ({{ c.party }}){% if not loop.last %}, {% endif %}{% endfor %}
+  </p>
+</div>
+{% endfor %}
