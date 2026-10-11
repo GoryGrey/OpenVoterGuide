@@ -200,31 +200,214 @@
         "name": "David P. Joyce",
         "party": "Republican",
         "incumbent": true,
-        "background": "Cleveland; accounting and law degrees from the University of Dayton; public defender, then Geauga County prosecuting attorney (1988-2012). Elected to Congress Nov. 2012; seventh term. House Appropriations Committee (chairs Financial Services and General Government subcommittee) and House Homeland Security Committee. ~3.0% lifetime missed votes.",
+        "background": "David Joyce’s official House biography says he earned a law degree from the University of Dayton, worked as a public defender, served nearly 25 years as Geauga County Prosecutor, and was elected to Congress in 2012. It lists him on the House Appropriations and Homeland Security committees and as chair of the Financial Services and General Government Appropriations Subcommittee. The biography lists Bainbridge Township as his residence.",
         "promises": [
-          "Protect and fund the Great Lakes (Great Lakes Restoration Initiative)",
-          "Treat opioid epidemic as national emergency (fentanyl interdiction, naloxone access)",
-          "Cannabis reform via state autonomy (co-chair, Congressional Cannabis Caucus; STATES 2.0 Act; SAFE Banking Act)",
-          "Fiscal restraint, military funding, economic growth"
+          "Advocates for federal investment in the Great Lakes and the Great Lakes Restoration Initiative; his office says he introduced a 2025 reauthorization bill.",
+          "Supports an opioid response combining prevention, education, treatment, enforcement against illegal distribution, and resources for first responders.",
+          "Supports state autonomy on cannabis policy and access to banking for state-legal cannabis businesses; his office describes the STATES 2.0 and SAFE Banking bills."
         ],
         "record": [
-          "Sponsored STATES 2.0 Act (reintroduced April 2025), SAFE Banking Act of 2026 (lead, June 2026)",
-          "Voted NAY on the MORE Act (2022)",
-          "YEA on H.R.8035/8034/8036 (Ukraine/Israel/Indo-Pacific aid, April 20, 2024)",
-          "YEA on S.1582, GENIUS Act (stablecoin), House passage 308-122 (July 17, 2025)",
-          "GLRI reauthorization bill H.R.284 (Jan. 2025)"
+          "Introduced the STATES 2.0 Act in April 2025 and the SAFE Banking Act of 2026.",
+          "Sponsored H.R. 284, the Great Lakes Restoration Initiative Act of 2025, introduced January 9, 2025.",
+          "Voted NO on passage of the MORE Act (H.R. 3617) on April 1, 2022.",
+          "Voted YEA on passage of S. 1582, the GENIUS Act, on July 17, 2025.",
+          "Voted YEA on the Ukraine (H.R. 8035), Israel (H.R. 8034), and Indo-Pacific (H.R. 8036) supplemental appropriations bills on April 20, 2024."
         ],
-        "correlation": "MATCHES on cannabis (sponsored the reform bills he advocates) and Great Lakes advocacy. Military-funding position matches April 2024 aid votes.",
+        "correlation": "The record includes bills supporting state autonomy and banking access for cannabis alongside a NO vote on the broader MORE Act. Because these are different policy approaches, this guide does not reduce them to a simple match or mismatch score.",
         "sources": [
           {
-            "label": "theangryohioan.com",
-            "url": "https://www.theangryohioan.com/p/ohios-14th-congressional-district"
+            "label": "Official U.S. House biography",
+            "url": "https://joyce.house.gov/about-dave"
           },
           {
-            "label": "Congressional Record Index",
-            "url": "https://www.congress.gov/congressional-record/congressional-record-index/119th-congress/1st-session/joyce-david-p-a-representative-from-ohio/1964099"
+            "label": "Official U.S. House Great Lakes position",
+            "url": "https://joyce.house.gov/resources/great-lakes"
+          },
+          {
+            "label": "Official U.S. House opioid position",
+            "url": "https://joyce.house.gov/resources/opioid-crisis"
+          },
+          {
+            "label": "Official U.S. House release: STATES 2.0 Act",
+            "url": "https://joyce.house.gov/posts/joyce-miller-titus-reintroduce-bipartisan-legislation-to-protect-states-rights"
+          },
+          {
+            "label": "Official U.S. House release: SAFE Banking Act",
+            "url": "https://joyce.house.gov/posts/joyce-colleagues-reintroduce-safe-banking-act"
+          },
+          {
+            "label": "Official U.S. House release: Great Lakes bill",
+            "url": "https://joyce.house.gov/posts/joyce-introduces-legislation-to-reauthorize-great-lakes-restoration-initiative-relaunches-great-lakes-task-force"
+          },
+          {
+            "label": "House Clerk roll call 107: MORE Act",
+            "url": "https://clerk.house.gov/evs/2022/roll107"
+          },
+          {
+            "label": "House Clerk roll call 200: GENIUS Act",
+            "url": "https://clerk.house.gov/evs/2025/roll200"
+          },
+          {
+            "label": "House Clerk roll call 151: Ukraine supplemental",
+            "url": "https://clerk.house.gov/evs/2024/roll151"
+          },
+          {
+            "label": "House Clerk roll call 152: Israel supplemental",
+            "url": "https://clerk.house.gov/evs/2024/roll152"
+          },
+          {
+            "label": "House Clerk roll call 146: Indo-Pacific supplemental",
+            "url": "https://clerk.house.gov/evs/2024/roll146"
           }
         ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "Official House biography supports the office history, committee roles, education, and listed residence.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Official U.S. House biography",
+                  "url": "https://joyce.house.gov/about-dave"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "These are positions and actions described by Joyce’s official House office; the pages document his statements, not independent proof of policy outcomes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Great Lakes position",
+                  "url": "https://joyce.house.gov/resources/great-lakes"
+                },
+                {
+                  "label": "2025 Great Lakes bill release",
+                  "url": "https://joyce.house.gov/posts/joyce-introduces-legislation-to-reauthorize-great-lakes-restoration-initiative-relaunches-great-lakes-task-force"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The House office describes this as his approach to the opioid crisis; these are his stated priorities.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Opioid Crisis position",
+                  "url": "https://joyce.house.gov/resources/opioid-crisis"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The House office describes his positions and bills. Bill introductions do not show enactment or establish that a policy would have its promised effects.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "STATES 2.0 Act release",
+                  "url": "https://joyce.house.gov/posts/joyce-miller-titus-reintroduce-bipartisan-legislation-to-protect-states-rights"
+                },
+                {
+                  "label": "SAFE Banking Act release",
+                  "url": "https://joyce.house.gov/posts/joyce-colleagues-reintroduce-safe-banking-act"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "Joyce’s official House office announced both introductions; the press release is a member-office source.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "STATES 2.0 Act release",
+                  "url": "https://joyce.house.gov/posts/joyce-miller-titus-reintroduce-bipartisan-legislation-to-protect-states-rights"
+                },
+                {
+                  "label": "SAFE Banking Act release",
+                  "url": "https://joyce.house.gov/posts/joyce-colleagues-reintroduce-safe-banking-act"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "Official House office release identifies Joyce among the bill’s introducers and gives the introduction date.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Great Lakes bill release",
+                  "url": "https://joyce.house.gov/posts/joyce-introduces-legislation-to-reauthorize-great-lakes-restoration-initiative-relaunches-great-lakes-task-force"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "House Clerk roll call records Joyce voting no on passage of H.R. 3617.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "House Clerk roll call 107",
+                  "url": "https://clerk.house.gov/evs/2022/roll107"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "House Clerk roll call records Joyce voting yea on passage of S. 1582.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "House Clerk roll call 200",
+                  "url": "https://clerk.house.gov/evs/2025/roll200"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The three House Clerk roll calls show Joyce voting yea on passage of each named bill.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "H.R. 8035 roll call 151",
+                  "url": "https://clerk.house.gov/evs/2024/roll151"
+                },
+                {
+                  "label": "H.R. 8034 roll call 152",
+                  "url": "https://clerk.house.gov/evs/2024/roll152"
+                },
+                {
+                  "label": "H.R. 8036 roll call 146",
+                  "url": "https://clerk.house.gov/evs/2024/roll146"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This is a limited comparison of sourced bill actions and a recorded vote. The guide does not infer a single overall position or score.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "STATES 2.0 Act release",
+                  "url": "https://joyce.house.gov/posts/joyce-miller-titus-reintroduce-bipartisan-legislation-to-protect-states-rights"
+                },
+                {
+                  "label": "SAFE Banking Act release",
+                  "url": "https://joyce.house.gov/posts/joyce-colleagues-reintroduce-safe-banking-act"
+                },
+                {
+                  "label": "House Clerk roll call 107",
+                  "url": "https://clerk.house.gov/evs/2022/roll107"
+                }
+              ]
+            }
+          ]
+        },
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/David_Joyce_%28cropped%29.jpg/960px-David_Joyce_%28cropped%29.jpg",
         "photo_credit": "Public domain"
       },
@@ -232,29 +415,141 @@
         "name": "Maria Jukic",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Served four years as Euclid City Councilwoman for Ward 7 (2020-2023). ~24 years at the Cleveland Clinic, including developing the Arts and Medicine Institute. Licensed attorney and small business owner. Won the May 2026 Democratic primary (50.8%). No federal or state legislative record. Note: described in campaign materials as a Fulbright scholar - UNVERIFIED in sources reviewed.",
+        "background": "The City of Euclid says Jukic served four years on City Council representing Ward 7. Her campaign biography describes a Cleveland Clinic healthcare-administration career and legal background; those career details are candidate-reported here.",
         "promises": [
-          "Lower Medicare eligibility age from 65 to 62; break up healthcare monopolies; let Medicare negotiate drug prices; cap insulin costs",
-          "Oppose Social Security benefit reductions; support raising or eliminating the payroll-tax income cap",
-          "Working-family tax relief; close the carried-interest loophole; raise the minimum wage",
-          "Great Lakes protections (runoff, working with farmers on fertilizer runoff)"
+          "Would lower the Medicare eligibility age from 65 to 62; supports Medicare drug-price negotiation, insulin cost caps, and stronger limits on healthcare monopolies.",
+          "Opposes Social Security benefit cuts and privatization; supports lifting or eliminating the payroll-tax income cap.",
+          "Supports working-family tax relief, closing the carried-interest tax provision, and raising the federal minimum wage.",
+          "Supports Lake Erie protections, water-quality investment, and practical conservation programs with farmers to reduce runoff."
         ],
         "record": [
-          "No federal or state voting record found",
-          "Euclid City Council (2020-2023): no compiled individual voting record readily found - thin/UNVERIFIED",
-          "One documented item: Sept. 6, 2022 council agenda shows Jukic co-sponsoring Ordinance 097-22, a $105,000 design/engineering agreement for Waterfront Phase III project"
+          "This guide has not compiled a sourced roll-call summary of Jukic’s Euclid City Council votes."
         ],
-        "correlation": "N/A at the federal level - with no congressional or state legislative record, positions can only be weighed as stated promises.",
+        "correlation": "Her listed policy positions are campaign statements. This guide has not assembled a comparable council voting record, so it does not assign a position-to-record match score.",
         "sources": [
           {
-            "label": "Ballotpedia",
-            "url": "https://ballotpedia.org/Maria_Jukic"
+            "label": "City of Euclid notice recognizing Jukic’s four years on Council",
+            "url": "https://www.cityofeuclid.com/euclid-offers-thanks-to-departing-welcomes-new-council-members"
           },
           {
-            "label": "theangryohioan.com",
-            "url": "https://www.theangryohioan.com/p/ohios-14th-congressional-district"
+            "label": "Maria Jukic campaign biography",
+            "url": "https://www.mariajukicforcongress.com/about-maria/"
+          },
+          {
+            "label": "Cleveland Clinic Arts and Medicine staff page",
+            "url": "https://my.clevelandclinic.org/departments/arts-medicine/about"
+          },
+          {
+            "label": "Maria Jukic campaign healthcare plan",
+            "url": "https://www.mariajukicforcongress.com/healthcare-the-road-to-universal-coverage/"
+          },
+          {
+            "label": "Maria Jukic campaign Social Security plan",
+            "url": "https://www.mariajukicforcongress.com/social-security-protect-what-americans-earned/"
+          },
+          {
+            "label": "Maria Jukic campaign tax plan",
+            "url": "https://www.mariajukicforcongress.com/tax-policy-for-the-paycheck-not-the-portfolio/"
+          },
+          {
+            "label": "Maria Jukic campaign environment plan",
+            "url": "https://www.mariajukicforcongress.com/environment-climate-change-protecting-whats-ours/"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "editorial_summary",
+              "note": "Euclid independently confirms her four years in Ward 7. The healthcare and legal background details are from her campaign biography; Cleveland Clinic independently lists her as a JD in its Arts and Medicine materials.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "City of Euclid notice",
+                  "url": "https://www.cityofeuclid.com/euclid-offers-thanks-to-departing-welcomes-new-council-members"
+                },
+                {
+                  "label": "Campaign biography",
+                  "url": "https://www.mariajukicforcongress.com/about-maria/"
+                },
+                {
+                  "label": "Cleveland Clinic Arts and Medicine",
+                  "url": "https://my.clevelandclinic.org/departments/arts-medicine/about"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Campaign platform statement; this records what Jukic says she would pursue and does not assess the claims about healthcare costs or outcomes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Healthcare plan",
+                  "url": "https://www.mariajukicforcongress.com/healthcare-the-road-to-universal-coverage/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Campaign platform statement, including opposition to benefit cuts and support for lifting or eliminating the payroll-tax cap.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Social Security plan",
+                  "url": "https://www.mariajukicforcongress.com/social-security-protect-what-americans-earned/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Campaign platform statement. These are policy positions, not independently verified forecasts or outcomes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Tax policy plan",
+                  "url": "https://www.mariajukicforcongress.com/tax-policy-for-the-paycheck-not-the-portfolio/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Campaign platform statement about protecting Lake Erie and supporting farmer conservation practices.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Environment plan",
+                  "url": "https://www.mariajukicforcongress.com/environment-climate-change-protecting-whats-ours/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "pending",
+              "note": "The campaign and city sources establish her council service, but a complete individual vote history has not been assembled for this profile.",
+              "checked_on": "2026-10-11",
+              "sources": []
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide lists campaign statements and clearly records that a comparable local voting history is not assembled; no match or mismatch is inferred.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Campaign biography",
+                  "url": "https://www.mariajukicforcongress.com/about-maria/"
+                },
+                {
+                  "label": "City of Euclid notice",
+                  "url": "https://www.cityofeuclid.com/euclid-offers-thanks-to-departing-welcomes-new-council-members"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
