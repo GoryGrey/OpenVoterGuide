@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 9740)
-Total output lines: 943
-
 [
   {
     "issue_number": 4,
@@ -389,7 +386,175 @@ Total output lines: 943
       },
       {
         "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
-        "url": …1740 tokens truncated…_years": 5,
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 20,
+    "jurisdiction": "Ashtabula Township (excluding Ashtabula City)",
+    "purpose": "Fire and emergency medical service, personnel or equipment",
+    "type": "renewal",
+    "millage": 1,
+    "term_years": 5,
+    "tax_change": false,
+    "notes": "Raises about $149,815/year.",
+    "verification_status": "rate_and_type_checked",
+    "verification_date": "2026-10-11",
+    "sources": [
+      {
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 21,
+    "jurisdiction": "Ashtabula Township (excluding Ashtabula City)",
+    "purpose": "Fire and emergency medical service, personnel, or equipment",
+    "type": "renewal",
+    "millage": 1.5,
+    "term_years": 5,
+    "tax_change": false,
+    "notes": "Raises about $224,722/year.",
+    "verification_status": "rate_and_type_checked",
+    "verification_date": "2026-10-11",
+    "sources": [
+      {
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 22,
+    "jurisdiction": "Ashtabula Township (excluding Ashtabula City)",
+    "purpose": "Fire and emergency medical service, personnel, or equipment",
+    "type": "renewal",
+    "millage": 2.5,
+    "term_years": 5,
+    "tax_change": false,
+    "notes": "Raises about $374,537/year.",
+    "verification_status": "rate_and_type_checked",
+    "verification_date": "2026-10-11",
+    "sources": [
+      {
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 23,
+    "jurisdiction": "Austinburg Township",
+    "purpose": "Current operating expenses",
+    "type": "renewal",
+    "millage": 1,
+    "term_years": 5,
+    "tax_change": false,
+    "notes": "Raises about $52,316/year.",
+    "verification_status": "rate_and_type_checked",
+    "verification_date": "2026-10-11",
+    "sources": [
+      {
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 24,
+    "jurisdiction": "Austinburg Township",
+    "purpose": "Fire service (apparatus, buildings, water supply, alarm lines, personnel)",
+    "type": "renewal_increase",
+    "millage": 1.4,
+    "existing_millage": 1,
+    "term_years": 5,
+    "tax_change": true,
+    "notes": "Renews existing 1 mill and adds 0.4 mills (total 1.4 mills). Raises about $89,035/year. If it fails, the existing 1-mill tax expires entirely.",
+    "verification_status": "rate_and_type_checked",
+    "verification_date": "2026-10-11",
+    "sources": [
+      {
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 25,
+    "jurisdiction": "Cherry Valley Township",
+    "purpose": "Fire/EMS apparatus, personnel, ambulance services",
+    "type": "renewal_reduction",
+    "millage": 1,
+    "existing_millage": 1.5,
+    "term_years": 5,
+    "tax_change": true,
+    "notes": "Renews at a REDUCED rate: drops 0.5 mills from current 1.5 mills to 1.0 mill. This is a tax cut. Raises about $16,051/year. If it fails, the existing 1.5-mill tax expires entirely.",
+    "verification_status": "rate_and_type_checked",
+    "verification_date": "2026-10-11",
+    "sources": [
+      {
+        "label": "Ashtabula County Auditor, November 3, 2026 Levy Estimator (rate, jurisdiction and levy type)",
+        "url": "https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator"
+      },
+      {
+        "label": "Ohio Secretary of State, November 3, 2026 Local Questions and Issues workbook",
+        "url": "https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx"
+      },
+      {
+        "label": "Ashtabula County BOE, November 3, 2026 sample ballot selector (choose your precinct for official wording)",
+        "url": "https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx"
+      }
+    ]
+  },
+  {
+    "issue_number": 26,
+    "jurisdiction": "Colebrook Township",
+    "purpose": "Providing fire protection",
+    "type": "renewal",
+    "millage": 1.5,
+    "term_years": 5,
     "tax_change": false,
     "notes": "Raises about $31,527/year.",
     "verification_status": "rate_and_type_checked",
