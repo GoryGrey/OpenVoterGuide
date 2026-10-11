@@ -1069,6 +1069,26 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 .levy-explainer p { margin:0; font-size:.9rem; }
 .levy-explainer strong { color:#102d48; }
 .levy-explainer-icon { display:grid; flex:0 0 28px; width:28px; height:28px; place-items:center; border-radius:50%; background:#0b65bd; color:#fff; font-weight:900; }
+.levy-estimator { display:grid; grid-template-columns:minmax(0,1fr) minmax(220px,290px); align-items:center; gap:.6rem 1.25rem; margin:1.2rem 0 1.6rem; padding:clamp(1rem,2.4vw,1.45rem); border:1px solid #c9deee; border-radius:14px; background:linear-gradient(125deg,#f3f9ff,#f8fcff 65%,#effbf8); }
+.levy-estimator-copy { grid-row:span 2; }
+.levy-estimator-copy h2 { margin:.1rem 0 .3rem!important; font-size:clamp(1.25rem,2vw,1.6rem)!important; }
+.levy-estimator-copy > p:last-child { max-width:70ch; margin:.25rem 0 0; color:#49637c; font-size:.88rem; }
+.levy-value-field { display:grid; gap:.35rem; color:#173650; font-size:.86rem; font-weight:850; }
+.levy-value-input-wrap { display:flex; align-items:center; gap:.4rem; min-height:44px; padding:0 .75rem; border:1px solid #b8cddd; border-radius:8px; background:#fff; color:#49637c; }
+.levy-value-input-wrap:focus-within { outline:3px solid #00a9d6; outline-offset:2px; }
+.levy-value-input-wrap input { width:100%; min-width:0; min-height:40px; border:0; outline:0; background:transparent; color:#10283f; font:inherit; font-size:1rem; }
+.levy-estimator-help,.levy-estimator-status { grid-column:1/-1; margin:0; color:#526a82; font-size:.79rem; line-height:1.5; }
+.levy-estimator-status { color:#315670; font-weight:750; }
+.levy-estimator-help a { font-weight:800; }
+.levy-personal-impact { margin:1.5rem 0; padding:clamp(1rem,2.5vw,1.5rem); border:1px solid #cfe0ef; border-left:4px solid #00bddb; border-radius:12px; background:#f7fbff; }
+.levy-personal-impact h2 { margin:.2rem 0 .55rem!important; }
+.levy-personal-impact > p:not(.content-eyebrow) { margin:.45rem 0; }
+.levy-district-note { padding:.7rem .8rem; border-radius:8px; background:#fff; color:#36536d; }
+.levy-estimator-single { display:block; margin:1rem 0 0; padding:1rem; background:#fff; }
+.levy-estimator-single .levy-value-field { max-width:340px; }
+.levy-personal-estimate { margin:.8rem 0; padding:.85rem 1rem; border:1px solid #b9e6db; border-radius:9px; background:#effaf6; color:#075b48; font-weight:850; line-height:1.55; }
+.levy-estimator-single .levy-estimator-help { margin:.5rem 0; }
+.levy-estimator-single .levy-estimator-status { margin-top:.5rem; }
 .levy-group { margin:1.5rem 0; padding:clamp(.85rem,2vw,1.35rem); border:1px solid #dce6ef; border-radius:14px; background:#fff; box-shadow:0 5px 18px rgba(14,45,80,.05); }
 .levy-group-changes { border-top:4px solid #e33951; }
 .levy-group-renewals { border-top:4px solid #14a47a; }
@@ -1085,6 +1105,7 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 .levy-type-pill { display:inline-block; padding:.22rem .5rem; border-radius:999px; background:#fff0f2; color:#a52036; font-size:.76rem; font-weight:800; white-space:nowrap; }
 .levy-details-link { font-weight:800; text-decoration:none; white-space:nowrap; }
 .levy-impact-summary { display:block; max-width:38ch; margin-top:.35rem; color:#49637c; font-size:.82rem; line-height:1.45; }
+.levy-estimate-row { display:block; max-width:38ch; margin-top:.45rem; padding:.45rem .55rem; border-left:3px solid #12a683; border-radius:0 6px 6px 0; background:#effaf6; color:#075b48; font-size:.78rem; font-weight:800; line-height:1.45; }
 .levy-inline-details { min-width:180px; }
 .levy-inline-details summary { width:max-content; max-width:100%; color:#0758b4; cursor:pointer; font-weight:800; line-height:1.4; }
 .levy-inline-details summary:hover { text-decoration:underline; }
@@ -1133,12 +1154,16 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   .levy-group-tag { margin-top:.15rem; }
   .levy-facts { grid-template-columns:minmax(92px,.7fr) 1.5fr; }
   .levy-inline-panel { width:min(340px,72vw); }
+  .levy-estimator { grid-template-columns:1fr; }
+  .levy-estimator-copy { grid-row:auto; }
+  .levy-estimator-help,.levy-estimator-status { grid-column:1; }
 }
 @media (max-width:460px) {
   .levy-group-heading { display:block; }
   .levy-group-tag { display:inline-block; margin-top:.55rem; }
   .levy-facts dt,.levy-facts dd { padding:.65rem .7rem; }
   .levy-inline-panel { width:min(290px,70vw); }
+  .levy-personal-impact,.levy-estimator-single { padding:.8rem; }
 }
 @media (max-width:760px) {
   main > .page-shell:not(.landing-hero):not(.landing-shell) { padding:1rem .75rem 1.5rem; }

@@ -21,8 +21,21 @@ permalink: /levies/index.html
 
   <aside class="levy-explainer">
     <span class="levy-explainer-icon" aria-hidden="true">i</span>
-    <p><strong>How to read this list.</strong> The “annual revenue” figures are estimates for the taxing district, not a household bill. Millage is a tax rate; your cost depends on your property and applicable credits. Open “Sources and ballot context” to see where to verify each issue, or check your precinct ballot for its exact wording. Issue 10 is a Conneaut charter amendment, not a property-tax levy.</p>
+    <p><strong>Millage, in plain English:</strong> one mill is $1 of tax for each $1,000 of taxable value. Ohio taxes homes at 35% of appraised market value, so one mill is about $35 a year for each $100,000 of home value before reductions. The “raises about” amounts below are estimates for the whole taxing district, not your household. Issue 10 is a Conneaut charter amendment, not a property-tax levy.</p>
   </aside>
+
+  <section class="levy-estimator" data-levy-estimator aria-labelledby="levy-estimator-title">
+    <div class="levy-estimator-copy">
+      <p class="content-eyebrow">Make the rate personal</p>
+      <h2 id="levy-estimator-title">Estimate it for your home</h2>
+      <p>Enter your home’s appraised market value to update the estimates in each row. You can find that value on your property-tax record. Estimates use the full voted rate before credits and tax-rate reductions; your actual bill may differ.</p>
+    </div>
+    <label class="levy-value-field" for="levy-home-value">Appraised market value
+      <span class="levy-value-input-wrap"><span aria-hidden="true">$</span><input id="levy-home-value" data-levy-home-value type="number" min="1" step="1000" value="100000" inputmode="decimal" aria-describedby="levy-estimator-help"></span>
+    </label>
+    <p class="levy-estimator-help" id="levy-estimator-help">The $100,000 starting value is just an example. These rough estimates are not a tax bill. <a href="https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator" target="_blank" rel="noopener noreferrer">Use the County Auditor’s levy estimator</a> for a parcel-based estimate; it also says it excludes rollbacks and reductions.</p>
+    <p class="levy-estimator-status" data-levy-estimator-status aria-live="polite">Example estimates use a $100,000 appraised value.</p>
+  </section>
 
   <section class="levy-group levy-group-changes" aria-labelledby="tax-changes-heading">
     <div class="levy-group-heading">
@@ -38,9 +51,9 @@ permalink: /levies/index.html
           <tr>
             <td><a class="levy-issue-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td>
             <td>{{ levy.jurisdiction }}</td>
-            <td><strong>{{ levy.purpose }}</strong>{% if levy.notes %}<span class="levy-impact-summary">{{ levy.notes }}</span>{% endif %}</td>
-            <td><span class="levy-type-pill">{{ levy.type | replace("_", " ") | capitalize }}</span></td><td>{{ levy.millage }} mills</td><td>{% if levy.term_years %}{{ levy.term_years }} years{% else %}Not listed{% endif %}</td>
-            <td><details class="levy-inline-details"><summary>Sources and ballot context</summary><div class="levy-inline-panel"><p>{{ levy.notes or "No additional note is available for this issue." }}</p><p>Exact ballot wording can vary by precinct. Check your official sample ballot before voting.</p><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}</ul><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Open full Issue {{ levy.issue_number }} page <span aria-hidden="true">→</span></a></div></details></td>
+            <td><strong>{{ levy.purpose }}</strong>{% if levy.notes %}<span class="levy-impact-summary">{{ levy.notes }}</span>{% endif %}<span class="levy-estimate-row" data-levy-estimate data-kind="{{ levy.type }}" data-rate="{{ levy.millage }}" data-existing-rate="{{ levy.existing_millage or 0 }}">{% if levy.type == "additional" %}About ${{ (levy.millage * 35) | round(2) }}/year added per $100,000 home value{% elif levy.type == "renewal_increase" %}About ${{ ((levy.millage - levy.existing_millage) * 35) | round(2) }}/year added per $100,000 home value{% elif levy.type == "renewal_reduction" %}About ${{ ((levy.existing_millage - levy.millage) * 35) | round(2) }}/year lower per $100,000 home value{% else %}Continues an existing tax; not a new charge{% endif %}</span></td>
+            <td><span class="levy-type-pill">{{ levy.type | replace("_", " ") | capitalize }}</span></td><td>{{ levy.millage }} {% if levy.millage == 1 %}mill{% else %}mills{% endif %}</td><td>{% if levy.term_years %}{{ levy.term_years }} years{% else %}Not listed{% endif %}</td>
+            <td><details class="levy-inline-details"><summary>Sources and ballot context</summary><div class="levy-inline-panel"><p>{{ levy.notes or "No additional note is available for this issue." }}</p><p>{% if levy.type == "additional" %}If approved, this adds a new tax; if rejected, it is not added.{% elif levy.type == "renewal_reduction" %}If rejected, the current 1.5-mill levy expires.{% else %}If rejected, the current levy expires.{% endif %}Check your official sample ballot for the exact wording.</p><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}</ul><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Open full Issue {{ levy.issue_number }} page <span aria-hidden="true">→</span></a></div></details></td>
             <td><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES" aria-label="Vote yes on Issue {{ levy.issue_number }}"></td>
           </tr>{% endif %}{% endfor %}
         </tbody>
@@ -60,7 +73,7 @@ permalink: /levies/index.html
         <thead><tr><th scope="col">Issue</th><th scope="col">Jurisdiction</th><th scope="col">Purpose and impact</th><th scope="col">Rate</th><th scope="col">Term</th><th scope="col">More information</th><th scope="col"><span class="visually-hidden">Worksheet choice</span></th></tr></thead>
         <tbody>
           {% for levy in levies %}{% if not levy.tax_change %}
-          <tr><td><a class="levy-issue-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td><td>{{ levy.jurisdiction }}</td><td><strong>{{ levy.purpose }}</strong>{% if levy.notes %}<span class="levy-impact-summary">{{ levy.notes }}</span>{% endif %}</td><td>{{ levy.millage }} mills</td><td>{% if levy.term_years %}{{ levy.term_years }} years{% else %}Not listed{% endif %}</td><td><details class="levy-inline-details"><summary>Sources and ballot context</summary><div class="levy-inline-panel"><p>{{ levy.notes or "No additional note is available for this issue." }}</p><p>Exact ballot wording can vary by precinct. Check your official sample ballot before voting.</p><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}</ul><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Open full Issue {{ levy.issue_number }} page <span aria-hidden="true">→</span></a></div></details></td><td><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES" aria-label="Vote yes on Issue {{ levy.issue_number }}"></td></tr>
+          <tr><td><a class="levy-issue-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td><td>{{ levy.jurisdiction }}</td><td><strong>{{ levy.purpose }}</strong>{% if levy.notes %}<span class="levy-impact-summary">{{ levy.notes }}</span>{% endif %}<span class="levy-estimate-row" data-levy-estimate data-kind="{{ levy.type }}" data-rate="{{ levy.millage }}" data-existing-rate="{{ levy.existing_millage or 0 }}">Continues an existing tax; not a new charge</span></td><td>{{ levy.millage }} {% if levy.millage == 1 %}mill{% else %}mills{% endif %}</td><td>{% if levy.term_years %}{{ levy.term_years }} years{% else %}Not listed{% endif %}</td><td><details class="levy-inline-details"><summary>Sources and ballot context</summary><div class="levy-inline-panel"><p>{{ levy.notes or "No additional note is available for this issue." }}</p><p>{% if not levy.tax_change %}This straight renewal does not add new millage. If rejected, the current levy expires.{% else %}Exact ballot wording can vary by precinct. Check your official sample ballot before voting.{% endif %}</p><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a></li>{% endfor %}</ul><a class="levy-details-link" href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Open full Issue {{ levy.issue_number }} page <span aria-hidden="true">→</span></a></div></details></td><td><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES" aria-label="Vote yes on Issue {{ levy.issue_number }}"></td></tr>
           {% endif %}{% endfor %}
         </tbody>
       </table>
@@ -77,4 +90,5 @@ permalink: /levies/index.html
     <a class="directory-action" href="{{ '/sample-ballots/' | url }}">Check your official sample ballot <span aria-hidden="true">→</span></a>
   </section>
 </section>
+<script src="{{ '/js/levy-estimator.js' | url }}" defer></script>
 

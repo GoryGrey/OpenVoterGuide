@@ -19,12 +19,35 @@ eleventyComputed:
     <dt>Jurisdiction</dt><dd>{{ levy.jurisdiction }}</dd>
     <dt>Purpose</dt><dd>{{ levy.purpose }}</dd>
     <dt>Type</dt><dd>{{ levy.type | replace("_", " ") | capitalize }}{% if levy.tax_change %} · changes the tax{% else %} · straight renewal{% endif %}</dd>
-    <dt>Millage</dt><dd>{{ levy.millage }} mills</dd>
+    <dt>Tax rate</dt><dd><strong>{{ levy.millage }} {% if levy.millage == 1 %}mill{% else %}mills{% endif %}</strong>. A mill is $1 for every $1,000 of taxable value. Ohio taxes homes at 35% of appraised market value, so one mill is about $35 per year for each $100,000 of home value before reductions.</dd>
     {% if levy.term_years %}<dt>Term</dt><dd>{{ levy.term_years }} years</dd>{% endif %}
     <dt>Election</dt><dd>November 3, 2026 · Ashtabula County, Ohio</dd>
   </dl>
-  {% if levy.notes %}<h2>What this levy means</h2><p>{{ levy.notes }}</p>{% endif %}
+  <section class="levy-personal-impact" aria-labelledby="levy-impact-heading" data-levy-estimator>
+    <p class="content-eyebrow">Plain-language impact</p>
+    <h2 id="levy-impact-heading">What could this mean for your property?</h2>
+    {% if levy.type == "additional" %}<p>This is a new tax. If approved, it adds the proposed rate to properties in this district for {{ levy.term_years }} years. If it fails, this new levy is not added.</p>
+    {% elif levy.type == "renewal_increase" %}<p>This renews the current tax and adds <strong>{{ levy.millage - levy.existing_millage }} mills</strong>. The added portion is the estimated increase; the full {{ levy.millage }}-mill rate is the renewed levy total. If it fails, the existing tax expires.</p>
+    {% elif levy.type == "renewal_reduction" %}<p>This renews the current tax at a lower rate, from {{ levy.existing_millage }} to {{ levy.millage }} mills. The reduction is the estimated savings. If it fails, the existing tax expires.</p>
+    {% else %}<p>This is a straight renewal. It does not add a new tax or increase the rate; it continues the existing tax for {{ levy.term_years }} years. If it fails, the current levy expires.</p>{% endif %}
+    {% if levy.notes %}<p class="levy-district-note"><strong>For the district:</strong> {{ levy.notes }}</p>{% endif %}
+    <div class="levy-estimator levy-estimator-single">
+      <label class="levy-value-field" for="levy-home-value">Your home’s appraised market value
+        <span class="levy-value-input-wrap"><span aria-hidden="true">$</span><input id="levy-home-value" data-levy-home-value type="number" min="1" step="1000" value="100000" inputmode="decimal" aria-describedby="levy-estimator-help"></span>
+      </label>
+      <div class="levy-personal-estimate" data-levy-estimate data-kind="{{ levy.type }}" data-rate="{{ levy.millage }}" data-existing-rate="{{ levy.existing_millage or 0 }}" aria-label="Estimated individual tax impact">
+        {% if levy.type == "additional" %}At $100,000 appraised value: about ${{ (levy.millage * 35) | round(2) }} a year in new tax before reductions.
+        {% elif levy.type == "renewal_increase" %}At $100,000 appraised value: about ${{ ((levy.millage - levy.existing_millage) * 35) | round(2) }} a year added; about ${{ (levy.millage * 35) | round(2) }} total for this levy before reductions.
+        {% elif levy.type == "renewal_reduction" %}At $100,000 appraised value: about ${{ ((levy.existing_millage - levy.millage) * 35) | round(2) }} a year in savings; about ${{ (levy.millage * 35) | round(2) }} total for this levy before reductions.
+        {% else %}At $100,000 appraised value: about ${{ (levy.millage * 35) | round(2) }} a year for this existing levy before reductions; this is not a new charge.{% endif %}
+      </div>
+      <p class="levy-estimator-help" id="levy-estimator-help">The $100,000 starting value is only an example. This rough estimate multiplies the full voted rate by 35% of appraised value. It does not account for parcel-specific effective rates, credits, rollbacks, or other reductions, and is not a tax bill. <a href="https://auditor.ashtabulacounty.gov/dnn/Real-Estate/Levy-Calculator" target="_blank" rel="noopener noreferrer">Check the County Auditor’s levy estimator</a> for your parcel; the county says its estimate also excludes rollbacks and reductions.</p>
+      <p class="levy-estimator-status" data-levy-estimator-status aria-live="polite">Example uses a $100,000 appraised value.</p>
+    </div>
+  </section>
   <div class="worksheet-check"><label><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES"> Mark YES on my worksheet</label></div>
   {% if levy.sources and levy.sources.length %}<section class="source-list"><h2>Official and research sources</h2><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul></section>{% endif %}
   <p><a href="{{ '/sample-ballots/' | url }}">Check your official precinct ballot</a> · <a href="{{ '/levies/' | url }}">All property tax levies</a> · <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
 </article>
+<script src="{{ '/js/levy-estimator.js' | url }}" defer></script>
+
