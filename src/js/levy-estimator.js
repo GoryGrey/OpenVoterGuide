@@ -21,20 +21,20 @@
     const monthly = annualAmount => money.format(annualAmount / 12);
 
     if (kind === "additional") {
-      return `Estimated new tax: about ${money.format(annualAtVotedRate)} per year (about ${monthly(annualAtVotedRate)} a month) for a ${valueText} property, before reductions.`;
+      return `Estimated new tax: about ${money.format(annualAtVotedRate)} per year (about ${monthly(annualAtVotedRate)} per month when averaged across the year) for a ${valueText} property, before reductions.`;
     }
 
     if (kind === "renewal_increase") {
       const increase = annualTaxAtRate(marketValue, rate - existingRate);
-      return `Estimated increase: about ${money.format(increase)} per year (about ${monthly(increase)} a month) for a ${valueText} property. Total for this levy at ${rate} mills: about ${money.format(annualAtVotedRate)} per year, before reductions.`;
+      return `Estimated increase: about ${money.format(increase)} per year (about ${monthly(increase)} per month when averaged across the year) for a ${valueText} property. Total for this levy at ${rate} mills: about ${money.format(annualAtVotedRate)} per year, before reductions.`;
     }
 
     if (kind === "renewal_reduction") {
       const savings = annualTaxAtRate(marketValue, existingRate - rate);
-      return `Estimated savings: about ${money.format(savings)} per year (about ${monthly(savings)} a month) for a ${valueText} property. Total for this levy at ${rate} mills: about ${money.format(annualAtVotedRate)} per year, before reductions.`;
+      return `Estimated savings: about ${money.format(savings)} per year (about ${monthly(savings)} per month when averaged across the year) for a ${valueText} property. Total for this levy at ${rate} mills: about ${money.format(annualAtVotedRate)} per year, before reductions.`;
     }
 
-    return `This is not a new charge. If renewed, about ${money.format(annualAtVotedRate)} per year (about ${monthly(annualAtVotedRate)} a month) for a ${valueText} property would be associated with this levy at the full voted rate, before reductions.`;
+    return `This is not a new charge. If renewed, about ${money.format(annualAtVotedRate)} per year (about ${monthly(annualAtVotedRate)} per month when averaged across the year) for a ${valueText} property would be associated with this levy at the full voted rate, before reductions.`;
   }
 
   function updateEstimates() {
