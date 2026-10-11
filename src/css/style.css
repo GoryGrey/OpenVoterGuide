@@ -243,11 +243,37 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
 .skip-link { position:fixed; left:1rem; top:-5rem; z-index:100; padding:.7rem 1rem; border-radius:6px; background:#fff; color:var(--primary); }
 .skip-link:focus { top:1rem; }
 @media (max-width:850px) { .feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } header nav { align-items:flex-start; } .search-box { margin-left:auto; } }
+.site-nav { flex:1 1 auto; }
+.site-nav > summary { display:none; }
+.site-nav .nav-links { display:flex; flex-wrap:wrap; }
+
 @media (max-width:600px) {
-  header { position:relative; } header nav { gap:.55rem; } .nav-links { width:100%; order:3; overflow:auto; flex-wrap:nowrap; }
-  .nav-links a { flex:0 0 auto; } .search-box { width:100%; order:4; } .search-box input { width:100%; }
-  .landing-hero { min-height:500px; background-position:58% center; } .landing-hero-inner { padding:3.3rem 1rem; }
-  .landing-intro { display:block; } .feature-grid,.race-grid,.landing-issue-grid { grid-template-columns:1fr; } .feature-card { min-height:160px; }
+  header { position:relative; }
+  header nav { gap:.55rem; align-items:center; }
+  .logo { max-width:calc(100% - 6rem); font-size:1rem; line-height:1.25; }
+  .site-nav { position:relative; flex:0 0 auto; order:2; }
+  .site-nav > summary {
+    display:flex; align-items:center; justify-content:center; min-width:76px; min-height:44px;
+    padding:.55rem .75rem; border:1px solid var(--border); border-radius:8px;
+    background:#fff; color:var(--primary); font-weight:800; cursor:pointer; list-style:none;
+  }
+  .site-nav > summary::-webkit-details-marker { display:none; }
+  .site-nav > summary::after { content:"⌄"; margin-left:.4rem; }
+  .site-nav[open] > summary::after { content:"⌃"; }
+  .site-nav .nav-links {
+    position:absolute; top:calc(100% + .55rem); right:0; z-index:50; display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr)); gap:.25rem;
+    width:min(22rem,calc(100vw - 2rem)); padding:.5rem;
+    border:1px solid var(--border); border-radius:10px; background:#fff; box-shadow:var(--shadow);
+  }
+  .site-nav .nav-links a { display:flex; align-items:center; min-height:44px; padding:.65rem; }
+  .search-box { width:100%; order:3; margin:0; }
+  .search-box input { width:100%; }
+  .landing-hero { min-height:500px; background-position:58% center; }
+  .landing-hero-inner { padding:3.3rem 1rem; }
+  .landing-intro { display:block; }
+  .feature-grid,.race-grid,.landing-issue-grid { grid-template-columns:1fr; }
+  .feature-card { min-height:160px; }
 }
 @media print { header,footer,.landing-actions { display:none!important; } body,main { background:#fff; } .candidate-card,.measure-card { break-inside:avoid; } }
 
@@ -289,3 +315,25 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
 .address-search .address-official-links a { display: inline; font-weight: 700; }
 .address-status { color: var(--muted); }
 @media (max-width: 600px) { #search-results { position: absolute; left: 0; right: 0; width: 100%; } }
+
+
+/* Expandable candidate comparison keeps the readable candidate cards first. */
+.all-candidates-compare { padding:0; overflow:hidden; }
+.comparison-disclosure > summary {
+  display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:56px;
+  padding:1rem 1.2rem; color:var(--primary); font-weight:800; cursor:pointer; list-style:none;
+}
+.comparison-disclosure > summary::-webkit-details-marker { display:none; }
+.comparison-disclosure > summary::after { content:"+"; flex:0 0 auto; color:var(--accent); font-size:1.5rem; }
+.comparison-disclosure[open] > summary::after { content:"−"; }
+.comparison-summary-title { font-family:"Libre Franklin",system-ui,sans-serif; font-size:1.25rem; letter-spacing:-.02em; }
+.comparison-summary-hint { color:var(--muted); font-size:.85rem; font-weight:600; text-align:right; }
+.comparison-disclosure > p,.comparison-disclosure > .comparison-table-scroll { margin-left:1.2rem; margin-right:1.2rem; }
+.comparison-disclosure > p:last-of-type { margin-bottom:1rem; }
+.comparison-disclosure > .comparison-table-scroll { margin-bottom:1.2rem; }
+.comparison-disclosure > summary:focus-visible { outline:3px solid #f39c12; outline-offset:-3px; }
+@media (max-width:600px) {
+  .comparison-disclosure > summary { align-items:flex-start; padding:1rem; }
+  .comparison-summary-hint { max-width:7rem; }
+  .comparison-disclosure > p,.comparison-disclosure > .comparison-table-scroll { margin-left:.75rem; margin-right:.75rem; }
+}
