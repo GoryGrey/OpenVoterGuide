@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Sunday Liquor Questions
+description: Three Ashtabula County precinct-specific questions on Sunday alcohol sales.
+permalink: /measures/liquor/index.html
+---
+
+<h1>Sunday Liquor Questions</h1>
+<p>These local-option questions apply only to voters in the named precinct. Confirm your own ballot with the <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County Board of Elections</a>.</p>
+
+{% for issue in liquor %}
+<article class="candidate-card">
+  <h2>Issue {{ issue.issue_number }}: {{ issue.establishment }}</h2>
+  <p><strong>Precinct:</strong> {{ issue.precinct }}</p>
+  <p><strong>Location:</strong> {{ issue.address }}</p>
+  <p>{{ issue.plain_english }}</p>
+  <h3>What a YES vote means</h3>
+  <p>{{ issue.yes_means }}</p>
+  <h3>What a NO vote means</h3>
+  <p>{{ issue.no_means }}</p>
+  <div class="source-list"><strong>Official source:</strong>
+    <ul>{% for source in issue.sources %}<li><a href="{{ source.url }}" rel="noopener" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul>
+  </div>
+</article>
+{% endfor %}
+
+<p><a href="{{ '/measures/' | url }}">All ballot measures →</a></p>

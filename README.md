@@ -12,7 +12,7 @@ OpenVoterGuide is a searchable, interactive website that helps voters understand
 - **Personal worksheet** to privately mark choices (stored only in your browser, nothing tracked)
 - **Candidate comparison** tables to see all candidates side by side
 
-Strictly nonpartisan. No endorsements, no recommendations, no partisan framing. Every claim links to its source.
+Strictly nonpartisan. No endorsements, no recommendations, no partisan framing. Candidate pages include research sources; claim-by-claim citations are still being improved.
 
 ## Live Site
 
@@ -54,7 +54,7 @@ Visit `http://localhost:8080`.
 
 ## Data & Verification
 
-All Ashtabula County data was verified against the official Board of Elections candidate list (Rev. 9-15-26) and issues sheet (Rev. 9-15-26) on October 11, 2026.
+The candidate and issue lists were checked against the county Board of Elections documents dated Rev. 9-15-26 on October 11, 2026. This verifies ballot coverage and official issue details; candidate background, position, and voting-record summaries still need claim-by-claim source checks. The guide currently includes 10 races, 2 measures, 36 property-tax levies, and 3 precinct-specific liquor questions.
 
 See `data/oh-ashtabula-2026-general/VERIFICATION.md` for the full source manifest.
 

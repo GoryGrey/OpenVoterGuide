@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Ballot Measures
+description: Plain-language guides to Ohio Issue 3 and the Conneaut data-center charter amendment, with the effect of YES and NO votes.
+permalink: /measures/index.html
+---
+
+<h1>Ballot Measures</h1>
+<p>These summaries explain what the ballot text would change. They do not recommend how to vote. Check your official sample ballot to see which local questions appear for you.</p>
+
+{% for measure in measures %}
+  {% set measurePath = '/measures/' + measure.id + '/' %}
+  <article class="candidate-card">
+    <h2><a href="{{ measurePath | url }}">Issue {{ measure.issue_number }}: {{ measure.title }}</a></h2>
+    <p>{{ measure.plain_english }}</p>
+    <p><a href="{{ measurePath | url }}">Read what YES and NO mean →</a></p>
+  </article>
+{% endfor %}
+
+<p><a href="{{ '/measures/liquor/' | url }}">View the three precinct-specific Sunday liquor questions →</a></p>
