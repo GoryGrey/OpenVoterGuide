@@ -49,5 +49,5 @@ eleventyComputed:
   {% if levy.sources and levy.sources.length %}<section class="source-list"><h2>Official and research sources</h2><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul></section>{% endif %}
   <p><a href="{{ '/sample-ballots/' | url }}">Check your official precinct ballot</a> · <a href="{{ '/levies/' | url }}">All property tax levies</a> · <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
 </article>
-<script src="{{ '/js/levy-estimator.js' | url }}" defer></script>
+<script src="{{ '/js/levy-estimator.js' | url }}?v=20261011-2" defer></script>
 
