@@ -1475,64 +1475,223 @@
         "name": "Keith Faber",
         "party": "Republican",
         "incumbent": false,
-        "background": "Ohio Auditor of State since 2019; previously 16 years in the Ohio General Assembly, including as Senate President. Ran unopposed in the May 5, 2026 GOP primary.",
+        "background": "Faber’s campaign biography describes him as an attorney and Ohio Auditor of State. The official Auditor’s Office reports the Special Investigations Unit results listed below.",
         "promises": [
-          "Support law enforcement, including more resources for the Bureau of Criminal Investigation in counties without their own crime labs",
-          "Continue anti-corruption and anti-fraud work begun as auditor",
-          "Consumer protection, including help for Ohioans with denied health-insurance claims"
+          "Faber says his Attorney General’s office would focus on public safety and support Ohio police and prosecutors.",
+          "His campaign says he would address drug addiction through treatment and recovery services and prosecute drug suppliers.",
+          "His campaign proposes stronger consumer protection against fraud, scams, unfair business practices, and cybercrime."
         ],
         "record": [
-          "Auditor (2019-present): Special Investigations Unit - as of Aug. 2026, 165 convictions on 376 criminal charges, 284 findings for recovery totaling $28,667,204",
-          "Among first state auditors to examine pandemic unemployment-compensation fraud; estimated $5B+ in improper unemployment payments",
-          "Serves on the seven-member Ohio Redistricting Commission",
-          "State senator (16 years, incl. Senate presidency): specific roll-call votes with bill numbers correlated to AG promises were not located - GAP"
+          "The Ohio Auditor of State reports that, since Faber took office in January 2019, its Special Investigations Unit secured 170 convictions on 384 charges and issued 291 findings for recovery totaling $29,046,238 (page checked October 11, 2026)."
         ],
-        "correlation": "MATCH on anti-fraud/anti-corruption: auditor fraud investigations and recoveries directly parallel AG promise to continue that work. GAP on the BCI crime-lab and insurance-claim intervenor promises: no auditor or Senate record found testing them.",
+        "correlation": "Selected campaign statements are attributed to Faber’s campaign. The Auditor’s Office reports its unit’s outcomes during his tenure; these totals are office-reported and do not by themselves establish the effect of any one policy. No overall match score is assigned.",
         "sources": [
           {
-            "label": "Wikipedia - Keith Faber",
-            "url": "https://en.wikipedia.org/wiki/Keith_Faber"
+            "label": "Keith Faber campaign biography and launch statement",
+            "url": "https://www.keithfaber.org/"
           },
           {
-            "label": "Dispatch, 10/7/2026",
-            "url": "https://www.dispatch.com/story/news/state/2026/10/07/keith-faber-john-kulewicz-running-to-be-ohios-next-attorney-general/91656069007/"
+            "label": "Keith Faber campaign issues",
+            "url": "https://www.keithfaber.org/issues/"
           },
           {
-            "label": "signalohio.org",
-            "url": "https://signalohio.org/election-2026-keith-faber-and-john-kulewicz-ohio-next-attorney-general/"
+            "label": "Ohio Auditor of State: Special Investigations Unit",
+            "url": "https://www.ohioauditor.gov/fraud/default.html"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Keith_Faber_2018_rally_%28cropped%29.jpg/960px-Keith_Faber_2018_rally_%28cropped%29.jpg",
-        "photo_credit": "CC BY-SA 4.0 via https://commons.wikimedia.org/wiki/File:Keith_Faber_2018_rally_(cropped).jpg"
+        "photo_credit": "CC BY-SA 4.0 via https://commons.wikimedia.org/wiki/File:Keith_Faber_2018_rally_(cropped).jpg",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Faber’s campaign biography identifies him as an attorney and Auditor of State; the official Auditor’s Office page identifies the SIU results shown in this guide.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Keith Faber campaign biography and launch statement",
+                  "url": "https://www.keithfaber.org/"
+                },
+                {
+                  "label": "Ohio Auditor of State: Special Investigations Unit",
+                  "url": "https://www.ohioauditor.gov/fraud/default.html"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Faber’s campaign launch statement says his AG office would focus on public safety and support Ohio police and prosecutors.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Keith Faber campaign biography and launch statement",
+                  "url": "https://www.keithfaber.org/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Faber’s campaign issues page describes treatment, prosecution of suppliers, and recovery support as parts of its response to drug addiction.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Keith Faber campaign issues",
+                  "url": "https://www.keithfaber.org/issues/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Faber’s campaign issues page calls for consumer-protection enforcement against fraud, scams, unfair practices, and cybercriminals.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Keith Faber campaign issues",
+                  "url": "https://www.keithfaber.org/issues/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The Auditor of State reports the SIU totals and attributes its period of service to Faber’s tenure beginning in January 2019.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Auditor of State: Special Investigations Unit",
+                  "url": "https://www.ohioauditor.gov/fraud/default.html"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide includes selected campaign positions and office-reported SIU outcomes; it does not attribute every outcome to a particular position or assess the full platform.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Keith Faber campaign biography and launch statement",
+                  "url": "https://www.keithfaber.org/"
+                },
+                {
+                  "label": "Ohio Auditor of State: Special Investigations Unit",
+                  "url": "https://www.ohioauditor.gov/fraud/default.html"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "John J. Kulewicz",
         "party": "Democrat",
         "incumbent": false,
-        "background": "44 years as an attorney at Vorys, Sater, Seymour and Pease, leading teams on complex corporate cases; retired as a partner in December 2024. Elected to Upper Arlington City Council in 2019, re-elected 2023; now in second term. Beat former state Rep. Elliot Forhan 63.1% to 36.9% in the May 5, 2026 Democratic primary.",
+        "background": "Kulewicz’s campaign biography says he has litigated for more than 40 years, attended Yale Law School, and served on Upper Arlington City Council since 2020.",
         "promises": [
-          "Focus AG resources on economic issues: wage theft and consumer-protection cases; avoid 'culture war issues'",
-          "Handle the basics: protect health care, pensions, jobs, communities, daycare",
-          "Vigilance that prosecutors move cases forward promptly"
+          "Says he would pursue corruption cases and restore transparency and accountability in state government.",
+          "Says he would take on price-fixing monopolies, scam artists, and robocallers.",
+          "Says he would pursue Medicaid-provider and nursing-home fraud."
         ],
         "record": [
-          "City council record is thin: routine municipal business only",
-          "No record of wage-theft enforcement, consumer-protection litigation, or criminal-justice administration (not municipal-council functions)",
-          "No prior state legislative or prosecutorial record exists"
+          "This guide does not include a roll-call record for Kulewicz. His campaign biography reports his Upper Arlington City Council service; the profile does not assess the full municipal record."
         ],
-        "correlation": "NO PRIOR STATE-LEVEL RECORD. His 44-year litigation career is professional experience, not a voting or governing record. GAP on every AG promise.",
+        "correlation": "Selected positions are attributed to Kulewicz’s campaign. They are not independent findings about what he could accomplish as Attorney General; no overall match score is assigned.",
         "sources": [
           {
-            "label": "Ballotpedia",
-            "url": "https://ballotpedia.org/John_Kulewicz"
+            "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+            "url": "https://john4ohioag.com/"
           },
           {
-            "label": "Dispatch, 10/7/2026",
-            "url": "https://www.dispatch.com/story/news/state/2026/10/07/keith-faber-john-kulewicz-running-to-be-ohios-next-attorney-general/91656069007/"
+            "label": "Ohio Secretary of State: certified 2026 primary candidates",
+            "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-02-19"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/JohnJKulewicz.jpg",
-        "photo_credit": "CC BY-SA 4.0"
+        "photo_credit": "CC BY-SA 4.0",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Kulewicz’s campaign biography describes his litigation career, education, and Upper Arlington City Council service. The Ohio Secretary of State certified his name for the 2026 primary.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+                  "url": "https://john4ohioag.com/"
+                },
+                {
+                  "label": "Ohio Secretary of State: certified 2026 primary candidates",
+                  "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-02-19"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Kulewicz’s campaign says he would pursue corruption and restore transparency and accountability.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+                  "url": "https://john4ohioag.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Kulewicz’s campaign says he would take on price-fixing monopolies, scams, and robocalls.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+                  "url": "https://john4ohioag.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Kulewicz’s campaign says he would pursue Medicaid-provider and nursing-home fraud.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+                  "url": "https://john4ohioag.com/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide does not summarize city-council roll calls or a state legislative record. Campaign biography is cited only for the reported council service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+                  "url": "https://john4ohioag.com/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The guide presents a selection of campaign positions without evaluating feasibility or assigning a match score.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "John Kulewicz for Ohio Attorney General: campaign biography and priorities",
+                  "url": "https://john4ohioag.com/"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
@@ -1548,59 +1707,213 @@
         "name": "Frank LaRose",
         "party": "Republican",
         "incumbent": false,
-        "background": "In his second term as Ohio Secretary of State (elected 2018, re-elected 2022), term-limited in 2026. Previously two terms in the Ohio Senate (2011-2018). Served in the 101st Airborne and as a Green Beret; recently returned from a six-week Ohio Army National Guard deployment in Eastern Europe.",
+        "background": "LaRose’s campaign biography says he has served as Ohio Secretary of State since 2019, previously served two terms in the Ohio Senate, and served in the U.S. Army. His campaign announced his candidacy for Auditor of State in February 2026.",
         "promises": [
-          "Mandatory performance audits of public entities using per-capita cost analysis",
-          "Curb corruption and fraud by public officials, particularly Medicaid fraud, using public-database data analysis",
-          "Cites 2022 creation of the SOS Public Integrity Division as qualification for the auditor's fraud-fighting role"
+          "LaRose says he would bring transparency, efficiency, and accountability to state and local government.",
+          "His campaign says he would apply high performance standards and operational-efficiency practices to government offices.",
+          "LaRose says he would continue efforts to identify fraud, waste, abuse, cybercrime, and public corruption."
         ],
         "record": [
-          "SOS (2019-present): proposed and campaigned for the August 2023 Issue 1 constitutional amendment (60% voter-approval threshold); voters defeated it",
-          "Withdrew Ohio from the bipartisan Electronic Registration Information Center (ERIC) in March 2023, weeks after calling it 'one of the best fraud-fighting tools that we have'",
-          "Implemented Ohio's photo-ID voting law (statutory, 2023); has repeatedly said Ohio elections are 'secure, easily accessible and highly accurate'",
-          "Has stated election fraud is 'exceedingly rare' in Ohio"
+          "As Secretary of State, LaRose issued a 2023 directive instructing county boards of elections to implement election-law changes under HB 458 for that year’s primary. This is an administrative action, not an Auditor of State record."
         ],
-        "correlation": "MATCH on anti-fraud emphasis: Public Integrity Division creation parallels auditor-campaign pledge to fight fraud. MIXED on data-driven accountability: cited elections achievement is ballot-security administration, not financial auditing - no auditing experience. GAP: no record of performance-audit work.",
+        "correlation": "Selected proposals are attributed to LaRose’s campaign. The record item documents an election-administration directive from his current office and is not evidence of how he would perform as auditor. No overall match score is assigned.",
         "sources": [
           {
-            "label": "pulse.findlay.edu",
-            "url": "https://pulse.findlay.edu/2026/politics/auditor/"
+            "label": "Frank LaRose campaign announcement for Auditor of State",
+            "url": "https://www.franklarose.com/news-article-headline/"
           },
           {
-            "label": "Akron Beacon Journal, 5/30/2026",
-            "url": "https://www.beaconjournal.com/story/news/politics/elections/2026/05/30/gop-ohio-auditor-candidate-frank-larose-speaks-to-akron-press-club/90313346007/"
+            "label": "Ohio Secretary of State: Frank LaRose biography",
+            "url": "https://www.ohiosos.gov/office"
+          },
+          {
+            "label": "Ohio Secretary of State: implementation of HB 458 election reforms",
+            "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2023-02-07"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Frank_LaRose_by_Gage_Skidmore.jpg/960px-Frank_LaRose_by_Gage_Skidmore.jpg",
-        "photo_credit": "CC BY-SA 3.0 via https://en.wikipedia.org/wiki/Frank_LaRose"
+        "photo_credit": "CC BY-SA 3.0 via https://en.wikipedia.org/wiki/Frank_LaRose",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "LaRose’s campaign announcement gives his current and prior offices, military service, and Auditor campaign launch.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Frank LaRose campaign announcement for Auditor of State",
+                  "url": "https://www.franklarose.com/news-article-headline/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "LaRose’s campaign announcement says he plans to bring transparency, efficiency, and accountability to public offices.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Frank LaRose campaign announcement for Auditor of State",
+                  "url": "https://www.franklarose.com/news-article-headline/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "LaRose’s announcement describes applying performance standards and operational-efficiency practices to government offices.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Frank LaRose campaign announcement for Auditor of State",
+                  "url": "https://www.franklarose.com/news-article-headline/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "LaRose’s campaign announcement says he would build on programs to identify fraud, waste, abuse, cybercrime, and public corruption.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Frank LaRose campaign announcement for Auditor of State",
+                  "url": "https://www.franklarose.com/news-article-headline/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The Secretary of State’s February 2023 release documents Directive 2023-03 implementing HB 458 reforms for the May 2023 primary.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Secretary of State: implementation of HB 458 election reforms",
+                  "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2023-02-07"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "The listed record item concerns election administration in LaRose’s current office and does not establish performance in the auditor role.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Frank LaRose campaign announcement for Auditor of State",
+                  "url": "https://www.franklarose.com/news-article-headline/"
+                },
+                {
+                  "label": "Ohio Secretary of State: implementation of HB 458 election reforms",
+                  "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2023-02-07"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Annette Blackwell",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Elected mayor of Maple Heights (Cuyahoga County) in November 2015; serving her third term; the city's first female and first Black mayor. When she took office, the city was in state fiscal emergency; the emergency status ended in 2020. Previously spent 16 years at Deloitte as a property-tax specialist. B.A. from Ursuline College; Certified Public Manager credential from Cleveland State.",
+        "background": "Blackwell’s campaign biography says she has served as Maple Heights mayor for ten years, worked in property tax at Deloitte and Ryan, and developed the city’s recovery plan after it entered fiscal emergency.",
         "promises": [
-          "Turn the auditor's office from a 'purely punitive watchdog into a proactive partner' for local governments",
-          "Investigate corruption and fiscal mismanagement 'regardless of political affiliation'",
-          "Fight state-government corruption; safeguard taxpayer dollars",
-          "Fair congressional district maps (the auditor sits on the Redistricting Commission)"
+          "Blackwell says she would root out corruption in Ohio government.",
+          "She says she would safeguard taxpayer dollars and oppose state actions that reduce local-government funding.",
+          "She says she would use her role on the Ohio Redistricting Commission to advocate for fair representation."
         ],
         "record": [
-          "Mayor (2016-present): led the city's exit from fiscal emergency (2020), writing a five-year turnaround plan",
-          "City has received the Auditor of State's 'Clean Audit' award multiple years running (three consecutive years, per a 2026 podcast summary; primary award records not reviewed - thin)",
-          "Municipal record on investigating corruption beyond her own city's finances: not found - GAP"
+          "Blackwell’s campaign says she developed a recovery plan for Maple Heights after the city entered fiscal emergency and that the city later received multiple Clean Audit Awards. These are campaign-reported outcomes; this guide has not independently evaluated the municipal financial record."
         ],
-        "correlation": "MATCH on fiscal turnaround: Maple Heights' exit from fiscal emergency and clean audits directly parallel her promise of proactive fiscal partnership. GAP on statewide anti-corruption enforcement: a mayoral record does not include investigating other governments' fraud.",
+        "correlation": "Selected campaign priorities and campaign-reported municipal experience are shown. The guide does not treat a mayoral record as an Auditor of State record or assign an overall match score.",
         "sources": [
           {
-            "label": "pulse.findlay.edu",
-            "url": "https://pulse.findlay.edu/2026/politics/auditor/"
+            "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+            "url": "https://www.blackwellforohio.com/meetannetteblackwell"
           },
           {
-            "label": "Signal Akron voter guide",
-            "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
+            "label": "Annette Blackwell for Ohio Auditor: campaign homepage",
+            "url": "https://www.blackwellforohio.com/"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Blackwell’s campaign biography describes her mayoral service, property-tax work, and account of developing Maple Heights’s recovery plan.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+                  "url": "https://www.blackwellforohio.com/meetannetteblackwell"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Blackwell’s campaign lists rooting out corruption as a priority.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+                  "url": "https://www.blackwellforohio.com/meetannetteblackwell"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Blackwell’s campaign lists safeguarding taxpayer dollars and opposing reductions to local-government funds as priorities.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+                  "url": "https://www.blackwellforohio.com/meetannetteblackwell"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Blackwell’s campaign says she would advocate for fair representation as a member of the Ohio Redistricting Commission.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+                  "url": "https://www.blackwellforohio.com/meetannetteblackwell"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "candidate_statement",
+              "note": "This is a campaign-reported account of the city’s recovery plan and awards; no underlying audit or fiscal-emergency records were checked in this review.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+                  "url": "https://www.blackwellforohio.com/meetannetteblackwell"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This is a limited summary of campaign priorities and campaign-reported municipal experience, not a comprehensive record review.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Annette Blackwell for Ohio Auditor: biography and priorities",
+                  "url": "https://www.blackwellforohio.com/meetannetteblackwell"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
