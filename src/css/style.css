@@ -269,3 +269,23 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
 .comparison-empty { color:var(--muted); font-style:italic; }
 .measure-position-list li+li { margin-top:.8rem; }
 .visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+/* Address based district lookup */
+.search-box { z-index: 40; }
+#search-results { width: min(460px, calc(100vw - 2rem)); max-height: min(70vh, 560px); padding: .25rem; border-radius: 10px; }
+#search-results > p { padding: .75rem 1rem; }
+#search-results > a { border-radius: 6px; }
+.address-search { margin: .65rem; padding: .9rem; border: 1px solid #9bbfe3; border-radius: 9px; background: #f2f7fd; }
+.address-search > strong { display: block; color: var(--primary); font-size: 1rem; }
+.address-search > p { margin: .45rem 0; color: var(--text); font-size: .88rem; }
+.address-search-button { min-height: 42px; margin-top: .4rem; padding: .6rem .85rem; border: 0; border-radius: 7px; background: var(--accent); color: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+.address-search-button:hover { filter: brightness(.92); }
+.address-search-button:focus-visible,#search-results a:focus-visible { outline: 3px solid #f39c12; outline-offset: 2px; }
+.address-search-button:disabled { opacity: .65; cursor: wait; }
+.address-search > a { display: inline-block; padding: .3rem 0; color: var(--accent); font-weight: 700; }
+.address-match-title { display: block; margin-top: .75rem; color: var(--primary); }
+.address-search .address-geography { margin-top: .4rem; }
+.address-search .address-guidance { margin-top: .75rem; padding-top: .65rem; border-top: 1px solid var(--border); }
+.address-search .address-official-links { margin-top: .5rem; font-size: .86rem; }
+.address-search .address-official-links a { display: inline; font-weight: 700; }
+.address-status { color: var(--muted); }
+@media (max-width: 600px) { #search-results { position: absolute; left: 0; right: 0; width: 100%; } }

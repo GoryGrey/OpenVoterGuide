@@ -7,6 +7,7 @@ const measures = read("measures.json");
 const levies = read("levies.json");
 const liquor = read("liquor.json");
 const election = read("election.json");
+const districtRaceMap = JSON.parse(fs.readFileSync(path.join("src", "district-race-map.json"), "utf8"));
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -80,3 +81,17 @@ assert(levyTypes.renewal === 25 && levyTypes.additional === 7 && levyTypes.renew
 assert(election.election_date === "2026-11-03", "Election date must match this guide's election");
 
 console.log(`Data validation passed: ${races.length} races, ${measures.length} measures, ${levies.length} levies, ${liquor.length} liquor questions.`);
+
+assert(Array.isArray(districtRaceMap), "district-race-map.json must be an array");
+unique(districtRaceMap, (entry) => entry.kind + ":" + entry.district, "district race map");
+for (const entry of districtRaceMap) {
+  assert(["congressional", "state-upper", "state-lower"].includes(entry.kind), "District map " + entry.race_id + ": invalid kind");
+  assert(typeof entry.district === "string" && /^\d+$/.test(entry.district), "District map " + entry.race_id + ": district must be numeric text");
+  const race = races.find((candidate) => candidate.id === entry.race_id);
+  assert(race, "District map references unknown race " + entry.race_id);
+  const number = String(race.district || "").match(/\d+/)?.[0];
+  assert(number && String(Number(number)) === String(Number(entry.district)), "District map " + entry.race_id + ": district does not match race data");
+  if (entry.kind === "congressional") assert(/U\.S\. House/i.test(race.office), "District map " + entry.race_id + ": expected a congressional race");
+  if (entry.kind === "state-lower") assert(/State Representative/i.test(race.office), "District map " + entry.race_id + ": expected a state House race");
+  if (entry.kind === "state-upper") assert(/State Senator/i.test(race.office), "District map " + entry.race_id + ": expected a state Senate race");
+}
