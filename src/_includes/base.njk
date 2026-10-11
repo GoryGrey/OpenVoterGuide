@@ -10,7 +10,7 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v=20261011-comparison">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v=20261011-address-lookup">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -26,8 +26,8 @@
         <a href="{{ '/about/' | url }}">About</a>
       </div>
       <div class="search-box">
-        <input type="search" id="site-search" placeholder="Search candidates, measures..." aria-label="Search">
-        <div id="search-results"></div>
+        <input type="search" id="site-search" placeholder="Search races or enter your address..." aria-label="Search races or enter your address" aria-controls="search-results">
+        <div id="search-results" role="region" aria-label="Search results" aria-live="polite"></div>
       </div>
     </nav>
   </header>
@@ -39,7 +39,7 @@
     <p><a href="{{ '/about/' | url }}">About &amp; Sources</a> | <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County BOE</a></p>
     <p>Open source: <a href="https://github.com/GoryGrey/OpenVoterGuide">GitHub</a> (MIT License)</p>
   </footer>
-  <script>window.OVG_SEARCH_INDEX = "{{ '/search-index.json' | url }}";</script>
+  <script>window.OVG_SEARCH_INDEX = "{{ '/search-index.json' | url }}"; window.OVG_DISTRICT_RACE_MAP = "{{ '/district-race-map.json' | url }}";</script>
   <script src="{{ '/js/search.js' | url }}"></script>
   <script src="{{ '/js/worksheet.js' | url }}"></script>
 </body>

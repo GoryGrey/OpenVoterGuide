@@ -1,0 +1,12 @@
+[
+  {
+    "kind": "congressional",
+    "district": "14",
+    "race_id": "us-house-14"
+  },
+  {
+    "kind": "state-lower",
+    "district": "99",
+    "race_id": "ohio-house-99"
+  }
+]

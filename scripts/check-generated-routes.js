@@ -6,6 +6,7 @@ const races = read("races.json");
 const measures = read("measures.json");
 const expected = [
   "index.html",
+  "district-race-map.json",
   "races/index.html",
   "measures/index.html",
   "measures/liquor/index.html",

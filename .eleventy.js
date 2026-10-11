@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/search-index.json");
+  eleventyConfig.addPassthroughCopy("src/district-race-map.json");
 
   // Date filter
   eleventyConfig.addFilter("readableDate", (dateStr) => {
