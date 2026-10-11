@@ -1028,7 +1028,7 @@
     "id": "common-pleas-2027-01-01",
     "office": "Common Pleas Court Judge, General Division",
     "district": null,
-    "term_info": "Full term beginning January 1, 2027. Ohio law places common pleas judge contests on the nonpartisan office ballot in the general election. The BOE lists Marianne Sezon as the Republican nominee.",
+    "term_info": "Full term beginning January 1, 2027. The BOE lists Marianne Sezon under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
     "candidates": [
       {
         "name": "Marianne Sezon",
@@ -1041,6 +1041,10 @@
           {
             "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
             "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ashtabula County Common Pleas Court schedules",
+            "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
           }
         ],
         "incumbent": true
@@ -1053,7 +1057,7 @@
     "id": "common-pleas-2027-01-02",
     "office": "Common Pleas Court Judge, General Division",
     "district": null,
-    "term_info": "Full term beginning January 2, 2027. Ohio law places common pleas judge contests on the nonpartisan office ballot in the general election. The BOE lists the candidates' primary nominations; the general ballot does not display party labels.",
+    "term_info": "Full term beginning January 2, 2027. The BOE lists Albert S. Camplese under the Democratic primary nomination and Harold E. Specht Jr. under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
     "candidates": [
       {
         "name": "Albert S. Camplese",
@@ -1091,7 +1095,7 @@
     "id": "common-pleas-2027-02-09",
     "office": "Common Pleas Court Judge, General Division",
     "district": null,
-    "term_info": "Full term beginning February 9, 2027. Ohio law places common pleas judge contests on the nonpartisan office ballot in the general election. The BOE lists Thomas E. Harris as the Republican nominee.",
+    "term_info": "Full term beginning February 9, 2027. The BOE lists Thomas E. Harris under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
     "candidates": [
       {
         "name": "Thomas E. Harris",
@@ -1104,6 +1108,10 @@
           {
             "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
             "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ashtabula County Common Pleas Court schedules",
+            "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
           }
         ],
         "incumbent": true
@@ -1116,7 +1124,7 @@
     "id": "common-pleas-probate-2027-02-09",
     "office": "Common Pleas Court Judge, Probate Division",
     "district": null,
-    "term_info": "Full term beginning February 9, 2027. Ohio law places common pleas judge contests on the nonpartisan office ballot in the general election. The BOE lists Edith M. Jonas as the Republican nominee.",
+    "term_info": "Full term beginning February 9, 2027. The BOE lists Edith M. Jonas under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
     "candidates": [
       {
         "name": "Edith M. Jonas",
@@ -1160,6 +1168,10 @@
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ashtabula County Board of Commissioners",
+            "url": "https://ashtabulacounty.gov/220/Commissioners"
           }
         ],
         "party": "Republican",
@@ -1193,6 +1205,10 @@
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ashtabula County Auditor",
+            "url": "https://auditor.ashtabulacounty.gov/dnn/"
           }
         ],
         "party": "Republican",
@@ -1215,6 +1231,10 @@
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ashtabula County official staff directory",
+            "url": "https://www.ashtabulacounty.gov/m/directory"
           }
         ],
         "party": "Republican",
