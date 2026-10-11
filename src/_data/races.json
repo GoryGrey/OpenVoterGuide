@@ -925,65 +925,276 @@
         "name": "Vivek Ramaswamy / Robert A. McColley",
         "party": "Republican",
         "incumbent": false,
-        "background": "Ramaswamy: Cincinnati-born biotech entrepreneur, founder and CEO of Roivant Sciences (2014-2021), 2024 Republican presidential candidate. Won the May 5, 2026 GOP gubernatorial primary. No prior elected office. McColley: Ohio Senate District 1 since 2017, unanimously elected Ohio Senate President in January 2025.",
+        "background": "Cincinnati-born entrepreneur and Republican nominee for Ohio governor, according to his campaign biography. The sources reviewed here show no legislative voting record for him.",
         "promises": [
-          "Phase out Ohio's state income tax over 8-10 years; eliminate income taxes on capital gains in first two-year budget",
-          "Slash property taxes",
-          "Data centers would pay full property taxes (no abatements), some revenue funding homeowner rebates nearby",
-          "Expand natural-gas production, streamline permits, cut electric bills",
-          "Higher academic standards; merit-based teacher pay; parental choice",
-          "Tougher policies for repeat violent offenders",
-          "Supported the Sept. 2026 90-day gas-tax suspension (HB 519)"
+          "Says he will phase Ohio's state income tax to zero and lower property taxes.",
+          "Would require future data centers to pay full property taxes without abatements, use the revenue for homeowner tax relief, and provide free electricity or compensation to nearby residents; he also says he would pause new approvals until the rules are enacted.",
+          "Would require data centers to meet air and water standards, recycle and reuse water, and prioritize brownfield or industrial sites over farmland."
         ],
         "record": [
-          "Ramaswamy: no prior public-office voting or governing record",
-          "McColley (Ohio Senate): YES on HB 8, Parents' Bill of Rights (24-7, 12/18/2024); YES on SB 58, Second Amendment Financial Privacy Act; YES on HB 1, ban on foreign-national campaign contributions; YES on SB 1 (2025), barring public universities from DEI initiatives"
+          "No legislative voting history is listed here for Ramaswamy; his campaign biography describes him as an entrepreneur and candidate, not a former legislator.",
+          "McColley voted YEA on Senate passage of H.B. 8 on December 18, 2024 (24–7).",
+          "McColley voted YEA on Senate passage of S.B. 58 on December 18, 2024 (25–6). The bill prohibits certain fees and firearms liability insurance requirements and includes the Second Amendment Financial Privacy Act.",
+          "McColley voted YEA on Senate passage of S.B. 1 on February 12, 2025 (21–11), and on passage of the amended bill on March 26, 2025 (20–11)."
         ],
-        "correlation": "Ramaswamy: NO PRIOR RECORD - every position is a promise. McColley: MATCH on education/parental-rights and election-integrity. GAP on the income-tax phaseout and property-tax rollback: no McColley record of voting for full income-tax elimination found.",
+        "correlation": "The comparison lists selected statements from the campaign platform and selected Ohio Senate actions by running mate Robert McColley. Ramaswamy has no legislative voting record in the sources reviewed; Acton’s former health-director role was executive service. This is not a complete platform or voting history and assigns no match score.",
         "sources": [
           {
-            "label": "Dispatch, 10/4/2026",
-            "url": "https://www.dispatch.com/story/news/politics/2026/10/04/ohio-governor-candidates-amy-acton-and-vivek-ramaswamy-on-the-issues/88588933007/"
+            "label": "Vivek Ramaswamy campaign biography",
+            "url": "https://vivekforohio.com/meet-vivek/"
           },
           {
-            "label": "beyondlink.live, Jan 2026",
-            "url": "https://beyondlink.live/vivek-ramaswamy-reveals-running-mate-rob-mccolley-for-ohio-governor-ticket/"
+            "label": "Ramaswamy campaign launch statement on taxes",
+            "url": "https://vivekforohio.com/vivek-ramaswamy-launches-campaign-for-governor/"
+          },
+          {
+            "label": "Ramaswamy campaign data-center pledge, August 6, 2026",
+            "url": "https://vivekforohio.com/viveks-ohioans-first-data-center-pledge/"
+          },
+          {
+            "label": "Ohio Senate biography of Rob McColley",
+            "url": "https://ohiosenate.gov/members/rob-mccolley/biography"
+          },
+          {
+            "label": "Ohio Senate roll-call records for H.B. 8",
+            "url": "https://ohiosenate.gov/legislation/135/hb8/votes"
+          },
+          {
+            "label": "Ohio Senate roll-call records for S.B. 58",
+            "url": "https://ohiosenate.gov/legislation/135/sb58/votes"
+          },
+          {
+            "label": "Ohio Senate roll-call records for S.B. 1",
+            "url": "https://ohiosenate.gov/legislation/136/sb1/votes"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vivek_Ramaswamy_%2855241367373%29_%28cropped%29.jpg/960px-Vivek_Ramaswamy_%2855241367373%29_%28cropped%29.jpg",
-        "photo_credit": "CC BY-SA 4.0"
+        "photo_credit": "CC BY-SA 4.0",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "The campaign biography identifies Ramaswamy as a Cincinnati native and entrepreneur and presents him as the 2026 Republican nominee.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Vivek Ramaswamy campaign biography",
+                  "url": "https://vivekforohio.com/meet-vivek/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Ramaswamy’s campaign launch statement says he seeks to phase the state income tax to zero and lower property taxes.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ramaswamy campaign launch statement on taxes",
+                  "url": "https://vivekforohio.com/vivek-ramaswamy-launches-campaign-for-governor/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The August 6, 2026 campaign pledge proposes no future property-tax abatements for data centers, homeowner tax relief, free electricity or compensation for nearby residents, and a temporary halt on approvals until legislation is enacted.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ramaswamy campaign data-center pledge, August 6, 2026",
+                  "url": "https://vivekforohio.com/viveks-ohioans-first-data-center-pledge/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The same campaign pledge proposes air and water standards, recycled and reused water, and preference for brownfield and industrial sites.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ramaswamy campaign data-center pledge, August 6, 2026",
+                  "url": "https://vivekforohio.com/viveks-ohioans-first-data-center-pledge/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The campaign biography lists Ramaswamy’s business background and no legislative office; this guide lists no legislative votes for him.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Vivek Ramaswamy campaign biography",
+                  "url": "https://vivekforohio.com/meet-vivek/"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Ohio Senate records McColley Yea on Senate passage of H.B. 8 on December 18, 2024.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Senate roll-call records for H.B. 8",
+                  "url": "https://ohiosenate.gov/legislation/135/hb8/votes"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Ohio Senate records McColley Yea on Senate passage of S.B. 58 on December 18, 2024.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Senate roll-call records for S.B. 58",
+                  "url": "https://ohiosenate.gov/legislation/135/sb58/votes"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Ohio Senate records McColley Yea on S.B. 1 passage on February 12 and passage of the amended bill on March 26, 2025.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Ohio Senate roll-call records for S.B. 1",
+                  "url": "https://ohiosenate.gov/legislation/136/sb1/votes"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Amy Acton / David Pepper",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Acton: physician trained in pediatrics and preventive medicine. Led the Ohio Department of Health Feb. 2019-June 2020, becoming the public face of Ohio's early COVID-19 response. Resigned June 11, 2020. Ran unopposed in the 2026 Democratic primary. Pepper: Cincinnati lawyer, former Cincinnati City Council member and Hamilton County commissioner; chaired the Ohio Democratic Party 2015-2020.",
+        "background": "Physician and former director of the Ohio Department of Health. Her campaign biography describes her Ohio State University public-health faculty work and appointment to lead the state health department.",
         "promises": [
-          "Expand and make refundable the state earned income tax credit; $1,000/yr child tax credit (under 7) and $500/yr (ages 7-18) for families earning up to $85,000",
-          "Launch 'Ohio Rx' online platform to lower drug prices; protect Medicaid and Medicare",
-          "Ban fracking in state parks and wildlife areas; review existing drilling leases on public land",
-          "Create Anti-Corruption Task Force in first 100 days",
-          "Free school breakfasts and lunches; raise teacher pay; preserve teachers' right to organize",
-          "Pro-union; raise the minimum wage",
-          "Supported HB 519 (90-day gas-tax suspension)"
+          "Proposes an Earned Income Credit for working families and a child tax credit of $1,000 per year for children ages 0–6 and $500 for ages 7–18 in households earning up to $85,000.",
+          "Would create Ohio Rx, an online prescription-price platform using the purchasing power of Ohio Medicaid’s single pharmacy benefit manager.",
+          "Would appoint PUCO commissioners focused on ratepayers, restore funding for the Office of the Ohio Consumers’ Counsel, and reinstate energy-efficiency, demand-response, and renewable-portfolio programs.",
+          "Would direct faster handling of wage-theft cases through an executive order on her first day in office."
         ],
         "record": [
-          "Acton (ODH director Feb. 2019-June 11, 2020): signed emergency health orders closing schools, businesses, and (initially) polls in March-May 2020; extended modified stay-at-home order through May 29, 2020",
-          "Pepper: no state legislative voting record exists"
+          "Acton served as director of the Ohio Department of Health, an executive appointment. No legislative voting history is listed for her.",
+          "Pepper’s campaign biography lists service on Cincinnati City Council and as a Hamilton County commissioner; this profile does not include a state legislative voting history for him."
         ],
-        "correlation": "Acton: MATCH between her health-director tenure and campaign health-care framing. MIXED on executive style: ODH record shows willingness to use sweeping emergency orders, contrasting with campaign message against giving politicians more power. GAP: ODH role produced no record on taxes, fracking, or education funding. Pepper: NO PRIOR STATE VOTING RECORD.",
+        "correlation": "The comparison lists selected campaign statements and public-service history for the ticket. Acton’s health-director role was executive service; Pepper’s listed elected offices were local. This is not a complete platform or voting history and assigns no match score.",
         "sources": [
           {
-            "label": "Dispatch, 10/4/2026",
-            "url": "https://www.dispatch.com/story/news/politics/2026/10/04/ohio-governor-candidates-amy-acton-and-vivek-ramaswamy-on-the-issues/88588933007/"
+            "label": "Amy Acton campaign biography",
+            "url": "https://actonforgovernor.com/meet-amy/"
           },
           {
-            "label": "Wikipedia - Amy Acton",
-            "url": "https://en.wikipedia.org/wiki/Amy_Acton"
+            "label": "Amy Acton campaign affordability plan",
+            "url": "https://actonforgovernor.com/agenda/affordability-agenda/"
+          },
+          {
+            "label": "David Pepper campaign biography",
+            "url": "https://actonforgovernor.com/meet-david/"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Amy_Acton_2025.jpg",
-        "photo_credit": "CC0"
+        "photo_credit": "CC0",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Acton’s campaign biography describes her as a physician, Ohio State University public-health faculty member, and former director of the Ohio Department of Health.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign biography",
+                  "url": "https://actonforgovernor.com/meet-amy/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Pepper’s campaign biography lists Cincinnati City Council and Hamilton County commissioner service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "David Pepper campaign biography",
+                  "url": "https://actonforgovernor.com/meet-david/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Acton’s campaign plan describes an Earned Income Credit and sets out the child tax credit amounts, age groups, and income limit shown here.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign affordability plan",
+                  "url": "https://actonforgovernor.com/agenda/affordability-agenda/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Acton’s campaign plan proposes Ohio Rx using purchasing power from the Medicaid single pharmacy benefit manager.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign affordability plan",
+                  "url": "https://actonforgovernor.com/agenda/affordability-agenda/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Acton’s campaign plan proposes PUCO appointments, funding for the Office of the Ohio Consumers’ Counsel, and reinstating the named energy programs.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign affordability plan",
+                  "url": "https://actonforgovernor.com/agenda/affordability-agenda/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Acton’s campaign plan says she would issue a first-day executive order requiring faster wage-theft case turnaround.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign affordability plan",
+                  "url": "https://actonforgovernor.com/agenda/affordability-agenda/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "Acton’s campaign biography identifies her former executive appointment as Ohio Department of Health director; no legislative vote is claimed.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign biography",
+                  "url": "https://actonforgovernor.com/meet-amy/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Pepper’s campaign biography lists the local offices described. The guide does not infer a complete local voting history from that biography.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "David Pepper campaign biography",
+                  "url": "https://actonforgovernor.com/meet-david/"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Don Kissick / James L. Mills",
