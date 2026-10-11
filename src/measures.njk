@@ -41,6 +41,28 @@ eleventyComputed:
   </label>
 </div>
 
+<section aria-labelledby="candidate-views-heading">
+  <h2 id="candidate-views-heading">What candidates have said about this issue</h2>
+  <p>These entries summarize statements we could source and attribute to a specific candidate. They are not endorsements. No entry means this guide has not added a sourced statement; it does not mean a candidate is undecided or has not spoken.</p>
+  <ul class="measure-position-list">
+    {% for race in races %}
+      {% for candidate in race.candidates %}
+        {% for item in candidate.measure_positions or [] %}
+          {% if item.issue_number == measure.issue_number %}
+            {% set candidateAnchor = candidate.name | candidateSlug %}
+            {% set candidateHref = '/races/' + race.id + '/#' + candidateAnchor %}
+            <li>
+              <strong><a href="{{ candidateHref | url }}">{{ candidate.name }}</a> ({{ race.office }}): {{ item.position | capitalize }}</strong>
+              <p>{{ item.statement }}</p>
+              <small>Checked {{ item.checked_on }} · <a href="{{ item.source.url }}" rel="noopener" target="_blank">{{ item.source.label }}</a></small>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</section>
+
 {% if measure.sources and measure.sources.length %}
 <div class="source-list">
   <strong>Sources:</strong>
