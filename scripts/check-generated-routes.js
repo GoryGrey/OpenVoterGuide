@@ -4,6 +4,7 @@ const path = require("node:path");
 const races = require("../src/_data/races.json");
 const measures = require("../src/_data/measures.json");
 const levies = require("../src/_data/levies.json");
+const liquor = require("../src/_data/liquor.json");
 const candidates = require("../src/_data/candidatePages.js");
 const site = require("../src/_data/site.js");
 
@@ -27,8 +28,8 @@ assert.equal(fs.existsSync(path.join("src", "google4aaa287e48ffc299.html")), fal
   "Google verification file must be generated into output, not tracked in src.");
 
 const searchIndex = JSON.parse(fs.readFileSync(routeFile("search-index.json"), "utf8"));
-assert.equal(searchIndex.length, races.length + candidates.length + measures.length + levies.length,
-  "Search index should cover races, candidate profiles, measures, and levies.");
+assert.equal(searchIndex.length, races.length + candidates.length + measures.length + levies.length + liquor.length + 1,
+  "Search index should cover races, candidate profiles, measures, levies, liquor questions, and voting information.");
 for (const candidate of candidates) {
   assert(searchIndex.some((entry) => entry.url === candidate.profile_url), `Search index is missing ${candidate.name}.`);
 }

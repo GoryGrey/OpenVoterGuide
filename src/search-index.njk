@@ -14,6 +14,10 @@ eleventyExcludeFromCollections: true
 {% endfor %}
 {% for levy in levies %}
   {"title":{{ ("Issue " + (levy.issue_number | string) + ": " + levy.jurisdiction) | dump | safe }},"type":"Property tax levy","url":{{ ("/levies/issue-" + (levy.issue_number | string) + "/") | dump | safe }},"keywords":{{ (levy.jurisdiction + " " + levy.purpose + " property tax " + levy.type) | dump | safe }},"description":{{ (levy.notes or levy.purpose) | dump | safe }}}
-  {% if not loop.last %},{% endif %}
+  ,
 {% endfor %}
+  {"title":"Voting dates and deadlines","type":"Voting information","url":"/voting/","keywords":"early voting hours absentee ballot deadline request ballot due election day polls registration","description":{{ election.name | dump | safe }}}
+  {% for issue in liquor %},
+  {"title":{{ ("Issue " + (issue.issue_number | string) + ": " + issue.establishment) | dump | safe }},"type":"Sunday liquor question","url":{{ ("/measures/liquor/#" + issue.id) | dump | safe }},"keywords":{{ ("Issue " + (issue.issue_number | string) + " " + issue.precinct + " " + issue.establishment + " Sunday liquor sales") | dump | safe }},"description":{{ issue.plain_english | dump | safe }}}
+  {% endfor %}
 ]
