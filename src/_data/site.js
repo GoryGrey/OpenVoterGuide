@@ -1,4 +1,4 @@
-const configuredUrl = new URL(process.env.OVG_SITE_URL || "https://gorygrey.github.io/OpenVoterGuide");
+const configuredUrl = new URL(process.env.OVG_SITE_URL || "https://openvoterguide.org/");
 const pathname = configuredUrl.pathname.replace(/\/+$/, "");
 const pathPrefix = pathname ? `${pathname}/` : "/";
 
