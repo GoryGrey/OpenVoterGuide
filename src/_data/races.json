@@ -127,7 +127,7 @@
       },
       {
         "name": "Greg Levy",
-        "party": "Independent",
+        "party": "Other-party candidate",
         "incumbent": false,
         "background": "Community organizer and musician from University Heights (Akron-raised); directs the Robeson Singers gospel choir; joined the U.S. Navy at 18; furniture mover and grassroots organizer. Member of the Party for Socialism and Liberation but filed as an independent; describes himself as a revolutionary socialist. Does not accept PAC money. Never held public office - no prior voting record exists. Listed as 'Other-party' on the official BOE candidate list.",
         "promises": [
@@ -152,6 +152,39 @@
             "url": "https://www.greg4senate.com/platform"
           }
         ]
+      },
+      {
+        "name": "Stephen Faris",
+        "background": "Stephen Faris is listed by the Ashtabula County Board of Elections as a candidate for U.S. Senator. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
+      },
+      {
+        "name": "Anthony Holliman",
+        "background": "Anthony Holliman is listed by the Ashtabula County Board of Elections as a candidate for U.S. Senator. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
+      },
+      {
+        "name": "Timothy Telymonde",
+        "background": "Timothy Telymonde is listed by the Ashtabula County Board of Elections as a candidate for U.S. Senator. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
       }
     ]
   },
@@ -324,6 +357,50 @@
             "url": "https://athensindependent.com/2026-general-election-state-races/"
           }
         ]
+      },
+      {
+        "name": "Timothy Grady / Andrea Neutzling",
+        "background": "Timothy Grady / Andrea Neutzling is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
+      },
+      {
+        "name": "Heather Hill / Patrick Manley",
+        "background": "Heather Hill / Patrick Manley is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
+      },
+      {
+        "name": "Renea Turner / Jalen Turner",
+        "background": "Renea Turner / Jalen Turner is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
+      },
+      {
+        "name": "Ron Ula / Michael C. Lehnerd",
+        "background": "Ron Ula / Michael C. Lehnerd is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Write-in"
       }
     ]
   },
@@ -904,5 +981,267 @@
         ]
       }
     ]
+  },
+  {
+    "id": "ohio-appeals-11-2027-02-09",
+    "office": "11th District Court of Appeals Judge",
+    "district": "11th Appellate District",
+    "term_info": "Full term beginning February 9, 2027. The Ashtabula County BOE lists this candidate in the official November 3, 2026 candidate list.",
+    "candidates": [
+      {
+        "name": "Marisa L. Cornachio",
+        "background": "Marisa L. Cornachio is listed by the Ashtabula County Board of Elections as a candidate for Judge of the 11th District Court of Appeals. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Republican"
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "ohio-appeals-11-2027-02-10",
+    "office": "11th District Court of Appeals Judge",
+    "district": "11th Appellate District",
+    "term_info": "Full term beginning February 10, 2027. The Ashtabula County BOE lists this candidate in the official November 3, 2026 candidate list.",
+    "candidates": [
+      {
+        "name": "Robert J. Patton",
+        "background": "Robert J. Patton is listed by the Ashtabula County Board of Elections as a candidate for Judge of the 11th District Court of Appeals. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Republican"
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "common-pleas-2027-01-01",
+    "office": "Common Pleas Court Judge, General Division",
+    "district": null,
+    "term_info": "Full term beginning January 1, 2027. The BOE lists Marianne Sezon under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
+    "candidates": [
+      {
+        "name": "Marianne Sezon",
+        "background": "Marianne Sezon is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
+            "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ashtabula County Common Pleas Court schedules",
+            "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
+          }
+        ],
+        "incumbent": true
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "common-pleas-2027-01-02",
+    "office": "Common Pleas Court Judge, General Division",
+    "district": null,
+    "term_info": "Full term beginning January 2, 2027. The BOE lists Albert S. Camplese under the Democratic primary nomination and Harold E. Specht Jr. under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
+    "candidates": [
+      {
+        "name": "Albert S. Camplese",
+        "background": "Albert S. Camplese is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
+            "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Harold E. Specht Jr.",
+        "background": "Harold E. Specht Jr. is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
+            "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          }
+        ]
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "common-pleas-2027-02-09",
+    "office": "Common Pleas Court Judge, General Division",
+    "district": null,
+    "term_info": "Full term beginning February 9, 2027. The BOE lists Thomas E. Harris under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
+    "candidates": [
+      {
+        "name": "Thomas E. Harris",
+        "background": "Thomas E. Harris is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, General Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
+            "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          },
+          {
+            "label": "Ashtabula County Common Pleas Court schedules",
+            "url": "https://www.ashtabulacounty.gov/925/Court-Schedules"
+          }
+        ],
+        "incumbent": true
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "common-pleas-probate-2027-02-09",
+    "office": "Common Pleas Court Judge, Probate Division",
+    "district": null,
+    "term_info": "Full term beginning February 9, 2027. The BOE lists Edith M. Jonas under the Republican primary nomination. Ohio law places Common Pleas judge contests on the nonpartisan general-election ballot.",
+    "candidates": [
+      {
+        "name": "Edith M. Jonas",
+        "background": "Edith M. Jonas is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Common Pleas Court Judge, Probate Division. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ohio Secretary of State 2026 Election Official Manual, Chapter 5 (ballot designations)",
+            "url": "https://www.ohiosos.gov/assets/dir2026-32-eom-chapter-5.pdf"
+          }
+        ]
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "county-commissioner",
+    "office": "Ashtabula County Commissioner",
+    "district": "Ashtabula County",
+    "term_info": "Full term beginning January 1, 2027.",
+    "candidates": [
+      {
+        "name": "Jayson-Robert T. Noscal",
+        "background": "Jayson-Robert T. Noscal is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Commissioner. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Democrat"
+      },
+      {
+        "name": "Casey Kozlowski",
+        "background": "Casey Kozlowski is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Commissioner. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ashtabula County Board of Commissioners",
+            "url": "https://ashtabulacounty.gov/220/Commissioners"
+          }
+        ],
+        "party": "Republican",
+        "incumbent": true
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "county-auditor",
+    "office": "Ashtabula County Auditor",
+    "district": "Ashtabula County",
+    "term_info": "Full term beginning March 11, 2027.",
+    "candidates": [
+      {
+        "name": "Oakey L. Emery",
+        "background": "Oakey L. Emery is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Auditor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          }
+        ],
+        "party": "Democrat"
+      },
+      {
+        "name": "Scott Yamamoto",
+        "background": "Scott Yamamoto is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Auditor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ashtabula County Auditor",
+            "url": "https://auditor.ashtabulacounty.gov/dnn/"
+          }
+        ],
+        "party": "Republican",
+        "incumbent": true
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
+  },
+  {
+    "id": "county-coroner",
+    "office": "Ashtabula County Coroner",
+    "district": "Ashtabula County",
+    "term_info": "Unexpired term ending December 31, 2028.",
+    "candidates": [
+      {
+        "name": "Catherine A. Bishop",
+        "background": "Catherine A. Bishop is listed by the Ashtabula County Board of Elections as a candidate for Ashtabula County Coroner. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "sources": [
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Ashtabula County official staff directory",
+            "url": "https://www.ashtabulacounty.gov/m/directory"
+          }
+        ],
+        "party": "Republican",
+        "incumbent": true
+      }
+    ],
+    "verification_date": "2026-10-11",
+    "verification_status": "candidate_list_checked"
   }
 ]
