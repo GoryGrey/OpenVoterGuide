@@ -257,6 +257,7 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
 .all-candidates-compare { margin:2rem auto; padding:1.2rem; max-width:1180px; background:#fff; border:1px solid var(--border); border-radius:12px; }
 .comparison-table-scroll { max-width:100%; overflow:auto; border:1px solid var(--border); border-radius:8px; }
 .candidate-comparison { width:100%; min-width:760px; border-collapse:separate; border-spacing:0; font-size:.92rem; }
+.candidate-comparison td { vertical-align:top; }
 .candidate-comparison th,.candidate-comparison td { min-width:210px; padding:.9rem; text-align:left; vertical-align:top; border-right:1px solid var(--border); border-bottom:1px solid var(--border); }
 .candidate-comparison thead th { position:sticky; top:0; z-index:2; background:#eaf3ff; color:var(--primary); }
 .candidate-comparison thead th:first-child { left:0; z-index:3; min-width:155px; }
