@@ -1,29 +1,13 @@
 ---
 layout: base.njk
 title: Sunday Liquor Questions
-description: Three Ashtabula County precinct-specific questions on Sunday alcohol sales.
+description: Find precinct-specific local-option questions on your official Ashtabula County November 3, 2026 ballot.
 permalink: /measures/liquor/index.html
 ---
 
 <h1>Sunday Liquor Questions</h1>
-<p>These questions are precinct-specific. The guide is rechecking their exact November wording and precinct assignments because the previously linked BOE PDF is for the May primary. Treat the entries below as pending until you confirm them on your own ballot.</p>
-<p><a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx">Open the official November sample ballot selector</a> and choose your precinct. The <a href="https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx">Ohio Secretary of State local issues workbook</a> is also available.</p>
-
-{% for issue in liquor %}
-<article class="candidate-card" id="issue-{{ issue.issue_number }}">
-  <h2>Issue {{ issue.issue_number }}: {{ issue.establishment }}</h2>
-  <p><strong>Verification:</strong> Pending direct comparison with the November precinct ballot.</p>
-  <p><strong>Precinct:</strong> {{ issue.precinct }}</p>
-  <p><strong>Location:</strong> {{ issue.address }}</p>
-  <p>{{ issue.plain_english }}</p>
-  <h3>What a YES vote means</h3>
-  <p>{{ issue.yes_means }}</p>
-  <h3>What a NO vote means</h3>
-  <p>{{ issue.no_means }}</p>
-  <div class="source-list"><strong>Official source:</strong>
-    <ul>{% for source in issue.sources %}<li><a href="{{ source.url }}" rel="noopener" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul>
-  </div>
-</article>
-{% endfor %}
+<p>The BOE source previously used for these entries is a May 5 primary document. The three November entries still need to be matched against their exact precinct ballots, so this guide is temporarily withholding the establishment names, addresses, and ballot wording.</p>
+<p>Use the <a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx" target="_blank" rel="noopener">official November sample ballot selector</a> and choose your precinct. You can also review the <a href="https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx" target="_blank" rel="noopener">Ohio Secretary of State local questions and issues workbook</a>.</p>
+<p>These questions apply only to the precinct listed on the official ballot.</p>
 
 <p><a href="{{ '/measures/' | url }}">All ballot measures →</a></p>
