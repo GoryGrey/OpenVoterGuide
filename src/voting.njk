@@ -10,13 +10,14 @@ permalink: /voting/index.html
 
 <p><a class="primary-action" href="{{ '/sample-ballots/' | url }}">Find your official sample ballot</a></p>
 
+<div class="date-card-grid">
 {% for date in election.key_dates %}
-<article class="candidate-card">
-  <h2>{{ date.label }}</h2>
-  <p><strong>{{ date.date }}</strong></p>
-  <p>{{ date.details }}</p>
+<article class="date-card">
+  <span class="date-card-icon" aria-hidden="true">▣</span>
+  <div><h2>{{ date.label }}</h2><p class="date-card-date">{{ date.date }}</p><p>{{ date.details }}</p></div>
 </article>
 {% endfor %}
+</div>
 
 <h2>Official election services</h2>
 <ul>
