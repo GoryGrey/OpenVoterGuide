@@ -19,38 +19,135 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
   </div>
 </section>
 
-<div class="landing-shell">
-  <section aria-labelledby="start-heading">
-    <div class="landing-intro">
-      <div><h2 id="start-heading">Start with what matters to you</h2><p>Explore candidate races, ballot measures, and property tax levies using the guide’s source-linked summaries.</p></div>
-    </div>
-    <div class="feature-grid">
-      <a class="feature-card" href="{{ '/races/' | url }}"><span class="feature-icon" aria-hidden="true">♙</span><h3>Candidate races</h3><p>Backgrounds, campaign positions, public records, and sources for each race.</p><span class="feature-arrow">View all races →</span></a>
-      <a class="feature-card" href="{{ '/measures/' | url }}"><span class="feature-icon" aria-hidden="true">▤</span><h3>Ballot issues</h3><p>Plain-language summaries and what YES and NO votes mean.</p><span class="feature-arrow">Explore measures →</span></a>
-      <a class="feature-card" href="{{ '/levies/' | url }}"><span class="feature-icon" aria-hidden="true">◫</span><h3>Property tax levies</h3><p>Review the county’s levy issues, including renewals and tax changes.</p><span class="feature-arrow">Review levies →</span></a>
-      <a class="feature-card" href="{{ '/worksheet/' | url }}"><span class="feature-icon" aria-hidden="true">✓</span><h3>My ballot worksheet</h3><p>Privately keep a choice list in this browser and print it for reference.</p><span class="feature-arrow">Build your worksheet →</span></a>
-    </div>
-    <p class="landing-note"><strong>Independent and nonpartisan.</strong> The guide does not endorse candidates or ballot outcomes. Review the linked sources and check your official sample ballot.</p>
-  </section>
+<div class="home-page">
+  <aside class="home-note" aria-label="Nonpartisan disclaimer">
+    <span class="home-note-icon" aria-hidden="true">i</span>
+    <p><strong>Independent and nonpartisan.</strong> The guide does not endorse candidates or ballot outcomes. Review the linked sources and check your official sample ballot.</p>
+  </aside>
 
-  <section class="landing-shell" aria-labelledby="races-heading">
-    <div class="landing-intro"><div><h2 id="races-heading">Featured races</h2><p>Jump into a few of the offices on the November ballot.</p></div><a href="{{ '/races/' | url }}">View all races →</a></div>
-    <div class="race-grid">
-      {% for race in races %}
-        {% if loop.index <= 4 %}
-          {% set racePath = '/races/' + race.id + '/' %}
-          <a class="race-link" href="{{ racePath | url }}">{{ race.office }}{% if race.district %} · {{ race.district }}{% endif %}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+  <div class="home-content">
+    <section class="home-section" aria-labelledby="races-heading">
+      <div class="home-section-heading">
+        <div class="home-heading-copy">
+          <span class="home-section-icon" aria-hidden="true">★</span>
+          <div>
+            <h2 id="races-heading">Featured races</h2>
+            <p>Jump into a few of the offices on the November ballot.</p>
+          </div>
+        </div>
+        <a class="home-view-all" href="{{ '/races/' | url }}">View all races <span aria-hidden="true">→</span></a>
+      </div>
 
-  <section class="landing-shell" aria-labelledby="issues-heading">
-    <div class="landing-intro"><div><h2 id="issues-heading">Ballot issues &amp; levies</h2><p>Understand the questions on your ballot and follow the source material.</p></div></div>
-    <div class="landing-issue-grid">
-      <article class="landing-issue"><h3>State and local measures</h3><p>Read the proposed changes and the practical effect of a YES or NO vote.</p><a href="{{ '/measures/' | url }}">View ballot measures →</a></article>
-      <article class="landing-issue"><h3>Property tax questions</h3><p>Review all 36 property-tax levies and identify renewals and tax changes.</p><a href="{{ '/levies/' | url }}">See property tax levies →</a></article>
-      <article class="landing-issue"><h3>Sunday liquor sales</h3><p>Find the local liquor option questions included with the ballot guide.</p><a href="{{ '/measures/liquor/' | url }}">Read liquor issues →</a></article>
-    </div>
-  </section>
+      <div class="home-race-grid">
+        {% for race in races %}
+          {% if loop.index <= 4 %}
+            {% set racePath = '/races/' + race.id + '/' %}
+            {% if loop.index == 1 %}
+              {% set raceImage = 'https://images.unsplash.com/photo-1520525003249-2b9cdda513bc?auto=format&fit=crop&w=1000&q=82' %}
+              {% set raceCredit = 'Photo by Louis Velazquez · Unsplash' %}
+              {% set raceCreditUrl = 'https://unsplash.com/photos/united-states-capitol-building-in-washington-XWW746i6WoM' %}
+              {% set raceCategory = 'Federal' %}
+              {% set raceTone = 'federal' %}
+              {% set raceDescription = 'Explore candidates, backgrounds, and key issues.' %}
+            {% elif loop.index == 2 %}
+              {% set raceImage = 'https://upload.wikimedia.org/wikipedia/commons/9/90/United_States_House_of_Representatives_chamber.jpg' %}
+              {% set raceCredit = 'U.S. House of Representatives · Public domain' %}
+              {% set raceCreditUrl = 'https://commons.wikimedia.org/wiki/File:United_States_House_of_Representatives_chamber.jpg' %}
+              {% set raceCategory = 'Federal' %}
+              {% set raceTone = 'federal' %}
+              {% set raceDescription = 'Compare candidates and see where they stand.' %}
+            {% elif loop.index == 3 %}
+              {% set raceImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ohio_Statehouse_columbus.jpg/1280px-Ohio_Statehouse_columbus.jpg' %}
+              {% set raceCredit = 'Photo by Alexander Smith · CC BY-SA 3.0' %}
+              {% set raceCreditUrl = 'https://commons.wikimedia.org/wiki/File:Ohio_Statehouse_columbus.jpg' %}
+              {% set raceCategory = 'State' %}
+              {% set raceTone = 'state' %}
+              {% set raceDescription = 'Learn about the candidates and their priorities for Ohio.' %}
+            {% else %}
+              {% set raceImage = 'https://images.unsplash.com/photo-1758243954985-5f8e6db0a41c?auto=format&fit=crop&w=1000&q=82' %}
+              {% set raceCredit = 'Photo by Brooke Balentine · Unsplash' %}
+              {% set raceCreditUrl = 'https://unsplash.com/photos/red-courthouse-with-white-columns-under-blue-sky-0odwYZGIbbE' %}
+              {% set raceCategory = 'State' %}
+              {% set raceTone = 'state' %}
+              {% set raceDescription = 'Explore candidates, backgrounds, and key issues.' %}
+            {% endif %}
+            <article class="home-race-card home-race-{{ raceTone }}">
+              <figure class="home-race-photo">
+                <img src="{{ raceImage }}" alt="" loading="lazy" decoding="async" width="1000" height="620">
+                <figcaption>{% if loop.index == 3 %}<a href="{{ raceCreditUrl }}" target="_blank" rel="noopener noreferrer">Photo by Alexander Smith</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>{% else %}<a href="{{ raceCreditUrl }}" target="_blank" rel="noopener noreferrer">{{ raceCredit }}</a>{% endif %}</figcaption>
+                <span class="home-race-badge home-badge-{{ raceTone }}">{{ raceCategory }}</span>
+              </figure>
+              <div class="home-race-body">
+                <h3>{% if loop.index == 2 %}U.S. House of Representatives{% else %}{{ race.office }}{% endif %}</h3>
+                {% if race.district %}<p class="home-race-district">{{ race.district }}</p>{% endif %}
+                <p class="home-race-description">{{ raceDescription }}</p>
+                <a class="home-card-action" href="{{ racePath | url }}">Explore race <span aria-hidden="true">→</span><span class="visually-hidden">: {{ race.office }}{% if race.district %}, {{ race.district }}{% endif %}</span></a>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="home-section home-issues-section" aria-labelledby="issues-heading">
+      <div class="home-section-heading">
+        <div class="home-heading-copy">
+          <span class="home-section-icon home-section-icon-list" aria-hidden="true">≡</span>
+          <div>
+            <h2 id="issues-heading">Ballot issues &amp; levies</h2>
+            <p>Understand the questions on your ballot and follow the source material.</p>
+          </div>
+        </div>
+        <a class="home-view-all" href="{{ '/measures/' | url }}">View all measures <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="home-issue-grid">
+        <article class="home-issue-card home-issue-measures">
+          <img class="home-issue-photo" src="https://images.unsplash.com/photo-1767045386159-e2d27ad5be3b?auto=format&fit=crop&w=1100&q=82" alt="" loading="lazy" decoding="async" width="1100" height="700">
+          <div class="home-issue-content">
+            <span class="home-issue-icon" aria-hidden="true">▤</span>
+            <h3>State and local measures</h3>
+            <p>Read the proposed changes and the practical effect of a YES or NO vote.</p>
+            <a class="home-issue-action" href="{{ '/measures/' | url }}">View ballot measures <span aria-hidden="true">→</span></a>
+          </div>
+          <a class="home-photo-credit" href="https://unsplash.com/photos/hand-filling-out-a-ballot-with-a-pen--m-xjP08d_4" target="_blank" rel="noopener noreferrer">Photo by Ayfer ARAR · Unsplash<span class="visually-hidden">, image source</span></a>
+        </article>
+
+        <article class="home-issue-card home-issue-levies">
+          <img class="home-issue-photo" src="https://images.unsplash.com/photo-1746682817408-ee9ca79ece74?auto=format&fit=crop&w=1100&q=82" alt="" loading="lazy" decoding="async" width="1100" height="700">
+          <div class="home-issue-content">
+            <span class="home-issue-icon" aria-hidden="true">⌂</span>
+            <h3>Property tax questions</h3>
+            <p>Review all 36 property-tax levies and identify renewals and tax changes.</p>
+            <a class="home-issue-action" href="{{ '/levies/' | url }}">See property tax levies <span aria-hidden="true">→</span></a>
+          </div>
+          <a class="home-photo-credit" href="https://unsplash.com/photos/buying-a-house-with-money-keys-and-coins-cmp1PJBX5cw" target="_blank" rel="noopener noreferrer">Photo by Jakub Żerdzicki · Unsplash<span class="visually-hidden">, image source</span></a>
+        </article>
+
+        <article class="home-issue-card home-issue-liquor">
+          <img class="home-issue-photo" src="https://images.unsplash.com/photo-1677382454700-4556545209f0?auto=format&fit=crop&w=1100&q=82" alt="" loading="lazy" decoding="async" width="1100" height="700">
+          <div class="home-issue-content">
+            <span class="home-issue-icon" aria-hidden="true">▣</span>
+            <h3>Sunday liquor sales</h3>
+            <p>Find the local liquor option questions included with the ballot guide.</p>
+            <a class="home-issue-action" href="{{ '/measures/liquor/' | url }}">Read liquor issues <span aria-hidden="true">→</span></a>
+          </div>
+          <a class="home-photo-credit" href="https://unsplash.com/photos/a-neon-sign-for-a-liquor-store-in-a-city-TPF23-o-skU" target="_blank" rel="noopener noreferrer">Photo by Evan Wise · Unsplash<span class="visually-hidden">, image source</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-worksheet-banner" aria-labelledby="worksheet-banner-heading">
+      <img class="home-worksheet-photo" src="https://images.unsplash.com/photo-1604525925032-c28f963e8cbd?auto=format&fit=crop&w=1600&q=82" alt="" loading="lazy" decoding="async" width="1600" height="850">
+      <div class="home-worksheet-content">
+        <span class="home-worksheet-icon" aria-hidden="true">☑</span>
+        <div>
+          <h2 id="worksheet-banner-heading">Build your personal ballot</h2>
+          <p>Use the worksheet to keep track of your choices and bring it with you to the polls.</p>
+        </div>
+        <a href="{{ '/worksheet/' | url }}">Open my worksheet <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="home-worksheet-credit" href="https://unsplash.com/photos/a-close-up-of-a-piece-of-paper-on-a-flag-nSbsfmvURt8" target="_blank" rel="noopener noreferrer">Photo by Joshua Woroniecki · Unsplash<span class="visually-hidden">, image source</span></a>
+    </section>
+  </div>
 </div>
