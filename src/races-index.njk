@@ -5,14 +5,25 @@ description: Every candidate race on the Ashtabula County November 3, 2026 ballo
 permalink: /races/index.html
 ---
 
-<h1>All Races</h1>
-
-{% for race in races %}
-<div class="candidate-card">
-  <h3><a href="/OpenVoterGuide/races/{{ race.id }}/">{{ race.office }}</a></h3>
-  <p>{{ race.term_info | truncate(150) }}</p>
-  <p>{{ race.candidates.length }} candidates:
-    {% for c in race.candidates %}{{ c.name }} ({{ c.party }}){% if not loop.last %}, {% endif %}{% endfor %}
-  </p>
+<div class="directory-page directory-races">
+  <div class="directory-heading">
+    <span class="directory-eyebrow"><span aria-hidden="true">✦</span> November 3, 2026 · Ashtabula County</span>
+    <h1>All races</h1>
+    <p class="directory-lede">Explore the candidates and offices on your ballot. Use your address in search to find the races for your districts.</p>
+  </div>
+  <div class="directory-grid">
+    {% for race in races %}
+      {% set racePath = '/races/' + race.id + '/' %}
+      {% if loop.index <= 2 %}{% set raceCategory = 'Federal' %}{% elif loop.index <= 11 %}{% set raceCategory = 'State' %}{% else %}{% set raceCategory = 'Local' %}{% endif %}
+      <article class="directory-card">
+        <div class="directory-card-meta"><span class="directory-badge directory-badge-{{ raceCategory | lower }}">{{ raceCategory }}</span><span>{{ race.candidates.length }} candidates</span></div>
+        <h2><a href="{{ racePath | url }}">{{ race.office }}{% if race.district %}<span class="directory-district">{{ race.district }}</span>{% endif %}</a></h2>
+        <p class="directory-summary">{{ race.term_info | truncate(150) }}</p>
+        <div class="directory-candidates" aria-label="Candidates">
+          {% for c in race.candidates %}<span>{{ c.name }}{% if c.party %} · {{ c.party }}{% endif %}</span>{% endfor %}
+        </div>
+        <a class="directory-action" href="{{ racePath | url }}">Explore race <span aria-hidden="true">→</span><span class="visually-hidden">: {{ race.office }}</span></a>
+      </article>
+    {% endfor %}
+  </div>
 </div>
-{% endfor %}
