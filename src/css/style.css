@@ -444,12 +444,11 @@ table.levies { min-width:660px; }
 }
 .support-dialog-close:focus-visible { outline:3px solid var(--ovg-focus-on-light); outline-offset:2px; }
 .support-dialog iframe {
-  display:block; width:100%; height:min(712px,calc(100dvh - 11rem)); min-height:360px;
+  display:block; width:100%; height:min(560px,calc(100dvh - 11rem));
   border:0; border-radius:8px; background:#f9f9f9;
 }
 .support-fallback { margin:.55rem 0 0; font-size:.85rem; text-align:center; }
 .support-fallback a { color:var(--accent); font-weight:700; }
 @media (max-width:600px) {
   .support-dialog { width:calc(100vw - 1rem); padding:.75rem; }
-  .support-dialog iframe { height:min(712px,calc(100dvh - 10rem)); }
 }
