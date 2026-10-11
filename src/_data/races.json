@@ -1681,7 +1681,7 @@
           ],
           "record": [
             {
-              "status": "editorial_summary",
+              "status": "pending",
               "note": "This states the scope of the guide’s selected record section; it does not assert that the candidates have never held office.",
               "checked_on": "2026-10-11",
               "sources": []
