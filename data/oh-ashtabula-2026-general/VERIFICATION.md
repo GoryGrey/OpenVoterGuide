@@ -35,3 +35,7 @@ The county auditor confirms the levy counts and rate/type roster above. Exact ta
 ## Nonpartisanship
 
 The guide does not endorse candidates or ballot outcomes. It presents descriptions and links so readers can check primary documents and decide for themselves.
+
+## Supreme Court candidate profiles reviewed
+
+The profiles for Daniel R. Hawkins, Marilyn Zayas, Jennifer Brunner, and Colleen O’Donnell were narrowed to directly sourced biographies, attributed campaign statements, and selected opinions with official Supreme Court links. Hawkins’s 2022 Issue 1 statement is dated and described as a position on the proposed bail amendment. His State v. King entry distinguishes discretionary leave to appeal from an appeal as of right. The earlier unsupported claims about a unanimous Doberdruk authorship, broad ideological voting patterns, and unverified Zayas juvenile cases were removed. Brunner’s selected dissents describe the specific legal disagreements in State v. Lash and Wilkes. O’Donnell’s campaign biography and positions are attributed to her campaign; a selected-opinion review remains pending. This is a limited profile audit, not a full review of any candidate’s record.
