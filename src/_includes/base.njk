@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} | Ashtabula County Voter Guide 2026</title>
   <meta name="description" content="{{ description }}">
-  <link rel="canonical" href="https://ashtabula-voter-guide.pages.dev{{ page.url }}">
+  <meta name="ovg-base-path" content="{{ '/' | url }}">
+  <link rel="canonical" href="https://gorygrey.github.io/OpenVoterGuide{{ page.url }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="/OpenVoterGuide/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header>
     <nav>
-      <a href="/OpenVoterGuide/" class="logo">Ashtabula County Voter Guide</a>
+      <a href="{{ '/' | url }}" class="logo">Ashtabula County Voter Guide</a>
       <div class="nav-links">
-        <a href="/OpenVoterGuide/races/">Races</a>
-        <a href="/OpenVoterGuide/measures/">Measures</a>
-        <a href="/OpenVoterGuide/levies/">Levies</a>
-        <a href="/OpenVoterGuide/worksheet/">My Worksheet</a>
-        <a href="/OpenVoterGuide/about/">About</a>
+        <a href="{{ '/races/' | url }}">Races</a>
+        <a href="{{ '/measures/' | url }}">Measures</a>
+        <a href="{{ '/levies/' | url }}">Levies</a>
+        <a href="{{ '/worksheet/' | url }}">My Worksheet</a>
+        <a href="{{ '/about/' | url }}">About</a>
       </div>
       <div class="search-box">
         <input type="search" id="site-search" placeholder="Search candidates, measures..." aria-label="Search">
@@ -28,16 +30,17 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main id="main-content">
     {{ content | safe }}
   </main>
   <footer>
     <p>Strictly nonpartisan. No endorsements. Data verified against Ashtabula County BOE official lists (Rev. 9-15-26) on October 11, 2026.</p>
-    <p><a href="/OpenVoterGuide/about/">About & Sources</a> | <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County BOE</a></p>
-    <p>Open source: <a href="https://github.com/">GitHub</a> (MIT License)</p>
+    <p><a href="{{ '/about/' | url }}">About &amp; Sources</a> | <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County BOE</a></p>
+    <p>Open source: <a href="https://github.com/GoryGrey/OpenVoterGuide">GitHub</a> (MIT License)</p>
   </footer>
-  <script src="/OpenVoterGuide/js/search.js"></script>
-  <script src="/OpenVoterGuide/js/worksheet.js"></script>
-  <script src="/OpenVoterGuide/js/compare.js"></script>
+  <script>window.OVG_SEARCH_INDEX = "{{ '/search-index.json' | url }}";</script>
+  <script src="{{ '/js/search.js' | url }}"></script>
+  <script src="{{ '/js/worksheet.js' | url }}"></script>
+  <script src="{{ '/js/compare.js' | url }}"></script>
 </body>
 </html>

@@ -1,46 +1,54 @@
 ---
 layout: base.njk
 title: Ashtabula County, Ohio Voter Guide
-description: Nonpartisan voter guide for the November 3, 2026 general election in Ashtabula County, Ohio. Candidates, ballot measures, levies, and key dates.
+description: A nonpartisan, source-linked guide to the November 3, 2026 general election in Ashtabula County, Ohio.
 ---
 
-# Ashtabula County, Ohio
-## November 3, 2026 General Election Voter Guide
+<section class="landing-hero" style="--hero-image:url('{{ '/images/ashtabula-lighthouse.jpg' | url }}')" aria-labelledby="home-title">
+  <div class="landing-hero-inner">
+    <p class="landing-kicker">Ashtabula County · November 3, 2026</p>
+    <h1 id="home-title">Know what’s on your ballot.</h1>
+    <p>A clear, nonpartisan guide to local and statewide races, ballot issues, and the choices that will appear on your ballot.</p>
+    <div class="landing-actions">
+      <a class="primary-action" href="{{ '/races/' | url }}">Find what’s on your ballot <span aria-hidden="true">→</span></a>
+      <a href="{{ '/measures/' | url }}">Explore ballot issues</a>
+      <a href="{{ '/worksheet/' | url }}">Build my ballot</a>
+    </div>
+  </div>
+</section>
 
-<p class="lead">A strictly nonpartisan guide to every race and measure on your ballot. No endorsements. Every claim linked to its source.</p>
+<div class="landing-shell">
+  <section aria-labelledby="start-heading">
+    <div class="landing-intro">
+      <div><h2 id="start-heading">Start with what matters to you</h2><p>Explore candidate races, ballot measures, and property tax levies using the guide’s source-linked summaries.</p></div>
+    </div>
+    <div class="feature-grid">
+      <a class="feature-card" href="{{ '/races/' | url }}"><span class="feature-icon" aria-hidden="true">♙</span><h3>Candidate races</h3><p>Backgrounds, campaign positions, public records, and sources for each race.</p><span class="feature-arrow">View all races →</span></a>
+      <a class="feature-card" href="{{ '/measures/' | url }}"><span class="feature-icon" aria-hidden="true">▤</span><h3>Ballot issues</h3><p>Plain-language summaries and what YES and NO votes mean.</p><span class="feature-arrow">Explore measures →</span></a>
+      <a class="feature-card" href="{{ '/levies/' | url }}"><span class="feature-icon" aria-hidden="true">◫</span><h3>Property tax levies</h3><p>Review the county’s levy issues, including renewals and tax changes.</p><span class="feature-arrow">Review levies →</span></a>
+      <a class="feature-card" href="{{ '/worksheet/' | url }}"><span class="feature-icon" aria-hidden="true">✓</span><h3>My ballot worksheet</h3><p>Privately keep a choice list in this browser and print it for reference.</p><span class="feature-arrow">Build your worksheet →</span></a>
+    </div>
+    <p class="landing-note"><strong>Independent and nonpartisan.</strong> The guide does not endorse candidates or ballot outcomes. Review the linked sources and check your official sample ballot.</p>
+  </section>
 
-<div class="key-dates">
-  <h2>Key Dates</h2>
-  <ul>
-    <li><strong>Election Day:</strong> Tuesday, November 3, 2026 (polls 6:30am-7:30pm)</li>
-    <li><strong>Early voting:</strong> October 6 - November 1 at BOE (8 W Walnut St, Jefferson)</li>
-    <li><strong>Absentee application deadline:</strong> October 27 by 8:30pm</li>
-    <li><strong>Ballot return:</strong> Must be RECEIVED by 7:30pm Nov 3. Postmarks do not count.</li>
-  </ul>
-  <p><a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County Board of Elections</a> | 440-576-6915 | <a href="https://voteohio.gov/track">Track your ballot</a></p>
+  <section class="landing-shell" aria-labelledby="races-heading">
+    <div class="landing-intro"><div><h2 id="races-heading">Featured races</h2><p>Jump into a few of the offices on the November ballot.</p></div><a href="{{ '/races/' | url }}">View all races →</a></div>
+    <div class="race-grid">
+      {% for race in races %}
+        {% if loop.index <= 4 %}
+          {% set racePath = '/races/' + race.id + '/' %}
+          <a class="race-link" href="{{ racePath | url }}">{{ race.office }}{% if race.district %} · {{ race.district }}{% endif %}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="landing-shell" aria-labelledby="issues-heading">
+    <div class="landing-intro"><div><h2 id="issues-heading">Ballot issues &amp; levies</h2><p>Understand the questions on your ballot and follow the source material.</p></div></div>
+    <div class="landing-issue-grid">
+      <article class="landing-issue"><h3>State and local measures</h3><p>Read the proposed changes and the practical effect of a YES or NO vote.</p><a href="{{ '/measures/' | url }}">View ballot measures →</a></article>
+      <article class="landing-issue"><h3>Property tax questions</h3><p>Review all 37 county levy issues and identify renewals and tax changes.</p><a href="{{ '/levies/' | url }}">See property tax levies →</a></article>
+      <article class="landing-issue"><h3>Sunday liquor sales</h3><p>Find the local liquor option questions included with the ballot guide.</p><a href="{{ '/measures/liquor/' | url }}">Read liquor issues →</a></article>
+    </div>
+  </section>
 </div>
-
-<h2>Candidate Races</h2>
-<div class="race-grid">
-  <a href="/OpenVoterGuide/races/us-senator/" class="race-link">U.S. Senator</a>
-  <a href="/OpenVoterGuide/races/us-house-14/" class="race-link">U.S. House District 14</a>
-  <a href="/OpenVoterGuide/races/governor/" class="race-link">Governor</a>
-  <a href="/OpenVoterGuide/races/attorney-general/" class="race-link">Attorney General</a>
-  <a href="/OpenVoterGuide/races/auditor/" class="race-link">Auditor of State</a>
-  <a href="/OpenVoterGuide/races/secretary-of-state/" class="race-link">Secretary of State</a>
-  <a href="/OpenVoterGuide/races/treasurer/" class="race-link">Treasurer of State</a>
-  <a href="/OpenVoterGuide/races/supreme-court-1/" class="race-link">Supreme Court (Term 1/1/2027)</a>
-  <a href="/OpenVoterGuide/races/supreme-court-2/" class="race-link">Supreme Court (Term 1/2/2027)</a>
-  <a href="/OpenVoterGuide/races/ohio-house-99/" class="race-link">Ohio House District 99</a>
-</div>
-
-<h2>Ballot Measures</h2>
-<ul>
-  <li><a href="/OpenVoterGuide/measures/issue-3/">Issue 3: Voter ID Constitutional Amendment</a> (statewide)</li>
-  <li><a href="/OpenVoterGuide/measures/issue-10/">Issue 10: Conneaut Data Center Ban</a></li>
-  <li><a href="/OpenVoterGuide/levies/">Issues 4-40: Property Tax Levies</a> (37 total)</li>
-  <li><a href="/OpenVoterGuide/measures/liquor/">Issues 41-43: Sunday Liquor Sales</a></li>
-</ul>
-
-<h2>Make Your Plan</h2>
-<p><a href="/OpenVoterGuide/worksheet/" class="btn">Open My Voting Worksheet</a> — privately mark your choices, print a reference sheet. Nothing leaves your browser.</p>
