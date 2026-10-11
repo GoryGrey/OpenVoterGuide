@@ -1575,7 +1575,21 @@
               ]
             }
           ]
-        }
+        },
+        "measure_positions": [
+          {
+            "issue_number": "3",
+            "issue_label": "Ohio Issue 3: voter identification amendment",
+            "position": "support",
+            "statement": "Vivek Ramaswamy campaigned for Issue 3 and backed a voter-ID amendment in a May op-ed before the final ballot text was certified. This records Ramaswamy’s stated support; it does not attribute a separate position to his running mate.",
+            "checked_on": "2026-10-11",
+            "issue_path": "/measures/issue-3/",
+            "source": {
+              "label": "Signal Ohio, Issue 3 explainer (September 1, 2026)",
+              "url": "https://signalohio.org/what-is-ohio-issue-3-voter-id-amendment-november-election-2026/"
+            }
+          }
+        ]
       },
       {
         "name": "Amy Acton / David Pepper",
@@ -1718,7 +1732,21 @@
               ]
             }
           ]
-        }
+        },
+        "measure_positions": [
+          {
+            "issue_number": "3",
+            "issue_label": "Ohio Issue 3: voter identification amendment",
+            "position": "support",
+            "statement": "Amy Acton said she supports Issue 3. She also said she would work to make the required ID easy to obtain and available at no cost to eligible voters.",
+            "checked_on": "2026-10-11",
+            "issue_path": "/measures/issue-3/",
+            "source": {
+              "label": "Signal Ohio, Acton statement on Issue 3 (August 7, 2026)",
+              "url": "https://signalohio.org/amy-acton-backs-issue-3-voter-id-amendment-november-election-2026/"
+            }
+          }
+        ]
       },
       {
         "name": "Don Kissick / James L. Mills",
@@ -2614,7 +2642,21 @@
               ]
             }
           ]
-        }
+        },
+        "measure_positions": [
+          {
+            "issue_number": "3",
+            "issue_label": "Ohio Issue 3: voter identification amendment",
+            "position": "support",
+            "statement": "Sprague said photo ID is fundamental to election security and should be added to Ohio’s Constitution.",
+            "checked_on": "2026-10-11",
+            "issue_path": "/measures/issue-3/",
+            "source": {
+              "label": "Hometown Stations, Sprague discusses Issue 3 (September 2, 2026)",
+              "url": "https://www.hometownstations.com/2026/09/02/sprague-discusses-voter-id-amendment-during-lima-campaign-stop/"
+            }
+          }
+        ]
       },
       {
         "name": "Allison Russo",
@@ -2721,7 +2763,21 @@
               ]
             }
           ]
-        }
+        },
+        "measure_positions": [
+          {
+            "issue_number": "3",
+            "issue_label": "Ohio Issue 3: voter identification amendment",
+            "position": "oppose",
+            "statement": "Russo publicly opposed Issue 3 and said she was concerned about the photo-ID requirements and whether the listed forms would remain usable.",
+            "checked_on": "2026-10-11",
+            "issue_path": "/measures/issue-3/",
+            "source": {
+              "label": "Heidelberg University, Constitution Day conversation (September 17, 2026)",
+              "url": "https://inside.heidelberg.edu/news/091726/constitution-day-conversation-challenges-heidelberg-students-find-their-voice"
+            }
+          }
+        ]
       },
       {
         "name": "Tom Pruss",
@@ -2826,7 +2882,21 @@
               ]
             }
           ]
-        }
+        },
+        "measure_positions": [
+          {
+            "issue_number": "3",
+            "issue_label": "Ohio Issue 3: voter identification amendment",
+            "position": "oppose",
+            "statement": "Pruss opposed Issue 3, calling it political theatre and raising concerns about how it could affect later decisions on mail voting.",
+            "checked_on": "2026-10-11",
+            "issue_path": "/measures/issue-3/",
+            "source": {
+              "label": "Ohio Capital Journal, What is Issue 3? (July 29, 2026)",
+              "url": "https://ohiocapitaljournal.com/2026/07/29/what-is-issue-3-on-the-ohio-ballot/"
+            }
+          }
+        ]
       }
     ]
   },
