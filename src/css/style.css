@@ -338,3 +338,10 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
   .comparison-summary-hint { max-width:7rem; }
   .comparison-disclosure > p,.comparison-disclosure > .comparison-table-scroll { margin-left:.75rem; margin-right:.75rem; }
 }
+
+
+@media (max-width:600px) {
+  /* Anchor the full-width menu panel to the viewport instead of the small Menu button. */
+  .site-nav { position:static; }
+  .site-nav .nav-links { top:calc(.65rem + 44px + .55rem); right:1rem; }
+}
