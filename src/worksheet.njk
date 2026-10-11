@@ -25,9 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('worksheet-list');
   const entries = Object.entries(saved);
   if (entries.length === 0) {
-    list.innerHTML = '<p>No choices marked yet. Browse <a href="/OpenVoterGuide/races/">races</a> and <a href="/OpenVoterGuide/measures/">measures</a> to get started.</p>';
+    const message = document.createElement('p');
+    const racesLink = document.createElement('a');
+    racesLink.href = '{{ "/races/" | url }}';
+    racesLink.textContent = 'races';
+    const measuresLink = document.createElement('a');
+    measuresLink.href = '{{ "/measures/" | url }}';
+    measuresLink.textContent = 'measures';
+    message.append('No choices marked yet. Browse ', racesLink, ' and ', measuresLink, ' to get started.');
+    list.replaceChildren(message);
   } else {
-    list.innerHTML = '<ul>' + entries.map(([id, label]) => `<li>${label}</li>`).join('') + '</ul>';
+    const choices = document.createElement('ul');
+    for (const [, label] of entries) {
+      const item = document.createElement('li');
+      item.textContent = label;
+      choices.append(item);
+    }
+    list.replaceChildren(choices);
   }
 });
 </script>

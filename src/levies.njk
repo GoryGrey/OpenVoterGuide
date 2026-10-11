@@ -24,7 +24,7 @@ permalink: /levies/index.html
     {% for levy in levies %}
     {% if levy.tax_change %}
     <tr>
-      <td>{{ levy.issue_number }}</td>
+      <td><a href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td>
       <td>{{ levy.jurisdiction }}</td>
       <td>{{ levy.purpose }}</td>
       <td>{{ levy.type }}</td>
@@ -49,7 +49,7 @@ permalink: /levies/index.html
     {% for levy in levies %}
     {% if not levy.tax_change %}
     <tr>
-      <td>{{ levy.issue_number }}</td>
+      <td><a href="{{ ('/levies/issue-' + levy.issue_number + '/') | url }}">Issue {{ levy.issue_number }}</a></td>
       <td>{{ levy.jurisdiction }}</td>
       <td>{{ levy.purpose }}</td>
       <td>{{ levy.millage }}</td>
@@ -66,4 +66,4 @@ permalink: /levies/index.html
   <li><a href="https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx" target="_blank" rel="noopener">Ohio Secretary of State local questions and issues workbook</a> — official statewide filing data.</li>
   <li><a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx" target="_blank" rel="noopener">County sample ballot selector</a> — choose your precinct to see the exact question printed on your ballot.</li>
 </ul>
-<p><a href="/OpenVoterGuide/worksheet/">My worksheet</a></p>
+<p><a href="{{ '/worksheet/' | url }}">My worksheet</a></p>

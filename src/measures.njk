@@ -6,7 +6,7 @@ pagination:
   alias: measure
 permalink: "/measures/{{ measure.id }}/"
 eleventyComputed:
-  title: "{{ measure.title }}"
+  title: "{{ measure.title }} — Ohio Issue {{ measure.issue_number }}"
   description: "{{ measure.plain_english | truncate(150) }}"
 ---
 
@@ -50,7 +50,7 @@ eleventyComputed:
         {% for item in candidate.measure_positions or [] %}
           {% if item.issue_number == measure.issue_number %}
             {% set candidateAnchor = candidate.name | candidateSlug %}
-            {% set candidateHref = '/races/' + race.id + '/#' + candidateAnchor %}
+            {% set candidateHref = '/candidates/' + race.id + '/' + (candidate.name | profileSlug) + '/' %}
             <li>
               <strong><a href="{{ candidateHref | url }}">{{ candidate.name }}</a> ({{ race.office }}): {{ item.position | capitalize }}</strong>
               <p>{{ item.statement }}</p>

@@ -1,0 +1,19 @@
+---
+permalink: /search-index.json
+eleventyExcludeFromCollections: true
+---
+[
+{% for race in races %}
+  {"title":{{ race.office | dump | safe }},"type":"Race","url":{{ ("/races/" + race.id + "/") | dump | safe }},"keywords":{{ (race.office + " " + (race.district or "")) | dump | safe }},"description":{{ (race.term_info or "") | dump | safe }}},
+{% endfor %}
+{% for candidate in candidatePages %}
+  {"title":{{ candidate.name | dump | safe }},"type":{{ ("Candidate for " + candidate.race_office) | dump | safe }},"url":{{ candidate.profile_url | dump | safe }},"keywords":{{ ((candidate.party or "") + " " + candidate.race_office + " " + (candidate.race_district or "") + " " + (candidate.background or "")) | dump | safe }},"description":{{ candidate.seo_description | dump | safe }}},
+{% endfor %}
+{% for measure in measures %}
+  {"title":{{ measure.title | dump | safe }},"type":"Ballot measure","url":{{ ("/measures/" + measure.id + "/") | dump | safe }},"keywords":{{ ("Issue " + (measure.issue_number | string) + " Ohio ballot measure " + measure.plain_english) | dump | safe }},"description":{{ measure.plain_english | dump | safe }}},
+{% endfor %}
+{% for levy in levies %}
+  {"title":{{ ("Issue " + (levy.issue_number | string) + ": " + levy.jurisdiction) | dump | safe }},"type":"Property tax levy","url":{{ ("/levies/issue-" + (levy.issue_number | string) + "/") | dump | safe }},"keywords":{{ (levy.jurisdiction + " " + levy.purpose + " property tax " + levy.type) | dump | safe }},"description":{{ (levy.notes or levy.purpose) | dump | safe }}}
+  {% if not loop.last %},{% endif %}
+{% endfor %}
+]
