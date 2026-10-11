@@ -80,6 +80,32 @@ assert(levyTypes.renewal === 25 && levyTypes.additional === 7 && levyTypes.renew
   `Unexpected levy breakdown: ${JSON.stringify(levyTypes)}`);
 assert(election.election_date === "2026-11-03", "Election date must match this guide's election");
 
+const requiredRaceIds = [
+  "ohio-appeals-11-2027-02-09",
+  "ohio-appeals-11-2027-02-10",
+  "common-pleas-2027-01-01",
+  "common-pleas-2027-01-02",
+  "common-pleas-2027-02-09",
+  "common-pleas-probate-2027-02-09",
+  "county-commissioner",
+  "county-auditor",
+  "county-coroner"
+];
+for (const raceId of requiredRaceIds) {
+  assert(races.some((race) => race.id === raceId), `Missing Ashtabula 2026 candidate-list race: ${raceId}`);
+}
+assert(races.length === 20, `Expected 20 Ashtabula race pages from the reviewed candidate list; found ${races.length}`);
+const namedWriteIns = {
+  governor: ["Timothy Grady / Andrea Neutzling", "Heather Hill / Patrick Manley", "Renea Turner / Jalen Turner", "Ron Ula / Michael C. Lehnerd"],
+  senator: ["Stephen Faris", "Anthony Holliman", "Timothy Telymonde"]
+};
+for (const [raceId, names] of [["governor", namedWriteIns.governor], ["us-senator", namedWriteIns.senator]]) {
+  const race = races.find((item) => item.id === raceId);
+  for (const name of names) {
+    assert(race.candidates.some((candidate) => candidate.name === name && candidate.party === "Write-in"), `Missing listed write-in candidate in ${raceId}: ${name}`);
+  }
+}
+
 console.log(`Data validation passed: ${races.length} races, ${measures.length} measures, ${levies.length} levies, ${liquor.length} liquor questions.`);
 
 assert(Array.isArray(districtRaceMap), "district-race-map.json must be an array");
