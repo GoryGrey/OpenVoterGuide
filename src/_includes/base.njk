@@ -23,7 +23,7 @@
   <link rel="icon" href="{{ '/assets/brand/favicon.svg' | url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/assets/brand/favicon.ico' | url }}" sizes="any">
   <link rel="apple-touch-icon" href="{{ '/assets/brand/apple-touch-icon.png' | url }}">
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v=20261011-brand-support1">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v=20261011-brand-support2">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -33,9 +33,9 @@
         <img class="brand-wordmark" src="{{ '/assets/brand/logo-horizontal-light.svg' | url }}" alt="">
         <img class="brand-mark" src="{{ '/assets/brand/mark-light.svg' | url }}" alt="">
       </a>
-      <details class="site-nav">
-        <summary aria-label="Open site navigation">Menu</summary>
-        <div class="nav-links">
+      <div class="site-nav">
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav-links">Menu</button>
+        <div class="nav-links" id="primary-nav-links">
           <a href="{{ '/races/' | url }}">Races</a>
           <a href="{{ '/voting/' | url }}">Voting info</a>
           <a href="{{ '/measures/' | url }}">Measures</a>
@@ -43,7 +43,7 @@
           <a href="{{ '/worksheet/' | url }}">My Worksheet</a>
           <a href="{{ '/about/' | url }}">About</a>
         </div>
-      </details>
+      </div>
       <div class="search-box">
         <input type="search" id="site-search" placeholder="Search races or enter your address..." aria-label="Search races or enter your address" aria-controls="search-results">
         <div id="search-results" role="region" aria-label="Search results" aria-live="polite"></div>
@@ -59,6 +59,29 @@
     <p><a href="{{ '/about/' | url }}">About &amp; Sources</a> | <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County BOE</a></p>
     <p>Open source: <a href="https://github.com/GoryGrey/OpenVoterGuide">GitHub</a> (MIT License)</p>
   </footer>
+  <script>
+    (() => {
+      const toggle = document.querySelector(".mobile-menu-toggle");
+      const links = document.querySelector("#primary-nav-links");
+      if (!toggle || !links) return;
+      const closeMenu = () => toggle.setAttribute("aria-expanded", "false");
+      toggle.addEventListener("click", () => {
+        toggle.setAttribute("aria-expanded", String(toggle.getAttribute("aria-expanded") !== "true"));
+      });
+      links.addEventListener("click", event => {
+        if (event.target.closest("a")) closeMenu();
+      });
+      document.addEventListener("click", event => {
+        if (!event.target.closest(".site-nav")) closeMenu();
+      });
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          closeMenu();
+          toggle.focus();
+        }
+      });
+    })();
+  </script>
   <script>window.OVG_SEARCH_INDEX = "{{ '/search-index.json' | url }}"; window.OVG_DISTRICT_RACE_MAP = "{{ '/district-race-map.json' | url }}";</script>
   <script src="{{ '/js/search.js' | url }}?v=20261011-address-lookup3"></script>
   <script src="{{ '/js/worksheet.js' | url }}"></script>
