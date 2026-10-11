@@ -990,19 +990,10 @@
           ],
           "correlation": [
             {
-              "status": "editorial_summary",
-              "note": "Editorial summary of his published response and the absence of a comparable state legislative record; the underlying candidate position is not independently fact-checked.",
+              "status": "pending",
+              "note": "The candidate-response source supports his stated positions, but his prior state legislative service history has not been independently checked.",
               "checked_on": "2026-10-11",
-              "sources": [
-                {
-                  "label": "Ideastream Public Media, Ohio House District 65 candidate responses (submitted as written)",
-                  "url": "https://www.ideastream.org/ohio-house-district-65"
-                },
-                {
-                  "label": "Ohio House official biography: David Thomas",
-                  "url": "https://ohiohouse.gov/members/david-thomas/biography"
-                }
-              ]
+              "sources": []
             }
           ]
         }
