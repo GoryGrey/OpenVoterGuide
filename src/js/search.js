@@ -49,7 +49,9 @@
     links.className = 'address-official-links';
     links.append(makeLink('Official polling-place lookup', 'https://lookup.boe.ohio.gov/vtrapp/ashtabula/pollfinder.aspx', true),
       document.createTextNode(' · '),
-      makeLink('Ashtabula County sample ballot and election notices', 'https://www.boe.ohio.gov/ashtabula/', true));
+      makeLink('Official sample ballot lookup', 'https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx', true),
+      document.createTextNode(' · '),
+      makeLink('County Board of Elections', 'https://www.boe.ohio.gov/ashtabula/', true));
     parent.appendChild(links);
   }
   function getDistrictNumber(geographies, key) {
@@ -129,7 +131,8 @@
         if (race) panel.appendChild(makeLink('View the ' + label.toLowerCase() + ' race, ' + number, basePath + 'races/' + encodeURIComponent(race.race_id) + '/'));
       }
       if (isAshtabula) {
-        addText(panel, 'p', 'This guide covers Ashtabula County. District matches help you find races; your official sample ballot is the authority for what is on your ballot.', 'address-guidance');
+        panel.appendChild(makeLink('View all candidate races for Ashtabula County', basePath + 'races/'));
+        addText(panel, 'p', 'District matches help you find district-specific races. The full race list includes countywide offices; your official sample ballot confirms the contests and issues for this address.', 'address-guidance');
         showServiceLinks(panel);
       } else {
         addText(panel, 'p', 'This guide currently covers Ashtabula County, Ohio. Use your own county election office to confirm your ballot and polling place.', 'address-guidance');
