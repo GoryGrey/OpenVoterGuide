@@ -12,7 +12,7 @@ The county homepage publishes the candidate and issues documents for the current
 
 ## Coverage and counts
 
-This guide currently includes 10 race pages, 2 measure pages (Issues 3 and 10), 36 property-tax levies, and 3 precinct-specific liquor questions (Issues 41–43). Issue 10 is a Conneaut charter amendment, not a property-tax levy.
+This guide currently includes 20 race pages with 45 named candidates, including the seven write-in candidates named in the official candidate list; 2 measure pages (Issues 3 and 10); 36 property-tax levies; and 3 precinct-specific liquor questions (Issues 41–43). The 9 additional race pages cover two 11th District Court of Appeals seats, four Common Pleas seats, County Commissioner, County Auditor, and County Coroner. Several new profiles intentionally contain only official ballot-list information until more candidate details can be independently sourced. Issue 10 is a Conneaut charter amendment, not a property-tax levy.
 
 The 36 levies are: 25 straight renewals, 7 additional levies, 3 renewals with increases, and 1 renewal with a reduction. Eleven levy questions change the tax amount or add a levy.
 
@@ -20,9 +20,9 @@ The official issue list covers ballot issue numbers 3–43 (41 numbered items). 
 
 ## Candidate information: scope of verification
 
-Candidate names and ballot presence were checked against the county's official candidate list, and the guide has candidate research sources listed on each profile. This does not establish that every biography, campaign position, voting-history item, or comparison is correct. Candidate claims are not yet mapped to claim-specific citations throughout the pages. Treat those summaries as research in progress and verify consequential claims from the linked reporting, official records, and candidates' own statements.
+Candidate names and ballot presence were checked against the county's official candidate list, revised September 15, 2026. Named write-in candidates are included for U.S. Senator and Governor/Lieutenant Governor. Candidate profiles use the party wording from that list where applicable. Court of Common Pleas candidates are shown without party labels because Ohio law requires those contests on the nonpartisan ballot; the candidate list's primary-party headings are not ballot labels. See the Ohio Secretary of State Election Official Manual, Chapter 5.\n\nThis verifies candidate names and ballot presence, not every biography, campaign position, voting-history item, or comparison. Most summaries still have sources grouped by candidate instead of beside each factual claim. Several newly added candidates have no additional independently sourced bio or issue statements yet. Treat those profiles as a verified roster with research in progress, and use their links to inspect the official candidate list and ballot.
 
-## Known correction in this review
+## Coverage correction in this review\n\nThe official candidate list includes nine additional judge and county-office contests beyond the original 11 race pages. Those routes are now represented. The list also names four write-in tickets for Governor/Lieutenant Governor and three write-in candidates for U.S. Senator; all seven are included.\n\n
 
 The site previously described Issues 4–40 as 37 property-tax levies and reported 26 straight renewals. Issue 10 is not a levy; correcting the totals gives 36 levies and 25 straight renewals. The remaining categories are 7 additional levies, 3 increases, and 1 reduction.
 
