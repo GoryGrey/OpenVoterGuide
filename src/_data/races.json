@@ -700,8 +700,8 @@
           ],
           "record": [
             {
-              "status": "guide_summary",
-              "note": "This guide does not include legislative votes for Levy; the linked campaign page describes positions but no legislative voting history.",
+              "status": "editorial_summary",
+              "note": "This guide does not include legislative votes for Levy; the linked campaign page describes his platform, not a voting record.",
               "checked_on": "2026-10-11",
               "sources": [
                 {
