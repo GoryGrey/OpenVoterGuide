@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Property Tax Levies (Issues 4-40)
-description: All 36 property tax levies on the Ashtabula County November 3, 2026 ballot, with millage rates and estimated costs.
+description: County auditor-verified jurisdictions, levy types, and millage rates for the 36 Ashtabula County November 3, 2026 property-tax questions.
 permalink: /levies/index.html
 ---
 
@@ -39,7 +39,7 @@ permalink: /levies/index.html
 
 <table class="levies">
   <thead>
-    <tr><th>Issue</th><th>Jurisdiction</th><th>Purpose</th><th>Millage</th><th>Rate</th></tr>
+    <tr><th>Issue</th><th>Jurisdiction</th><th>Purpose</th><th>Millage</th></tr>
   </thead>
   <tbody>
     {% for levy in levies %}
@@ -48,7 +48,6 @@ permalink: /levies/index.html
       <td>{{ levy.issue_number }}</td>
       <td>{{ levy.jurisdiction }}</td>
       <td>{{ levy.purpose }}</td>
-      <td>{{ levy.millage }}</td>
       <td>{{ levy.millage }}</td>
     </tr>
     {% endif %}
