@@ -1449,6 +1449,43 @@
                 }
               ]
             }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This summary covers the cited campaign statements and the selected official Senate votes of running mate Robert McColley. It does not infer a general match or score.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Vivek Ramaswamy campaign biography",
+                  "url": "https://vivekforohio.com/meet-vivek/"
+                },
+                {
+                  "label": "Ramaswamy campaign launch statement on taxes",
+                  "url": "https://vivekforohio.com/vivek-ramaswamy-launches-campaign-for-governor/"
+                },
+                {
+                  "label": "Ramaswamy campaign data-center pledge, August 6, 2026",
+                  "url": "https://vivekforohio.com/viveks-ohioans-first-data-center-pledge/"
+                },
+                {
+                  "label": "Ohio Senate biography of Rob McColley",
+                  "url": "https://ohiosenate.gov/members/rob-mccolley/biography"
+                },
+                {
+                  "label": "Ohio Senate roll-call records for H.B. 8",
+                  "url": "https://ohiosenate.gov/legislation/135/hb8/votes"
+                },
+                {
+                  "label": "Ohio Senate roll-call records for S.B. 58",
+                  "url": "https://ohiosenate.gov/legislation/135/sb58/votes"
+                },
+                {
+                  "label": "Ohio Senate roll-call records for S.B. 1",
+                  "url": "https://ohiosenate.gov/legislation/136/sb1/votes"
+                }
+              ]
+            }
           ]
         }
       },
@@ -1565,6 +1602,27 @@
               "note": "Pepper’s campaign biography lists the local offices described. The guide does not infer a complete local voting history from that biography.",
               "checked_on": "2026-10-11",
               "sources": [
+                {
+                  "label": "David Pepper campaign biography",
+                  "url": "https://actonforgovernor.com/meet-david/"
+                }
+              ]
+            }
+          ],
+          "correlation": [
+            {
+              "status": "editorial_summary",
+              "note": "This summary labels Acton’s executive service and Pepper’s local elected roles separately from the campaign’s issue statements. It makes no comparison to a legislative vote record and assigns no match score.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Amy Acton campaign biography",
+                  "url": "https://actonforgovernor.com/meet-amy/"
+                },
+                {
+                  "label": "Amy Acton campaign affordability plan",
+                  "url": "https://actonforgovernor.com/agenda/affordability-agenda/"
+                },
                 {
                   "label": "David Pepper campaign biography",
                   "url": "https://actonforgovernor.com/meet-david/"
@@ -3138,10 +3196,10 @@
           "Improve transparency by keeping constituents and local officials involved and opposing major bill changes added after debate."
         ],
         "record": [
-          "No state legislative voting record exists because he has not served in the Ohio General Assembly.",
+          "This guide does not include votes from the Ohio General Assembly for Barbo. The City of Geneva lists his current council seat; this guide has not compiled the council roll-call record.",
           "Serves on Geneva City Council; this guide has not compiled a comparable roll-call record from council."
         ],
-        "correlation": "There is no state legislative record to compare with his campaign positions. His education, data-center, cost-of-living, and transparency statements are candidate responses published by Ideastream Public Media; voters can compare them with a future legislative record.",
+        "correlation": "This guide does not compare Barbo’s sourced candidate responses to a state legislative vote history. The City of Geneva roster confirms his council seat, but local council votes are not included here.",
         "sources": [
           {
             "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
@@ -3250,10 +3308,19 @@
           ],
           "record": [
             {
-              "status": "pending",
-              "note": "No state legislative service is listed in the sources reviewed; independent check still needed.",
+              "status": "editorial_summary",
+              "note": "This describes the guide's record coverage. The Ohio House vote history is not provided; the City of Geneva roster confirms his local council seat.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "City of Geneva City Council roster",
+                  "url": "https://genevaohio.gov/city-council/"
+                },
+                {
+                  "label": "Ohio House District 65 candidate responses, Ideastream Public Media",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                }
+              ]
             },
             {
               "status": "official_record",
@@ -3269,10 +3336,19 @@
           ],
           "correlation": [
             {
-              "status": "pending",
-              "note": "The candidate-response source supports his stated positions, but his prior state legislative service history has not been independently checked.",
+              "status": "editorial_summary",
+              "note": "This limits the comparison to sourced candidate responses; a separate audit of local council votes is not included.",
               "checked_on": "2026-10-11",
-              "sources": []
+              "sources": [
+                {
+                  "label": "Ohio House District 65 candidate responses, Ideastream Public Media",
+                  "url": "https://www.ideastream.org/ohio-house-district-65"
+                },
+                {
+                  "label": "City of Geneva City Council roster",
+                  "url": "https://genevaohio.gov/city-council/"
+                }
+              ]
             }
           ]
         }
