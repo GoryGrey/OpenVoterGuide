@@ -253,41 +253,203 @@
         "name": "Sherrod Brown",
         "party": "Democrat",
         "incumbent": false,
-        "background": "Born Mansfield, Ohio. Ohio House (1975-1982), Ohio Secretary of State (1983-1991), U.S. House (1993-2007), U.S. Senate (2007-2025) where he chaired the Banking Committee from 2021. Lost re-election in November 2024 to Bernie Moreno.",
+        "background": "Born in Mansfield, Ohio. Served in the Ohio House (1975–1982), Ohio Secretary of State (1983–1991), U.S. House (1993–2007), and U.S. Senate (2007–2025). Chaired the Senate Banking Committee during the 117th and 118th Congresses (2021–2024). Lost his 2024 Senate re-election bid.",
         "promises": [
-          "Hold healthcare companies accountable; lower prescription drug costs",
-          "Data centers should pay full utility costs and use closed-loop water systems; favors local restrictions and no tax breaks for tech companies (no moratorium proposed)",
-          "Cutting taxes for working families, not billionaires and corporations",
-          "End U.S. war with Iran to bring down gas and fertilizer costs",
-          "Target political corruption",
-          "Co-sponsor the Faster Labor Contracts Act (FLCA)"
+          "Would hold health insurers accountable for denying care and lower prescription drug costs.",
+          "Would require data centers to pay their full utility costs and says Ohioans should decide whether they are built in their communities.",
+          "Would cap how much utility companies can raise rates.",
+          "Would ban stock trading by members of Congress and their spouses, and bar members from becoming lobbyists after leaving office."
         ],
         "record": [
-          "NAY on H.J.Res.114, Iraq War authorization (Oct. 2002, as House member)",
-          "NAY on H.R.3450, NAFTA implementing legislation (Nov. 1993); long-documented trade-skeptic record",
-          "YEA on H.R.1319, American Rescue Plan (March 2021), including Butch Lewis Act preserving pensions of over a million union members/retirees",
-          "YEA on H.R.4346, CHIPS and Science Act (Aug. 2022) - helped bring Intel chip factories to New Albany, Ohio",
-          "YEA on H.R.3684, Infrastructure Investment and Jobs Act (Nov. 2021), insisting on Buy America requirements",
-          "YEA on H.R.4173, Dodd-Frank (July 2010); as Banking chair (2021-2025) pushed consumer protections against predatory lending and junk fees",
-          "Co-sponsored the PRO Act (union-organizing legislation); it never received a Senate floor vote - gap between stated labor priority and enacted outcomes"
+          "Voted NAY on House passage of H.J.Res. 114, authorizing the use of U.S. armed forces against Iraq, on October 10, 2002.",
+          "Voted NO on House passage of H.R. 3450, the North American Free Trade Agreement (NAFTA) implementing legislation, in November 1993.",
+          "Voted YEA on Senate passage of H.R. 1319, the American Rescue Plan Act of 2021, on March 6, 2021.",
+          "Voted YEA on the Senate motion to concur in the House amendment to H.R. 4346 with an amendment on July 27, 2022, during Senate consideration of the CHIPS and Science package.",
+          "Voted YEA on Senate passage of H.R. 3684, the Infrastructure Investment and Jobs Act, on August 10, 2021.",
+          "Voted YEA on Senate passage of H.R. 4173, the Dodd-Frank Wall Street Reform and Consumer Protection Act, on May 20, 2010.",
+          "Was an original cosponsor of S. 420, the Protecting the Right to Organize Act of 2021. The bill did not receive a Senate floor vote."
         ],
-        "correlation": "MATCHES labor/manufacturing promises (Butch Lewis, Buy America, CHIPS, NAFTA opposition, FEND Off Fentanyl) and drug-pricing (IRA vote). GAPS: PRO Act never became law; no major tax-code overhaul during his chairmanship. On data centers he has no Senate votes (out of office since Jan. 2025) - 'make tech pay' is a promise without a federal record.",
+        "correlation": "This profile lists four statements from Brown’s campaign platform and seven selected legislative actions. Each statement and action links to its source. The selection is not a complete platform or voting history, and it does not assign an overall match score.",
         "sources": [
           {
-            "label": "Athens Independent",
-            "url": "https://athensindependent.com/2026-general-election-state-races/"
+            "label": "Sherrod Brown campaign platform: Our Fight",
+            "url": "https://www.sherrodbrown.com/our-fight/"
           },
           {
-            "label": "Congressional Record farewell tribute",
-            "url": "https://www.congress.gov/congressional-record/volume-170/issue-184/senate-section/article/S6942-3"
+            "label": "U.S. House History, Art & Archives: Sherrod Brown biography",
+            "url": "https://history.house.gov/People/Detail/9996"
           },
           {
-            "label": "NPR/KSFR, 10/2/2026",
-            "url": "https://www.ksfr.org/npr-news/2026-10-02/the-u-s-senate-is-up-for-grabs-can-this-ohio-democrat-win-back-working-class-votes"
+            "label": "House roll call 455: H.J.Res. 114",
+            "url": "https://clerk.house.gov/Votes/2002455"
+          },
+          {
+            "label": "House roll call 575: H.R. 3450",
+            "url": "https://clerk.house.gov/Votes/1993575"
+          },
+          {
+            "label": "Senate roll call 110: H.R. 1319",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00110.htm"
+          },
+          {
+            "label": "Senate roll call 271: H.R. 4346",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00271.htm"
+          },
+          {
+            "label": "Senate roll call 314: H.R. 3684",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00314.htm"
+          },
+          {
+            "label": "Senate roll call 162: H.R. 4173",
+            "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1112/vote_111_2_00162.htm"
+          },
+          {
+            "label": "Congress.gov: S. 420 cosponsors",
+            "url": "https://www.congress.gov/bill/117th-congress/senate-bill/420/cosponsors"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sherrod_Brown_117th_Congress_%282%29.jpg/960px-Sherrod_Brown_117th_Congress_%282%29.jpg",
-        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Sherrod_Brown"
+        "photo_credit": "Public domain via https://en.wikipedia.org/wiki/Sherrod_Brown",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "official_record",
+              "note": "The official House history biography records Brown’s Ohio and federal offices, committee chairmanships, and 2024 election result.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "U.S. House History, Art & Archives: Sherrod Brown biography",
+                  "url": "https://history.house.gov/People/Detail/9996"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Brown’s campaign platform says he would hold health insurers accountable and lower prescription drug costs.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Sherrod Brown campaign platform: Our Fight",
+                  "url": "https://www.sherrodbrown.com/our-fight/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Brown’s campaign platform says data centers should pay their full utility costs and Ohioans should decide whether they are built in their communities.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Sherrod Brown campaign platform: Our Fight",
+                  "url": "https://www.sherrodbrown.com/our-fight/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Brown’s campaign platform says he would cap utility rate increases.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Sherrod Brown campaign platform: Our Fight",
+                  "url": "https://www.sherrodbrown.com/our-fight/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Brown’s campaign platform says he would ban stock trading by members of Congress and their spouses and prevent post-office lobbying.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Sherrod Brown campaign platform: Our Fight",
+                  "url": "https://www.sherrodbrown.com/our-fight/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "official_record",
+              "note": "The House Clerk records Brown’s Nay vote on passage on October 10, 2002.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "House roll call 455: H.J.Res. 114",
+                  "url": "https://clerk.house.gov/Votes/2002455"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The House Clerk records Brown’s No vote on passage of the NAFTA implementing legislation in November 1993.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "House roll call 575: H.R. 3450",
+                  "url": "https://clerk.house.gov/Votes/1993575"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Senate records Brown Yea on passage of H.R. 1319 on March 6, 2021.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Senate roll call 110: H.R. 1319",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00110.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Senate records Brown Yea on the July 27, 2022 motion concerning H.R. 4346. The entry describes the recorded motion rather than attributing a project outcome to the vote.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Senate roll call 271: H.R. 4346",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00271.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Senate records Brown Yea on passage of H.R. 3684 on August 10, 2021.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Senate roll call 314: H.R. 3684",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00314.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "The Senate records Brown Yea on passage of H.R. 4173 on May 20, 2010.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Senate roll call 162: H.R. 4173",
+                  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1112/vote_111_2_00162.htm"
+                }
+              ]
+            },
+            {
+              "status": "official_record",
+              "note": "Congress.gov lists Brown as an original cosponsor on February 24, 2021. The bill record shows no Senate floor vote.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Congress.gov: S. 420 cosponsors",
+                  "url": "https://www.congress.gov/bill/117th-congress/senate-bill/420/cosponsors"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "William B. Redpath",
