@@ -1047,3 +1047,13 @@ header nav { min-height:56px; padding:.4rem 1rem; gap:.35rem .65rem; }
   .home-heading-copy { gap:.55rem; }
   .home-section-icon { flex-basis:34px; width:34px; height:40px; }
 }
+
+/* Let the homepage treatment span the viewport; scope internal content frames separately. */
+main > .home-page { width:100%; max-width:none; margin:0; padding:1rem 0 1.5rem; }
+main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-width:none; margin:0; padding:1.35rem clamp(1rem,4vw,3rem) 2rem; }
+.directory-callout { margin-top:1.25rem; padding:1.2rem 1.35rem; border:1px solid #cfe0ef; border-left:4px solid #00bddb; border-radius:11px; background:#f5faff; }
+.directory-callout h2 { margin:0 0 .3rem!important; font-size:1.2rem!important; }
+.directory-callout p { margin:.3rem 0; }
+@media (max-width:760px) {
+  main > .page-shell:not(.landing-hero):not(.landing-shell) { padding:1rem .75rem 1.5rem; }
+}
