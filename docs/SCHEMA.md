@@ -70,6 +70,26 @@ Array of race objects:
 
 `measure_positions` is optional. Each entry must link to a direct source for the candidate statement. Allowed positions are `support`, `oppose`, or `unclear`; do not infer a position from a party, endorsement, vote, or silence. Omit the field or use an empty array when the guide has not verified a statement. An empty entry means this guide has no sourced statement listed, not that the candidate is undecided.
 
+
+Candidate narrative claims can carry direct, per-claim evidence in optional `claim_evidence`. Arrays align by index with `background` (one combined background statement), `promises`, `record`, or `correlation`. Evidence statuses are `candidate_statement` (source shows what the candidate said), `official_record` (official public record), or `editorial_summary` (guide interpretation with its supporting references). A source for a candidate statement does not independently verify its factual assertions. Use `pending` with no sources when a claim has been reviewed but still lacks direct support; omit an entry when its source audit has not yet been completed. The page labels missing claim-level citations as pending. Keep the grouped `sources` list as a broader reading list, not as proof of every claim.
+
+```json
+"claim_evidence": {
+  "promises": [{
+    "status": "candidate_statement",
+    "note": "Candidate response published as submitted; not independently fact-checked.",
+    "checked_on": "2026-10-11",
+    "sources": [{"label": "Candidate response", "url": "https://..."}]
+  }],
+  "record": [{
+    "status": "official_record",
+    "note": "Official sponsor list; sponsorship does not establish enactment.",
+    "checked_on": "2026-10-11",
+    "sources": [{"label": "Official legislative record", "url": "https://..."}]
+  }]
+}
+```
+
 ## measures.json
 
 ```json
