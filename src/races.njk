@@ -10,6 +10,21 @@ eleventyComputed:
   description: "Candidates for {{ race.office }} in the Ashtabula County November 3, 2026 election."
 ---
 
+{% macro claimEvidence(candidate, field, index) %}
+  {% set evidence = null %}
+  {% if candidate.claim_evidence and candidate.claim_evidence[field] %}
+    {% set evidence = candidate.claim_evidence[field][index] %}
+  {% endif %}
+  {% if evidence and evidence.sources and evidence.sources.length %}
+    <small class="claim-evidence">
+      {% for source in evidence.sources %}{% if not loop.first %} · {% endif %}<a href="{{ source.url }}" rel="noopener" target="_blank">{{ source.label }}</a>{% endfor %}
+      <strong>Evidence type: {{ evidence.status | replace("_", " ") }}</strong> · <span>{{ evidence.note }}</span>
+    </small>
+  {% else %}
+    <small class="claim-evidence claim-evidence-pending">Claim-level source check pending.</small>
+  {% endif %}
+{% endmacro %}
+
 <h1>{{ race.office }}</h1>
 {% if race.district %}<p><strong>District:</strong> {{ race.district }}</p>{% endif %}
 <p>{{ race.term_info }}</p>
@@ -17,7 +32,7 @@ eleventyComputed:
 <span class="verification-badge">Candidate list checked {{ race.verification_date }} against Ashtabula County BOE</span>
 
 <h2>Candidates ({{ race.candidates.length }})</h2>
-<p>Candidate backgrounds, positions, and records are editorial summaries. Sources are grouped by candidate rather than attached to individual claims; open the listed sources to check details.</p>
+<p>Candidate statements, official records, and guide summaries are labeled below. A linked source identifies the basis for that specific claim; a pending label means the claim has not yet been individually checked.</p>
 
 
 {% if race.candidates.length >= 2 %}
@@ -37,14 +52,14 @@ eleventyComputed:
         {% endfor %}
       </tr></thead>
       <tbody>
-        <tr><th scope="row">Background</th>{% for c in race.candidates %}<td>{{ c.background or "No background summary listed." }}</td>{% endfor %}</tr>
+        <tr><th scope="row">Background</th>{% for c in race.candidates %}<td>{{ c.background or "No background summary listed." }}{% if c.background %}{{ claimEvidence(c, "background", 0) }}{% endif %}</td>{% endfor %}</tr>
         <tr><th scope="row">Campaign statements</th>{% for c in race.candidates %}<td>
           {% if c.response_status %}<p class="candidate-response-status">{{ c.response_status }}</p>{% endif %}
-          {% if c.promises and c.promises.length %}<ul>{% for p in c.promises %}<li>{{ p }}</li>{% endfor %}</ul>
+          {% if c.promises and c.promises.length %}<ul>{% for p in c.promises %}<li>{{ p }}{{ claimEvidence(c, "promises", loop.index0) }}</li>{% endfor %}</ul>
           {% elif not c.response_status %}<p>No sourced campaign statements listed.</p>{% endif %}
         </td>{% endfor %}</tr>
         <tr><th scope="row">Voting record</th>{% for c in race.candidates %}<td>
-          {% if c.record and c.record.length %}<ul>{% for item in c.record %}<li>{{ item }}</li>{% endfor %}</ul>
+          {% if c.record and c.record.length %}<ul>{% for item in c.record %}<li>{{ item }}{{ claimEvidence(c, "record", loop.index0) }}</li>{% endfor %}</ul>
           {% else %}<p>No voting record summary listed.</p>{% endif %}
         </td>{% endfor %}</tr>
         <tr><th scope="row">Stated views on ballot issues</th>{% for c in race.candidates %}<td>
@@ -91,19 +106,19 @@ eleventyComputed:
   </div>
 
   <h4>Background</h4>
-  <p>{{ c.background }}</p>
+  <p>{{ c.background }}{{ claimEvidence(c, "background", 0) }}</p>
 
   {% if c.promises and c.promises.length %}
   <h4>Campaign Promises & Positions</h4>
   <ul>
-    {% for p in c.promises %}<li>{{ p }}</li>{% endfor %}
+    {% for p in c.promises %}<li>{{ p }}{{ claimEvidence(c, "promises", loop.index0) }}</li>{% endfor %}
   </ul>
   {% endif %}
 
   {% if c.record and c.record.length %}
   <h4>Voting Record</h4>
   <ul>
-    {% for r in c.record %}<li>{{ r }}</li>{% endfor %}
+    {% for r in c.record %}<li>{{ r }}{{ claimEvidence(c, "record", loop.index0) }}</li>{% endfor %}
   </ul>
   {% endif %}
 
@@ -124,7 +139,7 @@ eleventyComputed:
 
   {% if c.correlation %}
   <h4>Promise vs. Record</h4>
-  <p>{{ c.correlation }}</p>
+  <p>{{ c.correlation }}{{ claimEvidence(c, "correlation", 0) }}</p>
   {% endif %}
 
   {% if c.sources and c.sources.length %}
