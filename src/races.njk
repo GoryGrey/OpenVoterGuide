@@ -39,8 +39,9 @@ eleventyComputed:
       <tbody>
         <tr><th scope="row">Background</th>{% for c in race.candidates %}<td>{{ c.background or "No background summary listed." }}</td>{% endfor %}</tr>
         <tr><th scope="row">Campaign statements</th>{% for c in race.candidates %}<td>
+          {% if c.response_status %}<p class="candidate-response-status">{{ c.response_status }}</p>{% endif %}
           {% if c.promises and c.promises.length %}<ul>{% for p in c.promises %}<li>{{ p }}</li>{% endfor %}</ul>
-          {% else %}<p>No sourced campaign statements listed.</p>{% endif %}
+          {% elif not c.response_status %}<p>No sourced campaign statements listed.</p>{% endif %}
         </td>{% endfor %}</tr>
         <tr><th scope="row">Voting record</th>{% for c in race.candidates %}<td>
           {% if c.record and c.record.length %}<ul>{% for item in c.record %}<li>{{ item }}</li>{% endfor %}</ul>
@@ -79,6 +80,8 @@ eleventyComputed:
       {% if c.photo_credit %}<p class="photo-credit"><small>Photo: {{ c.photo_credit }}</small></p>{% endif %}
     </div>
   </div>
+
+  {% if c.response_status %}<p class="candidate-response-status">{{ c.response_status }}</p>{% endif %}
 
   <div class="worksheet-check">
     <label>
