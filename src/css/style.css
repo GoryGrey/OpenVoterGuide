@@ -257,6 +257,7 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
     padding:.55rem .75rem; border:1px solid var(--border); border-radius:8px;
     background:#fff; color:var(--primary); font-weight:800; cursor:pointer; list-style:none;
   }
+  .site-nav > summary::marker { content:""; }
   .site-nav > summary::-webkit-details-marker { display:none; }
   .site-nav > summary::after { content:"⌄"; margin-left:.4rem; }
   .site-nav[open] > summary::after { content:"⌃"; }
