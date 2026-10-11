@@ -6,16 +6,26 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
 
 <section class="landing-hero" style="--hero-image:url('{{ '/images/ashtabula-lighthouse.jpg' | url }}')" aria-labelledby="home-title">
   <div class="landing-hero-inner">
-    <p class="landing-kicker">Ashtabula County · November 3, 2026</p>
-    <h1 id="home-title">Know what’s on your ballot.</h1>
-    <p>A clear, nonpartisan guide to local and statewide races, ballot issues, and the choices that will appear on your ballot.</p>
-    <div class="landing-actions">
-      <a class="primary-action" href="{{ '/races/' | url }}">Find what’s on your ballot <span aria-hidden="true">→</span></a>
-      <a href="{{ '/sample-ballots/' | url }}">Get my official sample ballot</a>
-      <a href="{{ '/measures/' | url }}">Explore ballot issues</a>
-      <a href="{{ '/worksheet/' | url }}">Build my ballot</a>
-      <a href="{{ '/voting/' | url }}">Plan when to vote</a>
+    <div class="landing-hero-copy">
+      <p class="landing-kicker">Ashtabula County · November 3, 2026</p>
+      <h1 id="home-title">Know what’s on<br><span>your ballot.</span></h1>
+      <p>A clear, nonpartisan guide to local and state races, ballot measures, and voting information for Ashtabula County.</p>
+      <div class="landing-actions">
+        <a class="primary-action" href="{{ '/races/' | url }}">Find what’s on your ballot <span aria-hidden="true">→</span></a>
+        <a href="{{ '/voting/' | url }}">Get voting info</a>
+        <a href="{{ '/sample-ballots/' | url }}">View sample ballot</a>
+        <a href="{{ '/voting/' | url }}">Plan when to vote</a>
+      </div>
     </div>
+    <aside class="hero-location" aria-label="Ashtabula County, Ohio">
+      <span class="hero-location-pin" aria-hidden="true">⌖</span>
+      <p><strong>Ashtabula</strong><br>County<br>Ohio</p>
+      <svg class="hero-location-map" viewBox="0 0 120 110" aria-hidden="true" focusable="false">
+        <path d="M25 5 91 7 102 20 98 38 106 53 100 76 87 88 72 84 59 98 44 94 35 78 24 67 18 49 22 34 16 20Z" fill="rgba(241,248,255,.1)" stroke="rgba(241,248,255,.8)" stroke-width="2"/>
+        <path d="m91 8 11 12-4 18-8-2Z" fill="#00c6eb"/>
+        <circle cx="93" cy="25" r="4" fill="#57f5d3" stroke="#071827" stroke-width="2"/>
+      </svg>
+    </aside>
   </div>
 </section>
 
@@ -29,7 +39,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
     <section class="home-section" aria-labelledby="races-heading">
       <div class="home-section-heading">
         <div class="home-heading-copy">
-          <span class="home-section-icon" aria-hidden="true">★</span>
+          <span class="home-section-icon" aria-hidden="true"><svg viewBox="0 0 40 48" focusable="false"><path d="M8 2h17l9 9v33H8a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4Z" fill="currentColor"/><path d="M25 2v10h9" fill="none" stroke="#0b63bc" stroke-width="2"/><path d="m19 16 2.6 5.2 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8Z" fill="#fff"/></svg></span>
           <div>
             <h2 id="races-heading">Featured races</h2>
             <p>Jump into a few of the offices on the November ballot.</p>
@@ -92,7 +102,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
     <section class="home-section home-issues-section" aria-labelledby="issues-heading">
       <div class="home-section-heading">
         <div class="home-heading-copy">
-          <span class="home-section-icon home-section-icon-list" aria-hidden="true">≡</span>
+          <span class="home-section-icon home-section-icon-list" aria-hidden="true"><svg viewBox="0 0 40 48" focusable="false"><path d="M8 2h17l9 9v33H8a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4Z" fill="currentColor"/><path d="M25 2v10h9" fill="none" stroke="#0b63bc" stroke-width="2"/><path d="M12 20h17M12 27h17M12 34h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg></span>
           <div>
             <h2 id="issues-heading">Ballot issues &amp; levies</h2>
             <p>Understand the questions on your ballot and follow the source material.</p>
@@ -105,7 +115,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
         <article class="home-issue-card home-issue-measures">
           <img class="home-issue-photo" src="https://images.unsplash.com/photo-1767045386159-e2d27ad5be3b?auto=format&fit=crop&w=1100&q=82" alt="" loading="lazy" decoding="async" width="1100" height="700">
           <div class="home-issue-content">
-            <span class="home-issue-icon" aria-hidden="true">▤</span>
+            <span class="home-issue-icon" aria-hidden="true"><svg viewBox="0 0 40 44" focusable="false"><path d="M7 2h18l9 9v29H7a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4Z" fill="currentColor"/><path d="M25 2v10h9" fill="none" stroke="#effaf6" stroke-width="2"/><path d="M11 20h17M11 26h17M11 32h12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span>
             <h3>State and local measures</h3>
             <p>Read the proposed changes and the practical effect of a YES or NO vote.</p>
             <a class="home-issue-action" href="{{ '/measures/' | url }}">View ballot measures <span aria-hidden="true">→</span></a>
@@ -116,7 +126,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
         <article class="home-issue-card home-issue-levies">
           <img class="home-issue-photo" src="https://images.unsplash.com/photo-1746682817408-ee9ca79ece74?auto=format&fit=crop&w=1100&q=82" alt="" loading="lazy" decoding="async" width="1100" height="700">
           <div class="home-issue-content">
-            <span class="home-issue-icon" aria-hidden="true">⌂</span>
+            <span class="home-issue-icon" aria-hidden="true"><svg viewBox="0 0 44 44" focusable="false"><path d="M3 21 22 5l19 16h-6v18H9V21Z" fill="currentColor"/><path d="M18 39V26h8v13" fill="none" stroke="#fff7e9" stroke-width="3"/></svg></span>
             <h3>Property tax questions</h3>
             <p>Review all 36 property-tax levies and identify renewals and tax changes.</p>
             <a class="home-issue-action" href="{{ '/levies/' | url }}">See property tax levies <span aria-hidden="true">→</span></a>
@@ -127,7 +137,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
         <article class="home-issue-card home-issue-liquor">
           <img class="home-issue-photo" src="https://images.unsplash.com/photo-1677382454700-4556545209f0?auto=format&fit=crop&w=1100&q=82" alt="" loading="lazy" decoding="async" width="1100" height="700">
           <div class="home-issue-content">
-            <span class="home-issue-icon" aria-hidden="true">▣</span>
+            <span class="home-issue-icon" aria-hidden="true"><svg viewBox="0 0 44 44" focusable="false"><path d="M5 15h34l-3-10H8Z" fill="currentColor"/><path d="M8 17v21h28V17M14 20v7h7v-7M25 20v7h7v-7" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M17 38V29h10v9" fill="none" stroke="currentColor" stroke-width="3"/></svg></span>
             <h3>Sunday liquor sales</h3>
             <p>Find the local liquor option questions included with the ballot guide.</p>
             <a class="home-issue-action" href="{{ '/measures/liquor/' | url }}">Read liquor issues <span aria-hidden="true">→</span></a>
@@ -140,7 +150,7 @@ description: A nonpartisan, source-linked guide to the November 3, 2026 general 
     <section class="home-worksheet-banner" aria-labelledby="worksheet-banner-heading">
       <img class="home-worksheet-photo" src="https://images.unsplash.com/photo-1604525925032-c28f963e8cbd?auto=format&fit=crop&w=1600&q=82" alt="" loading="lazy" decoding="async" width="1600" height="850">
       <div class="home-worksheet-content">
-        <span class="home-worksheet-icon" aria-hidden="true">☑</span>
+        <span class="home-worksheet-icon" aria-hidden="true"><svg viewBox="0 0 48 56" focusable="false"><path d="M15 6h18a4 4 0 0 1 4 4v39H7V10a4 4 0 0 1 4-4h4Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M17 4h14v8H17zM14 23l3 3 6-7M27 23h8M14 35l3 3 6-7M27 35h8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="43" r="8" fill="#00c6eb"/><path d="m34 43 3 3 5-6" fill="none" stroke="#071827" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <div>
           <h2 id="worksheet-banner-heading">Build your personal ballot</h2>
           <p>Use the worksheet to keep track of your choices and bring it with you to the polls.</p>
