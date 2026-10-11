@@ -31,7 +31,7 @@ eleventyComputed:
       <thead><tr><th scope="col">Compare</th>
         {% for c in race.candidates %}
         <th scope="col"><a href="#{{ c.name | slug }}">{{ c.name }}</a>
-          {% if c.party %}<span class="comparison-party">{{ c.party }}</span>{% endif %}
+          {% if c.party %}<span class="comparison-party">{{ c.party }}</span>{% else %}<span class="comparison-party">Nonpartisan ballot</span>{% endif %}
           {% if c.incumbent %}<span class="comparison-incumbent">Incumbent</span>{% endif %}
         </th>
         {% endfor %}
@@ -73,7 +73,7 @@ eleventyComputed:
     {% endif %}
     <div>
       <h3>{{ c.name }}
-        <span class="party-tag party-{{ c.party | first }}">{{ c.party }}</span>
+        {% if c.party %}<span class="party-tag party-{{ c.party | first }}">{{ c.party }}</span>{% else %}<span class="party-tag">Nonpartisan ballot</span>{% endif %}
         {% if c.incumbent %}<span class="party-tag">Incumbent</span>{% endif %}
       </h3>
       {% if c.photo_credit %}<p class="photo-credit"><small>Photo: {{ c.photo_credit }}</small></p>{% endif %}
