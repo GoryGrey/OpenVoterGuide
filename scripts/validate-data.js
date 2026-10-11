@@ -51,6 +51,24 @@ for (const race of races) {
   unique(race.candidates, (candidate) => candidate.name, `candidates in ${race.id}`);
   for (const candidate of race.candidates) {
     checkSources(candidate.sources, `Candidate ${candidate.name}`);
+
+    if (candidate.claim_evidence !== undefined) {
+      assert(candidate.claim_evidence && typeof candidate.claim_evidence === "object" && !Array.isArray(candidate.claim_evidence), `Candidate ${candidate.name}: claim_evidence must be an object`);
+      for (const [field, entries] of Object.entries(candidate.claim_evidence)) {
+        assert(["background", "promises", "record", "correlation"].includes(field), `Candidate ${candidate.name}: unsupported claim evidence field ${field}`);
+        assert(Array.isArray(entries), `Candidate ${candidate.name}: claim_evidence.${field} must be an array`);
+        const claimCount = field === "background" || field === "correlation" ? (candidate[field] ? 1 : 0) : (Array.isArray(candidate[field]) ? candidate[field].length : 0);
+        assert(entries.length <= claimCount, `Candidate ${candidate.name}: claim_evidence.${field} has entries without matching claims`);
+        for (const [index, evidence] of entries.entries()) {
+          if (evidence === null || evidence === undefined) continue;
+          assert(["candidate_statement", "official_record", "editorial_summary", "pending"].includes(evidence.status), `Candidate ${candidate.name}: invalid evidence status for ${field}[${index}]`);
+          assert(typeof evidence.note === "string" && evidence.note.trim(), `Candidate ${candidate.name}: claim evidence needs an explanatory note for ${field}[${index}]`);
+          assert(typeof evidence.checked_on === "string" && /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(evidence.checked_on) && !Number.isNaN(Date.parse(evidence.checked_on)), `Candidate ${candidate.name}: claim evidence needs checked_on for ${field}[${index}]`);
+          if (evidence.status === "pending") assert(Array.isArray(evidence.sources) && evidence.sources.length === 0, `Candidate ${candidate.name}: pending evidence must not claim supporting sources`);
+          else checkSources(evidence.sources, `Candidate ${candidate.name}, ${field} claim ${index + 1}`);
+        }
+      }
+    }
     if (candidate.response_status !== undefined) {
       assert(typeof candidate.response_status === "string" && candidate.response_status.trim(), `Candidate ${candidate.name}: response_status must be non-empty text`);
       assert(candidate.sources.some((source) => source.url.includes("ideastream.org")), `Candidate ${candidate.name}: response_status needs its voter-guide source`);
