@@ -455,63 +455,263 @@
         "name": "William B. Redpath",
         "party": "Libertarian",
         "incumbent": false,
-        "background": "Perrysburg resident (born Findlay); retired CPA and business valuator; former chairman of the Libertarian National Committee; 24 years as treasurer of Fair Vote (electoral-reform organization); ~40 years of ballot-access and electoral-reform work; Libertarian nominee for U.S. Senate in Illinois in 2022. Won the May 5, 2026 Libertarian primary with 4,996 votes (100%). Never held public office - no prior voting record exists.",
+        "background": "Redpath’s campaign biography describes a 38-year career in business valuation and two terms as chair of the Libertarian National Committee (2006–2010). The campaign biography lists no elected-office service.",
         "promises": [
-          "Free trade (opposes recent federal tariffs; supports unilateral free trade)",
-          "Cut federal spending; end corporate welfare and farm subsidies",
-          "Eliminate the federal Departments of Education and Housing and Urban Development",
-          "Entitlement reform: BRAC-style commission for Social Security, convert Medicare to cash-assistance, convert Medicaid to federal block grants with 10-year phaseout",
-          "Turn consensual-crime laws (drugs, gambling) over to the states",
-          "Ranked-choice voting and proportional representation"
+          "Supports ending all U.S. tariffs and unilateral free trade.",
+          "Calls for eliminating the Departments of Education and Housing and Urban Development and ending corporate welfare and farm subsidies, immediately or within ten years.",
+          "Supports a BRAC-style commission to propose Social Security reforms, cash payments to Medicare enrollees, and phasing out federal Medicaid subsidies over ten years.",
+          "Would repeal federal laws on consensual crimes, including federal drug prohibition and the federal ban on online gambling, leaving these issues to the states.",
+          "Would replace the federal tax code with the Tax Foundation’s Growth and Opportunity plan, including 20% individual income and distributed-profits tax rates.",
+          "Supports ranked-choice voting for single-winner elections and multi-member U.S. House districts under the Fair Representation Act."
         ],
         "record": [
-          "None (never held elected office)."
+          "No legislative voting history is listed in this guide; Redpath’s campaign biography lists business and party roles and no elected-office service."
         ],
-        "correlation": "N/A - no legislative record; platform only.",
+        "correlation": "This profile lists selected statements from Redpath’s campaign platform. No elected-office voting record is listed here. The selection is not a complete platform and assigns no overall match score.",
         "sources": [
           {
-            "label": "WTAP, 5/1/2026",
-            "url": "https://gray-wtap-prod.gtv-cdn.com/2026/05/01/ohio-us-senate-primary-candidates-outline-priorities-ahead-may-5-election/"
+            "label": "Bill Redpath campaign biography and platform",
+            "url": "https://billredpath.com/"
           },
           {
-            "label": "Athens Independent",
-            "url": "https://athensindependent.com/2026-general-election-state-races/"
-          },
-          {
-            "label": "Signal Ohio",
-            "url": "https://signalohio.org/ohio-disqualifies-libertarian-u-s-senate-candidate-jeffrey-kanter-election-2026/"
+            "label": "Bill Redpath campaign issue positions",
+            "url": "https://billredpath.com/faq/"
           }
         ],
         "photo_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Bill_Redpath_%28Portrait%29.jpeg",
-        "photo_credit": "CC BY-SA 2.0"
+        "photo_credit": "CC BY-SA 2.0",
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign biography describes his business-valuation career and Libertarian National Committee leadership and lists no elected-office service.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign biography and platform",
+                  "url": "https://billredpath.com/"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign says he supports unilateral free trade and ending all tariffs.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign biography and platform",
+                  "url": "https://billredpath.com/"
+                },
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign calls for eliminating the two departments, ending corporate welfare and farm subsidies immediately or phasing them out within ten years.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign describes the proposed Social Security commission, Medicare cash payments, and a ten-year Medicaid subsidy phaseout.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign says federal laws on consensual crimes, including drug prohibition and online gambling, should be repealed and left to the states.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign supports replacing the current federal tax code with the named Tax Foundation plan and summarizes its proposed rates.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign supports ranked-choice voting for single-winner elections and the Fair Representation Act’s multi-member U.S. House districts.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign issue positions",
+                  "url": "https://billredpath.com/faq/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "candidate_statement",
+              "note": "Redpath’s campaign biography lists his business and party background and no elected office; this guide does not include a voting history for him.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Bill Redpath campaign biography and platform",
+                  "url": "https://billredpath.com/"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Greg Levy",
         "party": "Other-party candidate",
         "incumbent": false,
-        "background": "Community organizer and musician from University Heights (Akron-raised); directs the Robeson Singers gospel choir; joined the U.S. Navy at 18; furniture mover and grassroots organizer. Member of the Party for Socialism and Liberation but filed as an independent; describes himself as a revolutionary socialist. Does not accept PAC money. Never held public office - no prior voting record exists. Listed as 'Other-party' on the official BOE candidate list.",
+        "background": "Greg Levy’s campaign identifies him as a socialist organizer and U.S. Navy veteran. The Ashtabula County Board of Elections lists him as an other-party candidate for U.S. Senator.",
         "promises": [
-          "Make college free; cancel all existing college debt",
-          "Fund by cutting the military budget by 90%",
-          "Raise minimum wage to match cost of living (cites $22.50/hr)",
-          "Combat data-center development; blames data centers for high electricity bills",
-          "Expand health insurance/Medicaid and unemployment assistance",
-          "End wars"
+          "Would make public education from pre-K through college and trade school free and cancel student debt.",
+          "Would establish universal, single-payer health care free at the point of use.",
+          "Calls for cutting the Pentagon budget by 90% and ending U.S. overseas military bases.",
+          "Would place the 100 largest corporations under public ownership and democratic worker control.",
+          "Would outlaw corporate lobbying and political donations.",
+          "Warns that AI-related energy use could strain Ohio’s electric infrastructure and natural resources."
         ],
         "record": [
-          "None (never held elected office)."
+          "No legislative voting history is included in this guide."
         ],
-        "correlation": "N/A - no legislative record; platform only.",
+        "correlation": "This profile lists selected positions from Levy’s campaign platform. No legislative voting history is included here. The selection is not a complete platform and assigns no overall match score.",
         "sources": [
           {
-            "label": "Heights Observer, 9/28/2026",
-            "url": "https://heightsobserver.org/articles/opinion/uhs-greg-levy-is-on-the-ballot-for-u-s-senate/"
+            "label": "Greg Levy campaign platform",
+            "url": "https://www.greg4senate.com/"
           },
           {
-            "label": "greg4senate.com/platform",
-            "url": "https://www.greg4senate.com/platform"
+            "label": "Greg Levy campaign and Party for Socialism and Liberation information",
+            "url": "https://www.greg4senate.com/about-the-psl"
+          },
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
           }
-        ]
+        ],
+        "claim_evidence": {
+          "background": [
+            {
+              "status": "candidate_statement",
+              "note": "Levy’s campaign identifies him as a socialist organizer and Navy veteran. The county BOE candidate list gives his ballot designation.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                }
+              ]
+            }
+          ],
+          "promises": [
+            {
+              "status": "candidate_statement",
+              "note": "The platform calls for free public education through college and trade school and cancellation of student debt.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The platform calls for universal single-payer health care free at the point of use.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The platform calls for a 90% Pentagon budget cut and dismantling the U.S. network of overseas military bases.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The platform proposes public ownership and democratic worker control of the 100 largest corporations.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The platform says the campaign would outlaw corporate lobbying and political donations.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            },
+            {
+              "status": "candidate_statement",
+              "note": "The platform warns that AI-related energy use could strain Ohio’s electrical infrastructure and natural resources.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            }
+          ],
+          "record": [
+            {
+              "status": "editorial_summary",
+              "note": "This guide does not include legislative votes for Levy; the linked campaign page describes his platform, not a voting record.",
+              "checked_on": "2026-10-11",
+              "sources": [
+                {
+                  "label": "Greg Levy campaign platform",
+                  "url": "https://www.greg4senate.com/"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "name": "Stephen Faris",
