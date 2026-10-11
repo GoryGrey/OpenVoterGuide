@@ -1,13 +1,26 @@
 ---
 layout: base.njk
 title: Sunday Liquor Questions
-description: Find precinct-specific local-option questions on your official Ashtabula County November 3, 2026 ballot.
+description: Precinct-specific November 3, 2026 Sunday liquor questions checked against the official Ashtabula County sample ballots.
 permalink: /measures/liquor/index.html
 ---
 
 <h1>Sunday Liquor Questions</h1>
-<p>The BOE source previously used for these entries is a May 5 primary document. The three November entries still need to be matched against their exact precinct ballots, so this guide is temporarily withholding the establishment names, addresses, and ballot wording.</p>
-<p>Use the <a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/ballotlist.aspx" target="_blank" rel="noopener">official November sample ballot selector</a> and choose your precinct. You can also review the <a href="https://www.ohiosos.gov/assets/2026-11-general-qandi.xlsx" target="_blank" rel="noopener">Ohio Secretary of State local questions and issues workbook</a>.</p>
-<p>These questions apply only to the precinct listed on the official ballot.</p>
+<p>These local-option questions apply only to voters in the listed precinct. The wording below comes from the county’s official November 3 ballot. Check your own sample ballot to confirm whether a question appears for you.</p>
+
+{% for item in liquor %}
+<section class="measure-card">
+  <h2>Issue {{ item.issue_number }}: {{ item.precinct }}</h2>
+  <p><strong>{{ item.establishment }}</strong> · {{ item.address }} · {{ item.business_type }} · {{ item.permit_type }} permit</p>
+  <p>{{ item.plain_english }}</p>
+  <h3>Official ballot wording</h3>
+  <blockquote>{{ item.official_ballot_language }}</blockquote>
+  <p><strong>Yes:</strong> {{ item.yes_means }}</p>
+  <p><strong>No:</strong> {{ item.no_means }}</p>
+  <ul class="source-list">
+    {% for source in item.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a></li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}
 
 <p><a href="{{ '/measures/' | url }}">All ballot measures →</a></p>
