@@ -179,6 +179,7 @@
       const raceFacts = element('dl', null, 'guided-facts');
       appendFact(raceFacts, context.district ? 'District' : '', context.district);
       appendFact(raceFacts, 'Term and seat', context.term_info);
+      appendFact(raceFacts, 'Contest details checked', context.verification_date);
       if (raceFacts.children.length) container.append(raceFacts);
       container.append(element('p', 'The candidate summaries below include sourced backgrounds, campaign statements, and available voting records. Open a full profile to read its complete evidence.', 'guided-source-note'));
       const candidates = element('div', null, 'guided-candidates');
@@ -189,6 +190,7 @@
         const affiliation = [candidate.party, candidate.incumbent ? 'Incumbent' : ''].filter(Boolean).join(' · ');
         if (affiliation) heading.append(element('p', affiliation));
         card.append(heading);
+        if (candidate.response_status) card.append(element('p', candidate.response_status, 'guided-response-status'));
         if (candidate.background) {
           card.append(element('h5', 'Background'));
           card.append(element('p', candidate.background));
@@ -243,13 +245,14 @@
       appendFact(facts, 'Type', `${String(context.levy_type || '').replaceAll('_', ' ')}${context.tax_change ? ' · changes the tax' : ' · renewal'}`);
       appendFact(facts, 'Proposed rate', `${context.millage} ${Number(context.millage) === 1 ? 'mill' : 'mills'}`);
       appendFact(facts, 'Term', context.term_years ? `${context.term_years} years` : 'Not listed');
+      appendFact(facts, 'Details checked', context.verification_date);
       container.append(facts);
       container.append(element('p', context.yes_means, 'guided-impact guided-impact-yes'));
       container.append(element('p', context.no_means, 'guided-impact guided-impact-no'));
       if (context.notes) container.append(element('p', `For the district: ${context.notes}`, 'guided-source-note'));
       if (Number.isFinite(context.estimate_at_100k)) {
         container.append(element('h4', 'Example individual impact'));
-        container.append(element('p', `At a $100,000 appraised home value: about ${context.estimate_at_100k.toFixed(2)} per year (${context.estimate_kind}), before reductions.`, 'guided-estimate'));
+        container.append(element('p', `At a $100,000 appraised home value: about $${context.estimate_at_100k.toFixed(2)} per year (${context.estimate_kind}), before reductions.`, 'guided-estimate'));
         container.append(element('p', context.estimate_explainer, 'guided-source-note'));
       }
       container.append(element('p', 'The rate and estimated amount may not apply to your property. Check the district, full explanation, and the County Auditor’s personalized estimator before deciding.', 'guided-source-note'));
@@ -262,6 +265,7 @@
       appendFact(facts, 'Address', context.address);
       appendFact(facts, 'Business and permit', `${context.business_type || ''}${context.permit_type ? ` · ${context.permit_type} permit` : ''}`);
       appendFact(facts, 'Sunday sales requested', context.sales_type);
+      appendFact(facts, 'Ballot details checked', context.verification_date);
       container.append(facts);
       container.append(element('p', context.plain_english));
       container.append(element('p', `A YES vote: ${context.yes_means}`, 'guided-impact guided-impact-yes'));

@@ -1401,6 +1401,7 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 .guided-candidate h4 { margin:.2rem 0 .45rem; color:#102f4a; font-size:1.15rem; }
 .guided-candidate h5,.guided-arguments h4,.guided-impact h4 { margin:.8rem 0 .35rem; }
 .guided-candidate-heading p { color:#536b80; font-size:.9rem; }
+.guided-response-status { padding:.45rem .6rem; border-left:3px solid #0877ce; background:#eef7ff; color:#244e70; font-size:.9rem; }
 .guided-fact-list,.guided-source-list { padding-left:1.25rem; }
 .guided-fact-list li { margin:.65rem 0; }
 .guided-fact-list p { margin:.25rem 0; }
