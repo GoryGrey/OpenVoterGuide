@@ -1264,9 +1264,10 @@
           "Supports Lake Erie protections, water-quality investment, and practical conservation programs with farmers to reduce runoff."
         ],
         "record": [
-          "This guide has not compiled a sourced roll-call summary of Jukic’s Euclid City Council votes."
+          "Euclid City Council minutes record Jukic voting YES on Ordinance 127a-19 on January 6, 2020. The ordinance amended several council procedures, including rules for order of business, council members’ comments, and conduct during meetings.",
+          "Euclid’s published 2022 action summaries list Jukic as a co-sponsor of Ordinance 031-22, which opted the city out of Ohio H.B. 172 and continued Euclid’s fireworks ban. The ordinance passed 6–3; the summary does not identify Jukic’s individual vote."
         ],
-        "correlation": "Her listed policy positions are campaign statements. This guide has not assembled a comparable council voting record, so it does not assign a position-to-record match score.",
+        "correlation": "This is a small, source-checked sample of one named roll-call vote and one co-sponsored ordinance. It is not a complete council voting history. The 2022 action summary reports the ordinance outcome but does not identify Jukic’s individual vote, so no vote is inferred from sponsorship.",
         "sources": [
           {
             "label": "City of Euclid notice recognizing Jukic’s four years on Council",
@@ -1295,6 +1296,26 @@
           {
             "label": "Maria Jukic campaign environment plan",
             "url": "https://www.mariajukicforcongress.com/environment-climate-change-protecting-whats-ours/"
+          },
+          {
+            "label": "Euclid City Council minutes, January 6, 2020",
+            "url": "https://cdn.euclidlibrary.org/cdn/ecc/2020/20200106_ECC/minutes.pdf"
+          },
+          {
+            "label": "Euclid Observer, City Council action summaries (April 2022)",
+            "url": "https://cdn.euclidlibrary.org/cdn/esj/2022/apr2022/apr2022.pdf"
+          },
+          {
+            "label": "Euclid Observer, City Council action summaries (June 2022)",
+            "url": "https://cdn.euclidlibrary.org/cdn/esj/2022/june2022/june2022.pdf"
+          },
+          {
+            "label": "Euclid City Council meeting archive",
+            "url": "https://www.euclidlibrary.org/content/council-meetings"
+          },
+          {
+            "label": "Euclid Codified Ordinances, 125.06 Minutes",
+            "url": "https://codelibrary.amlegal.com/codes/euclid/latest/euclid_oh/0-0-0-43261"
           }
         ],
         "claim_evidence": {
@@ -1367,25 +1388,58 @@
           ],
           "record": [
             {
-              "status": "pending",
-              "note": "The campaign and city sources establish her council service, but a complete individual vote history has not been assembled for this profile.",
-              "checked_on": "2026-10-11",
-              "sources": []
+              "status": "official_record",
+              "note": "Official meeting minutes record a named YES vote by Jukic on Ordinance 127a-19 on January 6, 2020. Euclid Observer's published council action summaries identify Jukic as a co-sponsor of Ordinance 031-22 and report its 6–3 passage, but do not state her individual vote. This is a limited sample, not a complete vote history.",
+              "checked_on": "2026-10-12",
+              "sources": [
+                {
+                  "label": "Euclid City Council minutes, January 6, 2020",
+                  "url": "https://cdn.euclidlibrary.org/cdn/ecc/2020/20200106_ECC/minutes.pdf"
+                },
+                {
+                  "label": "Euclid Observer, City Council action summaries (April 2022)",
+                  "url": "https://cdn.euclidlibrary.org/cdn/esj/2022/apr2022/apr2022.pdf"
+                },
+                {
+                  "label": "Euclid Observer, City Council action summaries (June 2022)",
+                  "url": "https://cdn.euclidlibrary.org/cdn/esj/2022/june2022/june2022.pdf"
+                },
+                {
+                  "label": "Euclid City Council meeting archive",
+                  "url": "https://www.euclidlibrary.org/content/council-meetings"
+                },
+                {
+                  "label": "Euclid Codified Ordinances, 125.06 Minutes",
+                  "url": "https://codelibrary.amlegal.com/codes/euclid/latest/euclid_oh/0-0-0-43261"
+                }
+              ]
             }
           ],
           "correlation": [
             {
               "status": "editorial_summary",
-              "note": "The guide lists campaign statements and clearly records that a comparable local voting history is not assembled; no match or mismatch is inferred.",
-              "checked_on": "2026-10-11",
+              "note": "The guide distinguishes an individually recorded vote from sponsorship and an aggregate outcome; it does not infer Jukic's vote on the 2022 ordinance or assign a policy match score.",
+              "checked_on": "2026-10-12",
               "sources": [
                 {
-                  "label": "Campaign biography",
-                  "url": "https://www.mariajukicforcongress.com/about-maria/"
+                  "label": "Euclid City Council minutes, January 6, 2020",
+                  "url": "https://cdn.euclidlibrary.org/cdn/ecc/2020/20200106_ECC/minutes.pdf"
                 },
                 {
-                  "label": "City of Euclid notice",
-                  "url": "https://www.cityofeuclid.com/euclid-offers-thanks-to-departing-welcomes-new-council-members"
+                  "label": "Euclid Observer, City Council action summaries (April 2022)",
+                  "url": "https://cdn.euclidlibrary.org/cdn/esj/2022/apr2022/apr2022.pdf"
+                },
+                {
+                  "label": "Euclid Observer, City Council action summaries (June 2022)",
+                  "url": "https://cdn.euclidlibrary.org/cdn/esj/2022/june2022/june2022.pdf"
+                },
+                {
+                  "label": "Euclid City Council meeting archive",
+                  "url": "https://www.euclidlibrary.org/content/council-meetings"
+                },
+                {
+                  "label": "Euclid Codified Ordinances, 125.06 Minutes",
+                  "url": "https://codelibrary.amlegal.com/codes/euclid/latest/euclid_oh/0-0-0-43261"
                 }
               ]
             }
