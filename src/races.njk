@@ -37,7 +37,7 @@ eleventyComputed:
 
 <h2>Candidates and tickets ({{ race.candidates.length }})</h2>
 <p>Candidate statements, official records, and guide summaries are labeled below. A linked source identifies the basis for that specific claim; a pending label means the claim has not yet been individually checked.</p>
-<div class="worksheet-check worksheet-undecided"><label><input type="radio" name="choice-race-{{ race.id }}" data-worksheet-id="race-{{ race.id }}-undecided" data-worksheet-group="race-{{ race.id }}" data-worksheet-label="{{ race.office }}: Undecided"> Mark this race undecided</label></div>
+<p class="worksheet-guide-cta"><a class="primary-action" href="{{ ('/worksheet/?item=race-' + race.id) | url }}">Review this race in the worksheet guide <span aria-hidden="true">→</span></a></p>
 
 
 {% if race.candidates.length >= 2 %}
@@ -105,13 +105,6 @@ eleventyComputed:
   <p><a href="{{ ('/candidates/' + race.id + '/' + (c.name | profileSlug) + '/') | url }}">View {{ c.name }}’s candidate profile and sources</a></p>
 
   {% if c.response_status %}<p class="candidate-response-status">{{ c.response_status }}</p>{% endif %}
-
-  <div class="worksheet-check">
-    <label>
-      <input type="radio" name="choice-race-{{ race.id }}" data-worksheet-id="race-{{ race.id }}-{{ c.name | candidateSlug }}" data-worksheet-group="race-{{ race.id }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
-      Mark as my choice
-    </label>
-  </div>
 
   <h4>Background</h4>
   <p>{{ c.background }}{{ claimEvidence(c, "background", 0) }}</p>

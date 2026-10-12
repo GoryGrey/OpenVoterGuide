@@ -30,26 +30,16 @@ eleventyComputed:
   <p>{{ measure.no_means }}</p>
 </div>
 
-<div class="worksheet-check">
-  <label>
-    <input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-yes" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: YES">
-    My choice: YES
-  </label>
-</div>
-<div class="worksheet-check">
-  <label>
-    <input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-no" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: NO">
-    My choice: NO
-  </label>
-</div>
-<div class="worksheet-check"><label><input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-undecided" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: Undecided"> My choice: undecided</label></div>
+<p class="worksheet-guide-cta"><a class="primary-action" href="{{ ('/worksheet/?item=measure-' + measure.id) | url }}">Review this issue in the worksheet guide <span aria-hidden="true">→</span></a></p>
 
 <section class="issue-graphic" id="issue-graphic-{{ measure.id }}" aria-labelledby="issue-graphic-title-{{ measure.id }}">
   <p class="issue-graphic-brand">OpenVoterGuide · Ashtabula County, Ohio</p>
   <p class="content-eyebrow">Verified ballot issue · November 3, 2026</p>
   <h2 id="issue-graphic-title-{{ measure.id }}">Issue {{ measure.issue_number }}: {{ measure.title }}</h2>
+  <p class="issue-graphic-disclaimer">Neutral summary, not official ballot language. Check your precinct-specific ballot for the exact wording.</p>
   <p>{{ measure.plain_english }}</p>
   <div class="issue-graphic-columns"><div><h3>YES means</h3><p>{{ measure.yes_means }}</p></div><div><h3>NO means</h3><p>{{ measure.no_means }}</p></div></div>
+  {% if measure.sources and measure.sources.length %}<p class="issue-graphic-sources"><strong>Sources:</strong> {% for source in measure.sources %}{% if not loop.first %} · {% endif %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a>{% endfor %}</p>{% endif %}
   <p class="issue-graphic-url">openvoterguide.org</p>
 </section>
 <p><button type="button" onclick="(function(){document.body.classList.add('print-issue-graphic');window.print();setTimeout(()=>document.body.classList.remove('print-issue-graphic'),500)})()">Print / save this issue graphic as PDF</button></p>

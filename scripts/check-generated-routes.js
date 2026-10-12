@@ -69,9 +69,8 @@ function inspectHtml(directory) {
       if (absolute.endsWith(path.join("worksheet", "index.html"))) {
         assert(/<meta name="robots" content="noindex, nofollow">/.test(html), "Private worksheet must be noindex and nofollow.");
       }
-      if (absolute.endsWith(path.join("worksheet", "index.html"))) {
-        assert(/<meta name="robots" content="noindex, nofollow">/.test(html), "Private worksheet must be noindex and nofollow.");
-      }
+      const title = html.match(/<title>([^<]+)<\/title>/i)?.[1] || "";
+      assert(!/OpenVoterGuide\s*\|\s*OpenVoterGuide/.test(title), `${absolute} repeats the site name in its title.`);
       htmlPages += 1;
     }
   }
