@@ -2031,7 +2031,7 @@
       },
       {
         "name": "Renea Turner / Jalen Turner",
-        "background": "Ohio Capital Journal described Renea Turner as an entrepreneur when she filed for the 2026 Republican primary with running mate Jalen Turner. The Ashtabula County Board of Elections later lists the ticket as write-in candidates. The guide has not found a reliable public biography or issue statements for Jalen Turner; regional voter guides report that he did not respond to their questionnaire.",
+        "background": "Ohio Capital Journal described Renea Turner as an entrepreneur when she filed for the 2026 Republican primary with running mate Jalen Turner. Politics1’s candidate directory describes Jalen as a project manager and marketing director; we have not found an independent profile to corroborate that job description or public issue statements for him. The Ashtabula County Board of Elections later lists the ticket as write-in candidates. Signal Cleveland reports that the Turners did not respond to its voter-guide questionnaire.",
         "sources": [
           {
             "label": "Ohio Capital Journal, 2026 Ohio statewide candidate field (February 6, 2026)",
@@ -2048,6 +2048,10 @@
           {
             "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
             "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
+          },
+          {
+            "label": "Politics1, Ohio Candidate & Election Guide",
+            "url": "https://politics1.com/oh.htm"
           }
         ],
         "party": "Write-in",
@@ -2055,7 +2059,7 @@
           "background": [
             {
               "status": "editorial_summary",
-              "note": "Ohio Capital Journal identifies Renea Turner as an entrepreneur in its pre-primary candidate overview; the county BOE list confirms the later write-in ticket. Signal Cleveland reports that Renea and Jalen Turner did not respond to its questionnaire, and Toledo Free Press lists the ticket without additional candidate background. No independent biography or issue statements for Jalen Turner were located in these sources.",
+              "note": "Ohio Capital Journal identifies Renea Turner as an entrepreneur in its pre-primary candidate overview; the county BOE list confirms the later write-in ticket. Politics1 describes Jalen Turner as a project manager and marketing director, but we found no independent corroboration or public issue statements for him. Signal Cleveland reports that the Turners did not respond to its questionnaire.",
               "checked_on": "2026-10-12",
               "sources": [
                 {
@@ -2073,6 +2077,10 @@
                 {
                   "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
                   "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
+                },
+                {
+                  "label": "Politics1, Ohio Candidate & Election Guide",
+                  "url": "https://politics1.com/oh.htm"
                 }
               ]
             }
