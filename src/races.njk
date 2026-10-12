@@ -29,10 +29,13 @@ eleventyComputed:
 <h1>{{ race.office }}</h1>
 {% if race.district %}<p><strong>District:</strong> {{ race.district }}</p>{% endif %}
 <p>{{ race.term_info }}</p>
+{% if race.id == "ohio-house-65" or race.id == "ohio-house-99" %}
+<p class="district-lookup-prompt"><a class="directory-action" href="#site-search">Use the address search above to find your Ohio House district <span aria-hidden="true">↑</span></a></p>
+{% endif %}
 
 <span class="verification-badge">Candidate list checked {{ race.verification_date }} against Ashtabula County BOE</span>
 
-<h2>Candidates ({{ race.candidates.length }})</h2>
+<h2>Candidates and tickets ({{ race.candidates.length }})</h2>
 <p>Candidate statements, official records, and guide summaries are labeled below. A linked source identifies the basis for that specific claim; a pending label means the claim has not yet been individually checked.</p>
 
 

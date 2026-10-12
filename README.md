@@ -54,7 +54,7 @@ Visit `http://localhost:8080`.
 
 ## Data & Verification
 
-The candidate and issue lists were checked against the county Board of Elections documents dated Rev. 9-15-26 on October 11, 2026. This verifies ballot coverage and official issue details; candidate background, position, and voting-record summaries still need claim-by-claim source checks. The guide currently includes 10 races, 2 measures, 36 property-tax levies, and 3 precinct-specific liquor questions.
+The candidate and issue lists were checked against the county Board of Elections documents dated Rev. 9-15-26 on October 11, 2026. This verifies ballot coverage and official issue details; candidate background, position, and voting-record summaries still need claim-by-claim source checks. The guide currently includes 20 races with 45 listed candidate entries or tickets, 2 measures, 36 property-tax levies, and 3 precinct-specific liquor questions.
 
 See `data/oh-ashtabula-2026-general/VERIFICATION.md` for the full source manifest.
 
