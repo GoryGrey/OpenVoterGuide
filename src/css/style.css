@@ -1368,3 +1368,67 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 }
 .issue-graphic-disclaimer { padding:.45rem .6rem; border-left:3px solid #0b65bd; background:#eff7ff; color:#24445f; font-size:.84rem; font-weight:700; }
 .issue-graphic-sources { font-size:.78rem; line-height:1.4; overflow-wrap:anywhere; }
+
+
+/* Optional, evidence-first worksheet walkthrough */
+.worksheet-guided-launch { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:1.25rem; margin:1.25rem 0; padding:1.25rem 1.4rem; border:1px solid #b8d7ed; border-left:5px solid #0877ce; border-radius:14px; background:linear-gradient(120deg,#eff8ff,#fff 75%); }
+.worksheet-guided-launch h2 { margin:.1rem 0 .45rem; color:#0b2a45; }
+.worksheet-guided-launch p { margin:.45rem 0; }
+.worksheet-guided-launch > button,.worksheet-guided-nav button { min-height:46px; padding:.7rem 1rem; border:1px solid #0b5aa3; border-radius:9px; background:#fff; color:#0b477f; font:inherit; font-weight:750; cursor:pointer; }
+.worksheet-guided-launch > button,.worksheet-guided-nav .primary-button { background:#0758b4; color:#fff; }
+.worksheet-guided button:disabled { opacity:.55; cursor:not-allowed; }
+.worksheet-guided { margin:1.25rem 0; padding:clamp(1rem,3vw,1.6rem); border:1px solid #cbddea; border-radius:16px; background:#fff; box-shadow:0 8px 28px rgba(12,48,78,.08); }
+.worksheet-guided-topline { display:flex; justify-content:space-between; align-items:end; gap:1rem; }
+.worksheet-guided-topline h2 { margin:.15rem 0 .5rem; }
+.worksheet-guided-position { margin:.2rem 0 .7rem; color:#47627a; font-weight:700; text-align:right; }
+.worksheet-guided > progress { display:block; width:100%; height:.7rem; margin:.3rem 0 1.2rem; accent-color:#00aeda; }
+.worksheet-guided-step { min-width:0; }
+.guided-kind { margin:0; color:#0758b4; font-size:.78rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; }
+.guided-item-title { margin:.25rem 0 .35rem; color:#0b2a45; font-size:clamp(1.35rem,3vw,2rem); line-height:1.2; overflow-wrap:anywhere; }
+.guided-item-intro,.guided-source-note { color:#465e73; }
+.guided-choices { display:flex; flex-wrap:wrap; gap:.55rem; margin:1rem 0 1.25rem; padding:.85rem; border:1px solid #cbddea; border-radius:12px; background:#f4f9fd; }
+.guided-choices legend { padding:0 .35rem; font-weight:800; }
+.guided-choice { display:flex; align-items:center; gap:.55rem; min-height:46px; padding:.55rem .75rem; border:1px solid #c5d7e6; border-radius:9px; background:white; cursor:pointer; font-weight:700; }
+.guided-choice:has(input:checked) { border-color:#0877ce; box-shadow:0 0 0 2px rgba(8,119,206,.15); }
+.guided-choice input { width:1.15rem; height:1.15rem; accent-color:#0758b4; }
+.guided-facts { display:grid; grid-template-columns:minmax(130px,.55fr) minmax(0,1.45fr); margin:1rem 0; overflow:hidden; border:1px solid #d6e3ee; border-radius:10px; }
+.guided-fact { display:contents; }
+.guided-fact dt,.guided-fact dd { margin:0; padding:.65rem .8rem; border-bottom:1px solid #e1eaf1; }
+.guided-fact dt { background:#f1f6fa; font-weight:750; }
+.guided-fact dd { overflow-wrap:anywhere; }
+.guided-candidates { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:1rem; margin:1rem 0; }
+.guided-candidate { min-width:0; padding:1rem; border:1px solid #d5e2ed; border-radius:12px; background:#fbfdff; }
+.guided-candidate h4 { margin:.2rem 0 .45rem; color:#102f4a; font-size:1.15rem; }
+.guided-candidate h5,.guided-arguments h4,.guided-impact h4 { margin:.8rem 0 .35rem; }
+.guided-candidate-heading p { color:#536b80; font-size:.9rem; }
+.guided-fact-list,.guided-source-list { padding-left:1.25rem; }
+.guided-fact-list li { margin:.65rem 0; }
+.guided-fact-list p { margin:.25rem 0; }
+.guided-evidence { color:#50677c; font-size:.86rem; }
+.guided-evidence a + a::before { content:' · '; color:#60798f; }
+.guided-profile-link { margin:1rem 0 0; font-weight:750; }
+.guided-sources { margin:.8rem 0; }
+.guided-sources summary,.guided-official-language summary { min-height:42px; padding:.55rem 0; color:#0758a0; font-weight:750; cursor:pointer; }
+.guided-impact-grid { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin:1rem 0; }
+.guided-impact { margin:.6rem 0; padding:.8rem 1rem; border-radius:10px; }
+.guided-impact-yes { border:1px solid #9bd9c0; background:#effaf5; }
+.guided-impact-no { border:1px solid #cbddea; background:#f3f7fb; }
+.guided-arguments { margin:1rem 0; padding:.8rem 1rem; border-left:4px solid #697e95; background:#f6f8fb; }
+.guided-estimate { padding:.8rem 1rem; border:1px solid #c7dff1; border-radius:10px; background:#eef8ff; font-size:1.08rem; font-weight:800; }
+.worksheet-guided-nav { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.6rem; margin-top:1.1rem; padding-top:1rem; border-top:1px solid #e0e9f0; }
+.worksheet-guided-exit { min-height:44px; margin-top:.6rem; border:0; background:transparent; color:#0758a0; font:inherit; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+.worksheet-page.is-guided > :not(.content-page-heading):not(#worksheet-guided):not(#worksheet-status) { display:none; }
+.worksheet-page.is-guided #worksheet-status { display:none; }
+.worksheet-guided :focus-visible,.worksheet-guided-launch :focus-visible { outline:3px solid #00a9d6; outline-offset:3px; }
+@media(max-width:650px) {
+  .worksheet-guided-launch { grid-template-columns:1fr; align-items:start; }
+  .worksheet-guided-launch > button { width:100%; }
+  .worksheet-guided-topline { display:block; }
+  .worksheet-guided-position { text-align:left; }
+  .guided-impact-grid { grid-template-columns:1fr; gap:.2rem; }
+  .guided-facts { grid-template-columns:minmax(105px,.7fr) minmax(0,1.3fr); font-size:.94rem; }
+  .guided-fact dt,.guided-fact dd { padding:.6rem; }
+  .worksheet-guided-nav { display:grid; grid-template-columns:1fr 1fr; }
+  .worksheet-guided-nav .primary-button { grid-column:1/-1; grid-row:1; }
+}
+

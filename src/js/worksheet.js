@@ -87,6 +87,243 @@
     const href = new URL(item.url, window.location.origin).href;
     return `<a href="${escapeHTML(href)}">${escapeHTML(item.title || 'Review the guide page')}</a>`;
   }
+  const guidedItems = window.OVG_WORKSHEET_ITEMS || [];
+  let guidedIndex = 0;
+
+  function element(tag, text, className) {
+    const node = document.createElement(tag);
+    if (text !== undefined && text !== null) node.textContent = String(text);
+    if (className) node.className = className;
+    return node;
+  }
+  function appendLink(parent, href, label) {
+    if (!href || !label) return;
+    const link = element('a', label);
+    link.href = new URL(href, window.location.origin).href;
+    if (/^https?:\/\//i.test(link.href) && new URL(link.href).origin !== window.location.origin) {
+      link.target = '_blank'; link.rel = 'noopener noreferrer';
+    }
+    parent.append(link);
+  }
+  function appendLinks(parent, links) {
+    if (!links?.length) return;
+    const list = element('ul', null, 'guided-source-list');
+    for (const source of links) {
+      const item = element('li'); appendLink(item, source.url, source.label); list.append(item);
+    }
+    parent.append(list);
+  }
+  function appendList(parent, title, entries, evidenceField) {
+    if (!entries?.length) return;
+    parent.append(element('h5', title));
+    const list = element('ul', null, 'guided-fact-list');
+    entries.forEach((entry, index) => {
+      const row = element('li'); row.append(element('p', entry));
+      const evidence = evidenceField?.[index];
+      if (evidence) {
+        const citation = element('p', `${evidence.status ? `Evidence: ${evidence.status.replaceAll('_', ' ')}. ` : ''}${evidence.note || ''}`, 'guided-evidence');
+        if (evidence.sources?.length) {
+          for (const source of evidence.sources) {
+            appendLink(citation, source.url, source.label);
+          }
+        }
+        row.append(citation);
+      }
+      list.append(row);
+    });
+    parent.append(list);
+  }
+  function appendFact(parent, label, value, className = '') {
+    if (!value) return;
+    const row = element('div', null, `guided-fact ${className}`.trim());
+    row.append(element('dt', label), element('dd', value)); parent.append(row);
+  }
+  function activeChoiceId(item, state) {
+    const choices = Object.keys(state.choices || {});
+    return choices.find(id => state.groups?.[id] === item.group) || choices.find(id => id.startsWith(`${item.group}-`)) || '';
+  }
+  function saveGuidedChoice(item, choice) {
+    const state = read(); state.groups ||= {};
+    for (const id of Object.keys(state.choices || {})) {
+      if (state.groups[id] === item.group || id.startsWith(`${item.group}-`)) {
+        delete state.choices[id]; delete state.groups[id];
+      }
+    }
+    state.choices[choice.id] = choice.label || choice.value || choice.id; state.groups[choice.id] = item.group;
+    write(state); render();
+    const status = document.getElementById('worksheet-guided-status');
+    if (status) status.textContent = `${choice.value === choice.label ? choice.label : choice.value} saved in this browser. Review the information, then continue when you’re ready.`;
+    updateGuidedControls();
+  }
+  function renderGuidedItem(item, container, state) {
+    container.replaceChildren();
+    container.append(element('p', item.kind, 'guided-kind'));
+    container.append(element('h3', item.title, 'guided-item-title'));
+    const summary = element('p', 'Review the information and sources below. Your choice saves only in this browser.', 'guided-item-intro');
+    container.append(summary);
+
+    const choices = element('fieldset', null, 'guided-choices');
+    choices.append(element('legend', item.kind === 'Race' ? 'Choose a candidate or mark this contest' : 'Your worksheet response'));
+    const selectedId = activeChoiceId(item, state);
+    for (const choice of item.choices || []) {
+      const label = element('label', null, 'guided-choice');
+      const input = element('input'); input.type = 'radio'; input.name = `guided-${item.group}`; input.value = choice.id;
+      input.checked = choice.id === selectedId;
+      input.addEventListener('change', () => saveGuidedChoice(item, choice));
+      label.append(input, element('span', choice.value)); choices.append(label);
+    }
+    container.append(choices);
+
+    const context = item.context || {};
+    if (item.kind === 'Race') {
+      const raceFacts = element('dl', null, 'guided-facts');
+      appendFact(raceFacts, context.district ? 'District' : '', context.district);
+      appendFact(raceFacts, 'Term and seat', context.term_info);
+      if (raceFacts.children.length) container.append(raceFacts);
+      container.append(element('p', 'The candidate summaries below include sourced backgrounds, campaign statements, and available voting records. Open a full profile to read its complete evidence.', 'guided-source-note'));
+      const candidates = element('div', null, 'guided-candidates');
+      for (const candidate of context.candidates || []) {
+        const card = element('article', null, 'guided-candidate');
+        const heading = element('div', null, 'guided-candidate-heading');
+        heading.append(element('h4', candidate.name));
+        const affiliation = [candidate.party, candidate.incumbent ? 'Incumbent' : ''].filter(Boolean).join(' · ');
+        if (affiliation) heading.append(element('p', affiliation));
+        card.append(heading);
+        if (candidate.background) {
+          card.append(element('h5', 'Background'));
+          card.append(element('p', candidate.background));
+          const evidence = candidate.claim_evidence?.background?.[0];
+          if (evidence) {
+            const ev = element('p', `${evidence.status ? `Evidence: ${evidence.status.replaceAll('_', ' ')}. ` : ''}${evidence.note || ''}`, 'guided-evidence');
+            appendLinks(ev, evidence.sources); card.append(ev);
+          }
+        } else card.append(element('p', 'No sourced background summary is listed yet. That absence is not evidence for or against the candidate.', 'guided-source-note'));
+        appendList(card, 'Campaign statements and positions', candidate.promises, candidate.claim_evidence?.promises);
+        appendList(card, 'Voting record', candidate.record, candidate.claim_evidence?.record);
+        if (candidate.correlation) card.append(element('p', candidate.correlation, 'guided-source-note'));
+        appendList(card, 'Statements about ballot issues', (candidate.measure_positions || []).map(entry => `${entry.issue_label}: ${entry.position}. ${entry.statement} (checked ${entry.checked_on})`));
+        if (candidate.sources?.length) {
+          const sources = element('details', null, 'guided-sources'); sources.open = true;
+          sources.append(element('summary', 'Sources for this candidate'));
+          appendLinks(sources, candidate.sources); card.append(sources);
+        }
+        const profile = element('p', null, 'guided-profile-link'); appendLink(profile, candidate.profile_url, `Read ${candidate.name}’s full profile and evidence`); card.append(profile);
+        candidates.append(card);
+      }
+      container.append(candidates);
+      appendLink(container, item.url, `Read the full ${item.title} race guide`);
+    } else if (item.kind === 'Ballot measure') {
+      container.append(element('h4', 'What this measure would do'));
+      container.append(element('p', context.plain_english));
+      const impacts = element('div', null, 'guided-impact-grid');
+      impacts.append(element('section', null, 'guided-impact guided-impact-yes'));
+      impacts.children[0].append(element('h4', 'A YES vote means'), element('p', context.yes_means));
+      impacts.append(element('section', null, 'guided-impact guided-impact-no'));
+      impacts.children[1].append(element('h4', 'A NO vote means'), element('p', context.no_means));
+      container.append(impacts);
+      if (context.supporters_say || context.opponents_say) {
+        const argumentSection = element('section', null, 'guided-arguments');
+        argumentSection.append(element('h4', 'Arguments in the official voter information'));
+        if (context.supporters_say) argumentSection.append(element('p', `Supporters: ${context.supporters_say}`));
+        if (context.opponents_say) argumentSection.append(element('p', `Opponents: ${context.opponents_say}`));
+        container.append(argumentSection);
+      }
+      if (context.official_ballot_language) {
+        const language = element('details', null, 'guided-official-language');
+        language.append(element('summary', 'Show official ballot language'), element('p', context.official_ballot_language));
+        container.append(language);
+      }
+      if (context.verification_date) container.append(element('p', `Sources checked ${context.verification_date}. The official wording on your precinct ballot controls.`, 'guided-source-note'));
+      appendLinks(container, context.sources);
+      appendLink(container, item.url, 'Open full issue guide, including candidate statements');
+    } else if (item.kind === 'Property tax levy') {
+      const facts = element('dl', null, 'guided-facts');
+      appendFact(facts, 'Jurisdiction', context.jurisdiction);
+      appendFact(facts, 'Purpose', context.purpose);
+      appendFact(facts, 'Type', `${String(context.levy_type || '').replaceAll('_', ' ')}${context.tax_change ? ' · changes the tax' : ' · renewal'}`);
+      appendFact(facts, 'Proposed rate', `${context.millage} ${Number(context.millage) === 1 ? 'mill' : 'mills'}`);
+      appendFact(facts, 'Term', context.term_years ? `${context.term_years} years` : 'Not listed');
+      container.append(facts);
+      container.append(element('p', context.yes_means, 'guided-impact guided-impact-yes'));
+      container.append(element('p', context.no_means, 'guided-impact guided-impact-no'));
+      if (context.notes) container.append(element('p', `For the district: ${context.notes}`, 'guided-source-note'));
+      if (Number.isFinite(context.estimate_at_100k)) {
+        container.append(element('h4', 'Example individual impact'));
+        container.append(element('p', `At a $100,000 appraised home value: about ${context.estimate_at_100k.toFixed(2)} per year (${context.estimate_kind}), before reductions.`, 'guided-estimate'));
+        container.append(element('p', context.estimate_explainer, 'guided-source-note'));
+      }
+      container.append(element('p', 'The rate and estimated amount may not apply to your property. Check the district, full explanation, and the County Auditor’s personalized estimator before deciding.', 'guided-source-note'));
+      appendLinks(container, context.sources);
+      appendLink(container, item.url, 'Open full levy page and personalized property-tax estimator');
+    } else if (item.kind === 'Precinct-specific liquor question') {
+      const facts = element('dl', null, 'guided-facts');
+      appendFact(facts, 'Precinct', context.precinct);
+      appendFact(facts, 'Establishment', context.establishment);
+      appendFact(facts, 'Address', context.address);
+      appendFact(facts, 'Business and permit', `${context.business_type || ''}${context.permit_type ? ` · ${context.permit_type} permit` : ''}`);
+      appendFact(facts, 'Sunday sales requested', context.sales_type);
+      container.append(facts);
+      container.append(element('p', context.plain_english));
+      container.append(element('p', `A YES vote: ${context.yes_means}`, 'guided-impact guided-impact-yes'));
+      container.append(element('p', `A NO vote: ${context.no_means}`, 'guided-impact guided-impact-no'));
+      if (context.official_ballot_language) {
+        const language = element('details', null, 'guided-official-language');
+        language.append(element('summary', 'Show official ballot language'), element('p', context.official_ballot_language));
+        container.append(language);
+      }
+      container.append(element('p', `This question applies only to voters in ${context.precinct}. Confirm that it appears on your official sample ballot.`, 'guided-source-note'));
+      appendLinks(container, context.sources);
+      appendLink(container, item.url, 'Open this liquor question on the full guide');
+    }
+  }
+  function updateGuidedControls() {
+    const item = guidedItems[guidedIndex];
+    const next = document.getElementById('worksheet-guided-next');
+    const back = document.getElementById('worksheet-guided-back');
+    const skip = document.getElementById('worksheet-guided-skip');
+    if (!item || !next) return;
+    const hasChoice = Boolean(activeChoiceId(item, read()));
+    next.disabled = !hasChoice;
+    next.textContent = guidedIndex === guidedItems.length - 1 ? 'Finish and review my worksheet' : hasChoice ? 'Next item' : 'Choose an option to continue';
+    if (back) back.disabled = guidedIndex === 0;
+    if (skip) skip.textContent = guidedIndex === guidedItems.length - 1 ? 'Skip this item and finish' : 'Skip for now';
+  }
+  function renderGuidedStep() {
+    if (!guidedItems.length) return;
+    const item = guidedItems[guidedIndex];
+    const position = document.getElementById('worksheet-guided-position');
+    const progress = document.getElementById('worksheet-guided-progress');
+    const step = document.getElementById('worksheet-guided-step');
+    const status = document.getElementById('worksheet-guided-status');
+    if (position) position.textContent = `Step ${guidedIndex + 1} of ${guidedItems.length} · ${item.kind}`;
+    if (progress) { progress.max = guidedItems.length; progress.value = guidedIndex + 1; }
+    if (status) status.textContent = '';
+    if (step) renderGuidedItem(item, step, read());
+    updateGuidedControls();
+  }
+  function openGuidedSetup() {
+    const state = read();
+    const firstUnanswered = guidedItems.findIndex(item => !activeChoiceId(item, state));
+    guidedIndex = firstUnanswered < 0 ? 0 : firstUnanswered;
+    const root = document.getElementById('worksheet-root');
+    root?.classList.add('is-guided');
+    const launch = document.getElementById('worksheet-guided-launch'); if (launch) launch.hidden = true;
+    const guided = document.getElementById('worksheet-guided'); if (guided) guided.hidden = false;
+    renderGuidedStep();
+  }
+  function closeGuidedSetup(message = 'Guided setup paused. Your choices remain saved in this browser.') {
+    document.getElementById('worksheet-root')?.classList.remove('is-guided');
+    const launch = document.getElementById('worksheet-guided-launch'); if (launch) launch.hidden = false;
+    const guided = document.getElementById('worksheet-guided'); if (guided) guided.hidden = true;
+    const status = document.getElementById('worksheet-status'); if (status) status.textContent = message;
+    render();
+  }
+  function advanceGuided(skip = false) {
+    const status = document.getElementById('worksheet-guided-status');
+    if (skip && status) status.textContent = 'Skipped for now. No choice was changed; you can return to this item later.';
+    if (guidedIndex < guidedItems.length - 1) { guidedIndex += 1; renderGuidedStep(); }
+    else closeGuidedSetup('You reached the end of the guided worksheet. Review your saved choices and check your official precinct ballot.');
+  }
   function worksheetHTML(state, mode) {
     const rows = selected(state);
     const title = mode === 'blank' ? 'Blank ballot research worksheet' : mode === 'detailed' ? 'Detailed personal ballot worksheet' : 'Quick ballot reference';
