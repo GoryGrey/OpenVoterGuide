@@ -7,8 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "npm run build",
+    "test": "npm run build && node scripts/test-worksheet.js",
     "build": "node scripts/validate-data.js && eleventy && node scripts/generate-google-verification.js && node scripts/check-generated-routes.js && node scripts/check-internal-links.js",
+    "check:external-links": "node scripts/check-external-links.js",
     "start": "eleventy --serve",
     "validate": "node scripts/validate-data.js"
   },

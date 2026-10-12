@@ -37,6 +37,7 @@ eleventyComputed:
 
 <h2>Candidates and tickets ({{ race.candidates.length }})</h2>
 <p>Candidate statements, official records, and guide summaries are labeled below. A linked source identifies the basis for that specific claim; a pending label means the claim has not yet been individually checked.</p>
+<div class="worksheet-check worksheet-undecided"><label><input type="radio" name="choice-race-{{ race.id }}" data-worksheet-id="race-{{ race.id }}-undecided" data-worksheet-group="race-{{ race.id }}" data-worksheet-label="{{ race.office }}: Undecided"> Mark this race undecided</label></div>
 
 
 {% if race.candidates.length >= 2 %}
@@ -107,7 +108,7 @@ eleventyComputed:
 
   <div class="worksheet-check">
     <label>
-      <input type="checkbox" data-worksheet-id="race-{{ race.id }}-{{ c.name | candidateSlug }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
+      <input type="radio" name="choice-race-{{ race.id }}" data-worksheet-id="race-{{ race.id }}-{{ c.name | candidateSlug }}" data-worksheet-group="race-{{ race.id }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
       Mark as my choice
     </label>
   </div>
@@ -162,3 +163,4 @@ eleventyComputed:
 
 <p><a href="{{ '/races/' | url }}">All races</a> | <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
 </article>
+

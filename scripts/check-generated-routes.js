@@ -15,7 +15,8 @@ const expected = [
   "google4aaa287e48ffc299.html", "district-race-map.json",
   "races/index.html", "measures/index.html", "measures/liquor/index.html",
   "levies/index.html", "worksheet/index.html", "about/index.html",
-  "voting/index.html", "sample-ballots/index.html",
+  "voting/index.html", "sample-ballots/index.html", "share/index.html",
+  "privacy/index.html", "terms/index.html",
   ...races.map((race) => `races/${race.id}/index.html`),
   ...measures.map((issue) => `measures/${issue.id}/index.html`),
   ...candidates.map((candidate) => `candidates/${candidate.race_id}/${candidate.slug}/index.html`),
@@ -28,7 +29,7 @@ assert.equal(fs.existsSync(path.join("src", "google4aaa287e48ffc299.html")), fal
   "Google verification file must be generated into output, not tracked in src.");
 
 const searchIndex = JSON.parse(fs.readFileSync(routeFile("search-index.json"), "utf8"));
-assert.equal(searchIndex.length, races.length + candidates.length + measures.length + levies.length + liquor.length + 1,
+assert.equal(searchIndex.length, races.length + candidates.length + measures.length + levies.length + liquor.length + 4,
   "Search index should cover races, candidate profiles, measures, levies, liquor questions, and voting information.");
 for (const candidate of candidates) {
   assert(searchIndex.some((entry) => entry.url === candidate.profile_url), `Search index is missing ${candidate.name}.`);
@@ -39,12 +40,13 @@ assert(!sitemap.includes("ashtabula-voter-guide.pages.dev"), "Sitemap still refe
 const sitemapLocations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 assert.equal(new Set(sitemapLocations).size, sitemapLocations.length, "Sitemap contains duplicate URLs.");
 assert(sitemapLocations.every((url) => url.startsWith(`${site.baseUrl}/`)), "Sitemap contains a URL outside the configured canonical base.");
-for (const file of expected.filter((item) => item.endsWith("index.html"))) {
+for (const file of expected.filter((item) => item.endsWith("index.html") && item !== "worksheet/index.html")) {
   const pathname = `/${file.replace(/index\.html$/, "")}`;
   assert(sitemap.includes(`<loc>${site.baseUrl}${pathname}</loc>`), `Sitemap is missing ${pathname}.`);
 }
 assert(fs.readFileSync(routeFile("robots.txt"), "utf8").includes(`${site.baseUrl}/sitemap.xml`),
   "robots.txt must advertise the sitemap.");
+assert(!sitemap.includes(`${site.baseUrl}/worksheet/`), "Private worksheet must not be listed in the public sitemap.");
 assert.equal(fs.readFileSync(routeFile("google4aaa287e48ffc299.html"), "utf8"),
   "google-site-verification: google4aaa287e48ffc299.html", "Google verification output must match the supplied token file.");
 
@@ -64,6 +66,12 @@ function inspectHtml(directory) {
       canonicals.add(canonical);
       assert(/property="og:title"/i.test(html) && /property="og:image"/i.test(html), `${absolute} has incomplete Open Graph metadata.`);
       assert((html.match(/application\/ld\+json/g) || []).length >= 3, `${absolute} has incomplete structured data.`);
+      if (absolute.endsWith(path.join("worksheet", "index.html"))) {
+        assert(/<meta name="robots" content="noindex, nofollow">/.test(html), "Private worksheet must be noindex and nofollow.");
+      }
+      if (absolute.endsWith(path.join("worksheet", "index.html"))) {
+        assert(/<meta name="robots" content="noindex, nofollow">/.test(html), "Private worksheet must be noindex and nofollow.");
+      }
       htmlPages += 1;
     }
   }

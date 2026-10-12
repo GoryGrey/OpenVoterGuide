@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% set staticRoutes = ["/", "/races/", "/measures/", "/measures/liquor/", "/levies/", "/worksheet/", "/about/", "/voting/", "/sample-ballots/"] %}
+{% set staticRoutes = ["/", "/races/", "/measures/", "/measures/liquor/", "/levies/", "/about/", "/voting/", "/sample-ballots/", "/share/", "/privacy/", "/terms/"] %}
 {% for route in staticRoutes %}<url><loc>{{ (site.baseUrl + route) | xmlEscape }}</loc></url>
 {% endfor %}{% for race in races %}<url><loc>{{ (site.baseUrl + "/races/" + race.id + "/") | xmlEscape }}</loc></url>
 {% endfor %}{% for candidate in candidatePages %}<url><loc>{{ (site.baseUrl + candidate.profile_url) | xmlEscape }}</loc></url>

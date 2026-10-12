@@ -32,16 +32,27 @@ eleventyComputed:
 
 <div class="worksheet-check">
   <label>
-    <input type="checkbox" data-worksheet-id="measure-{{ measure.id }}-yes" data-worksheet-label="{{ measure.title }}: YES">
+    <input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-yes" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: YES">
     My choice: YES
   </label>
 </div>
 <div class="worksheet-check">
   <label>
-    <input type="checkbox" data-worksheet-id="measure-{{ measure.id }}-no" data-worksheet-label="{{ measure.title }}: NO">
+    <input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-no" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: NO">
     My choice: NO
   </label>
 </div>
+<div class="worksheet-check"><label><input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-undecided" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: Undecided"> My choice: undecided</label></div>
+
+<section class="issue-graphic" id="issue-graphic-{{ measure.id }}" aria-labelledby="issue-graphic-title-{{ measure.id }}">
+  <p class="issue-graphic-brand">OpenVoterGuide · Ashtabula County, Ohio</p>
+  <p class="content-eyebrow">Verified ballot issue · November 3, 2026</p>
+  <h2 id="issue-graphic-title-{{ measure.id }}">Issue {{ measure.issue_number }}: {{ measure.title }}</h2>
+  <p>{{ measure.plain_english }}</p>
+  <div class="issue-graphic-columns"><div><h3>YES means</h3><p>{{ measure.yes_means }}</p></div><div><h3>NO means</h3><p>{{ measure.no_means }}</p></div></div>
+  <p class="issue-graphic-url">openvoterguide.org</p>
+</section>
+<p><button type="button" onclick="(function(){document.body.classList.add('print-issue-graphic');window.print();setTimeout(()=>document.body.classList.remove('print-issue-graphic'),500)})()">Print / save this issue graphic as PDF</button></p>
 
 <section aria-labelledby="candidate-views-heading">
   <h2 id="candidate-views-heading">What candidates have said about this issue</h2>
@@ -76,3 +87,4 @@ eleventyComputed:
 
 <p><a href="{{ '/measures/' | url }}">All measures</a> | <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
 </article>
+

@@ -11,7 +11,7 @@ permalink: /measures/liquor/index.html
 </header>
 
 {% for item in liquor %}
-<section class="measure-card">
+<section class="measure-card" id="{{ item.id }}">
   <h2>Issue {{ item.issue_number }}: {{ item.precinct }}</h2>
   <p><strong>{{ item.establishment }}</strong> · {{ item.address }} · {{ item.business_type }} · {{ item.permit_type }} permit</p>
   <p>{{ item.plain_english }}</p>
@@ -19,6 +19,7 @@ permalink: /measures/liquor/index.html
   <blockquote>{{ item.official_ballot_language }}</blockquote>
   <p><strong>Yes:</strong> {{ item.yes_means }}</p>
   <p><strong>No:</strong> {{ item.no_means }}</p>
+  <fieldset class="worksheet-choice-set"><legend>My worksheet choice · Issue {{ item.issue_number }}</legend><label><input type="radio" name="choice-liquor-{{ item.issue_number }}" data-worksheet-id="liquor-{{ item.issue_number }}-yes" data-worksheet-group="liquor-{{ item.issue_number }}" data-worksheet-label="Issue {{ item.issue_number }} ({{ item.precinct }}): YES"> YES</label><label><input type="radio" name="choice-liquor-{{ item.issue_number }}" data-worksheet-id="liquor-{{ item.issue_number }}-no" data-worksheet-group="liquor-{{ item.issue_number }}" data-worksheet-label="Issue {{ item.issue_number }} ({{ item.precinct }}): NO"> NO</label><label><input type="radio" name="choice-liquor-{{ item.issue_number }}" data-worksheet-id="liquor-{{ item.issue_number }}-undecided" data-worksheet-group="liquor-{{ item.issue_number }}" data-worksheet-label="Issue {{ item.issue_number }} ({{ item.precinct }}): Undecided"> Undecided</label></fieldset>
   <ul class="source-list">
     {% for source in item.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a></li>{% endfor %}
   </ul>
@@ -27,3 +28,4 @@ permalink: /measures/liquor/index.html
 
 <p><a href="{{ '/measures/' | url }}">All ballot measures →</a></p>
 </article>
+

@@ -40,8 +40,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 - **Static site generator:** Eleventy (11ty)
 - **Hosting:** GitHub Pages
-- **No backend, no database, no tracking**
+- **Static, no account system or database, no site-operated analytics or traffic counter**
 - **Build:** `npm run build` outputs to `_site/`
+- **Tests:** `npm test` builds the site and checks worksheet storage, import, and privacy behavior
 
 ### Local development
 
@@ -51,6 +52,8 @@ npm run start
 ```
 
 Visit `http://localhost:8080`.
+
+The [Privacy Policy](https://openvoterguide.org/privacy/) describes local worksheet storage and optional third-party services. [Terms of Use](https://openvoterguide.org/terms/) explains the guide's independent, informational role.
 
 ## Data & Verification
 
@@ -71,3 +74,4 @@ We welcome contributions, especially:
 - Documentation improvements
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). All contributions must maintain strict nonpartisanship.
+

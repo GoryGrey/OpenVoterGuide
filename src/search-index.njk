@@ -17,7 +17,10 @@ eleventyExcludeFromCollections: true
   ,
 {% endfor %}
   {"title":"Voting dates and deadlines","type":"Voting information","url":"/voting/","keywords":"early voting hours absentee ballot deadline request ballot due election day polls registration","description":{{ election.name | dump | safe }}}
-  {% for issue in liquor %},
+{% for issue in liquor %},
   {"title":{{ ("Issue " + (issue.issue_number | string) + ": " + issue.establishment) | dump | safe }},"type":"Sunday liquor question","url":{{ ("/measures/liquor/#" + issue.id) | dump | safe }},"keywords":{{ ("Issue " + (issue.issue_number | string) + " " + issue.precinct + " " + issue.establishment + " Sunday liquor sales") | dump | safe }},"description":{{ issue.plain_english | dump | safe }}}
   {% endfor %}
+  ,{"title":"Community voter guide flyers","type":"Share and print","url":"/share/","keywords":"share flyer QR code community print OpenVoterGuide","description":"Download and print voter education flyers with a QR code to the public guide."},
+  {"title":"Privacy policy","type":"Site policy","url":"/privacy/","keywords":"privacy worksheet local storage address lookup data","description":"How OpenVoterGuide handles worksheet data, address lookup, hosting, and optional services."},
+  {"title":"Terms of use","type":"Site policy","url":"/terms/","keywords":"terms independent voter guide usage","description":"Terms for using the independent OpenVoterGuide voter information project."}
 ]
