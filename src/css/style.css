@@ -1433,3 +1433,28 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   .worksheet-guided-nav .primary-button { grid-column:1/-1; grid-row:1; }
 }
 
+
+
+/* Keep the guided Next control immediately below the response choices. */
+.worksheet-guided-next {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  margin: -.65rem 0 1.1rem;
+  padding: .7rem 1rem;
+  border: 1px solid #0b5aa3;
+  border-radius: 9px;
+  background: #0758b4;
+  color: #fff;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+.worksheet-guided-next:focus-visible {
+  outline: 3px solid #00aeda;
+  outline-offset: 3px;
+}
+.worksheet-guided-next:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
