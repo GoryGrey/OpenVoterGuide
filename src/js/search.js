@@ -11,7 +11,7 @@
   }
   const input = document.getElementById('site-search');
   const results = document.getElementById('search-results');
-  const basePath = document.querySelector('meta[name="ovg-base-path"]')?.content || '/OpenVoterGuide/';
+  const basePath = document.querySelector('meta[name="ovg-base-path"]')?.content || '/';
   if (!input || !results) return;
 
   function isAddress(query) {

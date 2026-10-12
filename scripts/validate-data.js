@@ -7,7 +7,6 @@ const measures = read("measures.json");
 const levies = read("levies.json");
 const liquor = read("liquor.json");
 const election = read("election.json");
-const searchIndex = JSON.parse(fs.readFileSync(path.join("src", "search-index.json"), "utf8"));
 const districtRaceMap = JSON.parse(fs.readFileSync(path.join("src", "district-race-map.json"), "utf8"));
 
 function assert(condition, message) {
@@ -20,6 +19,16 @@ function candidateSlug(value) {
     .toLowerCase()
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9/'’]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function profileSlug(value) {
+  return String(value ?? "")
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s*[\/’']+\s*/g, "-and-")
+    .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
 
@@ -47,8 +56,8 @@ assert(Array.isArray(races) && races.length > 0, "races.json must contain races"
 unique(races, (race) => race.id, "races");
 for (const race of races) {
   assert(race.office && Array.isArray(race.candidates) && race.candidates.length > 0, `Race ${race.id}: missing office or candidates`);
-  assert(searchIndex.some((entry) => entry.type === "Race" && entry.url === `/races/${race.id}/`), `Race ${race.id}: missing search-index route`);
   unique(race.candidates, (candidate) => candidate.name, `candidates in ${race.id}`);
+  unique(race.candidates, (candidate) => profileSlug(candidate.name), `candidate profile slugs in ${race.id}`);
   for (const candidate of race.candidates) {
     checkSources(candidate.sources, `Candidate ${candidate.name}`);
 
@@ -73,8 +82,7 @@ for (const race of races) {
       assert(typeof candidate.response_status === "string" && candidate.response_status.trim(), `Candidate ${candidate.name}: response_status must be non-empty text`);
       assert(candidate.sources.some((source) => source.url.includes("ideastream.org")), `Candidate ${candidate.name}: response_status needs its voter-guide source`);
     }
-    const candidateUrl = `/races/${race.id}/#${candidateSlug(candidate.name)}`;
-    assert(searchIndex.some((entry) => entry.title === candidate.name && entry.url === candidateUrl), `Candidate ${candidate.name}: missing or mismatched search-index anchor`);
+    assert(profileSlug(candidate.name), `Candidate ${candidate.name}: invalid candidate profile slug`);
     if (candidate.measure_positions !== undefined) {
       assert(Array.isArray(candidate.measure_positions), `Candidate ${candidate.name}: measure_positions must be an array`);
       for (const position of candidate.measure_positions) {

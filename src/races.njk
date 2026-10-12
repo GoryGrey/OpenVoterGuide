@@ -6,10 +6,11 @@ pagination:
   alias: race
 permalink: "/races/{{ race.id }}/"
 eleventyComputed:
-  title: "{{ race.office }}"
+  title: "{{ race.office }} — Ashtabula County 2026 Election"
   description: "Candidates for {{ race.office }} in the Ashtabula County November 3, 2026 election."
 ---
 
+<article class="race-profile">
 {% macro claimEvidence(candidate, field, index) %}
   {% set evidence = null %}
   {% if candidate.claim_evidence and candidate.claim_evidence[field] %}
@@ -28,11 +29,15 @@ eleventyComputed:
 <h1>{{ race.office }}</h1>
 {% if race.district %}<p><strong>District:</strong> {{ race.district }}</p>{% endif %}
 <p>{{ race.term_info }}</p>
+{% if race.id == "ohio-house-65" or race.id == "ohio-house-99" %}
+<p class="district-lookup-prompt"><a class="directory-action" href="#site-search">Use the address search above to find your Ohio House district <span aria-hidden="true">↑</span></a></p>
+{% endif %}
 
 <span class="verification-badge">Candidate list checked {{ race.verification_date }} against Ashtabula County BOE</span>
 
-<h2>Candidates ({{ race.candidates.length }})</h2>
+<h2>Candidates and tickets ({{ race.candidates.length }})</h2>
 <p>Candidate statements, official records, and guide summaries are labeled below. A linked source identifies the basis for that specific claim; a pending label means the claim has not yet been individually checked.</p>
+<div class="worksheet-check worksheet-undecided"><label><input type="radio" name="choice-race-{{ race.id }}" data-worksheet-id="race-{{ race.id }}-undecided" data-worksheet-group="race-{{ race.id }}" data-worksheet-label="{{ race.office }}: Undecided"> Mark this race undecided</label></div>
 
 
 {% if race.candidates.length >= 2 %}
@@ -97,12 +102,13 @@ eleventyComputed:
       {% if c.photo_credit %}<p class="photo-credit"><small>Photo: {{ c.photo_credit }}</small></p>{% endif %}
     </div>
   </div>
+  <p><a href="{{ ('/candidates/' + race.id + '/' + (c.name | profileSlug) + '/') | url }}">View {{ c.name }}’s candidate profile and sources</a></p>
 
   {% if c.response_status %}<p class="candidate-response-status">{{ c.response_status }}</p>{% endif %}
 
   <div class="worksheet-check">
     <label>
-      <input type="checkbox" data-worksheet-id="race-{{ race.id }}-{{ c.name | candidateSlug }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
+      <input type="radio" name="choice-race-{{ race.id }}" data-worksheet-id="race-{{ race.id }}-{{ c.name | candidateSlug }}" data-worksheet-group="race-{{ race.id }}" data-worksheet-label="{{ race.office }}: {{ c.name }}">
       Mark as my choice
     </label>
   </div>
@@ -155,4 +161,5 @@ eleventyComputed:
 </div>
 {% endfor %}
 
-<p><a href="/OpenVoterGuide/races/">All races</a> | <a href="/OpenVoterGuide/worksheet/">My worksheet</a></p>
+<p><a href="{{ '/races/' | url }}">All races</a> | <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
+</article>

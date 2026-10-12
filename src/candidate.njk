@@ -1,0 +1,42 @@
+---
+layout: base.njk
+pagination:
+  data: candidatePages
+  size: 1
+  alias: candidatePage
+permalink: "/candidates/{{ candidatePage.race_id }}/{{ candidatePage.slug }}/"
+eleventyComputed:
+  title: "{{ candidatePage.name }} — {{ candidatePage.race_office }}"
+  description: "{{ candidatePage.seo_description }}"
+---
+
+{% macro claimEvidence(candidate, field, index) %}
+  {% set evidence = null %}
+  {% if candidate.claim_evidence and candidate.claim_evidence[field] %}{% set evidence = candidate.claim_evidence[field][index] %}{% endif %}
+  {% if evidence and evidence.sources and evidence.sources.length %}<small class="claim-evidence">{% for source in evidence.sources %}{% if not loop.first %} · {% endif %}<a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.label }}</a>{% endfor %} <strong>Evidence type: {{ evidence.status | replace("_", " ") }}</strong> · {{ evidence.note }}</small>
+  {% else %}<small class="claim-evidence claim-evidence-pending">Claim-level source check pending.{% if evidence and evidence.note %} {{ evidence.note }}{% endif %}</small>{% endif %}
+{% endmacro %}
+
+<article class="candidate-profile" itemscope itemtype="https://schema.org/Person">
+  <p class="directory-meta"><a href="{{ ('/races/' + candidatePage.race_id + '/') | url }}">{{ candidatePage.race_office }}</a>{% if candidatePage.race_district %} · {{ candidatePage.race_district }}{% endif %}</p>
+  <h1 itemprop="name">{{ candidatePage.name }}</h1>
+  <p>{{ candidatePage.race_term_info }}</p>
+  <span class="verification-badge">Candidate list checked {{ candidatePage.race_verification_date }} against Ashtabula County BOE</span>
+  {% if candidatePage.photo_url %}<figure><img src="{{ candidatePage.photo_url }}" alt="Photo of {{ candidatePage.name }}" class="candidate-photo" loading="lazy" decoding="async"><figcaption>{% if candidatePage.photo_credit %}Photo: {{ candidatePage.photo_credit }}{% endif %}</figcaption></figure>{% endif %}
+  {% if candidatePage.party %}<p><strong>Party:</strong> {{ candidatePage.party }}{% if candidatePage.incumbent %} · Incumbent{% endif %}</p>{% endif %}
+
+  <div class="worksheet-check">
+    <label><input type="radio" name="choice-race-{{ candidatePage.race_id }}" data-worksheet-id="race-{{ candidatePage.race_id }}-{{ candidatePage.name | candidateSlug }}" data-worksheet-group="race-{{ candidatePage.race_id }}" data-worksheet-label="{{ candidatePage.race_office }}: {{ candidatePage.name }}"> Mark as my choice</label>
+    <label><input type="radio" name="choice-race-{{ candidatePage.race_id }}" data-worksheet-id="race-{{ candidatePage.race_id }}-undecided" data-worksheet-group="race-{{ candidatePage.race_id }}" data-worksheet-label="{{ candidatePage.race_office }}: Undecided"> Mark this race undecided</label>
+  </div>
+
+  <h2>Background</h2>
+  <p>{{ candidatePage.background or "No background summary is listed." }}{% if candidatePage.background %}{{ claimEvidence(candidatePage, "background", 0) }}{% endif %}</p>
+  {% if candidatePage.response_status %}<p class="candidate-response-status">{{ candidatePage.response_status }}</p>{% endif %}
+  {% if candidatePage.promises and candidatePage.promises.length %}<h2>Campaign statements and positions</h2><ul>{% for statement in candidatePage.promises %}<li>{{ statement }}{{ claimEvidence(candidatePage, "promises", loop.index0) }}</li>{% endfor %}</ul>{% endif %}
+  {% if candidatePage.record and candidatePage.record.length %}<h2>Voting record</h2><ul>{% for record in candidatePage.record %}<li>{{ record }}{{ claimEvidence(candidatePage, "record", loop.index0) }}</li>{% endfor %}</ul>{% endif %}
+  {% if candidatePage.correlation %}<h2>Promise and record</h2><p>{{ candidatePage.correlation }}{{ claimEvidence(candidatePage, "correlation", 0) }}</p>{% endif %}
+  {% if candidatePage.measure_positions and candidatePage.measure_positions.length %}<h2>Stated views on ballot issues</h2><ul class="measure-position-list">{% for item in candidatePage.measure_positions %}<li><strong>{% if item.issue_path %}<a href="{{ item.issue_path | url }}">{{ item.issue_label }}</a>{% else %}{{ item.issue_label }}{% endif %}: {{ item.position | capitalize }}</strong><p>{{ item.statement }}</p><small>Checked {{ item.checked_on }} · <a href="{{ item.source.url }}" rel="noopener noreferrer" target="_blank">{{ item.source.label }}</a></small></li>{% endfor %}</ul>{% endif %}
+  {% if candidatePage.sources and candidatePage.sources.length %}<section class="source-list"><h2>Sources</h2><ul>{% for source in candidatePage.sources %}<li><a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul></section>{% endif %}
+  <p><a href="{{ ('/races/' + candidatePage.race_id + '/') | url }}">View all candidates for {{ candidatePage.race_office }}</a> · <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
+</article>

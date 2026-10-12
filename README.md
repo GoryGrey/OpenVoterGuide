@@ -16,7 +16,7 @@ Strictly nonpartisan. No endorsements, no recommendations, no partisan framing. 
 
 ## Live Site
 
-[https://gorygrey.github.io/OpenVoterGuide/](https://gorygrey.github.io/OpenVoterGuide/)
+[https://openvoterguide.org/](https://openvoterguide.org/)
 
 ## For Voters
 
@@ -40,8 +40,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 - **Static site generator:** Eleventy (11ty)
 - **Hosting:** GitHub Pages
-- **No backend, no database, no tracking**
+- **Static, no account system or database, no site-operated analytics or traffic counter**
 - **Build:** `npm run build` outputs to `_site/`
+- **Tests:** `npm test` builds the site and checks worksheet storage, import, and privacy behavior
 
 ### Local development
 
@@ -52,9 +53,11 @@ npm run start
 
 Visit `http://localhost:8080`.
 
+The [Privacy Policy](https://openvoterguide.org/privacy/) describes local worksheet storage and optional third-party services. [Terms of Use](https://openvoterguide.org/terms/) explains the guide's independent, informational role.
+
 ## Data & Verification
 
-The candidate and issue lists were checked against the county Board of Elections documents dated Rev. 9-15-26 on October 11, 2026. This verifies ballot coverage and official issue details; candidate background, position, and voting-record summaries still need claim-by-claim source checks. The guide currently includes 10 races, 2 measures, 36 property-tax levies, and 3 precinct-specific liquor questions.
+The candidate and issue lists were checked against the county Board of Elections documents dated Rev. 9-15-26 on October 11, 2026. This verifies ballot coverage and official issue details; candidate background, position, and voting-record summaries still need claim-by-claim source checks. The guide currently includes 20 races with 45 listed candidate entries or tickets, 2 measures, 36 property-tax levies, and 3 precinct-specific liquor questions.
 
 See `data/oh-ashtabula-2026-general/VERIFICATION.md` for the full source manifest.
 

@@ -8,7 +8,7 @@ permalink: /races/index.html
 <section class="directory-page" aria-labelledby="races-page-title">
   <h1 id="races-page-title">All races</h1>
   <p class="directory-intro">Explore candidate backgrounds, statements, voting records, and linked sources for the offices on your ballot.</p>
-  <p class="directory-count"><span aria-hidden="true">★</span> {{ races.length }} candidate races</p>
+  <p class="directory-count"><span aria-hidden="true">★</span> {{ site.raceCount }} candidate races · {{ site.candidateEntryCount }} candidate entries and tickets listed</p>
   <div class="directory-grid">
     {% for race in races %}
       {% set racePath = '/races/' + race.id + '/' %}
@@ -16,7 +16,7 @@ permalink: /races/index.html
         <p class="directory-meta">Candidate race{% if race.district %} · {{ race.district }}{% endif %}</p>
         <h2><a href="{{ racePath | url }}">{{ race.office }}</a></h2>
         <p>{{ race.term_info | truncate(160) }}</p>
-        <p>{{ race.candidates.length }} candidates listed</p>
+        <p>{{ race.candidates.length }} candidate entries and tickets listed</p>
         <a class="directory-action" href="{{ racePath | url }}">Explore race <span aria-hidden="true">→</span></a>
       </article>
     {% endfor %}

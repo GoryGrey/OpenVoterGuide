@@ -1,33 +1,36 @@
 ---
 layout: base.njk
 title: My Voting Worksheet
-description: Privately mark your ballot choices. Saved only in your browser, never sent anywhere.
+description: Privately build, annotate, back up, print, and save a personal ballot plan in your browser.
 permalink: /worksheet/index.html
 ---
 
-<h1>My Voting Worksheet</h1>
-<p>Check boxes on race and measure pages to build your list. Everything stays in your browser. Nothing is tracked or sent to any server.</p>
-
-<p class="worksheet-count-card"><strong><span id="worksheet-count">0</span> choices marked</strong></p>
-
-<div id="worksheet-list"></div>
-
-<div class="worksheet-toolbar">
-  <button type="button" onclick="printWorksheet()">Print my worksheet</button>
-  <button type="button" onclick="clearWorksheet()">Clear all choices</button>
-</div>
-
-<p><em>This is a private reference only, not an official ballot. Verify your choices against the official sample ballot at <a href="https://www.boe.ohio.gov/ashtabula/">boe.ohio.gov/ashtabula</a>.</em></p>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const saved = JSON.parse(localStorage.getItem('ashtabula-worksheet-2026') || '{}');
-  const list = document.getElementById('worksheet-list');
-  const entries = Object.entries(saved);
-  if (entries.length === 0) {
-    list.innerHTML = '<p>No choices marked yet. Browse <a href="/OpenVoterGuide/races/">races</a> and <a href="/OpenVoterGuide/measures/">measures</a> to get started.</p>';
-  } else {
-    list.innerHTML = '<ul>' + entries.map(([id, label]) => `<li>${label}</li>`).join('') + '</ul>';
-  }
-});
-</script>
+<article class="worksheet-page">
+  <header class="content-page-heading">
+    <p class="content-eyebrow">Private to this browser</p>
+    <h1>My voting worksheet</h1>
+    <p>Your selections and notes stay in this browser. They are not sent to a server or included in public links.</p>
+  </header>
+  <section class="worksheet-progress-card" aria-labelledby="worksheet-summary-heading">
+    <h2 id="worksheet-summary-heading"><span id="worksheet-count">0</span> choices marked</h2>
+    <progress id="worksheet-progress" max="{{ site.worksheetItemCount }}" value="0">0</progress>
+    <p><span id="worksheet-remaining">{{ site.worksheetItemCount }} items remain</span> in this countywide research guide. Precinct-specific issues may not appear on your ballot. Confirm eligible contests on your official sample ballot.</p>
+  </section>
+  <div id="worksheet-status" class="worksheet-status" role="status" aria-live="polite"></div>
+  <section id="worksheet-list" aria-label="Your choices and notes"></section>
+  <section class="worksheet-toolbar" aria-label="Worksheet tools">
+    <button type="button" onclick="printWorksheet('quick')">Print quick reference / save PDF</button>
+    <button type="button" onclick="printWorksheet('detailed')">Print detailed worksheet / save PDF</button>
+    <button type="button" onclick="printWorksheet('blank')">Print blank research worksheet</button>
+    <button type="button" onclick="exportWorksheet()">Download private backup</button>
+    <label class="worksheet-import-label" for="worksheet-import">Import backup</label>
+    <input id="worksheet-import" type="file" accept="application/json,.json">
+    <button class="worksheet-clear" type="button" onclick="clearWorksheet()">Delete choices and notes</button>
+  </section>
+  <aside class="worksheet-privacy-note">
+    <h2>Keep your worksheet private</h2>
+    <p>Backups and printed copies include your personal selections and notes. Anyone with access to those files or pages can read them. Store or share them carefully. Your data remains in this browser unless you download a copy.</p>
+  </aside>
+  <p><em>This worksheet is a private reference, not an official ballot. Check the <a href="{{ '/sample-ballots/' | url }}">official precinct-specific sample ballot</a> and confirm the contests that apply to you.</em></p>
+  <script>window.OVG_WORKSHEET_ITEMS = {{ worksheetItems | jsonLd | safe }};</script>
+</article>
