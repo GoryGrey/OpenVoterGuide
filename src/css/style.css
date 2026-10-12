@@ -1458,3 +1458,13 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   opacity: .55;
   cursor: not-allowed;
 }
+
+
+.worksheet-print-note {
+  margin: .8rem 0;
+  padding: .9rem 1rem;
+  border: 1px solid #cbddea;
+  border-radius: 10px;
+  background: #f1f7fc;
+  color: #25435e;
+}
