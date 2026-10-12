@@ -77,14 +77,30 @@
     }
   }
   function escapeDoc(value) { return escapeHTML(value).replace(/\n/g, '<br>'); }
+  function itemFor(id, state) {
+    const group = state.groups?.[id];
+    const items = window.OVG_WORKSHEET_ITEMS || [];
+    return items.find(item => item.group === group) || items.find(item => id === item.group || id.startsWith(`${item.group}-`));
+  }
+  function referenceLink(item) {
+    if (!item?.url) return '';
+    const href = new URL(item.url, window.location.origin).href;
+    return `<a href="${escapeHTML(href)}">${escapeHTML(item.title || 'Review the guide page')}</a>`;
+  }
   function worksheetHTML(state, mode) {
     const rows = selected(state);
     const title = mode === 'blank' ? 'Blank ballot research worksheet' : mode === 'detailed' ? 'Detailed personal ballot worksheet' : 'Quick ballot reference';
-    const items = rows.length ? rows.map(([id, label]) => `<li><strong>${escapeDoc(label)}</strong>${mode === 'detailed' && state.notes?.[state.groups?.[id] || id] ? `<p class="note">${escapeDoc(state.notes[state.groups?.[id] || id])}</p>` : mode === 'blank' ? '<p>Research / notes: __________________________________________________________</p>' : ''}</li>`).join('') : '';
-    const blank = mode === 'blank' ? `<h2>Blank research worksheet</h2>${(window.OVG_WORKSHEET_ITEMS || []).map(item => `<section class="blank-item"><h2>${escapeHTML(item.title)}</h2><p class="kind">${escapeHTML(item.kind)}${item.kind.includes('Precinct-specific') ? ' · Verify this appears on your ballot' : ''}</p><p>Choice: ${item.options.map(escapeHTML).join(' / ')}</p><p>Research / notes: __________________________________________________________</p><p>Sources: ___________________________________________________________________</p></section>`).join('')}` : '';
+    const items = rows.length ? rows.map(([id, label]) => {
+      const item = itemFor(id, state);
+      const reference = mode === 'detailed' && item ? `<p class="reference">Guide page and linked sources: ${referenceLink(item)}</p>` : '';
+      const note = mode === 'detailed' && state.notes?.[state.groups?.[id] || id] ? `<p class="note">${escapeDoc(state.notes[state.groups?.[id] || id])}</p>` : '';
+      return `<li><strong>${escapeDoc(label)}</strong>${note}${reference}</li>`;
+    }).join('') : '';
+    const sampleBallotUrl = new URL('/sample-ballots/', window.location.origin).href;
+    const blank = mode === 'blank' ? `<h2>Blank research worksheet</h2><p>Countywide research list; your exact contests may vary by precinct. <a href="${escapeHTML(sampleBallotUrl)}">Confirm your official precinct-specific sample ballot</a>.</p>${(window.OVG_WORKSHEET_ITEMS || []).map(item => `<section class="blank-item"><h2>${escapeHTML(item.title)}</h2><p class="kind">${escapeHTML(item.kind)}${item.kind.includes('Precinct-specific') ? ' · Verify this appears on your ballot' : ''}</p><p>Choice: ${item.options.map(escapeHTML).join(' / ')}</p><p>Research / notes: __________________________________________________________</p><p>Sources / reference: ${referenceLink(item) || '___________________________________________________________________'}</p></section>`).join('')}` : '';
     return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${title}</title><style>
-      @page{size:letter;margin:.65in}*{box-sizing:border-box}body{font:11pt/1.45 Arial,sans-serif;color:#102a43;margin:auto;max-width:7.2in}h1{font-size:21pt;margin:0 0 .2in}h2{font-size:14pt;margin:.22in 0 .08in}.brand{color:#0877ce;font-weight:bold;font-size:10pt;letter-spacing:.08em;text-transform:uppercase}.meta{color:#52687b;margin-bottom:.25in}ol{padding-left:.28in}li{padding:.1in 0;break-inside:avoid}.note{border-left:2px solid #18bfe0;padding-left:.12in;white-space:pre-wrap}.notice{margin-top:.35in;padding:.12in;border:1px solid #9fb3c8;font-size:9pt}.blank-item{break-inside:avoid;border-bottom:1px solid #b9cad8;padding:.08in 0}.kind{font-size:9pt;color:#50677c;margin:.02in 0}@media print{body{max-width:none}}
-    </style><body><p class="brand">OpenVoterGuide</p><h1>${title}</h1><p class="meta">${ELECTION} · Ashtabula County, Ohio</p>${mode === 'blank' ? blank : `<ol>${items}</ol>`}<p class="notice">Private reference only, not an official ballot. Confirm all contests and selections against your official precinct-specific ballot. This file contains your personal selections and notes; keep it private.</p><script>window.addEventListener('load',()=>window.print())<\/script></body></html>`;
+      @page{size:letter;margin:.65in}*{box-sizing:border-box}body{font:11pt/1.45 Arial,sans-serif;color:#102a43;margin:auto;max-width:7.2in}h1{font-size:21pt;margin:0 0 .2in}h2{font-size:14pt;margin:.22in 0 .08in}.brand{margin:0 0 .2in}.brand img{display:block;width:2.2in;height:auto;max-height:.48in;object-fit:contain;object-position:left center}.meta{color:#52687b;margin-bottom:.25in}ol{padding-left:.28in}li{padding:.1in 0;break-inside:avoid}.note{border-left:2px solid #18bfe0;padding-left:.12in;white-space:pre-wrap}.reference{font-size:9pt;overflow-wrap:anywhere}.notice{margin-top:.35in;padding:.12in;border:1px solid #9fb3c8;font-size:9pt}.blank-item{break-inside:avoid;border-bottom:1px solid #b9cad8;padding:.08in 0}.kind{font-size:9pt;color:#50677c;margin:.02in 0}@media print{body{max-width:none}}
+    </style><body><p class="brand"><img src="${escapeHTML(new URL('/assets/brand/logo-horizontal-light.svg', window.location.origin).href)}" alt="OpenVoterGuide"></p><h1>${title}</h1><p class="meta">${ELECTION} · Ashtabula County, Ohio</p>${mode === 'blank' ? blank : `<ol>${items}</ol>`}<p class="notice">Private reference only, not an official ballot. Confirm all contests and selections against your official precinct-specific ballot. This file contains your personal selections and notes; keep it private.</p><script>window.addEventListener('load',()=>window.print())<\/script></body></html>`;
   }
   window.printWorksheet = function (mode = 'quick') {
     const win = window.open('', '_blank');

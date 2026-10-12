@@ -47,8 +47,17 @@ const document = {
 class FileReader {
   readAsText(file) { this.result = file.text; this.onload(); }
 }
+class BrowserURL extends URL {
+  static createObjectURL() { return "blob:test"; }
+  static revokeObjectURL() {}
+}
 const window = {
-  OVG_WORKSHEET_ITEMS: [],
+  OVG_WORKSHEET_ITEMS: [
+    { group: "race-1", kind: "Race", title: "U.S. Senator", options: ["Candidate A", "Candidate B"], url: "/races/us-senator/" },
+    { group: "measure-1", kind: "Measure", title: "Issue 1: Measure", options: ["YES", "NO", "Undecided"], url: "/measures/issue-1/" },
+    { group: "liquor-2", kind: "Precinct-specific liquor question", title: "Issue 2: Sunday sales", options: ["YES", "NO", "Undecided"], url: "/measures/liquor/" }
+  ],
+  location: { origin: "https://openvoterguide.org" },
   confirm: () => true,
   open: () => ({ opener: {}, document: { open() {}, write(html) { printDocument = html; }, close() {} } })
 };
@@ -60,7 +69,7 @@ const context = {
   },
   CSS: { escape: (value) => value }, FileReader,
   Blob: class { constructor(parts) { this.parts = parts; } },
-  URL: { createObjectURL: () => "blob:test", revokeObjectURL() {} },
+  URL: BrowserURL,
   Date, JSON, Object, String, Math, Map, console
 };
 vm.runInNewContext(fs.readFileSync("src/js/worksheet.js", "utf8"), context);
@@ -95,6 +104,13 @@ assert.equal(saved.notes["race-1"], "backup note");
 window.printWorksheet("detailed");
 assert(printDocument.includes("Detailed personal ballot worksheet"));
 assert(printDocument.includes("backup note"));
+assert(printDocument.includes("https://openvoterguide.org/races/us-senator/"), "detailed print should include the relevant public research page");
+assert(printDocument.includes("U.S. Senator"), "detailed print should identify the reference page");
+assert(printDocument.includes("/assets/brand/logo-horizontal-light.svg"), "printable worksheets should carry the OpenVoterGuide brand mark");
+window.printWorksheet("blank");
+assert(printDocument.includes("https://openvoterguide.org/sample-ballots/"), "blank research worksheet should link to the official precinct ballot selector");
+assert(printDocument.includes("https://openvoterguide.org/measures/liquor/"), "blank worksheet should include relevant public references");
+assert(printDocument.includes("Precinct-specific liquor question"), "blank worksheet should distinguish precinct-specific contests");
 assert(!/fetch\s*\(|XMLHttpRequest|sendBeacon/.test(fs.readFileSync("src/js/worksheet.js", "utf8")),
   "worksheet code must not send personal data over the network");
 assert(!printDocument.includes("?choice=") && !printDocument.includes("#race-b"), "choices must not be added to public URLs");

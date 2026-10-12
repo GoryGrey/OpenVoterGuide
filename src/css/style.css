@@ -1349,3 +1349,22 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   .levy-inline-panel { width:min(290px,70vw); }
   .levy-personal-impact,.levy-estimator-single { padding:.8rem; }
 }
+
+@media screen and (max-width:600px) {
+  .community-flyer { aspect-ratio:auto; min-height:0; height:auto; overflow:visible; gap:1.15rem; }
+}
+@media print {
+  body[data-flyer-format] .share-page > :not(.community-flyer) { display:none!important; }
+  body[data-flyer-format="half"] .community-flyer { display:flex; flex-direction:column; justify-content:space-between; gap:.1in; padding:.22in; }
+  body[data-flyer-format="half"] .flyer-brand { gap:.08in; font-size:14pt; }
+  body[data-flyer-format="half"] .flyer-brand img { width:.32in; height:.32in; }
+  body[data-flyer-format="half"] .flyer-main { grid-template-columns:1fr auto; gap:.08in; }
+  body[data-flyer-format="half"] .flyer-main h2 { font-size:22pt; }
+  body[data-flyer-format="half"] .flyer-main > div:first-child > p:not(.flyer-eyebrow):not(.flyer-values):not(.flyer-url) { font-size:9pt; }
+  body[data-flyer-format="half"] .flyer-main ul { font-size:8pt; }
+  body[data-flyer-format="half"] .flyer-qr { gap:.04in; padding:.06in; font-size:6pt; }
+  body[data-flyer-format="half"] .flyer-qr img { width:.85in; height:.85in; }
+  body[data-flyer-format="half"] .community-flyer figcaption { font-size:6pt; line-height:1.25; }
+}
+.issue-graphic-disclaimer { padding:.45rem .6rem; border-left:3px solid #0b65bd; background:#eff7ff; color:#24445f; font-size:.84rem; font-weight:700; }
+.issue-graphic-sources { font-size:.78rem; line-height:1.4; overflow-wrap:anywhere; }
