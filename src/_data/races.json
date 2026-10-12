@@ -1400,7 +1400,7 @@
     "district": null,
     "term_info": "Joint ticket; vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-12",
     "candidates": [
       {
         "name": "Vivek Ramaswamy / Robert A. McColley",
@@ -2031,24 +2031,48 @@
       },
       {
         "name": "Renea Turner / Jalen Turner",
-        "background": "Renea Turner / Jalen Turner is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "Ohio Capital Journal described Renea Turner as an entrepreneur when she filed for the 2026 Republican primary with running mate Jalen Turner. The Ashtabula County Board of Elections later lists the ticket as write-in candidates. The guide has not found a reliable public biography or issue statements for Jalen Turner; regional voter guides report that he did not respond to their questionnaire.",
         "sources": [
           {
-            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "label": "Ohio Capital Journal, 2026 Ohio statewide candidate field (February 6, 2026)",
+            "url": "https://ohiocapitaljournal.com/2026/02/06/here-are-the-candidates-running-for-ohio-statewide-office-in-2026/"
+          },
+          {
+            "label": "Ashtabula County BOE official 2026 candidate list (revised September 15, 2026)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Signal Cleveland and Signal Akron, 2026 voter guide",
+            "url": "https://signalcleveland.org/election-2026-ohio-midterm-voter-guide-for-cuyahoga-county-candidates-issues-key-dates/"
+          },
+          {
+            "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
+            "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
-              "checked_on": "2026-10-11",
+              "status": "editorial_summary",
+              "note": "Ohio Capital Journal identifies Renea Turner as an entrepreneur in its pre-primary candidate overview; the county BOE list confirms the later write-in ticket. Signal Cleveland reports that Renea and Jalen Turner did not respond to its questionnaire, and Toledo Free Press lists the ticket without additional candidate background. No independent biography or issue statements for Jalen Turner were located in these sources.",
+              "checked_on": "2026-10-12",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Ohio Capital Journal, 2026 Ohio statewide candidate field (February 6, 2026)",
+                  "url": "https://ohiocapitaljournal.com/2026/02/06/here-are-the-candidates-running-for-ohio-statewide-office-in-2026/"
+                },
+                {
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised September 15, 2026)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                },
+                {
+                  "label": "Signal Cleveland and Signal Akron, 2026 voter guide",
+                  "url": "https://signalcleveland.org/election-2026-ohio-midterm-voter-guide-for-cuyahoga-county-candidates-issues-key-dates/"
+                },
+                {
+                  "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
+                  "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
                 }
               ]
             }
@@ -2057,24 +2081,48 @@
       },
       {
         "name": "Ron Ula / Michael C. Lehnerd",
-        "background": "Ron Ula / Michael C. Lehnerd is listed by the Ashtabula County Board of Elections as a candidate for Governor and Lieutenant Governor. The guide has not yet added independently sourced background or issue statements for this candidate.",
+        "background": "The Ashtabula County Board of Elections lists Ron Ula and Michael C. Lehnerd as write-in candidates. Signal Cleveland and Signal Akron report that Ula and Lehnerd did not respond to their voter-guide questionnaire, and Toledo Free Press lists the ticket without a biography. We have not found independently verifiable biographical details or issue statements for either candidate.",
         "sources": [
           {
-            "label": "Ashtabula County BOE official 2026 candidate list (revised 9/15/26)",
+            "label": "Ashtabula County BOE official 2026 candidate list (revised September 15, 2026)",
             "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+          },
+          {
+            "label": "Signal Cleveland and Signal Akron, 2026 voter guide",
+            "url": "https://signalcleveland.org/election-2026-ohio-midterm-voter-guide-for-cuyahoga-county-candidates-issues-key-dates/"
+          },
+          {
+            "label": "Signal Akron, 2026 voter guide",
+            "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
+          },
+          {
+            "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
+            "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
           }
         ],
         "party": "Write-in",
         "claim_evidence": {
           "background": [
             {
-              "status": "official_record",
-              "note": "The county’s revised official candidate list includes this named write-in candidate or ticket for the November 3, 2026 general election.",
-              "checked_on": "2026-10-11",
+              "status": "editorial_summary",
+              "note": "The county BOE list confirms the write-in ticket. Signal Cleveland and Signal Akron both state that Ron Ula and Michael C. Lehnerd did not respond to their voter-guide questionnaire; Toledo Free Press lists the ticket but provides no biography. No independently verifiable biography or issue statements for either candidate were located in these sources.",
+              "checked_on": "2026-10-12",
               "sources": [
                 {
-                  "label": "Ashtabula County BOE official candidate list, revised September 15, 2026",
+                  "label": "Ashtabula County BOE official 2026 candidate list (revised September 15, 2026)",
                   "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
+                },
+                {
+                  "label": "Signal Cleveland and Signal Akron, 2026 voter guide",
+                  "url": "https://signalcleveland.org/election-2026-ohio-midterm-voter-guide-for-cuyahoga-county-candidates-issues-key-dates/"
+                },
+                {
+                  "label": "Signal Akron, 2026 voter guide",
+                  "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
+                },
+                {
+                  "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
+                  "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
                 }
               ]
             }
