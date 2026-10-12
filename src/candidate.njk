@@ -25,9 +25,7 @@ eleventyComputed:
   {% if candidatePage.photo_url %}<figure><img src="{{ candidatePage.photo_url }}" alt="Photo of {{ candidatePage.name }}" class="candidate-photo" loading="lazy" decoding="async"><figcaption>{% if candidatePage.photo_credit %}Photo: {{ candidatePage.photo_credit }}{% endif %}</figcaption></figure>{% endif %}
   {% if candidatePage.party %}<p><strong>Party:</strong> {{ candidatePage.party }}{% if candidatePage.incumbent %} · Incumbent{% endif %}</p>{% endif %}
 
-  <div class="worksheet-check">
-    <label><input type="checkbox" data-worksheet-id="race-{{ candidatePage.race_id }}-{{ candidatePage.name | candidateSlug }}" data-worksheet-label="{{ candidatePage.race_office }}: {{ candidatePage.name }}"> Mark as my choice</label>
-  </div>
+  <p class="worksheet-guide-cta"><a class="primary-action" href="{{ ('/worksheet/?item=race-' + candidatePage.race_id) | url }}">Review this race step by step <span aria-hidden="true">→</span></a></p>
 
   <h2>Background</h2>
   <p>{{ candidatePage.background or "No background summary is listed." }}{% if candidatePage.background %}{{ claimEvidence(candidatePage, "background", 0) }}{% endif %}</p>

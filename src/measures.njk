@@ -30,19 +30,7 @@ eleventyComputed:
   <p>{{ measure.no_means }}</p>
 </div>
 
-<div class="worksheet-check">
-  <label>
-    <input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-yes" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: YES">
-    My choice: YES
-  </label>
-</div>
-<div class="worksheet-check">
-  <label>
-    <input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-no" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: NO">
-    My choice: NO
-  </label>
-</div>
-<div class="worksheet-check"><label><input type="radio" name="choice-measure-{{ measure.id }}" data-worksheet-id="measure-{{ measure.id }}-undecided" data-worksheet-group="measure-{{ measure.id }}" data-worksheet-label="{{ measure.title }}: Undecided"> My choice: undecided</label></div>
+<p class="worksheet-guide-cta"><a class="primary-action" href="{{ ('/worksheet/?item=measure-' + measure.id) | url }}">Review this issue step by step <span aria-hidden="true">→</span></a></p>
 
 <section class="issue-graphic" id="issue-graphic-{{ measure.id }}" aria-labelledby="issue-graphic-title-{{ measure.id }}">
   <p class="issue-graphic-brand">OpenVoterGuide · Ashtabula County, Ohio</p>

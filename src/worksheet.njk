@@ -13,23 +13,23 @@ permalink: /worksheet/index.html
   </header>
   <section class="worksheet-guided-launch" id="worksheet-guided-launch" aria-labelledby="worksheet-guided-launch-title">
     <div>
-      <p class="content-eyebrow">Optional guided setup</p>
-      <h2 id="worksheet-guided-launch-title">Build your worksheet one contest at a time</h2>
+      <p class="content-eyebrow">Optional step-by-step review</p>
+      <h2 id="worksheet-guided-launch-title">Review races and issues one at a time</h2>
       <p>Review candidate backgrounds, campaign statements, and available records; see what YES or NO would do for issues; and follow the sources before choosing. Your selection saves on this device as you go. You can skip anything and return later.</p>
       <p class="worksheet-ballot-reminder">The guide includes countywide and precinct-specific items. Your ballot may differ. <a href="{{ '/sample-ballots/' | url }}">Check your official sample ballot</a> to confirm what is on yours.</p>
     </div>
-    <button id="worksheet-guided-start" type="button">Start guided setup</button>
+    <button id="worksheet-guided-start" type="button">Start step-by-step review</button>
   </section>
   <section class="worksheet-guided" id="worksheet-guided" aria-labelledby="worksheet-guided-heading" hidden>
     <div class="worksheet-guided-topline">
       <div>
         <p class="content-eyebrow">Your choices save privately as you go</p>
-        <h2 id="worksheet-guided-heading">Guided worksheet</h2>
+        <h2 id="worksheet-guided-heading" tabindex="-1">Step-by-step ballot review</h2>
       </div>
       <p id="worksheet-guided-position" class="worksheet-guided-position"></p>
     </div>
     <progress id="worksheet-guided-progress" max="{{ site.worksheetItemCount }}" value="0" aria-label="Guided worksheet progress">0</progress>
-    <div id="worksheet-guided-step" class="worksheet-guided-step" aria-live="polite"></div>
+    <div id="worksheet-guided-step" class="worksheet-guided-step" aria-live="polite" tabindex="-1"></div>
     <p id="worksheet-guided-status" class="worksheet-status" role="status" aria-live="polite"></p>
     <nav class="worksheet-guided-nav" aria-label="Guided worksheet controls">
       <button id="worksheet-guided-back" type="button">Back</button>

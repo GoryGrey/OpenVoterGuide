@@ -45,7 +45,7 @@ eleventyComputed:
       <p class="levy-estimator-status" data-levy-estimator-status aria-live="polite">Example uses a $100,000 appraised value.</p>
     </div>
   </section>
-  <div class="worksheet-check"><label><input type="checkbox" data-worksheet-id="levy-{{ levy.issue_number }}-yes" data-worksheet-label="Issue {{ levy.issue_number }} ({{ levy.jurisdiction }} {{ levy.purpose }}): YES"> Mark YES on my worksheet</label></div>
+  <p class="worksheet-guide-cta"><a class="primary-action" href="{{ ('/worksheet/?item=levy-' + levy.issue_number) | url }}">Review this levy step by step <span aria-hidden="true">→</span></a></p>
   {% if levy.sources and levy.sources.length %}<section class="source-list"><h2>Official and research sources</h2><ul>{% for source in levy.sources %}<li><a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.label }}</a></li>{% endfor %}</ul></section>{% endif %}
   <p><a href="{{ '/sample-ballots/' | url }}">Check your official precinct ballot</a> · <a href="{{ '/levies/' | url }}">All property tax levies</a> · <a href="{{ '/worksheet/' | url }}">My worksheet</a></p>
 </article>

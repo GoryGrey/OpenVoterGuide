@@ -19,7 +19,7 @@ permalink: /measures/liquor/index.html
   <blockquote>{{ item.official_ballot_language }}</blockquote>
   <p><strong>Yes:</strong> {{ item.yes_means }}</p>
   <p><strong>No:</strong> {{ item.no_means }}</p>
-  <fieldset class="worksheet-choice-set"><legend>My worksheet choice · Issue {{ item.issue_number }}</legend><label><input type="radio" name="choice-liquor-{{ item.issue_number }}" data-worksheet-id="liquor-{{ item.issue_number }}-yes" data-worksheet-group="liquor-{{ item.issue_number }}" data-worksheet-label="Issue {{ item.issue_number }} ({{ item.precinct }}): YES"> YES</label><label><input type="radio" name="choice-liquor-{{ item.issue_number }}" data-worksheet-id="liquor-{{ item.issue_number }}-no" data-worksheet-group="liquor-{{ item.issue_number }}" data-worksheet-label="Issue {{ item.issue_number }} ({{ item.precinct }}): NO"> NO</label><label><input type="radio" name="choice-liquor-{{ item.issue_number }}" data-worksheet-id="liquor-{{ item.issue_number }}-undecided" data-worksheet-group="liquor-{{ item.issue_number }}" data-worksheet-label="Issue {{ item.issue_number }} ({{ item.precinct }}): Undecided"> Undecided</label></fieldset>
+  <p class="worksheet-guide-cta"><a class="primary-action" href="{{ ('/worksheet/?item=liquor-' + item.issue_number) | url }}">Review this question step by step <span aria-hidden="true">→</span></a></p>
   <ul class="source-list">
     {% for source in item.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a></li>{% endfor %}
   </ul>

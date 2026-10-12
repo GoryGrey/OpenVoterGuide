@@ -305,15 +305,17 @@
     if (step) renderGuidedItem(item, step, read());
     updateGuidedControls();
   }
-  function openGuidedSetup() {
+  function openGuidedSetup(targetGroup = null) {
     const state = read();
+    const targetIndex = targetGroup ? guidedItems.findIndex(item => item.group === targetGroup) : -1;
     const firstUnanswered = guidedItems.findIndex(item => !activeChoiceId(item, state));
-    guidedIndex = firstUnanswered < 0 ? 0 : firstUnanswered;
+    guidedIndex = targetIndex >= 0 ? targetIndex : firstUnanswered < 0 ? 0 : firstUnanswered;
     const root = document.getElementById('worksheet-root');
     root?.classList.add('is-guided');
     const launch = document.getElementById('worksheet-guided-launch'); if (launch) launch.hidden = true;
     const guided = document.getElementById('worksheet-guided'); if (guided) guided.hidden = false;
     renderGuidedStep();
+    document.getElementById('worksheet-guided-heading')?.focus();
   }
   function closeGuidedSetup(message = 'Guided setup paused. Your choices remain saved in this browser.') {
     document.getElementById('worksheet-root')?.classList.remove('is-guided');
@@ -395,6 +397,17 @@
     });
     const importer = document.getElementById('worksheet-import');
     importer?.addEventListener('change', () => { window.importWorksheet(importer.files?.[0]); importer.value = ''; });
+    document.getElementById('worksheet-guided-start')?.addEventListener('click', () => openGuidedSetup());
+    document.getElementById('worksheet-guided-back')?.addEventListener('click', () => {
+      if (guidedIndex > 0) { guidedIndex -= 1; renderGuidedStep(); }
+    });
+    document.getElementById('worksheet-guided-skip')?.addEventListener('click', () => advanceGuided(true));
+    document.getElementById('worksheet-guided-next')?.addEventListener('click', () => {
+      if (activeChoiceId(guidedItems[guidedIndex], read())) advanceGuided(false);
+    });
+    document.getElementById('worksheet-guided-exit')?.addEventListener('click', () => closeGuidedSetup());
     render();
+    const linkedItem = new URLSearchParams(window.location.search).get('item');
+    if (linkedItem && guidedItems.some(item => item.group === linkedItem)) openGuidedSetup(linkedItem);
   });
 })();
