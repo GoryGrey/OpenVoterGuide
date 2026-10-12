@@ -156,7 +156,7 @@
     updateGuidedControls();
   }
   function renderGuidedItem(item, container, state) {
-    const nextButton = document.getElementById('worksheet-guided-next');
+    const controls = container.querySelector('.worksheet-guided-nav');
     container.replaceChildren();
     container.append(element('p', item.kind, 'guided-kind'));
     container.append(element('h3', item.title, 'guided-item-title'));
@@ -174,7 +174,7 @@
       label.append(input, element('span', choice.value)); choices.append(label);
     }
     container.append(choices);
-    if (nextButton) container.append(nextButton);
+    if (controls) container.append(controls);
 
     const context = item.context || {};
     if (item.kind === 'Race') {
