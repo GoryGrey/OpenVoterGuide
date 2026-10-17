@@ -9,7 +9,7 @@
   <meta name="description" content="{{ description or site.description }}">
   {% if page.url == '/worksheet/' or page.url == '/404.html' %}<meta name="robots" content="noindex, nofollow">{% elif robots %}<meta name="robots" content="{{ robots }}">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
   <meta name="ovg-base-path" content="{{ '/' | url }}">
-  <link rel="canonical" href="{{ site.baseUrl }}{{ canonicalUrl or page.url }}">
+  <link rel="canonical" href="{{ site.baseUrl }}{{ page.url }}">
   {% if page.url == '/' %}<link rel="preload" as="image" href="{{ '/images/ashtabula-lighthouse.jpg' | url }}" fetchpriority="high">{% endif %}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description or site.description }}">
