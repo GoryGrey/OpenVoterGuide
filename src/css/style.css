@@ -1501,3 +1501,34 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 .error-page { text-align: center; }
 .error-actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; margin: 1.25rem 0; align-items: center; }
 .error-search-hint { color: var(--muted); }
+
+
+/* Keep the election reminder visible below the sticky site header. */
+.election-status { position:sticky; top:56px; z-index:29; }
+
+/* Give the Ohio map room to show its source-provided county highlight. */
+.hero-location-map { filter:none; opacity:1; padding:3px; border-radius:7px; background:#fff; }
+.hero-location-region { display:none; }
+
+/* Collapse the long desktop navigation before it wraps over the election banner. */
+@media (max-width:1350px) and (min-width:761px) {
+  header nav { flex-wrap:nowrap; gap:.4rem .65rem; }
+  .brand-wordmark { width:min(185px,15vw); }
+  .site-nav { position:relative; flex:0 0 auto; }
+  .site-nav .mobile-menu-toggle {
+    display:flex; align-items:center; justify-content:center; min-height:38px; padding:.45rem .7rem;
+    border:1px solid var(--border); border-radius:8px; background:#fff; color:var(--primary);
+    font:inherit; font-size:.82rem; font-weight:800; cursor:pointer;
+  }
+  .site-nav .nav-links { display:none; position:absolute; top:calc(100% + .5rem); left:0; z-index:50;
+    width:max-content; min-width:13rem; max-width:calc(100vw - 2rem); padding:.5rem; border:1px solid var(--border);
+    border-radius:10px; background:#fff; box-shadow:var(--shadow); }
+  .site-nav .mobile-menu-toggle[aria-expanded="true"] + .nav-links { display:grid; }
+  .site-nav .nav-links a { min-height:42px; }
+  .search-box { flex:0 1 210px; margin-left:auto; }
+  .search-box input { width:100%; }
+  .header-support { flex:0 0 auto; white-space:nowrap; }
+}
+@media (max-width:760px) {
+  .election-status { position:relative; top:auto; }
+}
