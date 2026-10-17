@@ -97,8 +97,8 @@
       const text = document.getElementById("election-status-text");
       const clock = document.getElementById("election-countdown");
       if (!box || !text || !clock) return;
-      const REG_CLOSE = Date.parse("2026-10-05T23:59:59-04:00");
-      const EARLY_START = Date.parse("2026-10-06T00:00:00-04:00");
+      const REG_CLOSE = Date.parse("2026-10-05T21:00:00-04:00");
+      const EARLY_START = Date.parse("2026-10-06T08:00:00-04:00");
       const EARLY_END = Date.parse("2026-11-01T17:00:00-05:00");
       const DAY_BEFORE = Date.parse("2026-11-02T00:00:00-05:00");
       const POLLS_OPEN = Date.parse("2026-11-03T06:30:00-05:00");
@@ -129,10 +129,10 @@
           msg = "Early in-person voting is open through Sunday, November 1 at 5 p.m.";
           target = EARLY_END; label = "Early voting ends in";
         } else if (now >= REG_CLOSE) {
-          msg = "Voter registration has closed. Early voting starts October 6.";
+          msg = "Voter registration has closed. Early voting starts at 8 a.m. October 6.";
           target = EARLY_START; label = "Early voting starts in";
         } else {
-          msg = "Register to vote by October 5.";
+          msg = "Register to vote by 9 p.m. on October 5.";
           target = REG_CLOSE; label = "Registration closes in";
         }
         text.textContent = msg;
