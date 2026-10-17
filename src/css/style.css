@@ -1508,7 +1508,11 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 
 /* Give the Ohio map room to show its source-provided county highlight. */
 .hero-location-map { filter:none; opacity:1; padding:3px; border-radius:7px; background:#fff; }
-.hero-location-region { display:none; }
+.hero-location-region {
+  display:block; position:absolute; left:94%; top:8%; width:11px; aspect-ratio:1;
+  border:2px solid #fff; border-radius:50%; background:#00c6eb;
+  transform:translate(-50%,-50%); box-shadow:0 0 0 3px rgba(0,198,235,.25);
+}
 
 /* Collapse the long desktop navigation before it wraps over the election banner. */
 @media (max-width:1350px) and (min-width:761px) {
