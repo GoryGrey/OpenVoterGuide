@@ -1490,3 +1490,14 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   background: #f1f7fc;
   color: #25435e;
 }
+
+/* Election status banner + live countdown (client-side only, no backend). */
+.election-status { background: var(--ovg-midnight, #071827); color: #fff; text-align: center; padding: .6rem 1rem; }
+.election-status p { margin: 0; display: flex; flex-wrap: wrap; gap: .3rem .65rem; align-items: center; justify-content: center; font-size: .95rem; }
+.election-status a { color: #ffd75e; font-weight: 700; }
+.election-countdown { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+/* 404 page */
+.error-page { text-align: center; }
+.error-actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; margin: 1.25rem 0; align-items: center; }
+.error-search-hint { color: var(--muted); }

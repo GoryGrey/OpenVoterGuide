@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Page not found
+description: The page you asked for is not on OpenVoterGuide. Find races, measures, levies, and voting information instead.
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+<article class="content-page error-page">
+  <header class="content-page-heading">
+    <p class="content-eyebrow">404</p>
+    <h1>This page didn't make the ballot.</h1>
+    <p>The link you followed isn't on OpenVoterGuide. It may have moved, or the address was typed wrong.</p>
+  </header>
+  <div class="error-actions">
+    <a class="primary-action" href="{{ '/' | url }}">Back to the voter guide</a>
+    <a href="{{ '/races/' | url }}">Browse races</a>
+    <a href="{{ '/voting/' | url }}">Voting dates &amp; info</a>
+  </div>
+  <p class="error-search-hint">Tip: use the search box at the top of the page to find a candidate, race, or measure.</p>
+</article>

@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://upload.wikimedia.org">
   <title>{{ title }} | {{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
-  {% if page.url == '/worksheet/' %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
+  {% if page.url == '/worksheet/' or page.url == '/404.html' %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">{% endif %}
   <meta name="ovg-base-path" content="{{ '/' | url }}">
   <link rel="canonical" href="{{ site.baseUrl }}{{ page.url }}">
   {% if page.url == '/' %}<link rel="preload" as="image" href="{{ '/images/ashtabula-lighthouse.jpg' | url }}" fetchpriority="high">{% endif %}
@@ -83,6 +85,69 @@
       referrerpolicy="strict-origin-when-cross-origin"></iframe>
     <p class="support-fallback">If the panel doesn’t load, <a href="https://ko-fi.com/openvoterguide" target="_blank" rel="noopener noreferrer">open Ko-fi directly</a>.</p>
   </dialog>
+  <div class="election-status" id="election-status" hidden>
+    <p><span id="election-status-text"></span><span class="election-countdown" role="timer" id="election-countdown"></span><a href="{{ '/voting/' | url }}">Voting info</a></p>
+  </div>
+  <script>
+    (() => {
+      // Status banner + live countdown for the November 3, 2026 general election.
+      // Key dates mirror src/_data/election.json. All times America/New_York.
+      // Pure client-side: no backend, no cookies, no tracking.
+      const box = document.getElementById("election-status");
+      const text = document.getElementById("election-status-text");
+      const clock = document.getElementById("election-countdown");
+      if (!box || !text || !clock) return;
+      const REG_CLOSE = Date.parse("2026-10-05T23:59:59-04:00");
+      const EARLY_START = Date.parse("2026-10-06T00:00:00-04:00");
+      const EARLY_END = Date.parse("2026-11-01T23:59:59-05:00");
+      const DAY_BEFORE = Date.parse("2026-11-02T00:00:00-05:00");
+      const POLLS_OPEN = Date.parse("2026-11-03T06:30:00-05:00");
+      const POLLS_CLOSE = Date.parse("2026-11-03T19:30:00-05:00");
+      function fmt(ms) {
+        const total = Math.max(0, Math.floor(ms / 1000));
+        const d = Math.floor(total / 86400);
+        const h = Math.floor((total % 86400) / 3600);
+        const m = Math.floor((total % 3600) / 60);
+        const s = total % 60;
+        return (d > 0 ? d + "d " : "") + h + "h " + m + "m " + s + "s";
+      }
+      function tick() {
+        const now = Date.now();
+        let msg, target = null, label = "";
+        if (now >= POLLS_CLOSE) {
+          msg = "The November 3 general election has ended. Thanks for voting.";
+        } else if (now >= POLLS_OPEN) {
+          msg = "Today is Election Day: polls are open until 7:30 PM.";
+          target = POLLS_CLOSE; label = "Polls close in";
+        } else if (now >= DAY_BEFORE) {
+          msg = "Election Day is tomorrow, November 3.";
+          target = POLLS_OPEN; label = "Polls open in";
+        } else if (now >= EARLY_END) {
+          msg = "Early voting has ended. Election Day is Tuesday, November 3.";
+          target = POLLS_OPEN; label = "Polls open in";
+        } else if (now >= EARLY_START) {
+          msg = "Early voting is open now through November 1.";
+          target = POLLS_OPEN; label = "Election Day in";
+        } else if (now >= REG_CLOSE) {
+          msg = "Voter registration has closed. Early voting starts October 6.";
+          target = EARLY_START; label = "Early voting starts in";
+        } else {
+          msg = "Register to vote by October 5.";
+          target = REG_CLOSE; label = "Registration closes in";
+        }
+        text.textContent = msg;
+        if (target) {
+          clock.hidden = false;
+          clock.textContent = label + " " + fmt(target - now);
+        } else {
+          clock.hidden = true;
+        }
+        box.hidden = false;
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
   <main id="main-content">
     {% if page.url == '/' %}
       {{ content | safe }}
@@ -92,7 +157,7 @@
       </div>
     {% endif %}
   </main>
-  {% if page.url != '/worksheet/' %}<aside class="public-share-tools" aria-label="Share this public page"><span>Share this public guide:</span><button type="button" data-share-page>Share</button><button type="button" data-copy-page-link>Copy link</button><a data-facebook-share href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Facebook</a><span class="share-status" role="status" aria-live="polite"></span></aside>{% endif %}
+  {% if page.url != '/worksheet/' and page.url != '/404.html' %}<aside class="public-share-tools" aria-label="Share this public page"><span>Share this public guide:</span><button type="button" data-share-page>Share</button><button type="button" data-copy-page-link>Copy link</button><a data-facebook-share href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Facebook</a><span class="share-status" role="status" aria-live="polite"></span></aside>{% endif %}
   <footer>
     <p>Strictly nonpartisan. No endorsements. Race and ballot listings checked against county BOE lists. Candidate claims link to claim-level evidence where checked; others are marked pending. See About for verification scope.</p>
     <p><a href="{{ '/about/' | url }}">About &amp; Sources</a> | <a href="{{ '/privacy/' | url }}">Privacy</a> | <a href="{{ '/terms/' | url }}">Terms</a> | <a href="https://www.boe.ohio.gov/ashtabula/">Ashtabula County BOE</a></p>
