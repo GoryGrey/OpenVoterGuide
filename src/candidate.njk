@@ -6,8 +6,8 @@ pagination:
   alias: candidatePage
 permalink: "/candidates/{{ candidatePage.race_id }}/{{ candidatePage.slug }}/"
 eleventyComputed:
-  title: "{{ candidatePage.name }} — {{ candidatePage.race_office }}"
-  description: "{{ candidatePage.seo_description }}"
+  title: "{{ (candidatePage.name + ' — ' + candidatePage.race_office) | safe }}"
+  description: "{{ candidatePage.seo_description | safe }}"
 ---
 
 {% macro claimEvidence(candidate, field, index) %}

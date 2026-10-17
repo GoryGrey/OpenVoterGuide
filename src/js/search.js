@@ -136,6 +136,8 @@
         showServiceLinks(panel);
       } else {
         addText(panel, 'p', 'This guide currently covers Ashtabula County, Ohio. Use your own county election office to confirm your ballot and polling place.', 'address-guidance');
+        addText(panel, 'p', 'Your county isn’t available yet. Help us bring OpenVoterGuide to your area!', 'address-request-copy');
+        panel.appendChild(makeLink('Request My County →', basePath + 'request-county/')).className = 'address-request-action';
       }
     } catch (error) {
       status.textContent = error.message || 'Address lookup failed. Please try again.';

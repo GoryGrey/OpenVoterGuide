@@ -16,7 +16,7 @@ const expected = [
   "races/index.html", "measures/index.html", "measures/liquor/index.html",
   "levies/index.html", "worksheet/index.html", "about/index.html",
   "voting/index.html", "sample-ballots/index.html", "share/index.html",
-  "privacy/index.html", "terms/index.html",
+  "privacy/index.html", "terms/index.html", "request-county/index.html",
   ...races.map((race) => `races/${race.id}/index.html`),
   ...measures.map((issue) => `measures/${issue.id}/index.html`),
   ...candidates.map((candidate) => `candidates/${candidate.race_id}/${candidate.slug}/index.html`),

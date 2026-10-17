@@ -6,8 +6,8 @@ pagination:
   alias: levy
 permalink: "/levies/issue-{{ levy.issue_number }}/"
 eleventyComputed:
-  title: "Ashtabula County Issue {{ levy.issue_number }} Levy — {{ levy.jurisdiction }}"
-  description: "Issue {{ levy.issue_number }} asks voters in {{ levy.jurisdiction }} about {{ levy.purpose | lower }}. Review the levy type, millage, term, tax change, and official sources for the November 3, 2026 ballot."
+  title: "{{ ('Ashtabula County Issue ' + (levy.issue_number | string) + ' Levy — ' + levy.jurisdiction) | safe }}"
+  description: "{{ ('Issue ' + (levy.issue_number | string) + ' asks voters in ' + levy.jurisdiction + ' about ' + (levy.purpose | lower) + '. Review the levy type, millage, term, tax change, and official sources for the November 3, 2026 ballot.') | safe }}"
 ---
 
 <article class="levy-profile">
