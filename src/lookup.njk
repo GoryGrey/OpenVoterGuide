@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: Find Your Districts
+description: Look up your Ohio congressional, state senate, and state house districts by address using the U.S. Census Bureau Geocoder.
+permalink: /lookup/index.html
+eleventyExcludeFromCollections: true
+robots: noindex, follow
+---
+
+<article class="content-page lookup-page">
+  <header class="content-page-heading">
+    <p class="content-eyebrow">Address lookup</p>
+    <h1>Find your districts</h1>
+    <p>Enter your full street address, city, and state or ZIP code in the search field at the top of this page. Choose <strong>Find districts for this address</strong> to see your congressional, Ohio Senate, and Ohio House districts.</p>
+  </header>
+  <section class="content-section">
+    <h2>Look up an address</h2>
+    <p>Your address is sent directly from your browser to the U.S. Census Bureau Geocoder only after you choose to look up districts. OpenVoterGuide does not receive or store it. If the address is in Ashtabula County, the results link to the matching races in this guide.</p>
+    <button class="primary-action" type="button" data-focus-address-search>Go to address search</button>
+  </section>
+  <section class="content-section">
+    <h2>Confirm your ballot</h2>
+    <p>District lookup helps you find relevant races, but your official sample ballot is the final source for the contests that apply to your address.</p>
+    <p><a href="{{ '/sample-ballots/' | url }}">Open the official sample ballot lookup</a> · <a href="https://lookup.boe.ohio.gov/vtrapp/ashtabula/pollfinder.aspx" target="_blank" rel="noopener noreferrer">Find your polling place</a></p>
+  </section>
+</article>
+<script>
+  document.querySelector("[data-focus-address-search]")?.addEventListener("click", () => {
+    const search = document.getElementById("site-search");
+    search?.focus();
+    search?.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+</script>
