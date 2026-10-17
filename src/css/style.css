@@ -1520,11 +1520,11 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
     border:1px solid var(--border); border-radius:8px; background:#fff; color:var(--primary);
     font:inherit; font-size:.82rem; font-weight:800; cursor:pointer;
   }
-  .site-nav:not([open]) > .nav-links { display:none; }
+  .site-nav:not([open]) > .nav-links { display:none!important; }
   .site-nav .nav-links { display:none; position:absolute; top:calc(100% + .5rem); left:0; z-index:50;
     width:max-content; min-width:13rem; max-width:calc(100vw - 2rem); padding:.5rem; border:1px solid var(--border);
     border-radius:10px; background:#fff; box-shadow:var(--shadow); }
-  .site-nav .mobile-menu-toggle[aria-expanded="true"] + .nav-links { display:grid; }
+  .site-nav .mobile-menu-toggle[aria-expanded="true"] + .nav-links { display:grid!important; }
   .site-nav .nav-links a { min-height:42px; }
   .search-box { flex:0 1 210px; margin-left:auto; }
   .search-box input { width:100%; }
