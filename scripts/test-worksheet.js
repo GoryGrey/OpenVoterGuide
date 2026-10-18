@@ -20,6 +20,8 @@ class Element {
   append(...children) { this.children.push(...children); }
   appendChild(child) { this.children.push(child); return child; }
   replaceChildren(...children) { this.children = children; }
+  querySelector() { return null; }
+  focus() {}
   setAttribute(key, value) { this.attributes[key] = value; }
   click() { this.clicked = true; }
 }
@@ -72,7 +74,7 @@ const context = {
   },
   CSS: { escape: (value) => value }, FileReader,
   Blob: class { constructor(parts) { this.parts = parts; } },
-  URL: BrowserURL,
+  URL: BrowserURL, URLSearchParams,
   Date, JSON, Object, String, Math, Map, console
 };
 vm.runInNewContext(fs.readFileSync("src/js/worksheet.js", "utf8"), context);
