@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Ashtabula County Polling Places & Precinct Lookup
-description: Search the Ashtabula County polling-place directory and precinct assignments. Verify your personal Election Day location with the Ohio Secretary of State.
+title: Ashtabula County Polling Places Map & Precinct Directory
+description: Explore Ashtabula County polling-place markers and precinct assignments, then verify your personal Election Day location with the Ohio Secretary of State.
 permalink: /polling-places/index.html
 ---
 {% set directory = pollingPlaces %}
@@ -10,7 +10,7 @@ permalink: /polling-places/index.html
   <header class="polling-intro">
     <p class="polling-eyebrow">{{ directory.county }} · {{ directory.election }}</p>
     <h1>Find your polling place</h1>
-    <p class="polling-lede">Search the county’s official precinct and Election Day polling-place directory. Then verify your personal assignment with the Ohio Secretary of State before you go.</p>
+    <p class="polling-lede">Explore Election Day polling places on the map, see which precincts vote at each building, and verify your address with the Ohio Secretary of State before you go.</p>
     <a class="polling-verify-button" href="https://voterlookup.ohiosos.gov/voterlookup.aspx" target="_blank" rel="noopener noreferrer">Verify your assigned polling place <span aria-hidden="true">↗</span></a>
     <p class="polling-privacy"><strong>Privacy:</strong> This page does not ask for or store your home address. Search stays in your browser. If you open a map or official lookup, your browser connects directly to that service.</p>
   </header>
@@ -22,7 +22,7 @@ permalink: /polling-places/index.html
 
   <section class="polling-explorer" aria-labelledby="polling-directory-heading">
     <div class="polling-directory-head">
-      <div><p class="polling-eyebrow">{{ directory.locations.length }} polling locations · 104 precincts</p><h2 id="polling-directory-heading">Search the directory</h2><p>Search by polling place, street, community, or precinct name or number.</p></div>
+      <div><p class="polling-eyebrow">{{ directory.locations.length }} polling locations · 104 precincts</p><h2 id="polling-directory-heading">Explore the map and directory</h2><p>Choose a map marker or search by polling place, street, community, or precinct name or number.</p></div>
       <a class="polling-source-link" href="{{ directory.sourceUrl }}" target="_blank" rel="noopener noreferrer">Open the county Board of Elections report <span aria-hidden="true">↗</span></a>
     </div>
     <form class="polling-search" role="search" data-polling-search-form>
@@ -33,27 +33,30 @@ permalink: /polling-places/index.html
     <p class="polling-result-count" data-polling-result-count role="status" aria-live="polite">Showing all {{ directory.locations.length }} polling locations.</p>
 
     <div class="polling-layout">
+      <aside class="polling-map-panel" aria-labelledby="polling-map-heading">
+        <div class="polling-map-panel-head"><span class="polling-map-icon" aria-hidden="true">⌖</span><div><h3 id="polling-map-heading">Interactive polling-place map</h3><p data-polling-map-selection>Choose a marker or location below to see its address and assigned precincts.</p></div></div>
+        <div class="polling-map-legend" aria-label="Map legend"><span><i class="polling-legend-marker" aria-hidden="true"></i>Election Day polling place</span><span><i class="polling-legend-selected" aria-hidden="true"></i>Selected location</span></div>
+        <div class="polling-map-status" data-polling-map-status role="status" aria-live="polite">The map loads when you reach this section. Your address is never requested.</div>
+        <div class="polling-map-canvas" data-polling-map aria-label="Interactive map of Ashtabula County Election Day polling locations" role="region" tabindex="0"></div>
+        <div class="polling-map-selected" data-polling-map-selected hidden></div>
+        <div class="polling-map-error" data-polling-map-error hidden><strong>Map unavailable right now.</strong> You can still search the complete location directory below or verify your address with the official Ohio lookup.</div>
+        <div class="polling-map-warning"><strong>Precinct boundaries are not shown.</strong><p>The county GIS precinct layer currently has 77 map features for 104 precincts in the October 16 Board of Elections report, so it cannot safely be used to highlight the complete assignment. The map shows only locations matched by address to the current report.</p></div>
+        <div class="polling-map-foot"><span aria-hidden="true">▦</span><p><strong>Precinct</strong> is your election district. Several precincts can vote at one building. Map location coordinates come from the county GIS layer; the Board of Elections report determines the assignments shown here.</p></div>
+      </aside>
       <div class="polling-results" id="polling-location-list" aria-label="Polling locations">
         {% for location in directory.locations %}
-          <article class="polling-location-card" data-polling-location data-search="{{ location.searchText }}">
-            <div class="polling-card-top"><span class="polling-marker" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ location.name }}</h3><address>{{ location.address.street }}<br>{{ location.address.city }}, {{ location.address.state }} {{ location.address.zip }}</address></div></div>
-            <div class="polling-precinct-section"><h4>{{ location.precincts.length }} precinct{% if location.precincts.length != 1 %}s{% endif %} assigned here</h4><ul>{% for precinct in location.precincts %}<li><span>{{ precinct.name }}</span><button type="button" class="polling-map-button" data-precinct-name="{{ precinct.name }}" data-map-url="{{ precinct.mapUrl }}" aria-label="View dated official reference map for {{ precinct.name }}">Map PDF <span aria-hidden="true">↗</span></button></li>{% endfor %}</ul></div>
+          <article class="polling-location-card" data-polling-location data-search="{{ location.searchText }}" data-street="{{ location.address.street }}" data-city="{{ location.address.city }}" data-zip="{{ location.address.zip }}">
+            <div class="polling-card-top"><span class="polling-marker" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ location.name }}</h3><address>{{ location.address.street }}<br>{{ location.address.city }}, {{ location.address.state }} {{ location.address.zip }}</address><button class="polling-show-on-map" type="button" data-show-location-on-map="{{ location.id }}" aria-label="Show {{ location.name }} on the map">Show on map <span aria-hidden="true">↗</span></button></div></div>
+            <div class="polling-precinct-section"><h4>{{ location.precincts.length }} precinct{% if location.precincts.length != 1 %}s{% endif %} assigned here</h4><ul>{% for precinct in location.precincts %}<li><span>{{ precinct.name }}</span><a class="polling-map-button" href="{{ precinct.mapUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Open the February 2013 county reference map for {{ precinct.name }}">Map PDF <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></div>
             <a class="polling-directions" href="https://www.google.com/maps/search/?api=1&amp;query={{ (location.address.street + ', ' + location.address.city + ', OH ' + location.address.zip) | urlencode }}" target="_blank" rel="noopener noreferrer">Directions <span aria-hidden="true">↗</span></a>
           </article>
         {% endfor %}
       </div>
-      <aside class="polling-map-panel" aria-labelledby="polling-map-heading">
-        <div class="polling-map-panel-head"><span class="polling-map-icon" aria-hidden="true">⌖</span><div><h3 id="polling-map-heading">Official precinct map</h3><p data-polling-map-selection>Select a “Map PDF” beside a precinct to view its county reference map.</p></div></div>
-        <div class="polling-map-warning"><strong>Historical map reference</strong><p>The linked Ashtabula County precinct map PDFs are dated February 27, 2013. They are not confirmed 2026 boundary maps. Use the official Ohio voter lookup to verify your current polling assignment.</p></div>
-        <div class="polling-map-frame-wrap" data-polling-map-frame-wrap hidden><iframe title="Official Ashtabula County precinct reference map" data-polling-map-frame loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-        <a class="polling-map-open" data-polling-map-open href="https://www.boe.ohio.gov/ashtabula/c/precmap/001.pdf" target="_blank" rel="noopener noreferrer" hidden>Open selected precinct map PDF <span aria-hidden="true">↗</span></a>
-        <div class="polling-map-foot"><span aria-hidden="true">▦</span><p><strong>Precinct</strong> is your election district. Multiple precincts can vote at one building. This is different from early in-person voting, which uses a separate location.</p></div>
-      </aside>
     </div>
     <p class="polling-no-results" data-polling-no-results hidden>No polling places match that search. Try a shorter street, community, or precinct name, or use the official voter lookup.</p>
   </section>
 
   <section class="polling-explain" aria-labelledby="polling-how-heading"><h2 id="polling-how-heading">How to use this directory</h2><div class="polling-explain-grid"><article><span>01</span><h3>Find your precinct</h3><p>Your precinct name is printed on your voter information and may be found through the official voter lookup.</p></article><article><span>02</span><h3>See its assigned location</h3><p>Search the precinct name or number above. The listed precinct-to-location assignment comes from the county Board of Elections report.</p></article><article><span>03</span><h3>Verify before you go</h3><p>Election Day polling places and early-voting sites are different. Confirm the location for your own address and this election with Ohio’s official lookup.</p></article></div></section>
-  <footer class="polling-data-citation"><p><strong>Sources:</strong> <a href="{{ directory.sourceUrl }}" target="_blank" rel="noopener noreferrer">Ashtabula County Board of Elections precinct and polling-place report</a> (report updated October 16, 2026); <a href="https://voterlookup.ohiosos.gov/voterlookup.aspx" target="_blank" rel="noopener noreferrer">Ohio Secretary of State Voter Lookup</a>; <a href="https://www.boe.ohio.gov/ashtabula/" target="_blank" rel="noopener noreferrer">Ashtabula County Board of Elections</a>.</p><p>Assignments were transcribed from the county report and checked October 18, 2026. Official precinct map PDFs linked here show map creation date February 27, 2013. We did not find an official current-election polygon or coordinate dataset in the public sources reviewed. No current boundary overlay or address-to-precinct match is claimed.</p></footer>
+  <footer class="polling-data-citation"><p><strong>Sources:</strong> <a href="{{ directory.sourceUrl }}" target="_blank" rel="noopener noreferrer">Ashtabula County Board of Elections precinct and polling-place report</a> (report updated October 16, 2026); <a href="https://services6.arcgis.com/SPg6lw9jlYmTOiLi/ArcGIS/rest/services/ElectoralDistricts/FeatureServer/0" target="_blank" rel="noopener noreferrer">Ashtabula County GIS polling-place point layer</a> (last edited May 29, 2026); <a href="https://voterlookup.ohiosos.gov/voterlookup.aspx" target="_blank" rel="noopener noreferrer">Ohio Secretary of State Voter Lookup</a>.</p><p>Assignments were transcribed from the county report and checked October 18, 2026. The GIS point layer is used only when its location address matches the current BOE report. Its related precinct polygon layer has 77 features, compared with 104 assignments in the current report, so no boundary overlay or point-in-polygon/address-to-precinct match is claimed. Official county PDF maps linked here are dated February 27, 2013.</p></footer>
 </article>
 <script defer src="{{ '/js/polling-places.js' | url }}?v=20261018-polling1"></script>

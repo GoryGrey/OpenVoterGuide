@@ -22,15 +22,20 @@ for (const location of data.locations) {
 
 const htmlPath = path.join(__dirname, "..", "_site", "polling-places", "index.html");
 const html = fs.readFileSync(htmlPath, "utf8");
-assert.match(html, /<title>Ashtabula County Polling Places &amp; Precinct Lookup \| OpenVoterGuide<\/title>/);
+assert.match(html, /<title>Ashtabula County Polling Places Map &amp; Precinct Directory \| OpenVoterGuide<\/title>/);
 assert.match(html, /<link rel="canonical" href="https:\/\/openvoterguide\.org\/polling-places\/">/);
-assert.match(html, /name="description" content="Search the Ashtabula County polling-place directory/);
+assert.match(html, /name="description" content="Explore Ashtabula County polling-place markers and precinct assignments/);
 assert.match(html, /data-polling-location/g);
 assert.equal((html.match(/data-polling-location/g) || []).length, 48);
 assert.match(html, /Verify your assigned polling place/);
 assert.match(html, /February 27, 2013/);
+assert.match(html, /Interactive polling-place map/);
+assert.match(html, /polling-place point layer/);
+assert.match(html, /77 map features for 104 precincts/);
+assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "js", "polling-places.js"), "utf8"), /tile\.openstreetmap\.org/);
+assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "js", "polling-places.js"), "utf8"), /services6\.arcgis\.com/);
 assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "sitemap.xml"), "utf8"), /https:\/\/openvoterguide\.org\/polling-places\//);
 assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "index.html"), "utf8"), /Find Your Polling Place/);
-assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "privacy", "index.html"), "utf8"), /Polling-place directory/);
+assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "privacy", "index.html"), "utf8"), /Polling-place map/);
 
-console.log("Polling-place tests passed: 48 locations, 104 unique precinct assignments, election provenance, map links, privacy notice, SEO, sitemap, and homepage entry point.");
+console.log("Polling-place tests passed: 48 locations, 104 unique precinct assignments, interactive-map data sources, election provenance, map links, privacy notice, SEO, sitemap, and homepage entry point.");
