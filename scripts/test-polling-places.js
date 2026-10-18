@@ -38,6 +38,8 @@ assert.match(html, /boundary names are matched to the current BOE precinct names
 const mapScript = fs.readFileSync(path.join(__dirname, "..", "_site", "js", "polling-places.js"), "utf8");
 assert.match(mapScript, /tile\.openstreetmap\.org/);
 assert.match(mapScript, /features\.length !== 104/);
+assert.match(mapScript, /JEFFERSON VILLAGE 1/);
+assert.match(mapScript, /JEFF VILL 3/);
 assert.match(mapScript, /selectPrecinct/);
 assert.doesNotMatch(mapScript, /services6\.arcgis\.com/);
 assert.match(fs.readFileSync(path.join(__dirname, "..", "_site", "sitemap.xml"), "utf8"), /https:\/\/openvoterguide\.org\/polling-places\//);

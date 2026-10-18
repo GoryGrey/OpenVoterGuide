@@ -39,7 +39,12 @@
   }));
   const precinctById = new Map(locations.flatMap(location => location.precincts.map(precinct => [precinct.id, { ...precinct, location }])));
   const nameKey = value => String(value || "").toLocaleUpperCase("en-US").replace(/[^A-Z0-9]/g, "");
-  const precinctAliases = new Map([[nameKey("GENEVA ON LAKE VILLAGE"), nameKey("GEN ON LAKE VILL")]]);
+  const precinctAliases = new Map([
+    [nameKey("GENEVA ON LAKE VILLAGE"), nameKey("GEN ON LAKE VILL")],
+    [nameKey("JEFFERSON VILLAGE 1"), nameKey("JEFF VILL 1")],
+    [nameKey("JEFFERSON VILLAGE 2"), nameKey("JEFF VILL 2")],
+    [nameKey("JEFFERSON VILLAGE 3"), nameKey("JEFF VILL 3")]
+  ]);
   const censusNameKey = name => precinctAliases.get(nameKey(name)) || nameKey(name);
 
   const showMapError = message => {
