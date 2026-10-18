@@ -6,8 +6,8 @@ pagination:
   alias: measure
 permalink: "/measures/{{ measure.id }}/"
 eleventyComputed:
-  title: "{{ ('Ohio Issue 3: Voter Photo ID Amendment' if measure.id == 'issue-3' else 'Ohio Issue ' + (measure.issue_number | string) + ': ' + measure.title) | safe }}"
-  description: "{{ ('Ohio Issue 3 would put photo ID rules in Ohio’s Constitution. See what a YES or NO vote changes and what state law already requires.' if measure.id == 'issue-3' else measure.plain_english | truncate(150)) | safe }}"
+  title: "{{ ('Ohio Issue 3 (2026): Voter Photo ID Amendment' if measure.id == 'issue-3' else 'Ohio Issue ' + (measure.issue_number | string) + ': ' + measure.title) | safe }}"
+  description: "{{ ('What Ohio Issue 3 would change about photo ID for in-person and mail voting. Review the YES and NO effects, existing law, and official sources.' if measure.id == 'issue-3' else measure.plain_english | truncate(150)) | safe }}"
 ---
 
 <article class="measure-profile">

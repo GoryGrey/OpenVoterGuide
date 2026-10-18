@@ -6,8 +6,8 @@ pagination:
   alias: race
 permalink: "/races/{{ race.id }}/"
 eleventyComputed:
-  title: "{{ ('Ohio Supreme Court Candidates | Ashtabula County 2026' if race.id == 'supreme-court-01022027' else race.office + ' Candidates | Ashtabula County 2026 Ballot') | safe }}"
-  description: "{{ ('Compare Jennifer Brunner and Colleen O’Donnell for Ohio Supreme Court Justice. Review sourced backgrounds, campaign statements and selected court records.' if race.id == 'supreme-court-01022027' else 'Compare candidates for ' + race.office + ' on the November 3, 2026 Ashtabula County ballot. Review sourced backgrounds, campaign statements, selected records, and citations.') | safe }}"
+  title: "{{ ('Ohio Supreme Court Full-Term Candidates (2026) | Ashtabula County' if race.id == 'supreme-court-01022027' else race.office + ' Candidates | Ashtabula County 2026 Ballot') | safe }}"
+  description: "{{ ('Compare Jennifer Brunner and Colleen O’Donnell for the Ohio Supreme Court full term beginning January 2, 2027. See sourced backgrounds, campaign statements, and court records.' if race.id == 'supreme-court-01022027' else 'Compare candidates for ' + race.office + ' on the November 3, 2026 Ashtabula County ballot. Review sourced backgrounds, campaign statements, selected records, and citations.') | safe }}"
 ---
 
 <article class="race-profile">
