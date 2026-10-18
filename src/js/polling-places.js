@@ -12,11 +12,15 @@
   const mapError = root.querySelector("[data-polling-map-error]");
   const mapSelection = root.querySelector("[data-polling-map-selection]");
   const selectedDetails = root.querySelector("[data-polling-map-selected]");
+  const layerUrl = root.dataset.precinctLayer;
   let map;
   let mapReady = false;
   let mapStarted = false;
-  let markersById = new Map();
-  let selectedId = null;
+  let precinctLayer;
+  let featuresById = new Map();
+  let selectedLocationId = null;
+  let selectedPrecinctIds = new Set();
+  let pendingSelection = null;
 
   const locations = cards.map((card, index) => ({
     id: card.dataset.locationId || card.querySelector("[data-show-location-on-map]")?.dataset.showLocationOnMap,
@@ -27,25 +31,16 @@
     city: card.dataset.city || "",
     address: card.querySelector("address")?.textContent.replace(/\s+/g, " ").trim() || "",
     search: card.dataset.search || "",
-    precincts: [...card.querySelectorAll(".polling-precinct-section li > span")].map(item => item.textContent.trim()),
+    precincts: [...card.querySelectorAll(".polling-precinct-section li")].map(item => ({
+      id: item.querySelector("[data-show-precinct-on-map]")?.dataset.showPrecinctOnMap,
+      name: item.querySelector("[data-precinct-name]")?.textContent.trim() || ""
+    })),
     directions: card.querySelector(".polling-directions")?.href || ""
   }));
-
-  const normalize = value => String(value || "")
-    .toLocaleUpperCase("en-US")
-    .replace(/\bSTATE\s+ROUTE\b/g, "ST RT")
-    .replace(/\bNORTH\b/g, "N")
-    .replace(/\bSOUTH\b/g, "S")
-    .replace(/\bEAST\b/g, "E")
-    .replace(/\bWEST\b/g, "W")
-    .replace(/\b(STREET)\b/g, "ST")
-    .replace(/\b(AVENUE)\b/g, "AVE")
-    .replace(/\b(ROAD)\b/g, "RD")
-    .replace(/\b(BOULEVARD)\b/g, "BLVD")
-    .replace(/\b(DRIVE)\b/g, "DR")
-    .replace(/\b(HIGHWAY)\b/g, "HWY")
-    .replace(/\b(ROUTE)\b/g, "RT")
-    .replace(/[^A-Z0-9]/g, "");
+  const precinctById = new Map(locations.flatMap(location => location.precincts.map(precinct => [precinct.id, { ...precinct, location }])));
+  const nameKey = value => String(value || "").toLocaleUpperCase("en-US").replace(/[^A-Z0-9]/g, "");
+  const precinctAliases = new Map([[nameKey("GENEVA ON LAKE VILLAGE"), nameKey("GEN ON LAKE VILL")]]);
+  const censusNameKey = name => precinctAliases.get(nameKey(name)) || nameKey(name);
 
   const showMapError = message => {
     mapStatus.textContent = message;
@@ -61,7 +56,6 @@
     css.integrity = "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=";
     css.crossOrigin = "";
     document.head.append(css);
-
     const script = document.createElement("script");
     script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
     script.integrity = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
@@ -71,25 +65,34 @@
     document.head.append(script);
   });
 
-  const addressMatches = (location, properties) => {
-    const city = normalize(properties.CITY);
-    const state = normalize(properties.STATE || "OH");
-    const fullAddress = normalize(properties.FULLADD);
-    const street = normalize(location.street);
-    return city === normalize(location.city)
-      && state === "OH"
-      && street.length > 5
-      && fullAddress.startsWith(street);
+  const setSelectionStyles = () => {
+    if (!precinctLayer) return;
+    precinctLayer.eachLayer(layer => {
+      const precinct = featuresById.get(censusNameKey(layer.feature.properties?.NAME));
+      const selected = precinct && selectedPrecinctIds.has(precinct.id);
+      layer.setStyle(selected
+        ? { color: "#005e9e", weight: 3, opacity: 1, fillColor: "#00c8d7", fillOpacity: 0.62 }
+        : { color: "#2873a6", weight: 1.25, opacity: 0.9, fillColor: "#54b9e8", fillOpacity: 0.13 });
+      const element = layer.getElement?.();
+      if (element && precinct) {
+        element.setAttribute("tabindex", "0");
+        element.setAttribute("role", "button");
+        element.setAttribute("aria-label", `${precinct.name}, assigned to ${precinct.location.name}`);
+        element.setAttribute("aria-pressed", String(Boolean(selected)));
+      }
+    });
   };
 
-  const makeSelectedDetails = location => {
+  const showSelection = (location, precincts, singularPrecinct = null) => {
     selectedDetails.replaceChildren();
     const heading = document.createElement("h4");
-    heading.textContent = location.name;
+    heading.textContent = singularPrecinct ? singularPrecinct.name : location.name;
     const address = document.createElement("p");
-    address.textContent = location.address;
-    const precincts = document.createElement("p");
-    precincts.textContent = `Serves ${location.precincts.length} precinct${location.precincts.length === 1 ? "" : "s"}: ${location.precincts.join(", ")}`;
+    address.textContent = `${location.name} · ${location.address}`;
+    const precinctText = document.createElement("p");
+    precinctText.textContent = singularPrecinct
+      ? `${singularPrecinct.name} is assigned to this polling place for the November 3, 2026 General Election.`
+      : `${precincts.length} assigned precinct${precincts.length === 1 ? "" : "s"}: ${precincts.map(item => item.name).join(", ")}`;
     const actions = document.createElement("div");
     actions.className = "polling-selected-actions";
     const directions = document.createElement("a");
@@ -103,105 +106,117 @@
     verify.rel = "noopener noreferrer";
     verify.textContent = "Verify your address ↗";
     actions.append(directions, verify);
-    selectedDetails.append(heading, address, precincts, actions);
+    selectedDetails.append(heading, address, precinctText, actions);
     selectedDetails.hidden = false;
   };
 
   const selectLocation = (location, moveMap = true) => {
-    selectedId = location.id;
-    for (const [id, marker] of markersById) {
-      marker.setZIndexOffset(id === selectedId ? 1000 : 0);
-      marker.setOpacity(id === selectedId ? 1 : 0.78);
-      marker.getElement()?.classList.toggle("is-selected", id === selectedId);
-    }
+    selectedLocationId = location.id;
+    selectedPrecinctIds = new Set(location.precincts.map(precinct => precinct.id));
     for (const item of locations) {
-      item.card.classList.toggle("is-map-selected", item.id === selectedId);
+      item.card.classList.toggle("is-map-selected", item.id === location.id);
       const button = item.card.querySelector("[data-show-location-on-map]");
-      if (item.id === selectedId) button?.setAttribute("aria-current", "location");
+      if (item.id === location.id) button?.setAttribute("aria-current", "location");
       else button?.removeAttribute("aria-current");
     }
-    mapSelection.textContent = `${location.name} · ${location.precincts.length} precinct${location.precincts.length === 1 ? "" : "s"} assigned for the November 3, 2026 General Election.`;
-    makeSelectedDetails(location);
-    if (moveMap && map && markersById.has(location.id)) {
-      const marker = markersById.get(location.id);
-      map.flyTo(marker.getLatLng(), Math.max(map.getZoom(), 12), { duration: matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 0.6 });
-      marker.openPopup();
+    mapSelection.textContent = `${location.name} serves ${location.precincts.length} precinct${location.precincts.length === 1 ? "" : "s"}. The assigned precinct areas are highlighted on the map.`;
+    showSelection(location, location.precincts);
+    setSelectionStyles();
+    if (moveMap && map && precinctLayer) {
+      const selectedLayers = [];
+      precinctLayer.eachLayer(layer => {
+        const precinct = featuresById.get(censusNameKey(layer.feature.properties?.NAME));
+        if (precinct && selectedPrecinctIds.has(precinct.id)) selectedLayers.push(layer);
+      });
+      if (selectedLayers.length) {
+        const bounds = selectedLayers.reduce((result, layer) => result.extend(layer.getBounds()), window.L.latLngBounds([]));
+        map.flyToBounds(bounds, { padding: [24, 24], maxZoom: 10, duration: matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 0.55 });
+      }
     }
   };
 
-  const filterLocations = () => {
-    const query = input.value.trim().toLocaleLowerCase();
-    let visible = 0;
-    for (const location of locations) {
-      const matches = !query || location.search.includes(query);
-      location.card.hidden = !matches;
-      if (matches) visible++;
-      const marker = markersById.get(location.id);
-      if (mapReady && marker) {
-        if (matches && !map.hasLayer(marker)) marker.addTo(map);
-        if (!matches && map.hasLayer(marker)) map.removeLayer(marker);
-      }
+  const selectPrecinct = (precinct, layer = null) => {
+    selectedLocationId = precinct.location.id;
+    selectedPrecinctIds = new Set([precinct.id]);
+    for (const item of locations) {
+      item.card.classList.toggle("is-map-selected", item.id === precinct.location.id);
+      const button = item.card.querySelector("[data-show-location-on-map]");
+      if (item.id === precinct.location.id) button?.setAttribute("aria-current", "location");
+      else button?.removeAttribute("aria-current");
     }
-    count.textContent = query
-      ? `Showing ${visible} of ${cards.length} polling locations matching “${input.value.trim()}”.`
-      : `Showing all ${cards.length} polling locations.`;
-    empty.hidden = visible !== 0;
-    if (query && markersById.size) mapStatus.textContent = `${markersById.size} verified map markers are available. The map and directory are filtered together.`;
-    else if (!query && mapReady) mapStatus.textContent = `${markersById.size} polling locations matched between the county GIS points and current Board of Elections address list.`;
+    mapSelection.textContent = `${precinct.name} is assigned to ${precinct.location.name}. This precinct boundary is highlighted.`;
+    showSelection(precinct.location, [precinct], precinct);
+    setSelectionStyles();
+    if (layer && map) map.flyToBounds(layer.getBounds(), { padding: [24, 24], maxZoom: 12, duration: matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 0.55 });
   };
 
   const initializeMap = async () => {
     if (mapStarted) return;
     mapStarted = true;
-    mapStatus.textContent = "Loading the county map and polling-place locations…";
+    mapStatus.textContent = "Loading the 2020 precinct boundaries…";
     try {
       const L = await loadLeaflet();
-      map = L.map(mapElement, { scrollWheelZoom: false, zoomControl: true, tap: true, preferCanvas: true }).setView([41.88, -80.76], 9);
+      map = L.map(mapElement, { scrollWheelZoom: false, zoomControl: true, tap: true }).setView([41.88, -80.76], 9);
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>'
       }).addTo(map);
 
-      const endpoint = "https://services6.arcgis.com/SPg6lw9jlYmTOiLi/ArcGIS/rest/services/ElectoralDistricts/FeatureServer/0/query?where=1%3D1&outFields=NAME,FULLADD,CITY,STATE,POLLINGID&returnGeometry=true&outSR=4326&f=geojson";
+      const endpoint = new URL(`${layerUrl}/query`);
+      endpoint.search = new URLSearchParams({ where: "STATE='39' AND COUNTY='007' AND VTDI='A'", outFields: "NAME,GEOID,VTD", returnGeometry: "true", outSR: "4326", f: "geojson" });
       const response = await fetch(endpoint, { headers: { Accept: "application/geo+json,application/json" }, mode: "cors" });
-      if (!response.ok) throw new Error(`County GIS returned ${response.status}.`);
+      if (!response.ok) throw new Error(`Census TIGERweb returned ${response.status}.`);
       const geojson = await response.json();
       const features = Array.isArray(geojson.features) ? geojson.features : [];
-      const bounds = [];
-
+      const censusPrecincts = new Map();
       for (const location of locations) {
-        const feature = features.find(item => addressMatches(location, item.properties || {}));
-        const coordinates = feature?.geometry?.coordinates;
-        if (!Array.isArray(coordinates) || coordinates.length < 2) continue;
-        const [longitude, latitude] = coordinates;
-        if (!Number.isFinite(latitude) || !Number.isFinite(longitude) || latitude < 41 || latitude > 43 || longitude < -82 || longitude > -80) continue;
-        const icon = L.divIcon({ className: "polling-pin-icon", html: `<span><b>${location.index}</b></span>`, iconSize: [34, 40], iconAnchor: [17, 38], popupAnchor: [0, -35] });
-        const marker = L.marker([latitude, longitude], { icon, title: `${location.name}, ${location.address}`, alt: `Polling place ${location.index}: ${location.name}`, keyboard: true, riseOnHover: true });
-        const popup = document.createElement("div");
-        const title = document.createElement("strong");
-        title.textContent = location.name;
-        const popupAddress = document.createElement("p");
-        popupAddress.textContent = location.address;
-        const popupPrecincts = document.createElement("p");
-        popupPrecincts.textContent = `${location.precincts.length} assigned precinct${location.precincts.length === 1 ? "" : "s"}`;
-        popup.append(title, popupAddress, popupPrecincts);
-        marker.bindPopup(popup);
-        marker.on("click", () => selectLocation(location, false));
-        marker.addTo(map);
-        markersById.set(location.id, marker);
-        bounds.push([latitude, longitude]);
+        for (const precinct of location.precincts) {
+          const key = censusNameKey(precinct.name);
+          if (censusPrecincts.has(key)) throw new Error(`The Board of Elections list repeats precinct ${precinct.name}.`);
+          censusPrecincts.set(key, { ...precinct, location });
+        }
+      }
+      featuresById = new Map();
+      for (const feature of features) {
+        const key = censusNameKey(feature.properties?.NAME);
+        const precinct = censusPrecincts.get(key);
+        if (!precinct || featuresById.has(key)) throw new Error("Census boundary names do not map uniquely to the current Board of Elections precinct list.");
+        featuresById.set(key, precinct);
+      }
+      if (features.length !== 104 || featuresById.size !== 104 || [...censusPrecincts.keys()].some(key => !featuresById.has(key))) {
+        throw new Error(`The Census boundary layer matched ${featuresById.size} of 104 current precincts; complete coverage is required before highlighting.`);
       }
 
+      precinctLayer = L.geoJSON(geojson, {
+        style: { color: "#2873a6", weight: 1.25, opacity: 0.9, fillColor: "#54b9e8", fillOpacity: 0.13 },
+        onEachFeature(feature, layer) {
+          const precinct = featuresById.get(censusNameKey(feature.properties?.NAME));
+          if (!precinct) return;
+          const popup = document.createElement("div");
+          popup.textContent = `${precinct.name} · ${precinct.location.name}`;
+          layer.bindPopup(popup);
+          layer.on("click", () => selectPrecinct(precinct, layer));
+          layer.on("add", () => {
+            const element = layer.getElement?.();
+            if (!element) return;
+            element.addEventListener("keydown", event => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                selectPrecinct(precinct, layer);
+              }
+            });
+          });
+        }
+      }).addTo(map);
       mapReady = true;
-      mapElement.setAttribute("aria-label", `Interactive map showing ${markersById.size} address-matched Ashtabula County Election Day polling places. Use Tab to focus map markers and Enter to select a location.`);
-      if (bounds.length) map.fitBounds(bounds, { padding: [28, 28], maxZoom: 10 });
-      else throw new Error("No county GIS polling-place addresses matched the current BOE location list.");
-      mapStatus.textContent = `${markersById.size} of ${locations.length} locations matched by address between the county GIS map layer and the current Board of Elections list. Use the search results for full location and precinct details.`;
-      if (selectedId) {
-        const location = locations.find(item => item.id === selectedId);
-        if (location) selectLocation(location);
-      }
-      filterLocations();
+      const bounds = precinctLayer.getBounds();
+      if (!bounds.isValid()) throw new Error("The Census boundary layer did not include usable geometry.");
+      map.fitBounds(bounds, { padding: [18, 18] });
+      mapElement.setAttribute("aria-label", "Interactive map of the 104 Ashtabula County precinct boundaries from the 2020 U.S. Census. Use Tab and Enter to select map areas, or use the location directory.");
+      mapStatus.textContent = "All 104 current Board of Elections precinct names matched to 2020 Census boundaries. Select a map area or a location card to highlight its assigned precincts.";
+      setSelectionStyles();
+      if (pendingSelection?.type === "precinct") selectPrecinct(pendingSelection.precinct);
+      else if (pendingSelection?.type === "location") selectLocation(pendingSelection.location);
       map.invalidateSize();
     } catch (error) {
       showMapError(`${error.message} The searchable directory and official verification link are still available.`);
@@ -221,23 +236,54 @@
   }
 
   form.addEventListener("submit", event => event.preventDefault());
-  input.addEventListener("input", filterLocations);
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    for (const location of locations) {
+      const matches = !query || location.search.includes(query);
+      location.card.hidden = !matches;
+      if (matches) visible++;
+    }
+    count.textContent = query
+      ? `Showing ${visible} of ${cards.length} polling locations matching “${input.value.trim()}”.`
+      : `Showing all ${cards.length} polling locations.`;
+    empty.hidden = visible !== 0;
+  });
   form.addEventListener("reset", () => requestAnimationFrame(() => {
-    filterLocations();
+    input.dispatchEvent(new Event("input", { bubbles: true }));
     input.focus();
   }));
 
   root.addEventListener("click", event => {
-    const button = event.target.closest("[data-show-location-on-map]");
-    if (!button) return;
-    const location = locations.find(item => item.id === button.dataset.showLocationOnMap);
-    if (!location) return;
-    if (!mapReady) {
-      selectedId = location.id;
-      initializeMap();
+    const locationButton = event.target.closest("[data-show-location-on-map]");
+    if (locationButton) {
+      const location = locations.find(item => item.id === locationButton.dataset.showLocationOnMap);
+      if (!location) return;
+      if (!mapReady) {
+        selectedLocationId = location.id;
+        selectedPrecinctIds = new Set(location.precincts.map(precinct => precinct.id));
+        pendingSelection = { type: "location", location };
+        initializeMap();
+        return;
+      }
+      selectLocation(location);
+      if (window.matchMedia("(max-width: 1000px)").matches) mapElement.scrollIntoView({ behavior: "smooth", block: "center" });
       return;
     }
-    selectLocation(location);
-    if (window.matchMedia("(max-width: 1000px)").matches) mapElement.scrollIntoView({ behavior: "smooth", block: "center" });
+    const precinctButton = event.target.closest("[data-show-precinct-on-map]");
+    if (precinctButton) {
+      const precinct = precinctById.get(precinctButton.dataset.showPrecinctOnMap);
+      if (!precinct) return;
+      if (!mapReady) {
+        selectedLocationId = precinct.location.id;
+        selectedPrecinctIds = new Set([precinct.id]);
+        pendingSelection = { type: "precinct", precinct };
+        initializeMap();
+        return;
+      }
+      const feature = [...precinctLayer.getLayers()].find(layer => censusNameKey(layer.feature.properties?.NAME) === censusNameKey(precinct.name));
+      selectPrecinct(precinct, feature || null);
+      if (window.matchMedia("(max-width: 1000px)").matches) mapElement.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   });
 })();
