@@ -1,6 +1,6 @@
 const sourceUrl = "https://lookup.boe.ohio.gov/vtrapp/ashtabula/precandpoll.aspx";
 const mapBaseUrl = "https://www.boe.ohio.gov/ashtabula/c/precmap/";
-const gisPollingPointUrl = "https://services6.arcgis.com/SPg6lw9jlYmTOiLi/ArcGIS/rest/services/ElectoralDistricts/FeatureServer/0";
+const censusPrecinctBoundaryUrl = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/15";
 const rows = [
   ["elks-club", "ELKS CLUB", "3115 LAKE RD W", "ASHTABULA", "44004", "001:ASHTABULA 1-A;002:ASHTABULA 1-B;004:ASHTABULA 1-D;008:ASHTABULA 2-D"],
   ["move-church", "MOVE CHURCH", "2310 W 9TH ST", "ASHTABULA", "44004", "003:ASHTABULA 1-C;005:ASHTABULA 2-A;010:ASHTABULA 3-B"],
@@ -64,8 +64,9 @@ const locations = rows.map(([id, name, street, city, zip, list]) => ({
 module.exports = {
   county: "Ashtabula County", state: "Ohio", election: "November 3, 2026 General Election", electionDate: "2026-11-03",
   verifiedAt: "2026-10-18", sourceUpdatedAt: "2026-10-16T22:15:07-04:00", sourceUrl,
-  gisPollingPointUrl,
-  precinctMapNote: "The linked county precinct PDFs are official reference maps dated February 27, 2013. They are not verified 2026 boundary data.",
-  limitations: ["The county GIS layer has polling-place point coordinates, but its related precinct polygon layer has 77 features for 104 precinct assignments in the current Board of Elections report. Boundary highlighting and address-to-precinct matching are therefore disabled.", "GIS polling-place points were last edited May 29, 2026; only points whose street address and community match the October 16, 2026 Board of Elections location report are displayed.", "The polling-place assignment report was current as of October 16, 2026; voters should confirm their personal assignment with the Ohio Secretary of State."],
+  censusPrecinctBoundaryUrl,
+  precinctBoundaryVintage: "2020 U.S. Census TIGER/Line Voting Districts",
+  precinctMapNote: "The BOE's linked precinct PDFs are dated February 27, 2013. The map overlay uses 2020 U.S. Census voting-district boundaries whose names match all 104 current BOE precinct names; the BOE has not published an election-specific GIS boundary file in its public GIS portal. Boundary changes since 2020 cannot be ruled out.",
+  limitations: ["Precinct polygons are from the 2020 U.S. Census TIGER/Line Voting Districts. Their names match the 104 precinct names in the current BOE report, but the BOE has not confirmed that the boundary geometry is unchanged for the 2026 election. Confirm your own precinct and polling place with the Ohio Secretary of State.", "The BOE's linked precinct PDF maps are dated February 27, 2013 and are shown only as historical reference maps.", "The polling-place assignment report was current as of October 16, 2026; voters should confirm their personal assignment with the Ohio Secretary of State."],
   locations
 };
