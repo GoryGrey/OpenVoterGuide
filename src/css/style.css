@@ -276,6 +276,7 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
   .feature-grid,.race-grid,.landing-issue-grid { grid-template-columns:1fr; }
   .feature-card { min-height:160px; }
 }
+
 @media print { header,footer,.landing-actions { display:none!important; } body,main { background:#fff; } .candidate-card,.measure-card { break-inside:avoid; } }
 
 
@@ -1401,3 +1402,32 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
 .polling-data-citation p { margin:.4rem 0; }
 @media(max-width:1000px) { .polling-layout { grid-template-columns:minmax(0,1fr); } .polling-map-panel { position:static; grid-row:1; } .polling-map-frame-wrap iframe { height:min(65vh,560px); } }
 @media(max-width:650px) { .polling-intro { border-radius:14px; } .polling-directory-head { display:block; } .polling-source-link { display:inline-block; margin-top:.8rem; } .polling-layout { gap:.65rem; } .polling-map-panel-head { padding:.8rem; } .polling-map-warning { margin:.7rem; } .polling-results { grid-template-columns:1fr; } .polling-explain-grid { grid-template-columns:1fr; } .polling-location-card { padding:.85rem; } }
+
+/* Interactive county polling-place map */
+.polling-layout { grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr); }
+.polling-results { grid-template-columns:minmax(0,1fr); }
+.polling-map-legend { display:flex; flex-wrap:wrap; gap:.6rem 1rem; padding:.7rem 1rem; border-bottom:1px solid #d9e5ed; color:#36536a; font-size:.8rem; font-weight:700; }
+.polling-map-legend span { display:inline-flex; align-items:center; gap:.45rem; }
+.polling-legend-marker,.polling-legend-selected { display:inline-block; width:14px; height:14px; border:2px solid white; border-radius:50% 50% 50% 0; background:#087be8; box-shadow:0 1px 4px #102b4366; transform:rotate(-45deg); }
+.polling-legend-selected { background:#00bcd4; outline:2px solid #0758a0; outline-offset:1px; }
+.polling-map-status { min-height:2.3rem; padding:.65rem 1rem; color:#38556d; font-size:.84rem; line-height:1.4; }
+.polling-map-canvas { height:clamp(380px,52vh,590px); min-height:330px; border-block:1px solid #cbdce8; background:#e8eff4; }
+.polling-map-canvas:focus-visible { outline:3px solid #00a6d6; outline-offset:-3px; }
+.polling-map-canvas .leaflet-control-zoom a { width:42px; height:42px; line-height:40px; font-size:22px; }
+.polling-map-canvas .leaflet-control-attribution { font-size:10px; }
+.polling-pin-icon { border:0; background:transparent; }
+.polling-pin-icon span { display:grid; width:34px; height:34px; place-items:center; border:3px solid #fff; border-radius:50% 50% 50% 7px; background:linear-gradient(145deg,#087be8,#00bcd4); box-shadow:0 3px 10px #092b4566; color:#fff; font-size:12px; font-weight:900; transform:rotate(-45deg); }
+.polling-pin-icon.is-selected span { background:#07396f; outline:3px solid #43e1d0; outline-offset:1px; transform:rotate(-45deg) scale(1.13); }
+.polling-map-selected { margin:.8rem .9rem 0; padding:.85rem 1rem; border:1px solid #c0ddeb; border-radius:10px; background:white; color:#29465e; font-size:.88rem; line-height:1.5; }
+.polling-map-selected h4 { margin:0 0 .25rem; color:#102b43; font-size:1rem; }
+.polling-map-selected p { margin:.25rem 0; }
+.polling-selected-actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:.6rem; }
+.polling-selected-actions a { color:#075db1; font-weight:800; text-underline-offset:3px; }
+.polling-map-error { margin:.7rem .9rem; padding:.85rem; border:1px solid #e4b9ac; border-radius:9px; background:#fff3ef; color:#723a2c; font-size:.88rem; line-height:1.5; }
+.polling-map-error[hidden],.polling-map-selected[hidden] { display:none; }
+.polling-show-on-map { display:inline-flex; align-items:center; gap:.35rem; min-height:38px; margin-top:.35rem; padding:.35rem .65rem; border:1px solid #b9d9e8; border-radius:8px; background:#f2fbff; color:#075db1; font:inherit; font-size:.85rem; font-weight:800; cursor:pointer; }
+.polling-show-on-map:hover,.polling-show-on-map[aria-current="location"] { border-color:#0089b8; background:#def8fb; color:#064d76; }
+.polling-location-card.is-map-selected { border-color:#00a6d6; box-shadow:0 0 0 2px #00a6d633,0 8px 24px #0b203314; }
+.polling-map-button { display:inline-flex; align-items:center; justify-content:center; min-width:65px; min-height:36px; padding:.3rem .48rem; border:1px solid #bfd7e8; border-radius:7px; background:#f4faff; color:#075db1; font:inherit; font-size:.77rem; font-weight:800; text-decoration:none; }
+@media(max-width:1000px) { .polling-layout { grid-template-columns:minmax(0,1fr); } .polling-map-panel { position:static; grid-row:1; } .polling-map-canvas { height:min(62vh,560px); } }
+@media(max-width:650px) { .polling-map-canvas { height:55vh; min-height:340px; max-height:520px; } .polling-map-legend { padding:.65rem .8rem; } .polling-map-status { padding:.6rem .8rem; } .polling-map-warning { margin:.7rem; } }
