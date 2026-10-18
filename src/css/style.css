@@ -1332,3 +1332,72 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   .support-dialog { max-height:calc(100dvh - 2rem); }
   .support-dialog iframe { height:min(560px,calc(100dvh - 11rem)); }
 }
+
+/* Ashtabula polling-place and precinct directory */
+.polling-page { max-width:1180px; margin:0 auto; color:#102b43; }
+.polling-page [hidden] { display:none!important; }
+.polling-breadcrumb { display:flex; gap:.55rem; align-items:center; margin:0 0 1.1rem; color:#60768b; font-size:.9rem; }
+.polling-breadcrumb a,.polling-source-link,.polling-data-citation a { color:#075db1; font-weight:750; text-underline-offset:3px; }
+.polling-intro { padding:clamp(1.3rem,4vw,3.1rem); border:1px solid #d6e5f1; border-radius:20px; background:radial-gradient(ellipse at 100% 0,rgba(0,198,235,.12),transparent 45%),linear-gradient(135deg,#f2f8ff,#fff 55%); }
+.polling-eyebrow { margin:0 0 .4rem; color:#087cb1; font-size:.82rem; font-weight:850; letter-spacing:.09em; text-transform:uppercase; }
+.polling-intro h1 { margin:0; color:#0b2033; font-size:clamp(2rem,5vw,3.5rem); line-height:1.08; letter-spacing:-.035em; }
+.polling-lede { max-width:70ch; margin:.9rem 0 1.2rem; color:#49627a; font-size:1.1rem; line-height:1.65; }
+.polling-verify-button { display:inline-flex; align-items:center; justify-content:center; gap:.7rem; min-height:50px; padding:.7rem 1.15rem; border-radius:10px; background:#071827; color:#fff; font-weight:850; text-decoration:none; }
+.polling-verify-button:hover { background:#0758a0; }
+.polling-privacy { max-width:78ch; margin:1.1rem 0 0; color:#425d74; font-size:.91rem; line-height:1.55; }
+.polling-source-notice { display:flex; gap:1rem; align-items:flex-start; margin:1.25rem 0 2rem; padding:1rem 1.15rem; border:1px solid #bfdcf4; border-radius:13px; background:#eaf5ff; }
+.polling-notice-icon { display:grid; flex:0 0 30px; width:30px; height:30px; place-items:center; border-radius:50%; background:#0871c5; color:white; font-weight:900; }
+.polling-source-notice h2 { margin:0 0 .25rem; color:#123755; font-size:1.04rem; }
+.polling-source-notice p { margin:0; color:#37536d; line-height:1.55; }
+.polling-explorer { margin:2rem 0 3rem; }
+.polling-directory-head { display:flex; align-items:end; justify-content:space-between; gap:1.25rem; margin-bottom:1rem; }
+.polling-directory-head h2,.polling-explain h2 { margin:.2rem 0; color:#0b2033; font-size:clamp(1.55rem,3.2vw,2.1rem); letter-spacing:-.025em; }
+.polling-directory-head p:not(.polling-eyebrow) { margin:.35rem 0 0; color:#536c82; }
+.polling-source-link { flex:0 0 auto; }
+.polling-search { max-width:740px; margin:1.25rem 0 .5rem; }
+.polling-search label { display:block; margin-bottom:.4rem; color:#152e44; font-weight:800; }
+.polling-search-controls { display:flex; gap:.55rem; }
+.polling-search input { flex:1; min-width:0; min-height:48px; padding:.7rem .85rem; border:1px solid #b7cada; border-radius:9px; background:white; color:#102b43; font:inherit; }
+.polling-search input:focus-visible,.polling-page button:focus-visible,.polling-page a:focus-visible { outline:3px solid #00a6d6; outline-offset:3px; }
+.polling-clear { min-width:76px; border:1px solid #b7cada; border-radius:9px; background:#f4f8fb; color:#23445e; font:inherit; font-weight:750; cursor:pointer; }
+.polling-search > p { margin:.35rem 0; color:#60768b; font-size:.85rem; }
+.polling-result-count { margin:.8rem 0; color:#31506b; font-size:.9rem; font-weight:700; }
+.polling-layout { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr); gap:1rem; align-items:start; }
+.polling-results { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; }
+.polling-location-card { min-width:0; padding:1rem; border:1px solid #d8e4ed; border-radius:13px; background:white; box-shadow:0 5px 20px rgba(11,32,51,.045); }
+.polling-location-card:hover { border-color:#9dcde1; box-shadow:0 8px 24px rgba(11,32,51,.08); }
+.polling-card-top { display:flex; gap:.75rem; align-items:flex-start; }
+.polling-marker { display:grid; flex:0 0 35px; width:35px; height:35px; place-items:center; border:2px solid #aeeaf0; border-radius:50%; background:linear-gradient(145deg,#007bea,#00c6eb); color:#fff; font-size:.8rem; font-weight:900; }
+.polling-card-top h3 { margin:0 0 .3rem; color:#102b43; font-size:1.02rem; line-height:1.25; }
+.polling-card-top address { color:#526b81; font-size:.91rem; font-style:normal; line-height:1.45; }
+.polling-precinct-section { margin-top:.8rem; padding-top:.75rem; border-top:1px solid #e5edf3; }
+.polling-precinct-section h4 { margin:0 0 .4rem; color:#3e5b73; font-size:.82rem; }
+.polling-precinct-section ul { display:grid; gap:.22rem; margin:0; padding:0; list-style:none; }
+.polling-precinct-section li { display:flex; justify-content:space-between; align-items:center; gap:.4rem; min-height:34px; color:#1d3d56; font-size:.88rem; }
+.polling-map-button { flex:0 0 auto; min-height:34px; padding:.3rem .48rem; border:1px solid #bfd7e8; border-radius:7px; background:#f4faff; color:#075db1; font:inherit; font-size:.77rem; font-weight:800; cursor:pointer; }
+.polling-map-button[aria-pressed="true"] { border-color:#0086bd; background:#e1f7fb; color:#064e77; }
+.polling-directions { display:inline-flex; align-items:center; gap:.4rem; min-height:40px; margin-top:.65rem; color:#075db1; font-weight:800; text-underline-offset:3px; }
+.polling-map-panel { position:sticky; top:1rem; overflow:hidden; border:1px solid #cbdce8; border-radius:16px; background:#f7fbfe; box-shadow:0 10px 30px rgba(11,32,51,.08); }
+.polling-map-panel-head { display:flex; gap:.75rem; align-items:flex-start; padding:1rem 1.1rem; background:#0c2c44; color:#fff; }
+.polling-map-icon { display:grid; flex:0 0 38px; width:38px; height:38px; place-items:center; border:1px solid rgba(255,255,255,.3); border-radius:10px; color:#4fe4d0; font-size:1.7rem; }
+.polling-map-panel-head h3 { margin:0; font-size:1.1rem; }
+.polling-map-panel-head p { margin:.25rem 0 0; color:#d2e3f0; font-size:.9rem; line-height:1.45; }
+.polling-map-warning { margin:.9rem; padding:.85rem; border:1px solid #f0d08a; border-radius:10px; background:#fff7e3; color:#644c1c; font-size:.86rem; line-height:1.5; }
+.polling-map-warning p { margin:.25rem 0 0; }
+.polling-map-frame-wrap { margin:0 .9rem; overflow:hidden; border:1px solid #cbdce8; border-radius:9px; background:#17212a; }
+.polling-map-frame-wrap iframe { display:block; width:100%; height:440px; border:0; background:white; }
+.polling-map-open { display:flex; justify-content:space-between; gap:.5rem; margin:.85rem .9rem; padding:.7rem .85rem; border:1px solid #bed8e8; border-radius:8px; background:white; color:#075db1; font-weight:800; text-decoration:none; }
+.polling-map-foot { display:flex; gap:.65rem; padding:.8rem 1rem; border-top:1px solid #d9e5ed; color:#50677b; font-size:.86rem; line-height:1.5; }
+.polling-map-foot > span { color:#0087ba; font-size:1.3rem; }
+.polling-map-foot p { margin:0; }
+.polling-no-results { padding:1rem; border:1px solid #edc98b; border-radius:10px; background:#fff8e8; color:#644c1c; }
+.polling-explain { margin:3rem 0 2rem; }
+.polling-explain-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.9rem; margin-top:1rem; }
+.polling-explain-grid article { padding:1.1rem; border:1px solid #d9e5ed; border-radius:12px; background:#fff; }
+.polling-explain-grid article > span { color:#0096c8; font-size:.78rem; font-weight:900; letter-spacing:.1em; }
+.polling-explain-grid h3 { margin:.4rem 0; color:#153750; }
+.polling-explain-grid p { margin:0; color:#536c82; line-height:1.55; }
+.polling-data-citation { margin:2rem 0 1rem; padding:1rem 1.15rem; border-top:1px solid #d4e1ea; color:#536c82; font-size:.88rem; line-height:1.55; }
+.polling-data-citation p { margin:.4rem 0; }
+@media(max-width:1000px) { .polling-layout { grid-template-columns:minmax(0,1fr); } .polling-map-panel { position:static; grid-row:1; } .polling-map-frame-wrap iframe { height:min(65vh,560px); } }
+@media(max-width:650px) { .polling-intro { border-radius:14px; } .polling-directory-head { display:block; } .polling-source-link { display:inline-block; margin-top:.8rem; } .polling-layout { gap:.65rem; } .polling-map-panel-head { padding:.8rem; } .polling-map-warning { margin:.7rem; } .polling-results { grid-template-columns:1fr; } .polling-explain-grid { grid-template-columns:1fr; } .polling-location-card { padding:.85rem; } }
