@@ -180,7 +180,7 @@ footer a { color: var(--accent); }
   align-items: flex-start;
 }
 @media print {
-  header nav, footer, .search-box, .worksheet-check { display: none; }
+  body > header nav, footer, .search-box, .worksheet-check { display: none; }
   .candidate-card, .measure-card { break-inside: avoid; }
 }
 
@@ -193,7 +193,7 @@ footer a { color: var(--accent); }
 }
 html { scroll-behavior:smooth; }
 body { background:var(--bg); color:var(--text); font-family:"DM Sans",system-ui,sans-serif; }
-header { position:sticky; top:0; z-index:30; background:rgba(255,255,255,.97); border-bottom:1px solid var(--border); box-shadow:0 2px 12px rgba(14,45,80,.05); }
+body > header { position:sticky; top:0; z-index:30; background:#fff; border-bottom:1px solid var(--border); box-shadow:0 2px 12px rgba(14,45,80,.05); }
 header nav { max-width:1240px; min-height:70px; margin:auto; padding:.65rem 1rem; background:transparent; color:var(--text); gap:.5rem 1rem; }
 .logo { color:var(--primary); font-family:"Libre Franklin",system-ui,sans-serif; letter-spacing:-.035em; }
 .nav-links { gap:.15rem; }
@@ -248,7 +248,7 @@ footer { background:#fff; border-top:1px solid var(--border); margin-top:3rem; }
 .site-nav .nav-links { display:flex; flex-wrap:wrap; }
 
 @media (max-width:600px) {
-  header { position:relative; }
+  body > header { position:relative; }
   header nav { gap:.55rem; align-items:center; }
   .logo { max-width:calc(100% - 6rem); font-size:1rem; line-height:1.25; }
   .site-nav { position:relative; flex:0 0 auto; order:2; }
@@ -1346,7 +1346,7 @@ main > .page-shell:not(.landing-hero):not(.landing-shell) { width:100%; max-widt
   body.print-issue-graphic * { visibility:hidden!important; }
   body.print-issue-graphic .issue-graphic,body.print-issue-graphic .issue-graphic * { visibility:visible!important; }
   body.print-issue-graphic .issue-graphic { position:absolute; inset:.5in; border:2px solid #0877ce; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
-  .public-share-tools,header,footer { display:none!important; }
+  .public-share-tools,body > header,footer { display:none!important; }
 }
 @media print { .worksheet-toolbar,.worksheet-status,.header-support,.support-dialog { display:none!important; } .worksheet-entry { break-inside:avoid; } }
 .race-profile > h1:first-of-type,.measure-profile > h1:first-of-type { margin-top:.5rem; }
