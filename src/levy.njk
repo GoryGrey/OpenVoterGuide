@@ -14,7 +14,7 @@ eleventyComputed:
   <p class="directory-meta"><a href="{{ '/levies/' | url }}">Ashtabula County property tax levies</a> · Issue {{ levy.issue_number }}</p>
   <h1>Issue {{ levy.issue_number }}: {{ levy.jurisdiction }}</h1>
   <p>{{ levy.purpose }}</p>
-  <span class="verification-badge">Levy details checked {{ levy.verification_date }} against county auditor and state filing sources</span>
+  <span class="verification-badge">Rates, levy type, term, and annual revenue checked {{ levy.verification_date }} against the county estimator and official ballot</span>
   <dl class="levy-facts">
     <dt>Jurisdiction</dt><dd>{{ levy.jurisdiction }}</dd>
     <dt>Purpose</dt><dd>{{ levy.purpose }}</dd>

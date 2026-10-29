@@ -140,7 +140,7 @@ for (const raceId of requiredRaceIds) {
 }
 assert(races.length === 20, `Expected 20 Ashtabula race pages from the reviewed candidate list; found ${races.length}`);
 const namedWriteIns = {
-  governor: ["Timothy Grady / Andrea Neutzling", "Heather Hill / Patrick Manley", "Renea Turner / Jalen Turner", "Ron Ula / Michael C. Lehnerd"],
+  governor: ["Timothy Grady / Andrea Neutzling", "Heather Hill / Patrick Manley", "Renea Turner / Jalen Turner"],
   senator: ["Stephen Faris", "Anthony Holliman", "Timothy Telymonde"]
 };
 for (const [raceId, names] of [["governor", namedWriteIns.governor], ["us-senator", namedWriteIns.senator]]) {
