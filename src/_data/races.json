@@ -5,7 +5,7 @@
     "district": null,
     "term_info": "Special election, unexpired term ending 1/3/2029 (vote for 1). Seat vacated when J.D. Vance resigned to become vice president; winner serves remaining two years of the term Vance was elected to in 2022.",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Jon Husted",
@@ -1035,7 +1035,7 @@
     "district": "14th District",
     "term_info": "Vote for 1; 2-year term. All of Ashtabula County is in OH-14.",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "David P. Joyce",
@@ -1454,7 +1454,7 @@
     "district": null,
     "term_info": "Joint ticket; vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-12",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Vivek Ramaswamy / Robert A. McColley",
@@ -2140,56 +2140,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "Ron Ula / Michael C. Lehnerd",
-        "background": "The Ashtabula County Board of Elections lists Ron Ula and Michael C. Lehnerd as write-in candidates. Signal Cleveland and Signal Akron report that Ula and Lehnerd did not respond to their voter-guide questionnaire, and Toledo Free Press lists the ticket without a biography. We have not found independently verifiable biographical details or issue statements for either candidate.",
-        "sources": [
-          {
-            "label": "Ashtabula County BOE official 2026 candidate list (revised September 15, 2026)",
-            "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
-          },
-          {
-            "label": "Signal Cleveland and Signal Akron, 2026 voter guide",
-            "url": "https://signalcleveland.org/election-2026-ohio-midterm-voter-guide-for-cuyahoga-county-candidates-issues-key-dates/"
-          },
-          {
-            "label": "Signal Akron, 2026 voter guide",
-            "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
-          },
-          {
-            "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
-            "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
-          }
-        ],
-        "party": "Write-in",
-        "claim_evidence": {
-          "background": [
-            {
-              "status": "editorial_summary",
-              "note": "The county BOE list confirms the write-in ticket. Signal Cleveland and Signal Akron both state that Ron Ula and Michael C. Lehnerd did not respond to their voter-guide questionnaire; Toledo Free Press lists the ticket but provides no biography. No independently verifiable biography or issue statements for either candidate were located in these sources.",
-              "checked_on": "2026-10-12",
-              "sources": [
-                {
-                  "label": "Ashtabula County BOE official 2026 candidate list (revised September 15, 2026)",
-                  "url": "https://www.boe.ohio.gov/ashtabula/c/upload/Election_Candidates.pdf"
-                },
-                {
-                  "label": "Signal Cleveland and Signal Akron, 2026 voter guide",
-                  "url": "https://signalcleveland.org/election-2026-ohio-midterm-voter-guide-for-cuyahoga-county-candidates-issues-key-dates/"
-                },
-                {
-                  "label": "Signal Akron, 2026 voter guide",
-                  "url": "https://signalakron.org/election-2026-ohio-midterm-voter-guide-for-akron-and-summit-county/"
-                },
-                {
-                  "label": "Toledo Free Press, 2026 general election voter guide (October 4, 2026)",
-                  "url": "https://toledofreepress.com/toledo-free-press-voters-guide-2026-general-election/"
-                }
-              ]
-            }
-          ]
-        }
       }
     ]
   },
@@ -2199,7 +2149,7 @@
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Keith Faber",
@@ -2431,7 +2381,7 @@
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Frank LaRose",
@@ -2653,7 +2603,7 @@
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Robert Sprague",
@@ -3024,7 +2974,7 @@
     "district": null,
     "term_info": "Vote for 1; 4-year term commencing 1/11/2027. Open seat (incumbent term-limited).",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Jay Edwards",
@@ -3226,7 +3176,7 @@
     "district": null,
     "term_info": "Full term commencing 1/1/2027; vote for 1; 6-year term. Judicial candidates run without party labels on the general ballot but are nominated in partisan primaries; parties below are the nominating party per the BOE list.",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Daniel R. Hawkins",
@@ -3432,7 +3382,7 @@
     "district": null,
     "term_info": "Full term commencing 1/2/2027; vote for 1; 6-year term. Judicial candidates run without party labels on the general ballot but are nominated in partisan primaries; parties below are the nominating party per the BOE list.",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Jennifer Brunner",
@@ -3607,7 +3557,7 @@
     "district": "Ohio House District 65",
     "term_info": "Vote for 1; 2-year term. District 65 includes parts of Ashtabula and Trumbull counties. Use the address search at the top of this page to identify your Ohio House district, then confirm your exact contests on your official sample ballot.",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "John Barbo",
@@ -3858,7 +3808,7 @@
     "district": "Ohio House District 99",
     "term_info": "Ashtabula County includes portions of Ohio House Districts 65 and 99. Use the address search at the top of this page to identify your Ohio House district, then confirm your exact contests on your official sample ballot.",
     "verification_status": "candidate_list_checked",
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "candidates": [
       {
         "name": "Sarah Fowler Arthur",
@@ -4069,7 +4019,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4109,7 +4059,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4161,7 +4111,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4283,7 +4233,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4327,7 +4277,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4378,7 +4328,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4507,7 +4457,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4588,7 +4538,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   },
   {
@@ -4633,7 +4583,7 @@
         }
       }
     ],
-    "verification_date": "2026-10-11",
+    "verification_date": "2026-10-28",
     "verification_status": "candidate_list_checked"
   }
 ]

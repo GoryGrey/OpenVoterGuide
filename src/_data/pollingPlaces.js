@@ -53,7 +53,7 @@ const rows = [
 ];
 
 const locations = rows.map(([id, name, street, city, zip, list]) => ({
-  id, name, address: { street, city, state: "OH", zip }, electionId: "2026-general", sourceUrl, verifiedAt: "2026-10-18",
+  id, name, address: { street, city, state: "OH", zip }, electionId: "2026-general", sourceUrl, verifiedAt: "2026-10-28",
   precincts: list.split(";").map(entry => {
     const [precinctId, precinctName] = entry.split(":");
     return { id: precinctId, name: precinctName, mapUrl: `${mapBaseUrl}${precinctId}.pdf` };
@@ -63,10 +63,10 @@ const locations = rows.map(([id, name, street, city, zip, list]) => ({
 
 module.exports = {
   county: "Ashtabula County", state: "Ohio", election: "November 3, 2026 General Election", electionDate: "2026-11-03",
-  verifiedAt: "2026-10-18", sourceUpdatedAt: "2026-10-16T22:15:07-04:00", sourceUrl,
+  verifiedAt: "2026-10-28", sourceUpdatedAt: "2026-10-22T22:15:07-04:00", sourceUrl,
   censusPrecinctBoundaryUrl,
   precinctBoundaryVintage: "2020 U.S. Census TIGER/Line Voting Districts",
   precinctMapNote: "The BOE's linked precinct PDFs are dated February 27, 2013. The map overlay uses 2020 U.S. Census voting-district boundaries whose names match all 104 current BOE precinct names; the BOE has not published an election-specific GIS boundary file in its public GIS portal. Boundary changes since 2020 cannot be ruled out.",
-  limitations: ["Precinct polygons are from the 2020 U.S. Census TIGER/Line Voting Districts. Their names match the 104 precinct names in the current BOE report, but the BOE has not confirmed that the boundary geometry is unchanged for the 2026 election. Confirm your own precinct and polling place with the Ohio Secretary of State.", "The BOE's linked precinct PDF maps are dated February 27, 2013 and are shown only as historical reference maps.", "The polling-place assignment report was current as of October 16, 2026; voters should confirm their personal assignment with the Ohio Secretary of State."],
+  limitations: ["Precinct polygons are from the 2020 U.S. Census TIGER/Line Voting Districts. Their names match the 104 precinct names in the current BOE report, but the BOE has not confirmed that the boundary geometry is unchanged for the 2026 election. Confirm your own precinct and polling place with the Ohio Secretary of State.", "The BOE's linked precinct PDF maps are dated February 27, 2013 and are shown only as historical reference maps.", "The polling-place assignments reflect the Board of Elections report updated October 22, 2026; voters should confirm their personal assignment with the Ohio Secretary of State."],
   locations
 };
